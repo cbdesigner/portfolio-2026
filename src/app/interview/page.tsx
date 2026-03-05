@@ -11,14 +11,14 @@ export default function InterviewPage() {
       <div className="max-w-4xl mx-auto px-6 py-20">
         {/* Hero */}
         <header className="mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+          <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4">
             I was interviewed by Multiplica in 2019
           </h1>
         </header>
 
         {/* What is Multiplica */}
         <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">
             What is Multiplica?
           </h2>
           <p className="text-gray-300 leading-relaxed">
@@ -34,7 +34,7 @@ export default function InterviewPage() {
 
         {/* Interview with Carlos Baeza */}
         <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">
             Interview with Carlos Baeza, UX Lead at Banco Ripley
           </h2>
           <div className="mt-6 mb-6">
@@ -76,7 +76,7 @@ export default function InterviewPage() {
 
         {/* Maturity in UX */}
         <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">
             Maturity in UX
           </h2>
           <div className="space-y-4 text-gray-300 leading-relaxed">
@@ -92,7 +92,7 @@ export default function InterviewPage() {
 
         {/* Main Gaps */}
         <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">Main Gaps</h2>
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">Main Gaps</h2>
           <div className="space-y-4 text-gray-300 leading-relaxed">
             <p>
               One of the main gaps identified is the macro conceptualization
@@ -109,7 +109,7 @@ export default function InterviewPage() {
 
         {/* What Awaits Us */}
         <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">
             What Awaits Us
           </h2>
           <div className="space-y-4 text-gray-300 leading-relaxed">

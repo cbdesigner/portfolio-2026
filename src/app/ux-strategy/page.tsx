@@ -11,7 +11,7 @@ export default function UXStrategyPage() {
       <div className="max-w-4xl mx-auto px-6 py-20">
         {/* Hero */}
         <header className="mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">UX Strategy</h1>
+          <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4">UX Strategy</h1>
           <p className="text-xl md:text-2xl text-gray-400 mb-8">
             As a UX Manager, I implement a UX strategy in five key areas, lead
             design teams, and build design capabilities for companies.
@@ -31,7 +31,7 @@ export default function UXStrategyPage() {
 
         {/* 1 > Strategy */}
         <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">1 &gt; Strategy</h2>
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">1 &gt; Strategy</h2>
           <div className="relative w-full max-w-[1000px] mx-auto" style={{ paddingBottom: '85%' }}>
             <iframe
               className="absolute inset-0 w-full h-full border-0"
@@ -43,7 +43,7 @@ export default function UXStrategyPage() {
 
         {/* 2 > Enterprise */}
         <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">2 &gt; Enterprise</h2>
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">2 &gt; Enterprise</h2>
           <div className="relative w-full max-w-[1000px] mx-auto" style={{ paddingBottom: '85%' }}>
             <iframe
               className="absolute inset-0 w-full h-full border-0"
@@ -55,7 +55,7 @@ export default function UXStrategyPage() {
 
         {/* 3 > Team */}
         <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">3 &gt; Team</h2>
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">3 &gt; Team</h2>
           <div className="relative w-full max-w-[1000px] mx-auto" style={{ paddingBottom: '85%' }}>
             <iframe
               className="absolute inset-0 w-full h-full border-0"
@@ -67,7 +67,7 @@ export default function UXStrategyPage() {
 
         {/* 4 > Operations */}
         <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">4 &gt; Operations</h2>
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">4 &gt; Operations</h2>
           <div className="relative w-full max-w-[1000px] mx-auto" style={{ paddingBottom: '85%' }}>
             <iframe
               className="absolute inset-0 w-full h-full border-0"
@@ -79,7 +79,7 @@ export default function UXStrategyPage() {
 
         {/* 5 > Experience */}
         <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">5 &gt; Experience</h2>
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">5 &gt; Experience</h2>
           <div className="relative w-full max-w-[1000px] mx-auto" style={{ paddingBottom: '85%' }}>
             <iframe
               className="absolute inset-0 w-full h-full border-0"

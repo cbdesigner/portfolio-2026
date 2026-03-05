@@ -11,7 +11,7 @@ export default function MyDesignProcessPage() {
       <div className="max-w-4xl mx-auto px-6 py-20">
         {/* Hero */}
         <header className="mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+          <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4">
             My Design Process
           </h1>
           <p className="text-xl md:text-2xl text-gray-400 mb-4">
@@ -35,7 +35,7 @@ export default function MyDesignProcessPage() {
 
         {/* Discover */}
         <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">Discover</h2>
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">Discover</h2>
 
           <h3 className="text-lg font-semibold text-gray-200 mb-3">
             Activities
@@ -76,7 +76,7 @@ export default function MyDesignProcessPage() {
 
         {/* Define */}
         <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">Define</h2>
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">Define</h2>
 
           <h3 className="text-lg font-semibold text-gray-200 mb-3">
             Activities
@@ -129,7 +129,7 @@ export default function MyDesignProcessPage() {
 
         {/* Develop */}
         <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">Develop</h2>
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">Develop</h2>
 
           <h3 className="text-lg font-semibold text-gray-200 mb-3">
             Activities
@@ -174,7 +174,7 @@ export default function MyDesignProcessPage() {
 
         {/* Deliver */}
         <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">Deliver</h2>
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">Deliver</h2>
 
           <h3 className="text-lg font-semibold text-gray-200 mb-3">
             Activities

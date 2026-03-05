@@ -10,10 +10,10 @@ export default function BancoRipleyPage() {
     <article className="bg-black text-white">
       {/* Hero Section */}
       <section className="max-w-4xl mx-auto px-6 pt-20 pb-16 text-center">
-        <p className="text-sm uppercase tracking-widest text-gray-400 mb-4">
+        <p className="text-sm uppercase tracking-widest text-gray-400 mb-4 font-mono">
           Case Study
         </p>
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+        <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4">
           Transforming the Digital Experience at Banco Ripley
         </h1>
         <p className="text-xl md:text-2xl text-gray-400 mb-8">
@@ -35,7 +35,7 @@ export default function BancoRipleyPage() {
 
       {/* Section 1 - UX Lead */}
       <section className="max-w-4xl mx-auto px-6 py-16">
-        <h2 className="text-3xl md:text-4xl font-bold mb-8">
+        <h2 className="font-heading text-3xl md:text-4xl font-bold mb-8">
           Let&apos;s start from the beginning as a UX Lead...
         </h2>
 
@@ -150,7 +150,7 @@ export default function BancoRipleyPage() {
 
       {/* Section 2 - UX Manager */}
       <section className="max-w-4xl mx-auto px-6 py-16">
-        <h2 className="text-3xl md:text-4xl font-bold mb-8">
+        <h2 className="font-heading text-3xl md:text-4xl font-bold mb-8">
           Now let&apos;s move on to my new role as UX Manager...
         </h2>
 

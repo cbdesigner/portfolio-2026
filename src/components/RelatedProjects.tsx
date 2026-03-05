@@ -21,7 +21,7 @@ export default function RelatedProjects({ current }: { current: string }) {
 
   return (
     <section className="mt-20 pt-12 border-t border-gray-800">
-      <h2 className="text-2xl font-bold mb-8 text-center">You may also like</h2>
+      <h2 className="font-heading text-2xl font-bold mb-8 text-center">You may also like</h2>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
         {related.map((project) => (
           <Link

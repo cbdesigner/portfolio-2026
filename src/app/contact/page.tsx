@@ -25,7 +25,7 @@ export default function ContactPage() {
     return (
       <div className="bg-black text-white min-h-screen">
         <div className="max-w-4xl mx-auto px-6 py-20 text-center">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Thank you!</h1>
+          <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4">Thank you!</h1>
           <p className="text-gray-300 text-lg">
             Your message has been received. I&apos;ll get back to you soon.
           </p>
@@ -39,7 +39,7 @@ export default function ContactPage() {
       <div className="max-w-2xl mx-auto px-6 py-20">
         {/* Hero */}
         <header className="mb-12">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Contact</h1>
+          <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4">Contact</h1>
         </header>
 
         {/* Form */}
@@ -48,7 +48,7 @@ export default function ContactPage() {
           <div>
             <label
               htmlFor="name"
-              className="block text-sm font-medium text-gray-300 mb-2"
+              className="block text-sm font-medium text-gray-300 mb-2 font-mono"
             >
               Name
             </label>
@@ -68,7 +68,7 @@ export default function ContactPage() {
           <div>
             <label
               htmlFor="email"
-              className="block text-sm font-medium text-gray-300 mb-2"
+              className="block text-sm font-medium text-gray-300 mb-2 font-mono"
             >
               Email Address
             </label>
@@ -88,7 +88,7 @@ export default function ContactPage() {
           <div>
             <label
               htmlFor="message"
-              className="block text-sm font-medium text-gray-300 mb-2"
+              className="block text-sm font-medium text-gray-300 mb-2 font-mono"
             >
               Message
             </label>

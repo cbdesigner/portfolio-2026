@@ -170,20 +170,20 @@ export default function DesignSystemArchitectPage() {
         <p className="text-sm uppercase tracking-widest text-indigo-400 mb-4">
           Case Study
         </p>
-        <h1 className="text-4xl md:text-5xl font-bold mb-4">
+        <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4">
           Design System Architect
         </h1>
         <p className="text-xl md:text-2xl text-gray-400 mb-8">
           Building scalable, multi-brand design systems that bridge design and development
         </p>
         <div className="flex justify-center gap-3 flex-wrap">
-          <span className="px-3 py-1 text-xs font-medium rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
+          <span className="px-3 py-1 text-xs font-medium font-mono rounded-full bg-indigo-500/10 text-indigo-400 border border-indigo-500/20">
             Design Systems
           </span>
-          <span className="px-3 py-1 text-xs font-medium rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20">
+          <span className="px-3 py-1 text-xs font-medium font-mono rounded-full bg-purple-500/10 text-purple-400 border border-purple-500/20">
             Token Architecture
           </span>
-          <span className="px-3 py-1 text-xs font-medium rounded-full bg-violet-500/10 text-violet-400 border border-violet-500/20">
+          <span className="px-3 py-1 text-xs font-medium font-mono rounded-full bg-violet-500/10 text-violet-400 border border-violet-500/20">
             Multi-brand
           </span>
         </div>
@@ -191,7 +191,7 @@ export default function DesignSystemArchitectPage() {
 
       {/* Overview */}
       <section className="max-w-4xl mx-auto px-6 py-16">
-        <h2 className="text-3xl md:text-4xl font-bold mb-8">Overview</h2>
+        <h2 className="font-heading text-3xl md:text-4xl font-bold mb-8">Overview</h2>
         <div className="space-y-6 text-gray-300 leading-relaxed text-lg">
           <p>
             As a Design System Architect, I create the foundational architecture
@@ -213,7 +213,7 @@ export default function DesignSystemArchitectPage() {
       {/* Core Competencies */}
       <section className="max-w-5xl mx-auto px-6 py-16">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">
             Core Competencies
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
@@ -244,7 +244,7 @@ export default function DesignSystemArchitectPage() {
       {/* Evolution of My Approach */}
       <section className="max-w-4xl mx-auto px-6 py-16">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">
             Evolution of My Approach
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
@@ -288,7 +288,7 @@ export default function DesignSystemArchitectPage() {
       {/* Key Achievements */}
       <section className="max-w-5xl mx-auto px-6 py-16">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">
             Key Achievements
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
@@ -353,7 +353,7 @@ export default function DesignSystemArchitectPage() {
       {/* Tools & Technologies */}
       <section className="max-w-4xl mx-auto px-6 py-16">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">
             Tools & Technologies
           </h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
@@ -378,7 +378,7 @@ export default function DesignSystemArchitectPage() {
       {/* Methodology */}
       <section className="max-w-5xl mx-auto px-6 py-16">
         <div className="text-center mb-12">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">Methodology</h2>
+          <h2 className="font-heading text-3xl md:text-4xl font-bold mb-4">Methodology</h2>
           <p className="text-gray-400 text-lg max-w-2xl mx-auto">
             A systematic approach to building and scaling design systems
           </p>
@@ -406,7 +406,7 @@ export default function DesignSystemArchitectPage() {
         </div>
 
         {/* Summary arrow flow */}
-        <div className="mt-10 flex items-center justify-center gap-2 flex-wrap text-sm text-gray-500">
+        <div className="mt-10 flex items-center justify-center gap-2 flex-wrap text-sm text-gray-500 font-mono">
           <span className="text-indigo-400 font-medium">Audit</span>
           <span>&rarr;</span>
           <span className="text-indigo-400 font-medium">Define Tokens</span>

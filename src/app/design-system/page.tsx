@@ -12,7 +12,7 @@ export default function DesignSystemPage() {
       <div className="max-w-4xl mx-auto px-6 py-20">
         {/* Hero */}
         <header className="mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">
+          <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4">
             Design System
           </h1>
           <p className="text-xl md:text-2xl text-gray-400 mb-8">
@@ -32,7 +32,7 @@ export default function DesignSystemPage() {
 
         {/* Journey Beginning */}
         <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">
             Journey beginning
           </h2>
           <p className="text-gray-300 leading-relaxed">
@@ -51,7 +51,7 @@ export default function DesignSystemPage() {
 
         {/* 2018-2019 */}
         <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">2018 - 2019</h2>
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">2018 - 2019</h2>
           <div className="space-y-4 text-gray-300 leading-relaxed">
             <p>
               I applied my knowledge at an Italian design firm, working on the
@@ -70,7 +70,7 @@ export default function DesignSystemPage() {
 
         {/* Design System with Tokens Studio */}
         <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">
             Design System with Tokens Studio
           </h2>
           <div className="space-y-4 text-gray-300 leading-relaxed">
@@ -105,7 +105,7 @@ export default function DesignSystemPage() {
 
         {/* Multibranding Design System with Variables */}
         <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">
             Multibranding Design System with variables
           </h2>
           <div className="space-y-4 text-gray-300 leading-relaxed">
@@ -141,9 +141,9 @@ export default function DesignSystemPage() {
 
         {/* Tools */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-4">Tools</h2>
+          <h2 className="font-heading text-2xl font-bold mb-4">Tools</h2>
           <div className="flex flex-wrap gap-3">
-            <span className="px-4 py-2 bg-gray-900 rounded-full text-sm text-gray-300">
+            <span className="px-4 py-2 bg-gray-900 rounded-full text-sm text-gray-300 font-mono">
               Figma
             </span>
           </div>

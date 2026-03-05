@@ -11,7 +11,7 @@ export default function EnelOneHubPage() {
       <div className="max-w-4xl mx-auto px-6 py-20">
         {/* Hero */}
         <header className="mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Enel One Hub</h1>
+          <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4">Enel One Hub</h1>
           <p className="text-xl md:text-2xl text-gray-400 mb-8">
             One of the main global operators in the sector of electricity, gas
             and integrated services
@@ -30,7 +30,7 @@ export default function EnelOneHubPage() {
 
         {/* Methodology & Deliverables */}
         <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">
             Methodology &amp; Deliverables
           </h2>
           <ul className="space-y-3 text-gray-300 leading-relaxed">
@@ -71,7 +71,7 @@ export default function EnelOneHubPage() {
 
         {/* Sections */}
         <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">
             Interviews in Chile/Peru and Argentina/Colombia
           </h2>
           <p className="text-gray-300 leading-relaxed">
@@ -87,7 +87,7 @@ export default function EnelOneHubPage() {
         </section>
 
         <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">
             Argentina and Colombia
           </h2>
           <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
@@ -97,7 +97,7 @@ export default function EnelOneHubPage() {
         </section>
 
         <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">
             Chile Sitemap
           </h2>
           <p className="text-gray-300 leading-relaxed">
@@ -112,7 +112,7 @@ export default function EnelOneHubPage() {
         </section>
 
         <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">Hotspots</h2>
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">Hotspots</h2>
           <p className="text-gray-300 leading-relaxed">
             Analyzed user interaction heatmaps and click data to identify
             critical hotspots, understanding where users focused their attention
@@ -124,7 +124,7 @@ export default function EnelOneHubPage() {
         </section>
 
         <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">
             Some screens of Private Area for Personas
           </h2>
           <p className="text-gray-300 leading-relaxed">
@@ -149,7 +149,7 @@ export default function EnelOneHubPage() {
         </section>
 
         <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">
             Screen of Public Area Personas
           </h2>
           <p className="text-gray-300 leading-relaxed">
@@ -164,7 +164,7 @@ export default function EnelOneHubPage() {
 
         {/* My Responsibilities */}
         <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">
             My Responsibilities
           </h2>
           <ul className="space-y-3 text-gray-300 leading-relaxed">
@@ -197,36 +197,36 @@ export default function EnelOneHubPage() {
 
         {/* Tools */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-4">Tools</h2>
+          <h2 className="font-heading text-2xl font-bold mb-4">Tools</h2>
           <div className="flex flex-wrap gap-3">
-            <span className="px-4 py-2 bg-gray-900 rounded-full text-sm text-gray-300">
+            <span className="px-4 py-2 bg-gray-900 rounded-full text-sm text-gray-300 font-mono">
               Sketch (Craft + Runner + Anima Toolkit + Paddy)
             </span>
-            <span className="px-4 py-2 bg-gray-900 rounded-full text-sm text-gray-300">
+            <span className="px-4 py-2 bg-gray-900 rounded-full text-sm text-gray-300 font-mono">
               Abstract
             </span>
-            <span className="px-4 py-2 bg-gray-900 rounded-full text-sm text-gray-300">
+            <span className="px-4 py-2 bg-gray-900 rounded-full text-sm text-gray-300 font-mono">
               Invision
             </span>
-            <span className="px-4 py-2 bg-gray-900 rounded-full text-sm text-gray-300">
+            <span className="px-4 py-2 bg-gray-900 rounded-full text-sm text-gray-300 font-mono">
               Google Slide
             </span>
-            <span className="px-4 py-2 bg-gray-900 rounded-full text-sm text-gray-300">
+            <span className="px-4 py-2 bg-gray-900 rounded-full text-sm text-gray-300 font-mono">
               Google Docs
             </span>
-            <span className="px-4 py-2 bg-gray-900 rounded-full text-sm text-gray-300">
+            <span className="px-4 py-2 bg-gray-900 rounded-full text-sm text-gray-300 font-mono">
               Avaza
             </span>
-            <span className="px-4 py-2 bg-gray-900 rounded-full text-sm text-gray-300">
+            <span className="px-4 py-2 bg-gray-900 rounded-full text-sm text-gray-300 font-mono">
               Draw.io
             </span>
-            <span className="px-4 py-2 bg-gray-900 rounded-full text-sm text-gray-300">
+            <span className="px-4 py-2 bg-gray-900 rounded-full text-sm text-gray-300 font-mono">
               Basecamp
             </span>
-            <span className="px-4 py-2 bg-gray-900 rounded-full text-sm text-gray-300">
+            <span className="px-4 py-2 bg-gray-900 rounded-full text-sm text-gray-300 font-mono">
               Smaply
             </span>
-            <span className="px-4 py-2 bg-gray-900 rounded-full text-sm text-gray-300">
+            <span className="px-4 py-2 bg-gray-900 rounded-full text-sm text-gray-300 font-mono">
               Principle
             </span>
           </div>

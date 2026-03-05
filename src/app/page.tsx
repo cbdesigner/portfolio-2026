@@ -65,7 +65,7 @@ export default function Home() {
         />
         <div className="absolute inset-0 bg-black/50" />
         <div className="relative z-10 text-center px-6 max-w-4xl">
-          <h1 className="text-5xl md:text-7xl font-bold mb-8">
+          <h1 className="font-heading text-5xl md:text-7xl font-bold mb-8">
             Hello, I&apos;m Carlos Baeza
           </h1>
           <p className="text-lg md:text-xl text-gray-300 leading-relaxed">

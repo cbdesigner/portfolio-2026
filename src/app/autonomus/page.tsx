@@ -12,7 +12,7 @@ export default function AutonomusPage() {
       <div className="max-w-4xl mx-auto px-6 py-20">
         {/* Hero */}
         <header className="mb-16">
-          <h1 className="text-4xl md:text-5xl font-bold mb-4">Autonomus</h1>
+          <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4">Autonomus</h1>
           <p className="text-xl md:text-2xl text-gray-400 mb-8">
             A digital platform that transport and accompany older adults in all
             their daily activities. From visits to the doctor, shopping, visiting
@@ -31,7 +31,7 @@ export default function AutonomusPage() {
 
         {/* Role & Responsibilities */}
         <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">
             My Role &amp; Responsibilities
           </h2>
           <div className="space-y-4 text-gray-300 leading-relaxed">
@@ -47,7 +47,7 @@ export default function AutonomusPage() {
 
         {/* Subsections */}
         <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">
             App for Caregiver and Senior
           </h2>
           <p className="text-gray-300 leading-relaxed">
@@ -75,7 +75,7 @@ export default function AutonomusPage() {
         </section>
 
         <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">
             Back Office for Sales, Operations and Support
           </h2>
           <p className="text-gray-300 leading-relaxed">
@@ -103,7 +103,7 @@ export default function AutonomusPage() {
 
         {/* Methodology & Deliverables */}
         <section className="mb-16">
-          <h2 className="text-2xl md:text-3xl font-bold mb-6">
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">
             Methodology &amp; Deliverables
           </h2>
           <ul className="space-y-3 text-gray-300 leading-relaxed">
@@ -137,18 +137,18 @@ export default function AutonomusPage() {
 
         {/* Tools */}
         <section className="mb-16">
-          <h2 className="text-2xl font-bold mb-4">Tools</h2>
+          <h2 className="font-heading text-2xl font-bold mb-4">Tools</h2>
           <div className="flex flex-wrap gap-3">
-            <span className="px-4 py-2 bg-gray-900 rounded-full text-sm text-gray-300">
+            <span className="px-4 py-2 bg-gray-900 rounded-full text-sm text-gray-300 font-mono">
               Figma + Figjam
             </span>
-            <span className="px-4 py-2 bg-gray-900 rounded-full text-sm text-gray-300">
+            <span className="px-4 py-2 bg-gray-900 rounded-full text-sm text-gray-300 font-mono">
               Mir&oacute;
             </span>
-            <span className="px-4 py-2 bg-gray-900 rounded-full text-sm text-gray-300">
+            <span className="px-4 py-2 bg-gray-900 rounded-full text-sm text-gray-300 font-mono">
               Relume
             </span>
-            <span className="px-4 py-2 bg-gray-900 rounded-full text-sm text-gray-300">
+            <span className="px-4 py-2 bg-gray-900 rounded-full text-sm text-gray-300 font-mono">
               Webflow
             </span>
           </div>
