@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bg-ux" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1e1145"/>
+      <stop offset="50%" style="stop-color:#251657"/>
+      <stop offset="100%" style="stop-color:#1a0f3c"/>
+    </linearGradient>
+    <linearGradient id="ring-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8b5cf6"/>
+      <stop offset="100%" style="stop-color:#6366f1"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg-ux)"/>
+
+  <!-- Radial decoration -->
+  <circle cx="400" cy="240" r="150" fill="none" stroke="#8b5cf6" stroke-width="1.5" opacity="0.1"/>
+  <circle cx="400" cy="240" r="110" fill="none" stroke="#8b5cf6" stroke-width="1.5" opacity="0.15"/>
+  <circle cx="400" cy="240" r="70" fill="none" stroke="#8b5cf6" stroke-width="2" opacity="0.2"/>
+
+  <!-- Pentagon / 5-sided shape for "5 areas" concept -->
+  <g transform="translate(400, 240)" opacity="0.25">
+    <polygon points="0,-80 76,-24.7 47,64.7 -47,64.7 -76,-24.7" fill="none" stroke="url(#ring-grad)" stroke-width="2"/>
+  </g>
+
+  <!-- 5 area nodes on pentagon vertices -->
+  <g transform="translate(400, 240)">
+    <circle cx="0" cy="-80" r="8" fill="#8b5cf6" opacity="0.7"/>
+    <circle cx="76" cy="-24.7" r="8" fill="#7c3aed" opacity="0.7"/>
+    <circle cx="47" cy="64.7" r="8" fill="#6366f1" opacity="0.7"/>
+    <circle cx="-47" cy="64.7" r="8" fill="#6366f1" opacity="0.7"/>
+    <circle cx="-76" cy="-24.7" r="8" fill="#7c3aed" opacity="0.7"/>
+  </g>
+
+  <!-- Connecting lines from center to vertices -->
+  <g transform="translate(400, 240)" stroke="#8b5cf6" stroke-width="1" opacity="0.12">
+    <line x1="0" y1="0" x2="0" y2="-80"/>
+    <line x1="0" y1="0" x2="76" y2="-24.7"/>
+    <line x1="0" y1="0" x2="47" y2="64.7"/>
+    <line x1="0" y1="0" x2="-47" y2="64.7"/>
+    <line x1="0" y1="0" x2="-76" y2="-24.7"/>
+  </g>
+
+  <!-- Center node -->
+  <circle cx="400" cy="240" r="12" fill="#a78bfa" opacity="0.5"/>
+  <circle cx="400" cy="240" r="5" fill="#c4b5fd" opacity="0.8"/>
+
+  <!-- Floating particles -->
+  <circle cx="180" cy="130" r="2" fill="#8b5cf6" opacity="0.3"/>
+  <circle cx="620" cy="100" r="3" fill="#a78bfa" opacity="0.2"/>
+  <circle cx="700" cy="350" r="2" fill="#6366f1" opacity="0.25"/>
+  <circle cx="100" cy="400" r="2.5" fill="#8b5cf6" opacity="0.2"/>
+  <circle cx="550" cy="450" r="2" fill="#a78bfa" opacity="0.15"/>
+
+  <!-- Large "5" number -->
+  <text x="400" y="260" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="48" font-weight="800" fill="#8b5cf6" text-anchor="middle" opacity="0.15">5</text>
+
+  <!-- Divider -->
+  <rect x="320" y="400" width="160" height="2" rx="1" fill="#8b5cf6" opacity="0.3"/>
+
+  <!-- Text -->
+  <text x="400" y="455" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="42" font-weight="700" fill="#ffffff" text-anchor="middle">UX Strategy</text>
+  <text x="400" y="500" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="20" font-weight="600" fill="#a78bfa" text-anchor="middle" letter-spacing="6">5 AREAS</text>
+  <text x="400" y="535" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="13" fill="#7c5cbf" text-anchor="middle" letter-spacing="3">FRAMEWORK FOR SUCCESS</text>
+</svg>

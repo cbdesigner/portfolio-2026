@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a3e"/>
+      <stop offset="50%" style="stop-color:#2d1b69"/>
+      <stop offset="100%" style="stop-color:#1a1a3e"/>
+    </linearGradient>
+    <linearGradient id="diamond-fill" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#7c5cbf"/>
+      <stop offset="100%" style="stop-color:#a78bfa"/>
+    </linearGradient>
+    <linearGradient id="accent-line" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#7c5cbf;stop-opacity:0"/>
+      <stop offset="50%" style="stop-color:#a78bfa"/>
+      <stop offset="100%" style="stop-color:#7c5cbf;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg)"/>
+
+  <!-- Subtle grid pattern -->
+  <g opacity="0.04" stroke="#a78bfa" stroke-width="1">
+    <line x1="0" y1="100" x2="800" y2="100"/>
+    <line x1="0" y1="200" x2="800" y2="200"/>
+    <line x1="0" y1="300" x2="800" y2="300"/>
+    <line x1="0" y1="400" x2="800" y2="400"/>
+    <line x1="0" y1="500" x2="800" y2="500"/>
+    <line x1="100" y1="0" x2="100" y2="600"/>
+    <line x1="200" y1="0" x2="200" y2="600"/>
+    <line x1="300" y1="0" x2="300" y2="600"/>
+    <line x1="400" y1="0" x2="400" y2="600"/>
+    <line x1="500" y1="0" x2="500" y2="600"/>
+    <line x1="600" y1="0" x2="600" y2="600"/>
+    <line x1="700" y1="0" x2="700" y2="600"/>
+  </g>
+
+  <!-- Decorative circles -->
+  <circle cx="650" cy="120" r="80" fill="none" stroke="#7c5cbf" stroke-width="1" opacity="0.15"/>
+  <circle cx="650" cy="120" r="120" fill="none" stroke="#7c5cbf" stroke-width="1" opacity="0.08"/>
+  <circle cx="150" cy="480" r="60" fill="none" stroke="#a78bfa" stroke-width="1" opacity="0.1"/>
+
+  <!-- Diamond icon -->
+  <g transform="translate(400, 220)">
+    <rect width="70" height="70" rx="8" fill="url(#diamond-fill)" transform="rotate(45, 35, 35)" opacity="0.9"/>
+    <rect width="50" height="50" rx="6" fill="none" stroke="#c4b5fd" stroke-width="2" transform="translate(10,10) rotate(45, 25, 25)" opacity="0.6"/>
+  </g>
+
+  <!-- Process step dots -->
+  <g transform="translate(250, 360)">
+    <circle cx="0" cy="0" r="6" fill="#7c5cbf"/>
+    <line x1="12" y1="0" x2="88" y2="0" stroke="#7c5cbf" stroke-width="2" stroke-dasharray="4,4" opacity="0.5"/>
+    <circle cx="100" cy="0" r="6" fill="#8b6cc7"/>
+    <line x1="112" y1="0" x2="188" y2="0" stroke="#8b6cc7" stroke-width="2" stroke-dasharray="4,4" opacity="0.5"/>
+    <circle cx="200" cy="0" r="6" fill="#a78bfa"/>
+    <line x1="212" y1="0" x2="288" y2="0" stroke="#a78bfa" stroke-width="2" stroke-dasharray="4,4" opacity="0.5"/>
+    <circle cx="300" cy="0" r="6" fill="#c4b5fd"/>
+  </g>
+
+  <!-- Accent line -->
+  <rect x="200" y="410" width="400" height="2" fill="url(#accent-line)" rx="1"/>
+
+  <!-- Text -->
+  <text x="400" y="460" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="38" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="1">My Design Process</text>
+  <text x="400" y="500" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="16" fill="#a78bfa" text-anchor="middle" letter-spacing="3" text-transform="uppercase">STRATEGY &#183; RESEARCH &#183; DESIGN</text>
+</svg>

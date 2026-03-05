@@ -1,0 +1,53 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bg-enel" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#0d2b2b"/>
+      <stop offset="40%" style="stop-color:#0f3d3d"/>
+      <stop offset="100%" style="stop-color:#0a4040"/>
+    </linearGradient>
+    <linearGradient id="accent-teal" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#14b8a6"/>
+      <stop offset="100%" style="stop-color:#2dd4bf"/>
+    </linearGradient>
+    <linearGradient id="glow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#14b8a6;stop-opacity:0.2"/>
+      <stop offset="100%" style="stop-color:#14b8a6;stop-opacity:0"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg-enel)"/>
+
+  <!-- Ambient glow -->
+  <ellipse cx="400" cy="250" rx="300" ry="200" fill="url(#glow)"/>
+
+  <!-- Abstract UI mockup shapes -->
+  <g opacity="0.12">
+    <rect x="180" y="100" width="440" height="280" rx="12" fill="none" stroke="#14b8a6" stroke-width="1.5"/>
+    <rect x="180" y="100" width="440" height="40" rx="12" fill="#14b8a6" opacity="0.15"/>
+    <rect x="200" y="160" width="120" height="80" rx="6" fill="#14b8a6" opacity="0.2"/>
+    <rect x="340" y="160" width="120" height="80" rx="6" fill="#14b8a6" opacity="0.15"/>
+    <rect x="480" y="160" width="120" height="80" rx="6" fill="#14b8a6" opacity="0.1"/>
+    <rect x="200" y="260" width="400" height="8" rx="4" fill="#14b8a6" opacity="0.15"/>
+    <rect x="200" y="280" width="300" height="8" rx="4" fill="#14b8a6" opacity="0.1"/>
+    <rect x="200" y="300" width="350" height="8" rx="4" fill="#14b8a6" opacity="0.08"/>
+  </g>
+
+  <!-- Decorative corner elements -->
+  <path d="M50 50 L90 50 M50 50 L50 90" stroke="#14b8a6" stroke-width="2" opacity="0.2"/>
+  <path d="M750 50 L710 50 M750 50 L750 90" stroke="#14b8a6" stroke-width="2" opacity="0.2"/>
+  <path d="M50 550 L90 550 M50 550 L50 510" stroke="#14b8a6" stroke-width="2" opacity="0.2"/>
+  <path d="M750 550 L710 550 M750 550 L750 510" stroke="#14b8a6" stroke-width="2" opacity="0.2"/>
+
+  <!-- Energy pulse rings -->
+  <circle cx="400" cy="250" r="60" fill="none" stroke="#14b8a6" stroke-width="1" opacity="0.08"/>
+  <circle cx="400" cy="250" r="100" fill="none" stroke="#14b8a6" stroke-width="1" opacity="0.05"/>
+  <circle cx="400" cy="250" r="140" fill="none" stroke="#14b8a6" stroke-width="1" opacity="0.03"/>
+
+  <!-- Accent bar -->
+  <rect x="300" y="430" width="200" height="3" rx="1.5" fill="url(#accent-teal)"/>
+
+  <!-- Text -->
+  <text x="400" y="490" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="42" font-weight="700" fill="#ffffff" text-anchor="middle" letter-spacing="0.5">Enel One Hub</text>
+  <text x="400" y="530" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="15" fill="#5eead4" text-anchor="middle" letter-spacing="4">ENTERPRISE UX PLATFORM</text>
+</svg>

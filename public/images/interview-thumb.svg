@@ -1,0 +1,66 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600" width="800" height="600">
+  <defs>
+    <linearGradient id="bg-int" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#134e4a"/>
+      <stop offset="50%" style="stop-color:#1a3a4a"/>
+      <stop offset="100%" style="stop-color:#3b2040"/>
+    </linearGradient>
+    <linearGradient id="quote-accent" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#14b8a6"/>
+      <stop offset="100%" style="stop-color:#f97066"/>
+    </linearGradient>
+    <linearGradient id="coral-bar" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#14b8a6"/>
+      <stop offset="100%" style="stop-color:#f97066"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="800" height="600" fill="url(#bg-int)"/>
+
+  <!-- Subtle diagonal lines -->
+  <g opacity="0.04" stroke="#ffffff" stroke-width="1">
+    <line x1="0" y1="0" x2="800" y2="800"/>
+    <line x1="100" y1="0" x2="900" y2="800"/>
+    <line x1="200" y1="0" x2="1000" y2="800"/>
+    <line x1="-100" y1="0" x2="700" y2="800"/>
+    <line x1="-200" y1="0" x2="600" y2="800"/>
+  </g>
+
+  <!-- Large quotation mark -->
+  <text x="140" y="230" font-family="Georgia, 'Times New Roman', serif" font-size="200" fill="url(#quote-accent)" opacity="0.12">"</text>
+
+  <!-- Quote card background -->
+  <rect x="140" y="150" width="520" height="260" rx="16" fill="#ffffff" opacity="0.05"/>
+  <rect x="140" y="150" width="4" height="260" rx="2" fill="url(#quote-accent)"/>
+
+  <!-- Quote text lines (representing text) -->
+  <g opacity="0.6">
+    <rect x="180" y="195" width="360" height="10" rx="5" fill="#ffffff" opacity="0.25"/>
+    <rect x="180" y="220" width="420" height="10" rx="5" fill="#ffffff" opacity="0.2"/>
+    <rect x="180" y="245" width="300" height="10" rx="5" fill="#ffffff" opacity="0.15"/>
+    <rect x="180" y="280" width="380" height="10" rx="5" fill="#ffffff" opacity="0.2"/>
+    <rect x="180" y="305" width="260" height="10" rx="5" fill="#ffffff" opacity="0.15"/>
+  </g>
+
+  <!-- Profile circle placeholder -->
+  <circle cx="200" cy="370" r="20" fill="none" stroke="url(#quote-accent)" stroke-width="2" opacity="0.4"/>
+  <circle cx="200" cy="365" r="7" fill="#ffffff" opacity="0.2"/>
+  <ellipse cx="200" cy="380" rx="10" ry="6" fill="#ffffff" opacity="0.15"/>
+
+  <!-- Name line -->
+  <rect x="232" y="360" width="120" height="8" rx="4" fill="#ffffff" opacity="0.3"/>
+  <rect x="232" y="376" width="80" height="6" rx="3" fill="#14b8a6" opacity="0.25"/>
+
+  <!-- Decorative dots -->
+  <circle cx="680" cy="160" r="4" fill="#14b8a6" opacity="0.2"/>
+  <circle cx="700" cy="180" r="3" fill="#f97066" opacity="0.15"/>
+  <circle cx="660" cy="185" r="2.5" fill="#14b8a6" opacity="0.1"/>
+
+  <!-- Gradient divider -->
+  <rect x="250" y="455" width="300" height="3" rx="1.5" fill="url(#coral-bar)"/>
+
+  <!-- Text -->
+  <text x="400" y="510" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="38" font-weight="700" fill="#ffffff" text-anchor="middle">Carlos Baeza</text>
+  <text x="400" y="548" font-family="system-ui, -apple-system, 'Segoe UI', sans-serif" font-size="15" fill="#5eead4" text-anchor="middle" letter-spacing="4">INTERVIEW &#183; INSIGHTS</text>
+</svg>
