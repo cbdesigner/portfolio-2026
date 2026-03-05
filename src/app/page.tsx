@@ -23,22 +23,26 @@ const projects = [
   {
     href: "/my-design-process",
     title: "My Design Process",
-    thumbnail: "/images/design-process-thumb.svg",
+    thumbnail:
+      "https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/0c7e75d4-6fb7-40f9-8ba1-828423d883b5_rwc_270x0x1381x1080x1381.jpg?h=9167763525b16a5face869c3a161e715",
   },
   {
     href: "/enel-one-hub",
     title: "Enel One Hub",
-    thumbnail: "/images/enel-thumb.svg",
+    thumbnail:
+      "https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/0dcdfaf8-0e56-408b-a690-5c922cbdef4b_rwc_519x558x2130x1668x2130.jpg?h=cd620d34e675c6352ec30e3d48c362b7",
   },
   {
     href: "/ux-strategy",
     title: "UX Strategy",
-    thumbnail: "/images/ux-strategy-thumb.svg",
+    thumbnail:
+      "https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/ecaaac91-83da-493b-8994-e10b74c703b5_rwc_225x0x2366x1850x2366.png?h=d5ef39743bb7b1cececf633c2ea61f23",
   },
   {
     href: "/interview",
     title: "I was interviewed by Multiplica in 2019",
-    thumbnail: "/images/interview-thumb.svg",
+    thumbnail:
+      "https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/16d7da82-9dc5-4da3-a280-2d7c322ff3ca_rwc_0x70x1036x809x1036.png?h=4e46f0a18ed50c859189d7a1efe0f938",
   },
   {
     href: "/design-system-architect",

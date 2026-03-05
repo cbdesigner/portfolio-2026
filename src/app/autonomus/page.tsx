@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import RelatedProjects from "@/components/RelatedProjects";
 
 export const metadata: Metadata = {
@@ -22,6 +23,11 @@ export default function AutonomusPage() {
             Mobility Startups.
           </p>
         </header>
+
+        {/* Hero Image */}
+        <div className="mt-8 mb-4">
+          <Image src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/914aa4c3-9ac2-4119-b92b-cfe7939dbe38_rw_1920.png?h=3cf33696329e175bcd749dd2774c9408" alt="Autonomus platform overview" width={1920} height={1080} className="w-full h-auto rounded-lg" />
+        </div>
 
         {/* Role & Responsibilities */}
         <section className="mb-16">
@@ -50,6 +56,22 @@ export default function AutonomusPage() {
             typography and intuitive navigation to accommodate users of all
             digital literacy levels.
           </p>
+
+          {/* App for Caregiver and Senior Image */}
+          <div className="mt-8 mb-4">
+            <Image src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/84f7f782-34fd-4bfb-9757-ce54d33675f7_rw_1920.png?h=c1c7c14201f8b015119a207a52c3f43d" alt="App for Caregiver and Senior" width={1920} height={1080} className="w-full h-auto rounded-lg" />
+          </div>
+
+          {/* Mobile App Video */}
+          <div className="mt-8 mb-4 max-w-[280px] mx-auto">
+            <div className="relative w-full" style={{ paddingBottom: '216%' }}>
+              <iframe
+                className="absolute inset-0 w-full h-full border-0"
+                src="https://www-ccv.adobe.io/v1/player/ccv/6noqNmJ-MKs/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View"
+                allowFullScreen
+              />
+            </div>
+          </div>
         </section>
 
         <section className="mb-16">
@@ -61,6 +83,22 @@ export default function AutonomusPage() {
             and Support teams to manage rides, monitor service quality, handle
             customer inquiries and track key performance metrics.
           </p>
+
+          {/* Back Office Image */}
+          <div className="mt-8 mb-4">
+            <Image src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/b3b98b27-d590-43af-b62b-b030be486436_rw_1920.png?h=476edca82ab4d765221842aebb880e73" alt="Back Office for Sales, Operations and Support" width={1920} height={1080} className="w-full h-auto rounded-lg" />
+          </div>
+
+          {/* Back Office Video */}
+          <div className="mt-8 mb-4">
+            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
+              <iframe
+                className="absolute inset-0 w-full h-full border-0"
+                src="https://www-ccv.adobe.io/v1/player/ccv/SD6d2-ZeXmo/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View"
+                allowFullScreen
+              />
+            </div>
+          </div>
         </section>
 
         {/* Methodology & Deliverables */}

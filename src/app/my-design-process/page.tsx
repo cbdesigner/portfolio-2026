@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import Image from "next/image";
 import RelatedProjects from "@/components/RelatedProjects";
 
 export const metadata: Metadata = {
@@ -22,6 +23,16 @@ export default function MyDesignProcessPage() {
             Discover, Define, Develop and Deliver.
           </p>
         </header>
+
+        <section className="mb-16">
+          <div className="relative w-full max-w-[1200px] mx-auto" style={{ paddingBottom: '70.83%' }}>
+            <iframe
+              className="absolute inset-0 w-full h-full border-0"
+              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FnUOuhUu3jSBsp4QfOTbZt7%2FDouble-Diamond-%253CR%253E%253CD%253E-for-Product-Strategy-%2526-Product-Development%3Fpage-id%3D0%253A1%26node-id%3D0-1%26viewport%3D-75%252C-1642%252C0.28%26t%3D3LqySr5TXLwABpuq-1%26scaling%3Dcontain%26starting-point-node-id%3D604%253A12035%26content-scaling%3Dfixed"
+              allowFullScreen
+            />
+          </div>
+        </section>
 
         {/* Discover */}
         <section className="mb-16">
@@ -58,6 +69,10 @@ export default function MyDesignProcessPage() {
               Research report
             </li>
           </ul>
+
+          <div className="mt-8">
+            <Image src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/45df7e50-c493-463a-835c-2ab98409ebc8_rw_1920.jpg?h=42d4ed746449db9a3dc915315b080e02" alt="Discover phase" width={1920} height={1080} className="w-full h-auto rounded-lg" />
+          </div>
         </section>
 
         {/* Define */}
@@ -107,6 +122,10 @@ export default function MyDesignProcessPage() {
               MoSCoW prioritization
             </li>
           </ul>
+
+          <div className="mt-8">
+            <Image src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/504d30e8-ae01-4b18-b77b-1e51a501c090_rw_1920.jpg?h=1a7571a686fb5d46dcaf1d8314855f88" alt="Define phase" width={1920} height={1080} className="w-full h-auto rounded-lg" />
+          </div>
         </section>
 
         {/* Develop */}
@@ -148,6 +167,10 @@ export default function MyDesignProcessPage() {
               Iterate based on feedback
             </li>
           </ul>
+
+          <div className="mt-8">
+            <Image src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/2e0b3c9f-a25e-4668-b526-65aa516b8ebd_rw_1920.jpg?h=172424bc484d9ffb6ae6eccaee7c7fe1" alt="Develop phase" width={1920} height={1080} className="w-full h-auto rounded-lg" />
+          </div>
         </section>
 
         {/* Deliver */}
@@ -189,6 +212,10 @@ export default function MyDesignProcessPage() {
               Finalize product
             </li>
           </ul>
+
+          <div className="mt-8">
+            <Image src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/da8fa13b-6a64-42bb-ada9-920d36fbce72_rw_1920.jpg?h=6cd6d79780a30201ccab450bd1eae191" alt="Deliver phase" width={1920} height={1080} className="w-full h-auto rounded-lg" />
+          </div>
         </section>
 
         {/* Summary */}
