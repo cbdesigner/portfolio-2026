@@ -49,6 +49,11 @@ const projects = [
     title: "Design System Architect",
     thumbnail: "/images/ds-architect-thumb.svg",
   },
+  {
+    href: "/ds-methodology",
+    title: "Design System Methodology",
+    thumbnail: "/images/ds-methodology-thumb.svg",
+  },
 ];
 
 export default function Home() {

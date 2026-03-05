@@ -15,6 +15,7 @@ export default function RelatedProjects({ current }: { current: string }) {
     { href: "/ux-strategy", title: "UX Strategy" },
     { href: "/interview", title: "I was interviewed by Multiplica in 2019" },
     { href: "/design-system-architect", title: "Design System Architect" },
+    { href: "/ds-methodology", title: "Design System Methodology" },
   ];
 
   const related = allProjects.filter((p) => p.href !== current).slice(0, 6);
