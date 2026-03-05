@@ -264,6 +264,34 @@ const productivityTools = [
   "Google Docs",
 ];
 
+const industries = [
+  "E-commerce (Marketplace) y Retail",
+  "Banca y Servicios Financieros",
+  "Telecomunicaciones",
+  "Energía y Utilities",
+  "Seguros (Insurance)",
+  "Salud (Healthcare)",
+  "Logística y Fulfillment",
+  "Medios y Entretenimiento",
+  "Viajes, Turimos y Hospitalidad",
+  "Educación, Universidades e Institutos (EdTech)",
+  "Gobierno y Sector Público",
+  "Tecnología y SaaS",
+  "Automotriz",
+  "Inmobiliario (PropTech)",
+];
+
+const companies = [
+  { name: "Enel" },
+  { name: "ENGIE" },
+  { name: "ShipBob" },
+  { name: "ACID LABS" },
+  { name: "Bupa" },
+  { name: "Falabella Financiero" },
+  { name: "COPEC VOLTEX" },
+  { name: "Banco Ripley" },
+];
+
 /* ───── Component ───── */
 
 export default function ProfilePage() {
@@ -583,11 +611,56 @@ export default function ProfilePage() {
           </div>
         </section>
 
+        {/* Industries */}
+        <section>
+          <h2 className="font-heading text-2xl font-bold mb-6 flex items-center gap-3">
+            <span className="w-8 h-8 rounded-lg bg-blue-600/20 flex items-center justify-center text-blue-400 text-sm">
+              07
+            </span>
+            Industries of Interest
+          </h2>
+          <div className="flex flex-wrap gap-2">
+            {industries.map((industry) => (
+              <span
+                key={industry}
+                className="px-4 py-2 bg-gray-900/60 border border-gray-800 rounded-full text-sm text-gray-300"
+              >
+                {industry}
+              </span>
+            ))}
+          </div>
+        </section>
+
+        {/* Clients & Companies */}
+        <section>
+          <h2 className="font-heading text-2xl font-bold mb-6 flex items-center gap-3">
+            <span className="w-8 h-8 rounded-lg bg-green-600/20 flex items-center justify-center text-green-400 text-sm">
+              08
+            </span>
+            Clients & Companies
+          </h2>
+          <p className="text-gray-400 text-sm mb-8">
+            Empresas de impacto global que han confiado en mi expertise para desarrollar soluciones digitales estratégicas
+          </p>
+          <div className="grid grid-cols-2 sm:grid-cols-4 gap-4">
+            {companies.map((company, i) => (
+              <div
+                key={i}
+                className="bg-white/5 hover:bg-white/10 border border-gray-800 rounded-xl p-6 flex items-center justify-center min-h-24 transition-colors"
+              >
+                <span className="font-medium text-gray-300 text-center text-sm">
+                  {company.name}
+                </span>
+              </div>
+            ))}
+          </div>
+        </section>
+
         {/* Recommendations */}
         <section>
           <h2 className="font-heading text-2xl font-bold mb-6 flex items-center gap-3">
             <span className="w-8 h-8 rounded-lg bg-indigo-600/20 flex items-center justify-center text-indigo-400 text-sm">
-              07
+              09
             </span>
             Recommendations
           </h2>
@@ -624,7 +697,7 @@ export default function ProfilePage() {
         <section>
           <h2 className="font-heading text-2xl font-bold mb-6 flex items-center gap-3">
             <span className="w-8 h-8 rounded-lg bg-yellow-600/20 flex items-center justify-center text-yellow-400 text-sm">
-              08
+              10
             </span>
             Honors & Awards
           </h2>
