@@ -201,6 +201,11 @@ const recommendations = [
     role: "Design System Specialist",
     text: "Carlos is an exceptional Design System Architect. Working alongside him at Bupa, I witnessed firsthand his remarkable ability to create comprehensive, well-structured design systems from the ground up. His methodology for building tokenized design systems is both rigorous and practical, making complex component architecture accessible for the entire team. His leadership style fosters collaboration and growth \u2014 he mentored me throughout the project and helped me develop my skills as a Design System Specialist. I would absolutely recommend Carlos for any role requiring strategic design thinking and systems architecture.",
   },
+  {
+    author: "Matthew Trahan",
+    role: "1st \u00b7 Product Strategy and Design",
+    text: "We worked with Carlos to modernize our design system \u2014 expanding component coverage, strengthening our system architecture, and aligning it with current best practices. Carlos brings deep technical knowledge and a strong understanding of both design and front-end development, which allows him to effectively bridge the gap between the two disciplines. As organizations like ours increasingly look to connect design systems with engineering workflows and AI-driven tooling, this kind of cross-functional expertise is becoming essential. Carlos was a thoughtful partner throughout the engagement and helped us lay a stronger foundation for how our teams design and build products.",
+  },
 ];
 
 const awards = [
