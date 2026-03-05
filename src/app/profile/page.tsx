@@ -2,256 +2,211 @@ import Link from "next/link";
 import RelatedProjects from "@/components/RelatedProjects";
 
 export const metadata = {
-  title: "Carlos Baeza - Profile | UX Manager & Head of Product Design",
+  title:
+    "Carlos Baeza - Profile | Design Systems Architect | AI-Ready Agentic Design Systems Infrastructure",
   description:
-    "Full professional profile of Carlos Baeza. 10+ years in UX Strategy, Product Design, and Design Systems across LATAM.",
+    "Full professional profile of Carlos Baeza. Design Systems Architect building AI-Ready Agentic Design Systems Infrastructure at Enterprise Scale.",
 };
 
 /* ───── data ───── */
 
-const experience = [
+const experience: {
+  role: string;
+  company: string;
+  period: string;
+  location?: string;
+  description: string;
+  responsibilities?: string[];
+}[] = [
   {
     role: "Design System Architect",
     company: "Flylance",
-    type: "Freelance",
-    period: "Aug 2024 – Present",
-    location: "Santiago, Chile · Remote",
+    period: "Jul 2025 – Present (9 months)",
     description:
-      "Designing and building scalable, tokenized design systems from scratch for enterprise clients. Defining component architecture, design tokens, and governance frameworks that bridge design and development teams.",
+      "I led the strategic conceptualization and execution of the Design System for ShipBob, optimizing visual consistency and operational efficiency across their global logistics ecosystem.",
+    responsibilities: [
+      "Figma Standardization: Built a robust library of documented components, facilitating technical handoff and significantly reducing friction between design and development teams.",
+      "3-Tier Token Architecture: Designed and implemented a hierarchical Design Token structure to ensure full maintainability and system scalability: Primitive Tokens (core chromatic scale and atomic base values), Semantic Tokens (logic layer based on intent and usage context / Alias), Component-Specific Tokens (high-specificity tokens for granular interface control).",
+      "PrimeVue Integration: Collaborated closely with the engineering team to ensure the technical implementation within PrimeVue, translating design tokens into injectable variables that streamlined the development of custom components.",
+      "Scalability & Theming: Laid the groundwork for multi-theme support (Dark Mode) and accessibility through the semantic abstraction of colors and typography.",
+    ],
+  },
+  {
+    role: "Head of Product Design & Design System Manager",
+    company: "Siamese Digital",
+    period: "Oct 2023 – Present (2 yrs 6 mos)",
+    location: "Santiago Metropolitan Region, Chile",
+    description:
+      "As Head of Product Design & Design System Manager, I lead the strategy and execution of design projects, balancing user experience with business goals. I manage cross-functional teams to create scalable design systems, driving consistency and optimizing processes. I\u2019ve worked with clients across various industries, tailoring strategies to meet their unique needs.\n\nI developed and maintained a multi-branding design system in Figma with tokens, utilizing the latest features for scalability. This system is implemented in React, Angular, Vue JS, Web Components and deployed in Storybook for interactive documentation. I also defined OKRs to help internal teams improve their skills with the design systems I\u2019ve delivered.",
+    responsibilities: [
+      "Defining and implementing the strategic vision for design and systems",
+      "Leading design teams to foster innovation and continuous improvement",
+      "Overseeing the creation and maintenance of scalable, multi-branding design systems",
+      "Collaborating with development teams for aligned implementation",
+      "Establishing style guides and component libraries for consistency",
+      "Conducting workshops to drive system adoption across teams",
+      "Defining OKRs to help internal teams enhance their design system skills",
+      "Acting as a liaison between stakeholders and design teams",
+    ],
   },
   {
     role: "Head of Product Design",
-    company: "Siamese Digital",
-    type: "Full-time",
-    period: "Oct 2022 – Aug 2024 · 1 yr 11 mos",
-    location: "Santiago, Chile · Hybrid",
-    description:
-      "Product Design leadership for digital products at one of Latin America's leading digital agencies. Leading cross-functional teams, defining design strategy, and establishing design operations across multiple client engagements.",
-  },
-  {
-    role: "Co-founder & UX Lead",
     company: "Autonomus",
-    type: "",
-    period: "Sep 2020 – Oct 2022 · 2 yrs 2 mos",
-    location: "Santiago, Chile",
+    period: "Oct 2023 – Jan 2024 (4 mos)",
+    location: "Chile",
     description:
-      "Co-founded a UX consultancy focused on delivering end-to-end design solutions for startups and enterprises. Led UX strategy, research, and design execution for multiple concurrent projects.",
+      "As Head of Product Design at Autonomus, I led the development of a digital platform providing comprehensive transportation and companionship services for seniors. This platform facilitated daily activities, from medical appointments to social meetings, for elderly users. Autonomus was backed by G\u00fcil, a leading Venture Studio specializing in mobility startups.",
+    responsibilities: [
+      "Organized collaborative workshops to define service blueprints and develop flowcharts, ensuring a clear understanding of the service structure",
+      "Developed sitemaps for the Autonomers app, back office, and public website, creating a coherent information architecture",
+      "Established a robust design system in Figma, ensuring consistency and scalability across all digital touchpoints",
+      "Built User Flows in Figma to streamline navigation paths, enhancing the overall user experience",
+      "Facilitated daily meetings and Agile ceremonies to ensure alignment and progress among team members",
+    ],
   },
   {
     role: "UX Manager",
-    company: "Banco Ripley",
-    type: "Full-time",
-    period: "Jul 2019 – Sep 2020 · 1 yr 3 mos",
-    location: "Santiago, Chile",
+    company: "Banco Ripley Chile",
+    period: "May 2021 – Sep 2023 (2 yrs 5 mos)",
+    location: "Alonso de C\u00f3rdova 5320",
     description:
-      "Led the UX team for Banco Ripley's digital transformation initiative. Managed a team of designers and researchers, established design processes, and drove the redesign of core banking products.",
+      "As UX Manager at Banco Ripley Chile and Peru, I led transformative initiatives, implementing a holistic UX strategy and fostering a culture of design excellence and innovation.",
+    responsibilities: [
+      "Developed and executed UX strategies aligned with organizational goals, ensuring exceptional user experiences",
+      "Championed innovation through a human-centered approach, driving creative design decisions",
+      "Optimized organizational structures and processes, improving design workflow and team well-being",
+      "Fostered strategic partnerships by aligning design teams with business functions, promoting a design-driven culture",
+    ],
   },
   {
-    role: "Lead UX Designer",
-    company: "Banco Ripley",
-    type: "Full-time",
-    period: "Jan 2018 – Jul 2019 · 1 yr 7 mos",
-    location: "Santiago, Chile",
+    role: "Lead UX",
+    company: "Banco Ripley Chile",
+    period: "Aug 2019 – May 2021 (1 yr 10 mos)",
+    location: "Alonso de C\u00f3rdova 5320",
     description:
-      "Led design efforts for Banco Ripley's digital products including mobile banking and web platforms. Introduced user research practices and established a component-based design approach.",
+      "As Lead UX for Banco Ripley\u2019s 100% digital account, Chek, I spearheaded the design process and managed a cross-functional team.",
+    responsibilities: [
+      "Established a robust design system in Figma, ensuring consistency and scalability across the digital platform",
+      "Managed business initiatives, aligning UX goals with overall organizational objectives",
+      "Led a diverse team of UX professionals, including writers, researchers, and designers",
+      "Collaborated effectively with the agile team, implementing Scrum methodologies for efficient project delivery",
+      "Oversaw the end-to-end design process, from conceptualization to implementation",
+      "Facilitated seamless communication between design, development, and business stakeholders",
+      "Conducted user research and usability testing to inform design decisions and improve user experience",
+      "Implemented design thinking principles to drive innovation in digital banking solutions",
+    ],
   },
   {
-    role: "Senior UX/UI Designer",
-    company: "Imille (Enel)",
-    type: "Full-time",
-    period: "Mar 2017 – Jan 2018 · 11 mos",
-    location: "Santiago, Chile",
+    role: "Senior UX Designer",
+    company: "Imille",
+    period: "Feb 2018 – Jan 2019 (1 yr)",
+    location: "Santiago, Santiago Metropolitan Region, Chile",
     description:
-      "Designed digital experiences for Enel's customer-facing platforms. Worked on the Enel One Hub project, creating unified digital touchpoints for energy customers across Latin America.",
+      "As a Senior UX Designer at Imille, I led the design and implementation of Enel\u2019s major digital transformation project across South America, encompassing Chile, Argentina, Peru, Colombia, and Brazil. This initiative, crucial for one of the world\u2019s largest energy companies, involved remote collaboration with the Board of Directors in Rome.",
+    responsibilities: [
+      "Defined comprehensive functionalities and user flows, ensuring a seamless digital experience across multiple countries",
+      "Cultivated and maintained strong relationships with Enel stakeholders in Latin America and Italy, as well as local development teams and technology providers",
+      "Conducted in-depth analysis of metrics using Google Analytics and Hotjar, complemented by user research and prototyping to inform design decisions",
+      "Developed a design system for the private area, enhancing consistency and user experience across platforms",
+    ],
   },
   {
-    role: "UX/UI Designer",
+    role: "Senior UX Designer & Frontend Developer",
     company: "Modyo",
-    type: "Full-time",
-    period: "Apr 2016 – Mar 2017 · 1 yr",
-    location: "Santiago, Chile",
-    description:
-      "Designed user experiences for Modyo's digital experience platform. Created interfaces for content management, digital channels, and customer engagement tools.",
+    period: "Sep 2016 – Jan 2018 (1 yr 5 mos)",
+    description: "",
   },
   {
-    role: "UX/UI Designer",
-    company: "Falabella",
-    type: "Full-time",
-    period: "Jun 2015 – Apr 2016 · 11 mos",
-    location: "Santiago, Chile",
-    description:
-      "Designed digital experiences for one of Latin America's largest retail companies. Worked on e-commerce platforms and internal tools.",
+    role: "Senior UX Designer Consultant & Frontend Developer",
+    company: "Falabella Financiero",
+    period: "2016 – 2017 (1 yr)",
+    description: "",
   },
   {
-    role: "Co-founder & Designer",
+    role: "UX Designer & Frontend Developer and co-Founder",
     company: "Insaciables Labs",
-    type: "",
-    period: "2014 – 2015",
-    location: "Santiago, Chile",
-    description:
-      "Co-founded a digital innovation lab focused on creating consumer-facing products and experiences.",
+    period: "2013 – 2015 (2 yrs)",
+    description: "",
   },
   {
-    role: "Web Designer",
-    company: "Multicaja",
-    type: "Full-time",
-    period: "2013 – 2014",
-    location: "Santiago, Chile",
-    description:
-      "Designed web interfaces for Multicaja's payment and financial services platforms.",
+    role: "UX Designer & Frontend Developer",
+    company: "Multicaja S.A.",
+    period: "2012 – 2013 (1 yr)",
+    description: "",
   },
   {
-    role: "Designer",
-    company: "People & Chess",
-    type: "",
-    period: "2012 – 2013",
-    location: "Santiago, Chile",
-    description: "Design work for branding and digital projects.",
+    role: "Lead Frontend Developer",
+    company: "People&Chess",
+    period: "2009 – 2012 (3 yrs)",
+    description: "",
   },
   {
-    role: "Designer",
-    company: "La Familia / Grupo Eva",
-    type: "",
-    period: "2008 – 2012",
-    location: "Santiago, Chile",
-    description:
-      "Started professional career in graphic and web design, working on branding, print, and early digital projects.",
+    role: "Web and Multimedia Chief",
+    company: "La Familia",
+    period: "2009 (less than 1 yr)",
+    description: "",
+  },
+  {
+    role: "Producer Graphic Designer",
+    company: "Grupo Eva",
+    period: "2008 (less than 1 yr)",
+    description: "",
   },
 ];
 
 const education = [
   {
-    institution: "Universidad del Desarrollo (UDD)",
-    degree: "Bootcamp, Full Stack Development",
-    period: "2024",
+    institution: "Universidad del Desarrollo",
+    degree: "Full Stack Development",
+    period: "Aug 2024 – Dec 2024",
   },
   {
     institution: "Duoc UC",
-    degree: "Graphic Design",
+    degree: "Dise\u00f1o gr\u00e1fico",
     period: "2002 – 2004",
   },
   {
     institution: "Escuela de Creativos Brother",
-    degree: "Creativity & Advertising",
+    degree: "",
     period: "2012",
   },
 ];
 
 const certifications = [
-  {
-    name: "SAFe 5 Product Owner / Product Manager",
-    issuer: "Scaled Agile, Inc.",
-    date: "2021",
-  },
-  {
-    name: "Product Strategy",
-    issuer: "Product School",
-    date: "2021",
-  },
-  {
-    name: "AI for Everyone",
-    issuer: "DeepLearning.AI (Coursera)",
-    date: "2023",
-  },
-  {
-    name: "Lean UX",
-    issuer: "Interaction Design Foundation (IxDF)",
-    date: "2020",
-  },
-  {
-    name: "Google Tag Manager Fundamentals",
-    issuer: "Google",
-    date: "2020",
-  },
-  {
-    name: "Design Sprint Masterclass",
-    issuer: "Udemy",
-    date: "2019",
-  },
-  {
-    name: "UX Research & Strategy",
-    issuer: "Designlab",
-    date: "2018",
-  },
-  {
-    name: "Gestión de Proyectos Digitales",
-    issuer: "Platzi",
-    date: "2017",
-  },
-  {
-    name: "Scrum Fundamentals Certified (SFC)",
-    issuer: "SCRUMstudy",
-    date: "2017",
-  },
-  {
-    name: "Mobile UX Design",
-    issuer: "Interaction Design Foundation (IxDF)",
-    date: "2016",
-  },
+  { name: "Hotel Reservations (CRUD)" },
+  { name: "JavaScript Voting System" },
+  { name: "React Web Application Ninja" },
+  { name: "Design Sprint Innovation" },
 ];
 
 const skills = [
-  "Design Systems",
-  "UX Strategy",
-  "Product Design",
-  "User Research",
-  "Interaction Design",
-  "Design Thinking",
-  "Design Ops",
-  "Prototyping",
   "Information Architecture",
-  "Usability Testing",
-  "Agile / SAFe",
-  "Team Leadership",
-  "Stakeholder Management",
-  "Workshop Facilitation",
-  "Cross-functional Collaboration",
+  "Wireframing & Prototyping",
+  "User Research",
 ];
 
 const recommendations = [
   {
-    author: "Felipe Nicolás Reyes Escobar",
+    author: "Felipe Nicol\u00e1s Reyes Escobar",
     role: "Front-end Engineer",
-    text: "I worked with Carlos at Bupa Chile, where he led the creation of a tokenized design system from scratch. His ability to define and structure design tokens, build a scalable component architecture, and bridge the gap between design and development was outstanding. Carlos has deep expertise in design systems methodology — he defined the full lifecycle from discovery to documentation and training. He's the kind of architect who truly understands how design scales across products. Highly recommended for any organization looking to build or mature their design system practice.",
+    text: "I worked with Carlos at Bupa Chile, where he led the creation of a tokenized design system from scratch. His ability to define and structure design tokens, build a scalable component architecture, and bridge the gap between design and development was outstanding. Carlos has deep expertise in design systems methodology \u2014 he defined the full lifecycle from discovery to documentation and training. He\u2019s the kind of architect who truly understands how design scales across products. Highly recommended for any organization looking to build or mature their design system practice.",
   },
   {
-    author: "Alejandra Azócar Díaz",
+    author: "Alejandra Az\u00f3car D\u00edaz",
     role: "Design System Specialist",
-    text: "Carlos is an exceptional Design System Architect. Working alongside him at Bupa, I witnessed firsthand his remarkable ability to create comprehensive, well-structured design systems from the ground up. His methodology for building tokenized design systems is both rigorous and practical, making complex component architecture accessible for the entire team. His leadership style fosters collaboration and growth — he mentored me throughout the project and helped me develop my skills as a Design System Specialist. I would absolutely recommend Carlos for any role requiring strategic design thinking and systems architecture.",
+    text: "Carlos is an exceptional Design System Architect. Working alongside him at Bupa, I witnessed firsthand his remarkable ability to create comprehensive, well-structured design systems from the ground up. His methodology for building tokenized design systems is both rigorous and practical, making complex component architecture accessible for the entire team. His leadership style fosters collaboration and growth \u2014 he mentored me throughout the project and helped me develop my skills as a Design System Specialist. I would absolutely recommend Carlos for any role requiring strategic design thinking and systems architecture.",
   },
 ];
 
 const awards = [
   {
-    title: "1st Place — Laboratoria Talent Fest",
-    description:
-      "Won first place at Laboratoria's Talent Fest hackathon, designing a digital solution for a real business challenge in a 2-day sprint.",
-    year: "2019",
-  },
-  {
-    title: "1st Place — International Young Forestry Entrepreneur (Mexico)",
-    description:
-      "Recognized as the top young forestry entrepreneur at an international competition in Mexico for innovative sustainable design concepts.",
-    year: "2014",
+    title: "International Young Forestry Entrepreneur Contest Mexico",
   },
   {
     title: "Developing Latin America",
-    description:
-      "Participated in the Developing Latin America hackathon, a regional open-data initiative to create civic tech solutions for citizens across LATAM.",
-    year: "2013",
-  },
-];
-
-const articles = [
-  {
-    title: "The AI Revolution in UX Design",
-    description:
-      "Exploring how artificial intelligence is transforming user experience design practices and workflows.",
   },
   {
-    title: "Building Design Systems at Scale",
-    description:
-      "Insights and methodology for creating enterprise-grade design systems that bridge design and development.",
+    title: "Laboratoria Talent Fest powered by Lenovo",
   },
 ];
 
@@ -311,10 +266,13 @@ export default function ProfilePage() {
           <h1 className="font-heading text-4xl md:text-5xl font-bold mb-2">
             Carlos Baeza
           </h1>
-          <p className="text-xl text-gray-300 mb-1">
-            UX Manager · Head of Product Design · Design System Architect
+          <p className="text-lg text-gray-300 mb-1">
+            Design Systems Architect | AI-Ready Agentic Design Systems
+            Infrastructure at Enterprise Scale
           </p>
-          <p className="text-gray-500 mb-6">Santiago, Chile · Remote</p>
+          <p className="text-gray-500 mb-6">
+            Gran Santiago, Regi&oacute;n Metropolitana de Santiago, Chile
+          </p>
           <div className="flex justify-center gap-3">
             <Link
               href="/contact"
@@ -345,30 +303,57 @@ export default function ProfilePage() {
           </h2>
           <div className="bg-gray-900/50 rounded-xl p-6 border border-gray-800 space-y-4 text-gray-300 leading-relaxed">
             <p>
-              With over 10 years of experience in UX Strategy, Product Design,
-              and Design Systems, I have led digital transformations at companies
-              such as Banco Ripley, Enel, Falabella, Modyo, and Bupa, across
-              multiple industries including banking, energy, retail, and
-              healthcare.
+              I work at the intersection of design, engineering, and product
+              infrastructure, helping organizations scale while improving
+              time-to-market and reducing hidden operational costs.
             </p>
             <p>
-              I specialize in creating scalable design systems from scratch —
-              defining component architecture, design tokens, governance
-              frameworks, and bridging the gap between design and development
-              teams. My methodology covers the full lifecycle from discovery to
-              documentation and training.
+              Over the past 10+ years, I&apos;ve seen the same pattern repeat
+              itself in growing product teams &mdash; more times than I&apos;d
+              like to admit: Design systems start as a productivity enabler, but
+              as organizations scale, they increasingly rely on manual
+              interpretation, ad-hoc documentation, and constant coordination.
+              What once helped teams move faster slowly becomes a bottleneck.
+            </p>
+            <p>My focus is on changing that model.</p>
+            <p>
+              Instead of treating design systems as documentation or static
+              libraries, I work on building deterministic, AI-ready design
+              infrastructure: systems with automated, parameterized
+              documentation and clearly defined rules that remove ambiguity
+              between design and engineering.
             </p>
             <p>
-              As a leader, I have managed cross-functional teams of designers,
-              researchers, and developers, establishing design operations and
-              driving product strategy aligned with business goals. I thrive in
-              fast-paced environments where collaboration, mentorship, and
-              quality are essential.
+              By embedding governance, constraints, and intent directly into the
+              system, teams reduce rework, avoid &ldquo;vibe-based&rdquo;
+              implementation, and prevent inconsistencies caused by
+              interpretation or AI hallucinations. In practice, this means fewer
+              reworks, shorter delivery cycles, and systems teams can actually
+              trust as they scale.
             </p>
             <p>
-              Currently working as a freelance Design System Architect through
-              Flylance, providing enterprise-grade design system solutions for
-              organizations across Latin America.
+              I&apos;ve led and supported cross-functional teams in complex,
+              regulated environments, where reliability, consistency, and speed
+              directly impact business results. I&apos;ve personally run into
+              these problems from multiple angles &mdash; design, engineering,
+              and leadership &mdash; which is why my work today is centered on
+              improving time-to-market, reducing non-productive hours, and
+              helping teams spend more time building architecture instead of
+              managing friction.
+            </p>
+            <p>I&apos;m particularly interested in conversations around:</p>
+            <ul className="list-disc list-inside space-y-1 text-gray-400">
+              <li>Design systems as revenue-impacting infrastructure</li>
+              <li>Deterministic, AI-assisted design-to-code workflows</li>
+              <li>Governed, automated documentation</li>
+              <li>
+                Scaling design and engineering ecosystems in large organizations
+              </li>
+            </ul>
+            <p>
+              If your teams are growing and alignment is starting to cost more
+              time than it should, we&apos;ll likely have a valuable
+              conversation.
             </p>
           </div>
         </section>
@@ -397,16 +382,39 @@ export default function ProfilePage() {
                       {exp.period}
                     </span>
                   </div>
-                  <p className="text-blue-400 text-sm mb-1">
-                    {exp.company}
-                    {exp.type && (
-                      <span className="text-gray-500"> · {exp.type}</span>
-                    )}
-                  </p>
-                  <p className="text-gray-500 text-xs mb-3">{exp.location}</p>
-                  <p className="text-gray-400 text-sm leading-relaxed">
-                    {exp.description}
-                  </p>
+                  <p className="text-blue-400 text-sm mb-1">{exp.company}</p>
+                  {exp.location && (
+                    <p className="text-gray-500 text-xs mb-3">
+                      {exp.location}
+                    </p>
+                  )}
+                  {exp.description && (
+                    <div className="text-gray-400 text-sm leading-relaxed space-y-3 mt-2">
+                      {exp.description.split("\n\n").map((para, j) => (
+                        <p key={j}>{para}</p>
+                      ))}
+                    </div>
+                  )}
+                  {exp.responsibilities && exp.responsibilities.length > 0 && (
+                    <div className="mt-3">
+                      <p className="text-gray-400 text-sm font-medium mb-2">
+                        Key Responsibilities:
+                      </p>
+                      <ul className="space-y-1.5">
+                        {exp.responsibilities.map((r, j) => (
+                          <li
+                            key={j}
+                            className="text-gray-400 text-sm leading-relaxed flex gap-2"
+                          >
+                            <span className="text-gray-600 mt-1 shrink-0">
+                              &bull;
+                            </span>
+                            <span>{r}</span>
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  )}
                 </div>
               </div>
             ))}
@@ -430,7 +438,9 @@ export default function ProfilePage() {
                 <h3 className="font-heading text-lg font-bold text-white">
                   {edu.institution}
                 </h3>
-                <p className="text-gray-300 text-sm">{edu.degree}</p>
+                {edu.degree && (
+                  <p className="text-gray-300 text-sm">{edu.degree}</p>
+                )}
                 <p className="font-mono text-xs text-gray-500 mt-1">
                   {edu.period}
                 </p>
@@ -445,7 +455,7 @@ export default function ProfilePage() {
             <span className="w-8 h-8 rounded-lg bg-cyan-600/20 flex items-center justify-center text-cyan-400 text-sm">
               04
             </span>
-            Licenses & Certifications
+            Certifications
           </h2>
           <div className="grid sm:grid-cols-2 gap-3">
             {certifications.map((cert, i) => (
@@ -454,10 +464,6 @@ export default function ProfilePage() {
                 className="bg-gray-900/40 rounded-xl p-4 border border-gray-800/60"
               >
                 <h3 className="font-bold text-white text-sm">{cert.name}</h3>
-                <p className="text-gray-400 text-xs mt-1">{cert.issuer}</p>
-                <p className="font-mono text-xs text-gray-500 mt-1">
-                  {cert.date}
-                </p>
               </div>
             ))}
           </div>
@@ -469,7 +475,7 @@ export default function ProfilePage() {
             <span className="w-8 h-8 rounded-lg bg-amber-600/20 flex items-center justify-center text-amber-400 text-sm">
               05
             </span>
-            Skills
+            Top Skills
           </h2>
           <div className="flex flex-wrap gap-2">
             {skills.map((skill) => (
@@ -598,56 +604,23 @@ export default function ProfilePage() {
           </div>
         </section>
 
-        {/* Articles */}
-        <section>
-          <h2 className="font-heading text-2xl font-bold mb-6 flex items-center gap-3">
-            <span className="w-8 h-8 rounded-lg bg-orange-600/20 flex items-center justify-center text-orange-400 text-sm">
-              08
-            </span>
-            Articles
-          </h2>
-          <div className="grid sm:grid-cols-2 gap-4">
-            {articles.map((article, i) => (
-              <div
-                key={i}
-                className="bg-gray-900/40 rounded-xl p-5 border border-gray-800/60"
-              >
-                <h3 className="font-heading text-base font-bold text-white mb-2">
-                  {article.title}
-                </h3>
-                <p className="text-gray-400 text-sm">{article.description}</p>
-              </div>
-            ))}
-          </div>
-        </section>
-
         {/* Honors & Awards */}
         <section>
           <h2 className="font-heading text-2xl font-bold mb-6 flex items-center gap-3">
             <span className="w-8 h-8 rounded-lg bg-yellow-600/20 flex items-center justify-center text-yellow-400 text-sm">
-              09
+              08
             </span>
             Honors & Awards
           </h2>
-          <div className="space-y-4">
+          <div className="space-y-3">
             {awards.map((award, i) => (
               <div
                 key={i}
                 className="bg-gray-900/40 rounded-xl p-5 border border-gray-800/60"
               >
-                <div className="flex items-start justify-between gap-3">
-                  <div>
-                    <h3 className="font-heading text-base font-bold text-white">
-                      {award.title}
-                    </h3>
-                    <p className="text-gray-400 text-sm mt-1">
-                      {award.description}
-                    </p>
-                  </div>
-                  <span className="font-mono text-xs text-gray-500 whitespace-nowrap">
-                    {award.year}
-                  </span>
-                </div>
+                <h3 className="font-heading text-base font-bold text-white">
+                  {award.title}
+                </h3>
               </div>
             ))}
           </div>
