@@ -176,7 +176,6 @@ const certifications = [
   { name: "SAFe 5 Product Owner / Product Manager", issuer: "Scaled Agile, Inc." },
   { name: "Product Strategy", issuer: "Product School" },
   { name: "Google Tag Manager Fundamentals", issuer: "Google" },
-  { name: "Mobile UX Design", issuer: "Interaction Design Foundation (IxDF)" },
   { name: "Hotel Reservations (CRUD)", issuer: "Universidad del Desarrollo" },
   { name: "JavaScript Voting System", issuer: "Universidad del Desarrollo" },
   { name: "React Web Application Ninja", issuer: "Universidad del Desarrollo" },
