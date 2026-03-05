@@ -202,13 +202,19 @@ const recommendations = [
 
 const awards = [
   {
+    title: "Laboratoria Talent Fest powered by Lenovo",
+    description:
+      "Hackathon event by Laboratoria connecting women in tech with employers. Multidisciplinary squads of developers and UX designers build digital solutions in a 36-hour sprint, presenting MVPs to industry leaders across Latin America.",
+  },
+  {
     title: "International Young Forestry Entrepreneur Contest Mexico",
+    description:
+      "International competition recognizing young entrepreneurs with innovative projects in sustainable forestry and environmental impact, held in Mexico.",
   },
   {
     title: "Developing Latin America",
-  },
-  {
-    title: "Laboratoria Talent Fest powered by Lenovo",
+    description:
+      "Regional civic tech hackathon organized by Fundaci\u00f3n Ciudadano Inteligente across 8 Latin American countries. Multidisciplinary teams of developers, designers, and citizens built open-data solutions to address social challenges in 36 consecutive hours.",
   },
 ];
 
@@ -628,6 +634,11 @@ export default function ProfilePage() {
                 <h3 className="font-heading text-base font-bold text-white">
                   {award.title}
                 </h3>
+                {award.description && (
+                  <p className="text-gray-400 text-sm mt-2 leading-relaxed">
+                    {award.description}
+                  </p>
+                )}
               </div>
             ))}
           </div>
