@@ -173,6 +173,16 @@ const education = [
 ];
 
 const certifications = [
+  { name: "SAFe 5 Product Owner / Product Manager", issuer: "Scaled Agile, Inc." },
+  { name: "Product Strategy", issuer: "Product School" },
+  { name: "AI for Everyone", issuer: "DeepLearning.AI (Coursera)" },
+  { name: "Lean UX", issuer: "Interaction Design Foundation (IxDF)" },
+  { name: "Google Tag Manager Fundamentals", issuer: "Google" },
+  { name: "Design Sprint Masterclass", issuer: "Udemy" },
+  { name: "UX Research & Strategy", issuer: "Designlab" },
+  { name: "Gesti\u00f3n de Proyectos Digitales", issuer: "Platzi" },
+  { name: "Scrum Fundamentals Certified (SFC)", issuer: "SCRUMstudy" },
+  { name: "Mobile UX Design", issuer: "Interaction Design Foundation (IxDF)" },
   { name: "Hotel Reservations (CRUD)", issuer: "Universidad del Desarrollo" },
   { name: "JavaScript Voting System", issuer: "Universidad del Desarrollo" },
   { name: "React Web Application Ninja", issuer: "Universidad del Desarrollo" },
