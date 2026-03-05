@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import Image from "next/image";
 import RelatedProjects from "@/components/RelatedProjects";
 
 export const metadata: Metadata = {
@@ -29,7 +28,7 @@ export default function InterviewPage() {
             strategies and deliver exceptional user experiences.
           </p>
           <div className="mt-6 mb-6">
-            <Image src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/251c0be5-e5c3-4b2d-8a45-0b1d0e9a6fbf_rw_1920.png?h=a7637cd3186675478999980674275955" alt="Multiplica - digital consulting firm" width={1920} height={1080} className="w-full h-auto rounded-lg" />
+            <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/251c0be5-e5c3-4b2d-8a45-0b1d0e9a6fbf_rw_1920.png?h=a7637cd3186675478999980674275955" alt="Multiplica - digital consulting firm" className="w-full h-auto rounded-lg" loading="lazy" />
           </div>
         </section>
 
@@ -39,7 +38,7 @@ export default function InterviewPage() {
             Interview with Carlos Baeza, UX Lead at Banco Ripley
           </h2>
           <div className="mt-6 mb-6">
-            <Image src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/b65d50ee-e2f4-4779-a32d-ff86fd544344_rw_1920.png?h=f4d8cd4e0bd1242e15d7feb9ff8ebfe9" alt="Interview with Carlos Baeza article" width={1920} height={1080} className="w-full h-auto rounded-lg" />
+            <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/b65d50ee-e2f4-4779-a32d-ff86fd544344_rw_1920.png?h=f4d8cd4e0bd1242e15d7feb9ff8ebfe9" alt="Interview with Carlos Baeza article" className="w-full h-auto rounded-lg" loading="lazy" />
           </div>
           <div className="space-y-6 text-gray-300 leading-relaxed">
             <p>

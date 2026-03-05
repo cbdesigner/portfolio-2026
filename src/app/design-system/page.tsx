@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import Image from "next/image";
+
 import RelatedProjects from "@/components/RelatedProjects";
 
 export const metadata: Metadata = {
@@ -26,7 +26,7 @@ export default function DesignSystemPage() {
             systems.
           </p>
           <div className="mt-8 mb-4">
-            <Image src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/84fea897-f6e2-4276-ba5a-80e209da103f_rw_1920.jpg?h=81ff2abc9d2e4e9c32b52857d8d54386" alt="Design System journey" width={1920} height={1080} className="w-full h-auto rounded-lg" />
+            <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/84fea897-f6e2-4276-ba5a-80e209da103f_rw_1920.jpg?h=81ff2abc9d2e4e9c32b52857d8d54386" alt="Design System journey" className="w-full h-auto rounded-lg" loading="lazy" />
           </div>
         </header>
 
@@ -45,7 +45,7 @@ export default function DesignSystemPage() {
             understanding of modular, scalable design architectures.
           </p>
           <div className="mt-6 max-w-[67%] mx-auto">
-            <Image src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/25825197-c473-4a76-bb01-401ddedcd0fb_rw_1920.png?h=3dcd06bb65a20695a3cd2c17815ca682" alt="Atomic Design book by Brad Frost" width={1920} height={1080} className="w-full h-auto rounded-lg" />
+            <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/25825197-c473-4a76-bb01-401ddedcd0fb_rw_1920.png?h=3dcd06bb65a20695a3cd2c17815ca682" alt="Atomic Design book by Brad Frost" className="w-full h-auto rounded-lg" loading="lazy" />
           </div>
         </section>
 
@@ -90,7 +90,7 @@ export default function DesignSystemPage() {
             </p>
           </div>
           <div className="mt-6 max-w-[67%] mx-auto">
-            <Image src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/cb5feb94-e5be-42aa-8cb9-7acc0760afb9_rw_1920.png?h=130d7524717101f2df6a053a7f4047cf" alt="Design System with Tokens Studio" width={1920} height={1080} className="w-full h-auto rounded-lg" />
+            <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/cb5feb94-e5be-42aa-8cb9-7acc0760afb9_rw_1920.png?h=130d7524717101f2df6a053a7f4047cf" alt="Design System with Tokens Studio" className="w-full h-auto rounded-lg" loading="lazy" />
           </div>
           <div className="mt-8 max-w-[67%] mx-auto">
             <div className="relative w-full" style={{ paddingBottom: '85%' }}>
@@ -123,7 +123,7 @@ export default function DesignSystemPage() {
             </p>
           </div>
           <div className="mt-6 max-w-[67%] mx-auto">
-            <Image src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/3a7b452f-b341-4e72-b0e7-743a6456924c_rw_1920.png?h=0bd1f99d2ffb6032ab3a7022b33f50d2" alt="Multibranding Design System with Variables" width={1920} height={1080} className="w-full h-auto rounded-lg" />
+            <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/3a7b452f-b341-4e72-b0e7-743a6456924c_rw_1920.png?h=0bd1f99d2ffb6032ab3a7022b33f50d2" alt="Multibranding Design System with Variables" className="w-full h-auto rounded-lg" loading="lazy" />
           </div>
         </section>
 

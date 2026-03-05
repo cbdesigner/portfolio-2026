@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import Image from "next/image";
 import RelatedProjects from "@/components/RelatedProjects";
 
 export const metadata: Metadata = {
@@ -26,7 +25,7 @@ export default function EnelOneHubPage() {
 
         {/* Hero Image */}
         <div className="mt-6 mb-4">
-          <Image src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/de6dc1e6-bcbb-406f-adee-b47964a84e1a_rw_1920.jpg?h=dbbe0459472647b26d29d389d11477da" alt="Enel One Hub" width={1920} height={1080} className="w-full h-auto rounded-lg" />
+          <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/de6dc1e6-bcbb-406f-adee-b47964a84e1a_rw_1920.jpg?h=dbbe0459472647b26d29d389d11477da" alt="Enel One Hub" className="w-full h-auto rounded-lg" loading="lazy" />
         </div>
 
         {/* Methodology & Deliverables */}
@@ -82,8 +81,8 @@ export default function EnelOneHubPage() {
             unified platform design.
           </p>
           <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Image src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/1095788a-2ad7-4262-889b-2ca483c20d9c_rw_1920.png?h=7ab54143df1a54a60ad316238727277a" alt="Interviews Chile and Peru" width={1920} height={1080} className="w-full h-auto rounded-lg" />
-            <Image src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/2f5c8c4f-2f84-4a17-b212-82c8e25dc90b_rw_1920.png?h=80e6c7018de1c60c3d5186894969ea3e" alt="Interviews Chile and Peru - workshops" width={1920} height={1080} className="w-full h-auto rounded-lg" />
+            <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/1095788a-2ad7-4262-889b-2ca483c20d9c_rw_1920.png?h=7ab54143df1a54a60ad316238727277a" alt="Interviews Chile and Peru" className="w-full h-auto rounded-lg" loading="lazy" />
+            <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/2f5c8c4f-2f84-4a17-b212-82c8e25dc90b_rw_1920.png?h=80e6c7018de1c60c3d5186894969ea3e" alt="Interviews Chile and Peru - workshops" className="w-full h-auto rounded-lg" loading="lazy" />
           </div>
         </section>
 
@@ -92,8 +91,8 @@ export default function EnelOneHubPage() {
             Argentina and Colombia
           </h2>
           <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
-            <Image src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/92feab37-cf17-45dd-ab67-ad7decc8b60b_rw_1920.png?h=943dc38eea792769f201d9f16b24fa6e" alt="Argentina workshops" width={1920} height={1080} className="w-full h-auto rounded-lg" />
-            <Image src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/80a69530-7f55-4ee3-ab5e-58fbb81a4e50_rw_1920.png?h=77067dc703df2f3e2a934e60b5bff6e1" alt="Colombia workshops" width={1920} height={1080} className="w-full h-auto rounded-lg" />
+            <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/92feab37-cf17-45dd-ab67-ad7decc8b60b_rw_1920.png?h=943dc38eea792769f201d9f16b24fa6e" alt="Argentina workshops" className="w-full h-auto rounded-lg" loading="lazy" />
+            <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/80a69530-7f55-4ee3-ab5e-58fbb81a4e50_rw_1920.png?h=77067dc703df2f3e2a934e60b5bff6e1" alt="Colombia workshops" className="w-full h-auto rounded-lg" loading="lazy" />
           </div>
         </section>
 
@@ -108,7 +107,7 @@ export default function EnelOneHubPage() {
             private areas.
           </p>
           <div className="mt-6 mb-4">
-            <Image src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/689d0786-f321-4a4c-9114-47e5a9389f1b_rw_1920.jpg?h=0a90d0e93f3ca19c1aa02c7b0e68e46e" alt="Chile Sitemap with all sites unified" width={1920} height={1080} className="w-full h-auto rounded-lg" />
+            <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/689d0786-f321-4a4c-9114-47e5a9389f1b_rw_1920.jpg?h=0a90d0e93f3ca19c1aa02c7b0e68e46e" alt="Chile Sitemap with all sites unified" className="w-full h-auto rounded-lg" loading="lazy" />
           </div>
         </section>
 
@@ -120,7 +119,7 @@ export default function EnelOneHubPage() {
             and which areas of the interface required optimization.
           </p>
           <div className="mt-6 mb-4">
-            <Image src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/711a3f8e-b0b0-4e62-85f5-d5dc0f6c1f45_rw_1920.png?h=3d10b17950714ca7b9ba72e71a6e8f86" alt="Hotspots of Private Area Personas Chile" width={1920} height={1080} className="w-full h-auto rounded-lg" />
+            <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/711a3f8e-b0b0-4e62-85f5-d5dc0f6c1f45_rw_1920.png?h=3d10b17950714ca7b9ba72e71a6e8f86" alt="Hotspots of Private Area Personas Chile" className="w-full h-auto rounded-lg" loading="lazy" />
           </div>
         </section>
 
@@ -134,18 +133,18 @@ export default function EnelOneHubPage() {
             points and digital behaviors to guide design decisions.
           </p>
           <div className="mt-6 mb-4">
-            <Image src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/3c01aa27-85a3-48f8-bb4c-47e693587aff_rw_1920.jpg?h=0a112cb07dcab423e5f936b89882df8d" alt="Private Area Personas screens" width={1920} height={1080} className="w-full h-auto rounded-lg" />
+            <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/3c01aa27-85a3-48f8-bb4c-47e693587aff_rw_1920.jpg?h=0a112cb07dcab423e5f936b89882df8d" alt="Private Area Personas screens" className="w-full h-auto rounded-lg" loading="lazy" />
           </div>
           <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
-            <Image src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/1c8f5170-7ed0-4a81-bc09-89508247421d_rw_1920.jpg?h=949c8f6461169f350248ac1ff2d95190" alt="Private Area Personas screens" width={1920} height={1080} className="w-full h-auto rounded-lg" />
-            <Image src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/68eaa859-0db0-4ac5-916d-8ed63f26069f_rw_1920.jpg?h=20c31c3e025ba81ae10bd9787eef795c" alt="Private Area Personas screens" width={1920} height={1080} className="w-full h-auto rounded-lg" />
-            <Image src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/31c5f970-38df-4715-b534-971eb2257c21_rw_1920.jpg?h=fa9eed76ba64ab796bb08eb7dfd51384" alt="Private Area Personas screens" width={1920} height={1080} className="w-full h-auto rounded-lg" />
+            <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/1c8f5170-7ed0-4a81-bc09-89508247421d_rw_1920.jpg?h=949c8f6461169f350248ac1ff2d95190" alt="Private Area Personas screens" className="w-full h-auto rounded-lg" loading="lazy" />
+            <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/68eaa859-0db0-4ac5-916d-8ed63f26069f_rw_1920.jpg?h=20c31c3e025ba81ae10bd9787eef795c" alt="Private Area Personas screens" className="w-full h-auto rounded-lg" loading="lazy" />
+            <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/31c5f970-38df-4715-b534-971eb2257c21_rw_1920.jpg?h=fa9eed76ba64ab796bb08eb7dfd51384" alt="Private Area Personas screens" className="w-full h-auto rounded-lg" loading="lazy" />
           </div>
           <div className="mt-6 mb-4">
-            <Image src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/4cddf3c6-96a4-4255-8b27-12704b9eb724_rw_1920.jpg?h=700f509bda7273c6b170a49bd351fdfe" alt="Private Area screens" width={1920} height={1080} className="w-full h-auto rounded-lg" />
+            <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/4cddf3c6-96a4-4255-8b27-12704b9eb724_rw_1920.jpg?h=700f509bda7273c6b170a49bd351fdfe" alt="Private Area screens" className="w-full h-auto rounded-lg" loading="lazy" />
           </div>
           <div className="mt-6 mb-4">
-            <Image src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/6359bbdd-d6a3-4a42-8fc5-15cd4fd5e8e0_rw_1920.jpg?h=222cdeb245ffb409f8fb8969a3f477f0" alt="Private Area screens detail" width={1920} height={1080} className="w-full h-auto rounded-lg" />
+            <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/6359bbdd-d6a3-4a42-8fc5-15cd4fd5e8e0_rw_1920.jpg?h=222cdeb245ffb409f8fb8969a3f477f0" alt="Private Area screens detail" className="w-full h-auto rounded-lg" loading="lazy" />
           </div>
         </section>
 
@@ -159,7 +158,7 @@ export default function EnelOneHubPage() {
             while addressing distinct user goals in each context.
           </p>
           <div className="mt-6 mb-4">
-            <Image src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/d17e4048-0bf7-4fc2-9dcb-0c14dac652f4_rw_1920.png?h=fbb981cbed23d6d213a3c0af8d79002c" alt="Public Area Personas screen" width={1920} height={1080} className="w-full h-auto rounded-lg" />
+            <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/d17e4048-0bf7-4fc2-9dcb-0c14dac652f4_rw_1920.png?h=fbb981cbed23d6d213a3c0af8d79002c" alt="Public Area Personas screen" className="w-full h-auto rounded-lg" loading="lazy" />
           </div>
         </section>
 

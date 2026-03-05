@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import Image from "next/image";
+
 import RelatedProjects from "@/components/RelatedProjects";
 
 export const metadata: Metadata = {
@@ -26,7 +26,7 @@ export default function AutonomusPage() {
 
         {/* Hero Image */}
         <div className="mt-8 mb-4">
-          <Image src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/914aa4c3-9ac2-4119-b92b-cfe7939dbe38_rw_1920.png?h=3cf33696329e175bcd749dd2774c9408" alt="Autonomus platform overview" width={1920} height={1080} className="w-full h-auto rounded-lg" />
+          <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/914aa4c3-9ac2-4119-b92b-cfe7939dbe38_rw_1920.png?h=3cf33696329e175bcd749dd2774c9408" alt="Autonomus platform overview" className="w-full h-auto rounded-lg" loading="lazy" />
         </div>
 
         {/* Role & Responsibilities */}
@@ -59,7 +59,7 @@ export default function AutonomusPage() {
 
           {/* App for Caregiver and Senior Image */}
           <div className="mt-8 mb-4">
-            <Image src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/84f7f782-34fd-4bfb-9757-ce54d33675f7_rw_1920.png?h=c1c7c14201f8b015119a207a52c3f43d" alt="App for Caregiver and Senior" width={1920} height={1080} className="w-full h-auto rounded-lg" />
+            <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/84f7f782-34fd-4bfb-9757-ce54d33675f7_rw_1920.png?h=c1c7c14201f8b015119a207a52c3f43d" alt="App for Caregiver and Senior" className="w-full h-auto rounded-lg" loading="lazy" />
           </div>
 
           {/* Mobile App Video */}
@@ -86,7 +86,7 @@ export default function AutonomusPage() {
 
           {/* Back Office Image */}
           <div className="mt-8 mb-4">
-            <Image src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/b3b98b27-d590-43af-b62b-b030be486436_rw_1920.png?h=476edca82ab4d765221842aebb880e73" alt="Back Office for Sales, Operations and Support" width={1920} height={1080} className="w-full h-auto rounded-lg" />
+            <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/b3b98b27-d590-43af-b62b-b030be486436_rw_1920.png?h=476edca82ab4d765221842aebb880e73" alt="Back Office for Sales, Operations and Support" className="w-full h-auto rounded-lg" loading="lazy" />
           </div>
 
           {/* Back Office Video */}

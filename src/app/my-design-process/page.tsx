@@ -1,5 +1,4 @@
 import { Metadata } from "next";
-import Image from "next/image";
 import RelatedProjects from "@/components/RelatedProjects";
 
 export const metadata: Metadata = {
@@ -71,7 +70,7 @@ export default function MyDesignProcessPage() {
           </ul>
 
           <div className="mt-8">
-            <Image src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/45df7e50-c493-463a-835c-2ab98409ebc8_rw_1920.jpg?h=42d4ed746449db9a3dc915315b080e02" alt="Discover phase" width={1920} height={1080} className="w-full h-auto rounded-lg" />
+            <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/45df7e50-c493-463a-835c-2ab98409ebc8_rw_1920.jpg?h=42d4ed746449db9a3dc915315b080e02" alt="Discover phase" className="w-full h-auto rounded-lg" loading="lazy" />
           </div>
         </section>
 
@@ -124,7 +123,7 @@ export default function MyDesignProcessPage() {
           </ul>
 
           <div className="mt-8">
-            <Image src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/504d30e8-ae01-4b18-b77b-1e51a501c090_rw_1920.jpg?h=1a7571a686fb5d46dcaf1d8314855f88" alt="Define phase" width={1920} height={1080} className="w-full h-auto rounded-lg" />
+            <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/504d30e8-ae01-4b18-b77b-1e51a501c090_rw_1920.jpg?h=1a7571a686fb5d46dcaf1d8314855f88" alt="Define phase" className="w-full h-auto rounded-lg" loading="lazy" />
           </div>
         </section>
 
@@ -169,7 +168,7 @@ export default function MyDesignProcessPage() {
           </ul>
 
           <div className="mt-8">
-            <Image src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/2e0b3c9f-a25e-4668-b526-65aa516b8ebd_rw_1920.jpg?h=172424bc484d9ffb6ae6eccaee7c7fe1" alt="Develop phase" width={1920} height={1080} className="w-full h-auto rounded-lg" />
+            <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/2e0b3c9f-a25e-4668-b526-65aa516b8ebd_rw_1920.jpg?h=172424bc484d9ffb6ae6eccaee7c7fe1" alt="Develop phase" className="w-full h-auto rounded-lg" loading="lazy" />
           </div>
         </section>
 
@@ -214,7 +213,7 @@ export default function MyDesignProcessPage() {
           </ul>
 
           <div className="mt-8">
-            <Image src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/da8fa13b-6a64-42bb-ada9-920d36fbce72_rw_1920.jpg?h=6cd6d79780a30201ccab450bd1eae191" alt="Deliver phase" width={1920} height={1080} className="w-full h-auto rounded-lg" />
+            <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/da8fa13b-6a64-42bb-ada9-920d36fbce72_rw_1920.jpg?h=6cd6d79780a30201ccab450bd1eae191" alt="Deliver phase" className="w-full h-auto rounded-lg" loading="lazy" />
           </div>
         </section>
 
