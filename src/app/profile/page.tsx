@@ -173,10 +173,10 @@ const education = [
 ];
 
 const certifications = [
-  { name: "Hotel Reservations (CRUD)" },
-  { name: "JavaScript Voting System" },
-  { name: "React Web Application Ninja" },
-  { name: "Design Sprint Innovation" },
+  { name: "Hotel Reservations (CRUD)", issuer: "Universidad del Desarrollo" },
+  { name: "JavaScript Voting System", issuer: "Universidad del Desarrollo" },
+  { name: "React Web Application Ninja", issuer: "Universidad del Desarrollo" },
+  { name: "Design Sprint Innovation", issuer: "Universidad del Desarrollo" },
 ];
 
 const skills = [
@@ -217,6 +217,8 @@ const aiTools = [
   "ChatGPT",
   "Gemini",
   "AI Google Studio",
+  "Gamma",
+  "NotebookLM",
   "Lovable",
   "Relume.ai",
   "UIzard.io",
@@ -464,6 +466,9 @@ export default function ProfilePage() {
                 className="bg-gray-900/40 rounded-xl p-4 border border-gray-800/60"
               >
                 <h3 className="font-bold text-white text-sm">{cert.name}</h3>
+                {cert.issuer && (
+                  <p className="text-gray-400 text-xs mt-1">{cert.issuer}</p>
+                )}
               </div>
             ))}
           </div>
