@@ -59,6 +59,11 @@ const projects = [
     title: "Bupa Design System",
     thumbnail: "/images/bupa-thumb.svg",
   },
+  {
+    href: "/profile",
+    title: "Profile — Carlos Baeza",
+    thumbnail: "/images/profile-thumb.svg",
+  },
 ];
 
 export default function Home() {

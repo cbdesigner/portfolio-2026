@@ -17,6 +17,7 @@ export default function RelatedProjects({ current }: { current: string }) {
     { href: "/design-system-architect", title: "Design System Architect" },
     { href: "/ds-methodology", title: "Design System Methodology" },
     { href: "/bupa-design-system", title: "Bupa Design System" },
+    { href: "/profile", title: "Profile — Carlos Baeza" },
   ];
 
   const related = allProjects.filter((p) => p.href !== current).slice(0, 6);
