@@ -54,6 +54,11 @@ const projects = [
     title: "Design System Methodology",
     thumbnail: "/images/ds-methodology-thumb.svg",
   },
+  {
+    href: "/bupa-design-system",
+    title: "Bupa Design System",
+    thumbnail: "/images/bupa-thumb.svg",
+  },
 ];
 
 export default function Home() {
