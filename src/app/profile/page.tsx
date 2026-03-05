@@ -183,6 +183,8 @@ const skills = [
   "Information Architecture",
   "Wireframing & Prototyping",
   "User Research",
+  "Design System Architect",
+  "Product Design",
 ];
 
 const recommendations = [
