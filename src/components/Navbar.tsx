@@ -2,57 +2,72 @@
 
 import Link from "next/link";
 import { usePathname } from "next/navigation";
+import { useLanguage } from "@/i18n/LanguageContext";
+import { useTheme } from "@/components/ThemeProvider";
 
 export default function Navbar() {
   const pathname = usePathname();
+  const { locale, setLocale, t } = useLanguage();
+  const { theme, toggleTheme } = useTheme();
 
   const links = [
-    { href: "/", label: "Home" },
-    {
-      href: "https://drive.google.com/file/d/1VbsG-cB8ynxxZk4yX-tinw-7B_5Wy2s-/view?usp=sharing",
-      label: "CV",
-      external: true,
-    },
-    { href: "/interview", label: "Interview" },
-    { href: "/contact", label: "Contact" },
+    { href: "/", label: t.nav.home },
+    { href: "/profile", label: t.nav.profile },
+    { href: "/contact", label: t.nav.contact },
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-6 py-5 bg-black/80 backdrop-blur-sm">
+    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 md:px-16 py-6 bg-[var(--color-nav-bg)] backdrop-blur-md theme-transition">
       <div className="flex items-center gap-6">
         {links.map((link) => (
           <Link
-            key={link.label}
+            key={link.href}
             href={link.href}
             target={link.external ? "_blank" : undefined}
             rel={link.external ? "noopener noreferrer" : undefined}
-            className={`text-sm font-medium transition-colors hover:text-white ${
+            className={`text-caption tracking-editorial link-underline transition-colors ${
               pathname === link.href
-                ? "text-white font-bold"
-                : "text-gray-300"
+                ? "accent-gradient-text font-medium"
+                : "text-[var(--color-text-secondary)]"
             }`}
           >
             {link.label}
           </Link>
         ))}
       </div>
-      <Link
-        href="https://www.linkedin.com/in/carlos-baeza-designer/"
-        target="_blank"
-        rel="noopener noreferrer"
-        className="text-white hover:text-gray-300 transition-colors"
-        aria-label="LinkedIn"
-      >
-        <svg
-          xmlns="http://www.w3.org/2000/svg"
-          width="20"
-          height="20"
-          viewBox="0 0 24 24"
-          fill="currentColor"
+      <div className="flex items-center gap-4">
+        <button
+          onClick={toggleTheme}
+          className="p-2 text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-colors"
+          aria-label="Toggle theme"
         >
-          <path d="M20.447 20.452h-3.554v-5.569c0-1.328-.027-3.037-1.852-3.037-1.853 0-2.136 1.445-2.136 2.939v5.667H9.351V9h3.414v1.561h.046c.477-.9 1.637-1.85 3.37-1.85 3.601 0 4.267 2.37 4.267 5.455v6.286zM5.337 7.433c-1.144 0-2.063-.926-2.063-2.065 0-1.138.92-2.063 2.063-2.063 1.14 0 2.064.925 2.064 2.063 0 1.139-.925 2.065-2.064 2.065zm1.782 13.019H3.555V9h3.564v11.452zM22.225 0H1.771C.792 0 0 .774 0 1.729v20.542C0 23.227.792 24 1.771 24h20.451C23.2 24 24 23.227 24 22.271V1.729C24 .774 23.2 0 22.222 0h.003z" />
-        </svg>
-      </Link>
+          {theme === "dark" ? (
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+              <circle cx="12" cy="12" r="5" />
+              <line x1="12" y1="1" x2="12" y2="3" />
+              <line x1="12" y1="21" x2="12" y2="23" />
+              <line x1="4.22" y1="4.22" x2="5.64" y2="5.64" />
+              <line x1="18.36" y1="18.36" x2="19.78" y2="19.78" />
+              <line x1="1" y1="12" x2="3" y2="12" />
+              <line x1="21" y1="12" x2="23" y2="12" />
+              <line x1="4.22" y1="19.78" x2="5.64" y2="18.36" />
+              <line x1="18.36" y1="5.64" x2="19.78" y2="4.22" />
+            </svg>
+          ) : (
+            <svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+              <path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z" />
+            </svg>
+          )}
+        </button>
+        <button
+          onClick={() => setLocale(locale === "en" ? "es" : "en")}
+          className="font-mono text-xs px-3 py-1.5 border border-[var(--color-border)] text-[var(--color-text-secondary)] transition-colors lang-switcher"
+          aria-label="Switch language"
+        >
+          {locale === "en" ? "ES" : "EN"}
+        </button>
+
+      </div>
     </nav>
   );
 }

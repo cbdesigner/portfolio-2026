@@ -1,69 +1,116 @@
-import { Metadata } from "next";
+"use client";
 
+import { useLanguage } from "@/i18n/LanguageContext";
 import RelatedProjects from "@/components/RelatedProjects";
 
-export const metadata: Metadata = {
-  title: "Carlos Baeza - Autonomus",
-};
+const i18n = {
+  en: {
+    title: "Autonomus",
+    subtitle:
+      "A digital platform that transport and accompany older adults in all their daily activities. From visits to the doctor, shopping, visiting friends, to family reunions.",
+    description:
+      "Autonomus was a project financed by G\u00fcil a Venture Studio for Mobility Startups.",
+    heroAlt: "Autonomus platform overview",
+    roleTitle: "My Role & Responsibilities",
+    roleText:
+      "I was in charge of Product Design, working closely with the CEO, Sales, Operations, Agile and Growth Marketing teams. My goal was to create an Uber-like experience tailored for seniors, ensuring accessibility, simplicity and trust throughout the entire user journey.",
+    caregiverTitle: "App for Caregiver and Senior",
+    caregiverDesc:
+      "Designed the mobile application experience for both caregivers and seniors, focusing on ease of use, large touch targets, clear typography and intuitive navigation to accommodate users of all digital literacy levels.",
+    caregiverAlt: "App for Caregiver and Senior",
+    backOfficeTitle: "Back Office for Sales, Operations and Support",
+    backOfficeDesc:
+      "Created the internal back office platform used by Sales, Operations and Support teams to manage rides, monitor service quality, handle customer inquiries and track key performance metrics.",
+    backOfficeAlt: "Back Office for Sales, Operations and Support",
+    methodologyTitle: "Methodology & Deliverables",
+    method1:
+      "Workshop with Operations and Sales Stakeholders for Service Blue Print and Diagram Flows",
+    method2: "Sitemaps of apps, Back Office, Public Website",
+    method3: "App Map Screens",
+    method4: "Design System with variables in Figma",
+    method5: "Users Flows in Figma",
+    method6: "Daily meetings and scrum ceremonies",
+    toolsTitle: "Tools",
+  },
+  es: {
+    title: "Autonomus",
+    subtitle:
+      "Una plataforma digital que transporta y acompaña a adultos mayores en todas sus actividades diarias. Desde visitas al médico, compras, visitar amigos, hasta reuniones familiares.",
+    description:
+      "Autonomus fue un proyecto financiado por G\u00fcil, un Venture Studio para Startups de Movilidad.",
+    heroAlt: "Vista general de la plataforma Autonomus",
+    roleTitle: "Mi Rol y Responsabilidades",
+    roleText:
+      "Estuve a cargo del Diseño de Producto, trabajando estrechamente con el CEO, y los equipos de Ventas, Operaciones, Agile y Growth Marketing. Mi objetivo era crear una experiencia tipo Uber adaptada para adultos mayores, asegurando accesibilidad, simplicidad y confianza a lo largo de todo el recorrido del usuario.",
+    caregiverTitle: "App para Cuidador y Adulto Mayor",
+    caregiverDesc:
+      "Diseñé la experiencia de la aplicación móvil tanto para cuidadores como para adultos mayores, enfocándome en la facilidad de uso, áreas táctiles grandes, tipografía clara y navegación intuitiva para acomodar usuarios de todos los niveles de alfabetización digital.",
+    caregiverAlt: "App para Cuidador y Adulto Mayor",
+    backOfficeTitle: "Back Office para Ventas, Operaciones y Soporte",
+    backOfficeDesc:
+      "Creé la plataforma interna de back office utilizada por los equipos de Ventas, Operaciones y Soporte para gestionar viajes, monitorear la calidad del servicio, atender consultas de clientes y rastrear métricas clave de rendimiento.",
+    backOfficeAlt: "Back Office para Ventas, Operaciones y Soporte",
+    methodologyTitle: "Metodología y Entregables",
+    method1:
+      "Workshop con Stakeholders de Operaciones y Ventas para Service Blue Print y Diagramas de Flujo",
+    method2: "Sitemaps de apps, Back Office, Sitio Web Público",
+    method3: "Mapas de Pantallas de la App",
+    method4: "Design System con variables en Figma",
+    method5: "Flujos de Usuario en Figma",
+    method6: "Reuniones diarias y ceremonias scrum",
+    toolsTitle: "Herramientas",
+  },
+} as const;
 
 export default function AutonomusPage() {
+  const { locale } = useLanguage();
+  const t = i18n[locale];
+
   return (
-    <div className="bg-black text-white min-h-screen">
-      <div className="max-w-4xl mx-auto px-6 py-20">
+    <div className="min-h-screen">
+      <div className=" mx-auto px-8 md:px-16 py-22">
         {/* Hero */}
         <header className="mb-16">
-          <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4">Autonomus</h1>
-          <p className="text-xl md:text-2xl text-gray-400 mb-8">
-            A digital platform that transport and accompany older adults in all
-            their daily activities. From visits to the doctor, shopping, visiting
-            friends, to family reunions.
+          <h1 className="font-heading text-display-lg tracking-display mb-4">{t.title}</h1>
+          <p className="text-body-lg text-[var(--color-text-secondary)] mb-8">
+            {t.subtitle}
           </p>
-          <p className="text-gray-300 leading-relaxed text-lg">
-            Autonomus was a project financed by G&uuml;il a Venture Studio for
-            Mobility Startups.
+          <p className="text-body-lg text-[var(--color-text-secondary)] leading-relaxed">
+            {t.description}
           </p>
         </header>
 
         {/* Hero Image */}
         <div className="mt-8 mb-4">
-          <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/914aa4c3-9ac2-4119-b92b-cfe7939dbe38_rw_1920.png?h=3cf33696329e175bcd749dd2774c9408" alt="Autonomus platform overview" className="w-full h-auto rounded-lg" loading="lazy" />
+          <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/914aa4c3-9ac2-4119-b92b-cfe7939dbe38_rw_1920.png?h=3cf33696329e175bcd749dd2774c9408" alt={t.heroAlt} className="w-full h-auto rounded-lg" loading="lazy" />
         </div>
 
         {/* Role & Responsibilities */}
         <section className="mb-16">
-          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">
-            My Role &amp; Responsibilities
+          <h2 className="font-heading text-display-md tracking-display mb-6">
+            {t.roleTitle}
           </h2>
-          <div className="space-y-4 text-gray-300 leading-relaxed">
-            <p>
-              I was in charge of Product Design, working closely with the CEO,
-              Sales, Operations, Agile and Growth Marketing teams. My goal was
-              to create an Uber-like experience tailored for seniors, ensuring
-              accessibility, simplicity and trust throughout the entire user
-              journey.
-            </p>
+          <div className="space-y-4 text-[var(--color-text-secondary)] leading-relaxed">
+            <p>{t.roleText}</p>
           </div>
         </section>
 
         {/* Subsections */}
         <section className="mb-16">
-          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">
-            App for Caregiver and Senior
+          <h2 className="font-heading text-display-md tracking-display mb-6">
+            {t.caregiverTitle}
           </h2>
-          <p className="text-gray-300 leading-relaxed">
-            Designed the mobile application experience for both caregivers and
-            seniors, focusing on ease of use, large touch targets, clear
-            typography and intuitive navigation to accommodate users of all
-            digital literacy levels.
+          <p className="text-[var(--color-text-secondary)] leading-relaxed">
+            {t.caregiverDesc}
           </p>
 
           {/* App for Caregiver and Senior Image */}
           <div className="mt-8 mb-4">
-            <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/84f7f782-34fd-4bfb-9757-ce54d33675f7_rw_1920.png?h=c1c7c14201f8b015119a207a52c3f43d" alt="App for Caregiver and Senior" className="w-full h-auto rounded-lg" loading="lazy" />
+            <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/84f7f782-34fd-4bfb-9757-ce54d33675f7_rw_1920.png?h=c1c7c14201f8b015119a207a52c3f43d" alt={t.caregiverAlt} className="w-full h-auto rounded-lg" loading="lazy" />
           </div>
 
           {/* Mobile App Video */}
-          <div className="mt-8 mb-4 max-w-[280px] mx-auto">
+          <div className="mt-8 mb-4  mx-auto">
             <div className="relative w-full" style={{ paddingBottom: '216%' }}>
               <iframe
                 className="absolute inset-0 w-full h-full border-0"
@@ -75,18 +122,16 @@ export default function AutonomusPage() {
         </section>
 
         <section className="mb-16">
-          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">
-            Back Office for Sales, Operations and Support
+          <h2 className="font-heading text-display-md tracking-display mb-6">
+            {t.backOfficeTitle}
           </h2>
-          <p className="text-gray-300 leading-relaxed">
-            Created the internal back office platform used by Sales, Operations
-            and Support teams to manage rides, monitor service quality, handle
-            customer inquiries and track key performance metrics.
+          <p className="text-[var(--color-text-secondary)] leading-relaxed">
+            {t.backOfficeDesc}
           </p>
 
           {/* Back Office Image */}
           <div className="mt-8 mb-4">
-            <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/b3b98b27-d590-43af-b62b-b030be486436_rw_1920.png?h=476edca82ab4d765221842aebb880e73" alt="Back Office for Sales, Operations and Support" className="w-full h-auto rounded-lg" loading="lazy" />
+            <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/b3b98b27-d590-43af-b62b-b030be486436_rw_1920.png?h=476edca82ab4d765221842aebb880e73" alt={t.backOfficeAlt} className="w-full h-auto rounded-lg" loading="lazy" />
           </div>
 
           {/* Back Office Video */}
@@ -103,52 +148,51 @@ export default function AutonomusPage() {
 
         {/* Methodology & Deliverables */}
         <section className="mb-16">
-          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">
-            Methodology &amp; Deliverables
+          <h2 className="font-heading text-display-md tracking-display mb-6">
+            {t.methodologyTitle}
           </h2>
-          <ul className="space-y-3 text-gray-300 leading-relaxed">
+          <ul className="space-y-3 text-[var(--color-text-secondary)] leading-relaxed">
             <li className="flex items-start gap-3">
-              <span className="text-gray-500 mt-1.5 text-xs">&#9679;</span>
-              Workshop with Operations and Sales Stakeholders for Service Blue
-              Print and Diagram Flows
+              <span className="text-[var(--color-text-tertiary)] mt-1.5 text-xs">&#9679;</span>
+              {t.method1}
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-gray-500 mt-1.5 text-xs">&#9679;</span>
-              Sitemaps of apps, Back Office, Public Website
+              <span className="text-[var(--color-text-tertiary)] mt-1.5 text-xs">&#9679;</span>
+              {t.method2}
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-gray-500 mt-1.5 text-xs">&#9679;</span>
-              App Map Screens
+              <span className="text-[var(--color-text-tertiary)] mt-1.5 text-xs">&#9679;</span>
+              {t.method3}
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-gray-500 mt-1.5 text-xs">&#9679;</span>
-              Design System with variables in Figma
+              <span className="text-[var(--color-text-tertiary)] mt-1.5 text-xs">&#9679;</span>
+              {t.method4}
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-gray-500 mt-1.5 text-xs">&#9679;</span>
-              Users Flows in Figma
+              <span className="text-[var(--color-text-tertiary)] mt-1.5 text-xs">&#9679;</span>
+              {t.method5}
             </li>
             <li className="flex items-start gap-3">
-              <span className="text-gray-500 mt-1.5 text-xs">&#9679;</span>
-              Daily meetings and scrum ceremonies
+              <span className="text-[var(--color-text-tertiary)] mt-1.5 text-xs">&#9679;</span>
+              {t.method6}
             </li>
           </ul>
         </section>
 
         {/* Tools */}
         <section className="mb-16">
-          <h2 className="font-heading text-2xl font-bold mb-4">Tools</h2>
+          <h2 className="font-heading text-display-md tracking-display mb-4">{t.toolsTitle}</h2>
           <div className="flex flex-wrap gap-3">
-            <span className="px-4 py-2 bg-gray-900 rounded-full text-sm text-gray-300 font-mono">
-              Figma + Figjam
+            <span className="px-4 py-2 border border-[var(--color-border)] text-sm text-[var(--color-text-secondary)] font-mono">
+              Figma  Figjam
             </span>
-            <span className="px-4 py-2 bg-gray-900 rounded-full text-sm text-gray-300 font-mono">
+            <span className="px-4 py-2 border border-[var(--color-border)] text-sm text-[var(--color-text-secondary)] font-mono">
               Mir&oacute;
             </span>
-            <span className="px-4 py-2 bg-gray-900 rounded-full text-sm text-gray-300 font-mono">
+            <span className="px-4 py-2 border border-[var(--color-border)] text-sm text-[var(--color-text-secondary)] font-mono">
               Relume
             </span>
-            <span className="px-4 py-2 bg-gray-900 rounded-full text-sm text-gray-300 font-mono">
+            <span className="px-4 py-2 border border-[var(--color-border)] text-sm text-[var(--color-text-secondary)] font-mono">
               Webflow
             </span>
           </div>

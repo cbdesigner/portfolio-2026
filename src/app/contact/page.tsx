@@ -1,8 +1,10 @@
 "use client";
 
 import { useState } from "react";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 export default function ContactPage() {
+  const { t } = useLanguage();
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -23,11 +25,11 @@ export default function ContactPage() {
 
   if (submitted) {
     return (
-      <div className="bg-black text-white min-h-screen">
-        <div className="max-w-4xl mx-auto px-6 py-20 text-center">
-          <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4">Thank you!</h1>
-          <p className="text-gray-300 text-lg">
-            Your message has been received. I&apos;ll get back to you soon.
+      <div className="min-h-screen theme-transition">
+        <div className=" mx-auto px-8 md:px-16 py-22 text-center">
+          <h1 className="font-heading text-display-lg tracking-display mb-4">{t.contact.thankYou}</h1>
+          <p className="text-body-lg text-[var(--color-text-secondary)]">
+            {t.contact.received}
           </p>
         </div>
       </div>
@@ -35,22 +37,22 @@ export default function ContactPage() {
   }
 
   return (
-    <div className="bg-black text-white min-h-screen">
-      <div className="max-w-2xl mx-auto px-6 py-20">
+    <div className="min-h-screen theme-transition">
+      <div className=" mx-auto px-8 md:px-16 py-22">
         {/* Hero */}
         <header className="mb-12">
-          <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4">Contact</h1>
+          <h1 className="font-heading text-display-lg tracking-display mb-4">{t.contact.title}</h1>
         </header>
 
         {/* Form */}
-        <form onSubmit={handleSubmit} className="space-y-6">
+        <form onSubmit={handleSubmit} className="space-y-8">
           {/* Name */}
           <div>
             <label
               htmlFor="name"
-              className="block text-sm font-medium text-gray-300 mb-2 font-mono"
+              className="block text-overline uppercase tracking-widest-caps text-[var(--color-text-tertiary)] mb-3 font-mono"
             >
-              Name
+              {t.contact.name}
             </label>
             <input
               type="text"
@@ -59,8 +61,8 @@ export default function ContactPage() {
               required
               value={formData.name}
               onChange={handleChange}
-              className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-gray-400 transition-colors"
-              placeholder="Your name"
+              className="w-full px-0 py-3 bg-transparent border-0 border-b border-[var(--color-border)] text-[var(--color-text-primary)] placeholder-[var(--color-text-tertiary)] focus:outline-none focus:border-[var(--color-text-primary)] transition-colors theme-transition"
+              placeholder={t.contact.namePlaceholder}
             />
           </div>
 
@@ -68,9 +70,9 @@ export default function ContactPage() {
           <div>
             <label
               htmlFor="email"
-              className="block text-sm font-medium text-gray-300 mb-2 font-mono"
+              className="block text-overline uppercase tracking-widest-caps text-[var(--color-text-tertiary)] mb-3 font-mono"
             >
-              Email Address
+              {t.contact.email}
             </label>
             <input
               type="email"
@@ -79,8 +81,8 @@ export default function ContactPage() {
               required
               value={formData.email}
               onChange={handleChange}
-              className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-gray-400 transition-colors"
-              placeholder="your@email.com"
+              className="w-full px-0 py-3 bg-transparent border-0 border-b border-[var(--color-border)] text-[var(--color-text-primary)] placeholder-[var(--color-text-tertiary)] focus:outline-none focus:border-[var(--color-text-primary)] transition-colors theme-transition"
+              placeholder={t.contact.emailPlaceholder}
             />
           </div>
 
@@ -88,9 +90,9 @@ export default function ContactPage() {
           <div>
             <label
               htmlFor="message"
-              className="block text-sm font-medium text-gray-300 mb-2 font-mono"
+              className="block text-overline uppercase tracking-widest-caps text-[var(--color-text-tertiary)] mb-3 font-mono"
             >
-              Message
+              {t.contact.message}
             </label>
             <textarea
               id="message"
@@ -99,17 +101,17 @@ export default function ContactPage() {
               rows={6}
               value={formData.message}
               onChange={handleChange}
-              className="w-full px-4 py-3 bg-gray-900 border border-gray-700 rounded-lg text-white placeholder-gray-500 focus:outline-none focus:border-gray-400 transition-colors resize-none"
-              placeholder="Your message..."
+              className="w-full px-0 py-3 bg-transparent border-0 border-b border-[var(--color-border)] text-[var(--color-text-primary)] placeholder-[var(--color-text-tertiary)] focus:outline-none focus:border-[var(--color-text-primary)] transition-colors resize-none theme-transition"
+              placeholder={t.contact.messagePlaceholder}
             />
           </div>
 
           {/* Submit */}
           <button
             type="submit"
-            className="w-full py-3 px-6 bg-white text-black font-semibold rounded-lg hover:bg-gray-200 transition-colors"
+            className="w-full btn-ghost py-4 text-sm font-medium tracking-editorial uppercase"
           >
-            Send Message
+            {t.contact.send}
           </button>
         </form>
       </div>

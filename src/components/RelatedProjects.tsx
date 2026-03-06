@@ -1,38 +1,55 @@
-import Link from "next/link";
+"use client";
 
-interface Project {
-  href: string;
-  title: string;
-}
+import Link from "next/link";
+import { useLanguage } from "@/i18n/LanguageContext";
+
+type ProjectKey =
+  | "bancoRipley"
+  | "designSystem"
+  | "autonomus"
+  | "myDesignProcess"
+  | "enelOneHub"
+  | "uxStrategy"
+  | "designSystemArchitect"
+  | "dsMethodology"
+  | "bupaDesignSystem"
+  | "dsServices"
+  | "profile";
+
+const allProjects: { href: string; key: ProjectKey }[] = [
+  { href: "/banco-ripley", key: "bancoRipley" },
+  { href: "/design-system", key: "designSystem" },
+  { href: "/autonomus", key: "autonomus" },
+  { href: "/my-design-process", key: "myDesignProcess" },
+  { href: "/enel-one-hub", key: "enelOneHub" },
+  { href: "/ux-strategy", key: "uxStrategy" },
+  { href: "/design-system-architect", key: "designSystemArchitect" },
+  { href: "/ds-methodology", key: "dsMethodology" },
+  { href: "/bupa-design-system", key: "bupaDesignSystem" },
+  { href: "/ds-services", key: "dsServices" },
+  { href: "/profile", key: "profile" },
+];
 
 export default function RelatedProjects({ current }: { current: string }) {
-  const allProjects: Project[] = [
-    { href: "/banco-ripley", title: "Transforming the Digital Experience at Banco Ripley" },
-    { href: "/design-system", title: "Design System" },
-    { href: "/autonomus", title: "Autonomus" },
-    { href: "/my-design-process", title: "My Design Process" },
-    { href: "/enel-one-hub", title: "Enel One Hub" },
-    { href: "/ux-strategy", title: "UX Strategy" },
-    { href: "/interview", title: "I was interviewed by Multiplica in 2019" },
-    { href: "/design-system-architect", title: "Design System Architect" },
-    { href: "/ds-methodology", title: "Design System Methodology" },
-    { href: "/bupa-design-system", title: "Bupa Design System" },
-    { href: "/profile", title: "Profile — Carlos Baeza" },
-  ];
+  const { t } = useLanguage();
 
   const related = allProjects.filter((p) => p.href !== current).slice(0, 6);
 
   return (
-    <section className="mt-20 pt-12 border-t border-gray-800">
-      <h2 className="font-heading text-2xl font-bold mb-8 text-center">You may also like</h2>
+    <section className="mt-22 pt-12 border-t border-[var(--color-border)] px-8 md:px-16">
+      <h2 className="font-heading text-display-md tracking-display mb-8 text-center">
+        {t.relatedProjects}
+      </h2>
       <div className="grid grid-cols-2 md:grid-cols-3 gap-4">
         {related.map((project) => (
           <Link
             key={project.href}
             href={project.href}
-            className="block p-4 bg-gray-900 hover:bg-gray-800 rounded-lg transition-colors text-center"
+            className="block p-4 border border-[var(--color-border)] hover:border-[var(--color-text-tertiary)] transition-colors text-center theme-transition"
           >
-            <span className="text-sm text-gray-300">{project.title}</span>
+            <span className="text-sm text-[var(--color-text-secondary)]">
+              {t.projectTitles[project.key]}
+            </span>
           </Link>
         ))}
       </div>

@@ -1,26 +1,49 @@
-import { Metadata } from "next";
+"use client";
+
+import { useLanguage } from "@/i18n/LanguageContext";
 import RelatedProjects from "@/components/RelatedProjects";
 
-export const metadata: Metadata = {
-  title: "Carlos Baeza - UX Strategy",
-};
+const i18n = {
+  en: {
+    title: "UX Strategy",
+    subtitle:
+      "As a UX Manager, I implement a UX strategy in five key areas, lead design teams, and build design capabilities for companies.",
+    strategy: "1 > Strategy",
+    enterprise: "2 > Enterprise",
+    team: "3 > Team",
+    operations: "4 > Operations",
+    experience: "5 > Experience",
+  },
+  es: {
+    title: "Estrategia UX",
+    subtitle:
+      "Como UX Manager, implemento una estrategia UX en cinco \u00E1reas clave, lidero equipos de dise\u00F1o y construyo capacidades de dise\u00F1o para empresas.",
+    strategy: "1 > Estrategia",
+    enterprise: "2 > Empresa",
+    team: "3 > Equipo",
+    operations: "4 > Operaciones",
+    experience: "5 > Experiencia",
+  },
+} as const;
 
 export default function UXStrategyPage() {
+  const { locale } = useLanguage();
+  const t = i18n[locale];
+
   return (
-    <div className="bg-black text-white min-h-screen">
-      <div className="max-w-4xl mx-auto px-6 py-20">
+    <div className="min-h-screen">
+      <div className=" mx-auto px-8 md:px-16 py-22">
         {/* Hero */}
         <header className="mb-16">
-          <h1 className="font-heading text-4xl md:text-5xl font-bold mb-4">UX Strategy</h1>
-          <p className="text-xl md:text-2xl text-gray-400 mb-8">
-            As a UX Manager, I implement a UX strategy in five key areas, lead
-            design teams, and build design capabilities for companies.
+          <h1 className="font-heading text-display-lg tracking-display mb-4">{t.title}</h1>
+          <p className="text-body-lg text-[var(--color-text-secondary)] mb-8">
+            {t.subtitle}
           </p>
         </header>
 
         {/* Overview iframe */}
         <section className="mb-16">
-          <div className="relative w-full max-w-[1000px] mx-auto" style={{ paddingBottom: '85%' }}>
+          <div className="relative w-full  mx-auto" style={{ paddingBottom: '85%' }}>
             <iframe
               className="absolute inset-0 w-full h-full border-0"
               src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FL67zzf8ZNLhjUuwKQmIfWw%2FUX-Strategy%3Fpage-id%3D0%253A1%26node-id%3D801%253A361%26viewport%3D241%252C48%252C0.22%26scaling%3Dcontain%26starting-point-node-id%3D801%253A361"
@@ -31,8 +54,8 @@ export default function UXStrategyPage() {
 
         {/* 1 > Strategy */}
         <section className="mb-16">
-          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">1 &gt; Strategy</h2>
-          <div className="relative w-full max-w-[1000px] mx-auto" style={{ paddingBottom: '85%' }}>
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">{t.strategy}</h2>
+          <div className="relative w-full  mx-auto" style={{ paddingBottom: '85%' }}>
             <iframe
               className="absolute inset-0 w-full h-full border-0"
               src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FL67zzf8ZNLhjUuwKQmIfWw%2FUX-Strategy%3Fpage-id%3D0%253A1%26node-id%3D801%253A395%26viewport%3D241%252C48%252C0.22%26scaling%3Dcontain%26starting-point-node-id%3D801%253A361"
@@ -43,8 +66,8 @@ export default function UXStrategyPage() {
 
         {/* 2 > Enterprise */}
         <section className="mb-16">
-          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">2 &gt; Enterprise</h2>
-          <div className="relative w-full max-w-[1000px] mx-auto" style={{ paddingBottom: '85%' }}>
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">{t.enterprise}</h2>
+          <div className="relative w-full  mx-auto" style={{ paddingBottom: '85%' }}>
             <iframe
               className="absolute inset-0 w-full h-full border-0"
               src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FL67zzf8ZNLhjUuwKQmIfWw%2FUX-Strategy%3Fpage-id%3D0%253A1%26node-id%3D801%253A398%26viewport%3D241%252C48%252C0.22%26scaling%3Dcontain%26starting-point-node-id%3D801%253A361"
@@ -55,8 +78,8 @@ export default function UXStrategyPage() {
 
         {/* 3 > Team */}
         <section className="mb-16">
-          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">3 &gt; Team</h2>
-          <div className="relative w-full max-w-[1000px] mx-auto" style={{ paddingBottom: '85%' }}>
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">{t.team}</h2>
+          <div className="relative w-full  mx-auto" style={{ paddingBottom: '85%' }}>
             <iframe
               className="absolute inset-0 w-full h-full border-0"
               src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FL67zzf8ZNLhjUuwKQmIfWw%2FUX-Strategy%3Fpage-id%3D0%253A1%26node-id%3D801%253A399%26viewport%3D241%252C48%252C0.22%26scaling%3Dcontain%26starting-point-node-id%3D801%253A361"
@@ -67,8 +90,8 @@ export default function UXStrategyPage() {
 
         {/* 4 > Operations */}
         <section className="mb-16">
-          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">4 &gt; Operations</h2>
-          <div className="relative w-full max-w-[1000px] mx-auto" style={{ paddingBottom: '85%' }}>
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">{t.operations}</h2>
+          <div className="relative w-full  mx-auto" style={{ paddingBottom: '85%' }}>
             <iframe
               className="absolute inset-0 w-full h-full border-0"
               src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FL67zzf8ZNLhjUuwKQmIfWw%2FUX-Strategy%3Fpage-id%3D0%253A1%26node-id%3D801%253A397%26viewport%3D241%252C48%252C0.22%26scaling%3Dcontain%26starting-point-node-id%3D801%253A361"
@@ -79,8 +102,8 @@ export default function UXStrategyPage() {
 
         {/* 5 > Experience */}
         <section className="mb-16">
-          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">5 &gt; Experience</h2>
-          <div className="relative w-full max-w-[1000px] mx-auto" style={{ paddingBottom: '85%' }}>
+          <h2 className="font-heading text-2xl md:text-3xl font-bold mb-6">{t.experience}</h2>
+          <div className="relative w-full  mx-auto" style={{ paddingBottom: '85%' }}>
             <iframe
               className="absolute inset-0 w-full h-full border-0"
               src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FL67zzf8ZNLhjUuwKQmIfWw%2FUX-Strategy%3Fpage-id%3D0%253A1%26node-id%3D801%253A396%26viewport%3D241%252C48%252C0.22%26scaling%3Dcontain%26starting-point-node-id%3D801%253A361"
