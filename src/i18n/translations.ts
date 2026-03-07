@@ -26,6 +26,16 @@ export const translations = {
     methodology: "Methodology",
     responsibilities: "Responsibilities",
     letsChat: "Let\u2019s Chat",
+    login: {
+      title: "Portfolio",
+      password: "Password",
+      placeholder: "Enter password",
+      submit: "Enter",
+      submitting: "Verifying...",
+      error: "Invalid password",
+      rateLimited: "Too many attempts. Please try again later.",
+      connectionError: "Connection error. Please try again.",
+    },
     contact: {
       title: "Contact",
       thankYou: "Thank you!",
@@ -169,6 +179,16 @@ export const translations = {
     methodology: "Metodolog\u00eda",
     responsibilities: "Responsabilidades",
     letsChat: "Conversemos",
+    login: {
+      title: "Portfolio",
+      password: "Contraseña",
+      placeholder: "Ingresa la contraseña",
+      submit: "Entrar",
+      submitting: "Verificando...",
+      error: "Contraseña incorrecta",
+      rateLimited: "Demasiados intentos. Inténtalo más tarde.",
+      connectionError: "Error de conexión. Inténtalo de nuevo.",
+    },
     contact: {
       title: "Contacto",
       thankYou: "\u00a1Gracias!",

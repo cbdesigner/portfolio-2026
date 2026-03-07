@@ -1,14 +1,24 @@
 "use client";
 
 import Link from "next/link";
-import { usePathname } from "next/navigation";
+import { usePathname, useRouter } from "next/navigation";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { useTheme } from "@/components/ThemeProvider";
 
 export default function Navbar() {
   const pathname = usePathname();
+  const router = useRouter();
   const { locale, setLocale, t } = useLanguage();
   const { theme, toggleTheme } = useTheme();
+
+  // Hide navbar on login page
+  if (pathname === "/login") return null;
+
+  const handleLogout = async () => {
+    await fetch("/api/auth/logout", { method: "POST" });
+    router.push("/login");
+    router.refresh();
+  };
 
   const links = [
     { href: "/", label: t.nav.home },
@@ -64,7 +74,17 @@ export default function Navbar() {
         >
           {locale === "en" ? "ES" : "EN"}
         </button>
-
+        <button
+          onClick={handleLogout}
+          className="p-2 text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-colors"
+          aria-label="Logout"
+        >
+          <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M9 21H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h4" />
+            <polyline points="16 17 21 12 16 7" />
+            <line x1="21" y1="12" x2="9" y2="12" />
+          </svg>
+        </button>
       </div>
     </nav>
   );
