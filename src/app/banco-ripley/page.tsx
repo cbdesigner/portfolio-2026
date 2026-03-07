@@ -144,7 +144,7 @@ export default function BancoRipleyPage() {
   return (
     <article>
       {/* Hero Section */}
-      <section className=" mx-auto px-8 md:px-16 pt-22 pb-22 text-center">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 pt-22 pb-22 text-center">
         <p className="text-overline uppercase tracking-widest-caps text-[var(--color-text-tertiary)] mb-4 font-mono">
           {t.overline}
         </p>
@@ -168,7 +168,7 @@ export default function BancoRipleyPage() {
       </section>
 
       {/* Section 1 - UX Lead */}
-      <section className=" mx-auto px-8 md:px-16 py-22">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22">
         <h2 className="font-heading text-display-md tracking-display mb-8">
           {t.section1Title}
         </h2>
@@ -270,7 +270,7 @@ export default function BancoRipleyPage() {
       </section>
 
       {/* Section 2 - UX Manager */}
-      <section className=" mx-auto px-8 md:px-16 py-22">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22">
         <h2 className="font-heading text-display-md tracking-display mb-8">
           {t.section2Title}
         </h2>
@@ -392,7 +392,7 @@ export default function BancoRipleyPage() {
       </section>
 
       {/* Related Projects */}
-      <section className=" mx-auto px-8 md:px-16 pb-22">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 pb-22">
         <RelatedProjects current="/banco-ripley" />
       </section>
     </article>

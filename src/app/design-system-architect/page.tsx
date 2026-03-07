@@ -398,7 +398,7 @@ export default function DesignSystemArchitectPage() {
   return (
     <article>
       {/* Hero Section */}
-      <section className=" mx-auto px-8 md:px-16 pt-22 pb-22 text-center">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 pt-22 pb-22 text-center">
         <p className="text-overline uppercase tracking-widest-caps text-[var(--color-text-tertiary)] mb-4">
           {t.caseStudy}
         </p>
@@ -422,7 +422,7 @@ export default function DesignSystemArchitectPage() {
       </section>
 
       {/* Overview */}
-      <section className=" mx-auto px-8 md:px-16 py-22">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22">
         <h2 className="font-heading text-display-md tracking-display mb-8">{t.overviewTitle}</h2>
         <div className="space-y-6 text-body-lg text-[var(--color-text-secondary)] leading-relaxed">
           <p>{t.overviewP1}</p>
@@ -431,7 +431,7 @@ export default function DesignSystemArchitectPage() {
       </section>
 
       {/* Core Competencies */}
-      <section className=" mx-auto px-8 md:px-16 py-22">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22">
         <div className="text-center mb-12">
           <h2 className="font-heading text-display-md tracking-display mb-4">
             {t.competenciesTitle}
@@ -462,7 +462,7 @@ export default function DesignSystemArchitectPage() {
       </section>
 
       {/* Evolution of My Approach */}
-      <section className=" mx-auto px-8 md:px-16 py-22">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22">
         <div className="text-center mb-12">
           <h2 className="font-heading text-display-md tracking-display mb-4">
             {t.evolutionTitle}
@@ -506,7 +506,7 @@ export default function DesignSystemArchitectPage() {
       </section>
 
       {/* Key Achievements */}
-      <section className=" mx-auto px-8 md:px-16 py-22">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22">
         <div className="text-center mb-12">
           <h2 className="font-heading text-display-md tracking-display mb-4">
             {t.achievementsTitle}
@@ -555,7 +555,7 @@ export default function DesignSystemArchitectPage() {
       </section>
 
       {/* Tools & Technologies */}
-      <section className=" mx-auto px-8 md:px-16 py-22">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22">
         <div className="text-center mb-12">
           <h2 className="font-heading text-display-md tracking-display mb-4">
             {t.toolsTitle}
@@ -580,7 +580,7 @@ export default function DesignSystemArchitectPage() {
       </section>
 
       {/* Methodology */}
-      <section className=" mx-auto px-8 md:px-16 py-22">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22">
         <div className="text-center mb-12">
           <h2 className="font-heading text-display-md tracking-display mb-4">{t.methodologyTitle}</h2>
           <p className="text-[var(--color-text-tertiary)] text-lg  mx-auto">
@@ -627,7 +627,7 @@ export default function DesignSystemArchitectPage() {
       </section>
 
       {/* Related Projects */}
-      <section className=" mx-auto px-8 md:px-16 pb-22">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 pb-22">
         <RelatedProjects current="/design-system-architect" />
       </section>
     </article>

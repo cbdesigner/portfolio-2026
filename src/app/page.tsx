@@ -1,7 +1,7 @@
 "use client";
 
 import HeroSection from "@/components/HeroSection";
-import CarouselSection, { CarouselItem } from "@/components/CarouselSection";
+import ProjectGrid, { type ProjectItem, type FilterValue } from "@/components/ProjectGrid";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 type ProjectKey =
@@ -19,15 +19,15 @@ type ProjectKey =
 const allProjects: {
   href: string;
   key: ProjectKey;
-  thumbnail: string;
   category: string;
+  filter: FilterValue;
   description: { en: string; es: string };
 }[] = [
   {
     href: "/banco-ripley",
     key: "bancoRipley",
-    thumbnail: "/images/banco-ripley-thumb.svg",
     category: "UX Design · Banking",
+    filter: "projects",
     description: {
       en: "Full redesign of the digital banking experience, improving retention and self-service rates across mobile and web.",
       es: "Rediseño completo de la experiencia bancaria digital, mejorando retención y autoservicio en web y móvil.",
@@ -36,8 +36,8 @@ const allProjects: {
   {
     href: "/autonomus",
     key: "autonomus",
-    thumbnail: "/images/autonomus-thumb.svg",
     category: "Product Design · Mobility",
+    filter: "projects",
     description: {
       en: "Platform connecting seniors to transportation and companionship services, designed for simplicity and trust.",
       es: "Plataforma que conecta adultos mayores con servicios de transporte y compañía, diseñada para simplicidad y confianza.",
@@ -46,8 +46,8 @@ const allProjects: {
   {
     href: "/enel-one-hub",
     key: "enelOneHub",
-    thumbnail: "/images/enel-thumb.svg",
     category: "Design Systems · Energy",
+    filter: "projects",
     description: {
       en: "Unified design system enabling consistency across Enel's digital products in Latin America.",
       es: "Sistema de diseño unificado que garantiza consistencia en los productos digitales de Enel en Latinoamérica.",
@@ -56,8 +56,8 @@ const allProjects: {
   {
     href: "/ux-strategy",
     key: "uxStrategy",
-    thumbnail: "/images/ux-strategy-thumb.svg",
     category: "UX Strategy",
+    filter: "projects",
     description: {
       en: "Strategic UX framework applied across enterprise products to drive adoption and reduce cognitive overhead.",
       es: "Marco estratégico de UX aplicado en productos enterprise para impulsar adopción y reducir fricción cognitiva.",
@@ -66,8 +66,8 @@ const allProjects: {
   {
     href: "/my-design-process",
     key: "myDesignProcess",
-    thumbnail: "/images/design-process-thumb.svg",
     category: "Methodology · Process",
+    filter: "methodology",
     description: {
       en: "A documented, repeatable approach to design thinking and execution in complex product environments.",
       es: "Un enfoque documentado y repetible para el design thinking y ejecución en entornos de producto complejos.",
@@ -76,8 +76,8 @@ const allProjects: {
   {
     href: "/ds-methodology",
     key: "dsMethodology",
-    thumbnail: "/images/ds-methodology-thumb.svg",
     category: "Design Systems · Methodology",
+    filter: "methodology",
     description: {
       en: "Scalable methodology for building and governing design systems across large organizations.",
       es: "Metodología escalable para construir y gobernar design systems en grandes organizaciones.",
@@ -86,8 +86,8 @@ const allProjects: {
   {
     href: "/ds-services",
     key: "dsServices",
-    thumbnail: "/images/ds-services-thumb.svg",
     category: "Services · Strategy",
+    filter: "methodology",
     description: {
       en: "Integrated framework—Governance, Architecture, Metrics—to transform how design systems scale and deliver business value.",
       es: "Framework integrado—Gobernanza, Arquitectura, Métricas—para transformar cómo los design systems escalan e impactan el negocio.",
@@ -96,8 +96,8 @@ const allProjects: {
   {
     href: "/design-system",
     key: "designSystem",
-    thumbnail: "/images/design-system-thumb.svg",
     category: "Design Systems",
+    filter: "designSystems",
     description: {
       en: "End-to-end design system built to serve multiple products with a single, consistent design language.",
       es: "Design system end-to-end construido para servir múltiples productos con un lenguaje de diseño único y consistente.",
@@ -106,8 +106,8 @@ const allProjects: {
   {
     href: "/design-system-architect",
     key: "designSystemArchitect",
-    thumbnail: "/images/ds-architect-thumb.svg",
     category: "Design Systems · Architecture",
+    filter: "designSystems",
     description: {
       en: "AI-ready design infrastructure built for scale, governance, and deterministic design-to-code workflows.",
       es: "Infraestructura de diseño lista para IA, construida para escala, gobernanza y flujos deterministas de diseño a código.",
@@ -116,8 +116,8 @@ const allProjects: {
   {
     href: "/bupa-design-system",
     key: "bupaDesignSystem",
-    thumbnail: "/images/bupa-thumb.svg",
     category: "Design Systems · Healthcare",
+    filter: "designSystems",
     description: {
       en: "Design system for healthcare digital products balancing clinical precision with human warmth.",
       es: "Sistema de diseño para productos digitales de salud, equilibrando precisión clínica con calidez humana.",
@@ -125,42 +125,21 @@ const allProjects: {
   },
 ];
 
-const projectKeys: ProjectKey[] = ["bancoRipley", "autonomus", "enelOneHub", "uxStrategy"];
-const methodologyKeys: ProjectKey[] = ["myDesignProcess", "dsMethodology", "dsServices"];
-const designSystemKeys: ProjectKey[] = ["designSystem", "designSystemArchitect", "bupaDesignSystem"];
-
 export default function Home() {
   const { t, locale } = useLanguage();
 
-  const byKey = Object.fromEntries(allProjects.map((p) => [p.key, p]));
-
-  const toItems = (keys: ProjectKey[]): CarouselItem[] =>
-    keys.map((key) => ({
-      href: byKey[key].href,
-      title: t.projectTitles[key],
-      thumbnail: byKey[key].thumbnail,
-      category: byKey[key].category,
-      description: byKey[key].description[locale as "en" | "es"],
-    }));
+  const items: ProjectItem[] = allProjects.map((p) => ({
+    href: p.href,
+    title: t.projectTitles[p.key],
+    category: p.category,
+    description: p.description[locale as "en" | "es"],
+    filter: p.filter,
+  }));
 
   return (
     <>
       <HeroSection />
-
-      <div className="pt-16">
-        <CarouselSection
-          label={t.categories.projects}
-          items={toItems(projectKeys)}
-        />
-        <CarouselSection
-          label={t.categories.methodologies}
-          items={toItems(methodologyKeys)}
-        />
-        <CarouselSection
-          label={t.categories.designSystems}
-          items={toItems(designSystemKeys)}
-        />
-      </div>
+      <ProjectGrid items={items} />
     </>
   );
 }

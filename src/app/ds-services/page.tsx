@@ -322,7 +322,7 @@ export default function DSServicesPage() {
   return (
     <article className="pt-32 pb-26">
       {/* Hero */}
-      <section className="px-8 md:px-16 mb-26">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 mb-26">
         <div className="text-overline uppercase tracking-widest-caps text-[var(--color-text-tertiary)] mb-6">
           {content.heroOverline}
         </div>
@@ -338,7 +338,7 @@ export default function DSServicesPage() {
       </section>
 
       {/* 3 Pillars Overview */}
-      <section className="px-8 md:px-16 mb-26">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 mb-26">
         <h2 className="font-heading text-display-md italic tracking-display text-[var(--color-text-primary)] mb-12">
           {content.pillarsTitle}
         </h2>
@@ -360,7 +360,7 @@ export default function DSServicesPage() {
       </section>
 
       {/* Pillar 1: Governance */}
-      <section className="px-8 md:px-16 mb-26">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 mb-26">
         <h2 className="font-heading text-display-md italic tracking-display text-[var(--color-text-primary)] mb-6">
           {content.governanceTitle}
         </h2>
@@ -412,7 +412,7 @@ export default function DSServicesPage() {
       </section>
 
       {/* Pillar 2: Architecture */}
-      <section className="px-8 md:px-16 mb-26">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 mb-26">
         <h2 className="font-heading text-display-md italic tracking-display text-[var(--color-text-primary)] mb-6">
           {content.architectureTitle}
         </h2>
@@ -476,7 +476,7 @@ export default function DSServicesPage() {
       </section>
 
       {/* Pillar 3: Metrics */}
-      <section className="px-8 md:px-16 mb-26">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 mb-26">
         <h2 className="font-heading text-display-md italic tracking-display text-[var(--color-text-primary)] mb-6">
           {content.metricsTitle}
         </h2>
@@ -536,7 +536,7 @@ export default function DSServicesPage() {
       </section>
 
       {/* Recommendation */}
-      <section className="px-8 md:px-16 mb-26">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 mb-26">
         <div className="bg-[var(--color-card-bg)] border border-[var(--color-border)] rounded-lg p-12 theme-transition">
           <h2 className="font-heading text-display-md italic tracking-display text-[var(--color-text-primary)] mb-6">
             {content.recommendationTitle}
@@ -548,7 +548,7 @@ export default function DSServicesPage() {
       </section>
 
       {/* CTA */}
-      <section className="px-8 md:px-16 mb-26 text-center">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 mb-26 text-center">
         <p className="text-body-lg text-[var(--color-text-secondary)] mb-8">
           {content.ctaText}
         </p>

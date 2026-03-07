@@ -497,7 +497,7 @@ export default function DSMethodologyPage() {
   return (
     <article>
       {/* Hero */}
-      <section className=" mx-auto px-8 md:px-16 pt-22 pb-22 text-center">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 pt-22 pb-22 text-center">
         <p className="text-overline uppercase tracking-widest-caps text-[var(--color-text-tertiary)] mb-4 font-mono">
           {t.heroOverline}
         </p>
@@ -513,7 +513,7 @@ export default function DSMethodologyPage() {
       </section>
 
       {/* Strategic Benefits */}
-      <section className=" mx-auto px-8 md:px-16 py-22">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22">
         <div className="text-center mb-12">
           <h2 className="font-heading text-display-md tracking-display mb-4">
             {t.benefitsTitle}
@@ -544,7 +544,7 @@ export default function DSMethodologyPage() {
       </section>
 
       {/* 5 Stages Overview */}
-      <section className=" mx-auto px-8 md:px-16 py-22">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22">
         <div className="text-center mb-12">
           <h2 className="font-heading text-display-md tracking-display mb-4">
             {t.stagesTitle}
@@ -601,7 +601,7 @@ export default function DSMethodologyPage() {
       </section>
 
       {/* Development Pipeline */}
-      <section className=" mx-auto px-8 md:px-16 py-22">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22">
         <div className="text-center mb-12">
           <h2 className="font-heading text-display-md tracking-display mb-4">
             {t.pipelineTitle}
@@ -635,7 +635,7 @@ export default function DSMethodologyPage() {
       </section>
 
       {/* Tools */}
-      <section className=" mx-auto px-8 md:px-16 py-22">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22">
         <div className="text-center mb-12">
           <h2 className="font-heading text-display-md tracking-display mb-4">
             {t.toolsSectionTitle}
@@ -656,7 +656,7 @@ export default function DSMethodologyPage() {
       </section>
 
       {/* KPIs */}
-      <section className=" mx-auto px-8 md:px-16 py-22">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22">
         <div className="text-center mb-12">
           <h2 className="font-heading text-display-md tracking-display mb-4">
             {t.kpisTitle}
@@ -698,7 +698,7 @@ export default function DSMethodologyPage() {
       </section>
 
       {/* Roadmap */}
-      <section className=" mx-auto px-8 md:px-16 py-22">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22">
         <div className="text-center mb-12">
           <h2 className="font-heading text-display-md tracking-display mb-4">
             {t.roadmapTitle}
@@ -746,7 +746,7 @@ export default function DSMethodologyPage() {
       </section>
 
       {/* Related Projects */}
-      <section className=" mx-auto px-8 md:px-16 pb-22">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 pb-22">
         <RelatedProjects current="/ds-methodology" />
       </section>
     </article>

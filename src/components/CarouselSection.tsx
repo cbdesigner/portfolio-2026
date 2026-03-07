@@ -92,55 +92,37 @@ export default function CarouselSection({ label, items }: CarouselSectionProps) 
         </span>
       </div>
 
-      {/* Full-bleed image strip */}
-      <div className="relative">
+      {/* Hidden scroll container for autoplay index tracking */}
+      <div
+        ref={scrollRef}
+        className="hidden"
+        onScroll={handleScroll}
+      >
+        {items.map((item) => (
+          <div key={item.href} className="flex-none w-full" />
+        ))}
+      </div>
 
-        {/* Scroll container — no side padding for edge-to-edge images */}
-        <div
-          ref={scrollRef}
-          onScroll={handleScroll}
-          className="flex overflow-x-auto snap-x snap-mandatory"
-          style={{ scrollbarWidth: "none", msOverflowStyle: "none" }}
-        >
-          {items.map((item) => {
-            const isSvg = item.thumbnail.endsWith(".svg");
-            return (
-              <div key={item.href} className="snap-start flex-none w-full">
-                <Link
-                  href={item.href}
-                  className="group relative block aspect-[16/10] overflow-hidden bg-[var(--color-card-bg)]"
-                >
-                  {/* eslint-disable-next-line @next/next/no-img-element */}
-                  <img
-                    src={item.thumbnail}
-                    alt={item.title}
-                    className={`absolute inset-0 w-full h-full transition-transform duration-700 ease-editorial group-hover:scale-105 ${
-                      isSvg ? "object-contain p-8" : "object-cover"
-                    }`}
-                  />
-                  {/* Subtle dark overlay on hover */}
-                  <div className="absolute inset-0 bg-black/0 group-hover:bg-black/10 transition-colors duration-500" />
-                </Link>
-              </div>
-            );
-          })}
-        </div>
-
-        {/* Dash indicators — overlaid at bottom-left */}
-        <div className="absolute bottom-5 left-8 md:left-16 flex items-center gap-2">
+      {/* Dash indicators + arrows */}
+      <div className="flex items-center justify-between px-8 md:px-16 py-4">
+        <div className="flex items-center gap-2">
           {items.map((_, i) => (
             <button
               key={i}
               onClick={() => scrollTo(i)}
               aria-label={`Go to slide ${i + 1}`}
-              className="relative h-px overflow-hidden bg-white/30 hover:bg-white/50 transition-colors"
-              style={{ width: i === currentIndex ? 32 : 16 }}
+              className="relative h-[2px] overflow-hidden transition-colors"
+              style={{
+                width: i === currentIndex ? 32 : 16,
+                backgroundColor: i === currentIndex
+                  ? "var(--color-text-primary)"
+                  : "var(--color-border)",
+              }}
             >
-              {/* Animated fill for active dash */}
               {i === currentIndex && (
                 <span
                   key={currentIndex}
-                  className="absolute inset-y-0 left-0 bg-white"
+                  className="absolute inset-y-0 left-0 bg-[var(--color-text-primary)]"
                   style={{
                     animation: `dash-fill ${AUTOPLAY_MS}ms linear forwards`,
                   }}
@@ -150,31 +132,28 @@ export default function CarouselSection({ label, items }: CarouselSectionProps) 
           ))}
         </div>
 
-        {/* Prev arrow */}
-        {currentIndex > 0 && (
+        <div className="flex items-center gap-2">
           <button
             onClick={prev}
-            className="absolute left-3 top-1/2 -translate-y-1/2 z-10 flex items-center justify-center w-8 h-8 bg-black/30 backdrop-blur-sm text-white hover:bg-black/50 transition-colors"
+            disabled={currentIndex === 0}
+            className="flex items-center justify-center w-8 h-8 text-[var(--color-text-tertiary)] hover:text-[var(--color-text-primary)] disabled:opacity-20 transition-colors"
             aria-label="Previous"
           >
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
               <path d="M15 18l-6-6 6-6" />
             </svg>
           </button>
-        )}
-
-        {/* Next arrow */}
-        {currentIndex < items.length - 1 && (
           <button
             onClick={next}
-            className="absolute right-3 top-1/2 -translate-y-1/2 z-10 flex items-center justify-center w-8 h-8 bg-black/30 backdrop-blur-sm text-white hover:bg-black/50 transition-colors"
+            disabled={currentIndex === items.length - 1}
+            className="flex items-center justify-center w-8 h-8 text-[var(--color-text-tertiary)] hover:text-[var(--color-text-primary)] disabled:opacity-20 transition-colors"
             aria-label="Next"
           >
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.5" strokeLinecap="round" strokeLinejoin="round">
               <path d="M9 18l6-6-6-6" />
             </svg>
           </button>
-        )}
+        </div>
       </div>
 
       {/* Info row — two columns, animates on slide change */}

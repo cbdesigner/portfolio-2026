@@ -499,7 +499,7 @@ export default function BupaDesignSystemPage() {
   return (
     <article>
       {/* Hero */}
-      <section className=" mx-auto px-8 md:px-16 pt-22 pb-22 text-center">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 pt-22 pb-22 text-center">
         <p className="text-overline uppercase tracking-widest-caps text-[var(--color-text-tertiary)] mb-4 font-mono">
           {t.caseStudy}
         </p>
@@ -525,7 +525,7 @@ export default function BupaDesignSystemPage() {
       </section>
 
       {/* Project Roadmap (reference) */}
-      <section className=" mx-auto px-8 md:px-16 py-8">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 py-8">
         <div className="rounded-xl overflow-hidden border border-[var(--color-border)]">
           <img
             src="/images/bupa/roadmap-reference.svg"
@@ -537,7 +537,7 @@ export default function BupaDesignSystemPage() {
       </section>
 
       {/* Role & Context */}
-      <section className=" mx-auto px-8 md:px-16 py-22">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22">
         <h2 className="font-heading text-display-md tracking-display mb-8">
           {t.myRole}
         </h2>
@@ -572,7 +572,7 @@ export default function BupaDesignSystemPage() {
       </section>
 
       {/* Methodology Applied */}
-      <section className=" mx-auto px-8 md:px-16 py-22">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22">
         <h2 className="font-heading text-display-md tracking-display mb-4">
           {t.methodologyTitle}
         </h2>
@@ -598,7 +598,7 @@ export default function BupaDesignSystemPage() {
       </section>
 
       {/* Foundations Screenshot */}
-      <section className=" mx-auto px-8 md:px-16 py-8">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 py-8">
         <div className="rounded-xl overflow-hidden border border-[var(--color-border)]">
           <img
             src="/images/bupa/figma-foundations.png"
@@ -610,7 +610,7 @@ export default function BupaDesignSystemPage() {
       </section>
 
       {/* Foundations */}
-      <section className=" mx-auto px-8 md:px-16 py-22">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22">
         <h2 className="font-heading text-display-md tracking-display mb-4">
           {t.foundationsTitle}
         </h2>
@@ -631,7 +631,7 @@ export default function BupaDesignSystemPage() {
       </section>
 
       {/* Typography Detail Screenshot */}
-      <section className=" mx-auto px-8 md:px-16 py-8">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 py-8">
         <div className="rounded-xl overflow-hidden border border-[var(--color-border)]">
           <img
             src="/images/bupa/figma-typography.png"
@@ -643,7 +643,7 @@ export default function BupaDesignSystemPage() {
       </section>
 
       {/* Variables Screenshot */}
-      <section className=" mx-auto px-8 md:px-16 py-8">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 py-8">
         <div className="rounded-xl overflow-hidden border border-[var(--color-border)]">
           <img
             src="/images/bupa/figma-variables.png"
@@ -655,7 +655,7 @@ export default function BupaDesignSystemPage() {
       </section>
 
       {/* Figma Library Screenshot */}
-      <section className=" mx-auto px-8 md:px-16 py-8">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 py-8">
         <div className="rounded-xl overflow-hidden border border-[var(--color-border)]">
           <img
             src="/images/bupa/figma-library.png"
@@ -667,7 +667,7 @@ export default function BupaDesignSystemPage() {
       </section>
 
       {/* Component Screenshot */}
-      <section className=" mx-auto px-8 md:px-16 py-8">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 py-8">
         <div className="rounded-xl overflow-hidden border border-[var(--color-border)]">
           <img
             src="/images/bupa/figma-button.png"
@@ -679,7 +679,7 @@ export default function BupaDesignSystemPage() {
       </section>
 
       {/* Base Components */}
-      <section className=" mx-auto px-8 md:px-16 py-22">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22">
         <h2 className="font-heading text-display-md tracking-display mb-4">
           {t.componentLibraryTitle}
         </h2>
@@ -702,7 +702,7 @@ export default function BupaDesignSystemPage() {
       </section>
 
       {/* Product Flows Screenshot */}
-      <section className=" mx-auto px-8 md:px-16 py-8">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 py-8">
         <div className="rounded-xl overflow-hidden border border-[var(--color-border)]">
           <img
             src="/images/bupa/figma-flows.png"
@@ -714,7 +714,7 @@ export default function BupaDesignSystemPage() {
       </section>
 
       {/* Agenda Responsive Screenshot */}
-      <section className=" mx-auto px-8 md:px-16 py-8">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 py-8">
         <div className="rounded-xl overflow-hidden border border-[var(--color-border)]">
           <img
             src="/images/bupa/figma-agenda-responsive.png"
@@ -726,7 +726,7 @@ export default function BupaDesignSystemPage() {
       </section>
 
       {/* Products */}
-      <section className=" mx-auto px-8 md:px-16 py-22">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22">
         <h2 className="font-heading text-display-md tracking-display mb-4">
           {t.digitalProductsTitle}
         </h2>
@@ -758,7 +758,7 @@ export default function BupaDesignSystemPage() {
       </section>
 
       {/* Development Pipeline */}
-      <section className=" mx-auto px-8 md:px-16 py-22">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22">
         <h2 className="font-heading text-display-md tracking-display mb-4">
           {t.pipelineTitle}
         </h2>
@@ -795,7 +795,7 @@ export default function BupaDesignSystemPage() {
       </section>
 
       {/* Timeline / Roadmap */}
-      <section className=" mx-auto px-8 md:px-16 py-22">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22">
         <h2 className="font-heading text-display-md tracking-display mb-4">
           {t.timelineTitle}
         </h2>
@@ -851,7 +851,7 @@ export default function BupaDesignSystemPage() {
       </section>
 
       {/* KPIs */}
-      <section className=" mx-auto px-8 md:px-16 py-22">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22">
         <h2 className="font-heading text-display-md tracking-display mb-8">
           {t.metricsTitle}
         </h2>
@@ -874,7 +874,7 @@ export default function BupaDesignSystemPage() {
       </section>
 
       {/* Tools & Technologies */}
-      <section className=" mx-auto px-8 md:px-16 py-22">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22">
         <h2 className="font-heading text-display-md tracking-display mb-8">
           {t.toolsTitle}
         </h2>
@@ -928,7 +928,7 @@ export default function BupaDesignSystemPage() {
       </section>
 
       {/* Team */}
-      <section className=" mx-auto px-8 md:px-16 py-22">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22">
         <h2 className="font-heading text-display-md tracking-display mb-8">
           {t.teamTitle}
         </h2>
@@ -985,7 +985,7 @@ export default function BupaDesignSystemPage() {
       </section>
 
       {/* Related Projects */}
-      <section className=" mx-auto px-8 md:px-16 pb-22">
+      <section className="max-w-5xl mx-auto px-8 md:px-16 pb-22">
         <RelatedProjects current="/bupa-design-system" />
       </section>
     </article>

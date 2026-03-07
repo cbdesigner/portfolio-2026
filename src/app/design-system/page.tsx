@@ -80,7 +80,7 @@ export default function DesignSystemPage() {
 
   return (
     <div className="min-h-screen">
-      <div className=" mx-auto px-8 md:px-16 py-22">
+      <div className="max-w-5xl mx-auto px-8 md:px-16 py-22">
         {/* Hero */}
         <header className="mb-16">
           <h1 className="font-heading text-display-lg tracking-display mb-4">
