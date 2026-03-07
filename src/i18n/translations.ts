@@ -28,6 +28,7 @@ export const translations = {
     letsChat: "Let\u2019s Chat",
     login: {
       title: "Portfolio",
+      welcome: "Welcome to my portfolio. Enter the access password to explore my work, projects, and design system case studies.",
       password: "Password",
       placeholder: "Enter password",
       submit: "Enter",
@@ -181,6 +182,7 @@ export const translations = {
     letsChat: "Conversemos",
     login: {
       title: "Portfolio",
+      welcome: "Bienvenido a mi portfolio. Ingresa la contraseña de acceso para explorar mi trabajo, proyectos y casos de estudio de design systems.",
       password: "Contraseña",
       placeholder: "Ingresa la contraseña",
       submit: "Entrar",

@@ -1,0 +1,129 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" fill="none">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1200" y2="500" gradientUnits="userSpaceOnUse">
+      <stop offset="0%" stop-color="#0A0F1E"/>
+      <stop offset="100%" stop-color="#0F1629"/>
+    </linearGradient>
+    <linearGradient id="bar1" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#6366F1"/>
+      <stop offset="100%" stop-color="#818CF8"/>
+    </linearGradient>
+    <linearGradient id="bar2" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#A855F7"/>
+      <stop offset="100%" stop-color="#C084FC"/>
+    </linearGradient>
+    <linearGradient id="bar3" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#06B6D4"/>
+      <stop offset="100%" stop-color="#22D3EE"/>
+    </linearGradient>
+    <linearGradient id="bar4" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Background -->
+  <rect width="1200" height="500" fill="url(#bg)"/>
+
+  <!-- Grid lines -->
+  <line x1="280" y1="60" x2="280" y2="440" stroke="#1E293B" stroke-width="1"/>
+  <line x1="395" y1="60" x2="395" y2="440" stroke="#1E293B" stroke-width="1"/>
+  <line x1="510" y1="60" x2="510" y2="440" stroke="#1E293B" stroke-width="1"/>
+  <line x1="625" y1="60" x2="625" y2="440" stroke="#1E293B" stroke-width="1"/>
+  <line x1="740" y1="60" x2="740" y2="440" stroke="#1E293B" stroke-width="1"/>
+  <line x1="855" y1="60" x2="855" y2="440" stroke="#1E293B" stroke-width="1"/>
+  <line x1="970" y1="60" x2="970" y2="440" stroke="#1E293B" stroke-width="1"/>
+  <line x1="1085" y1="60" x2="1085" y2="440" stroke="#1E293B" stroke-width="1"/>
+
+  <!-- Horizontal lines -->
+  <line x1="160" y1="130" x2="1150" y2="130" stroke="#1E293B" stroke-width="0.5"/>
+  <line x1="160" y1="190" x2="1150" y2="190" stroke="#1E293B" stroke-width="0.5"/>
+  <line x1="160" y1="250" x2="1150" y2="250" stroke="#1E293B" stroke-width="0.5"/>
+  <line x1="160" y1="310" x2="1150" y2="310" stroke="#1E293B" stroke-width="0.5"/>
+  <line x1="160" y1="370" x2="1150" y2="370" stroke="#1E293B" stroke-width="0.5"/>
+
+  <!-- Title -->
+  <text x="40" y="38" fill="#94A3B8" font-family="monospace" font-size="11" letter-spacing="3" text-transform="uppercase">PROJECT ROADMAP</text>
+  <text x="1050" y="38" fill="#475569" font-family="monospace" font-size="10">16+ SPRINTS</text>
+
+  <!-- Month headers -->
+  <text x="310" y="78" fill="#64748B" font-family="monospace" font-size="11" text-anchor="middle">JUL</text>
+  <text x="425" y="78" fill="#64748B" font-family="monospace" font-size="11" text-anchor="middle">AUG</text>
+  <text x="540" y="78" fill="#64748B" font-family="monospace" font-size="11" text-anchor="middle">SEP</text>
+  <text x="655" y="78" fill="#64748B" font-family="monospace" font-size="11" text-anchor="middle">OCT</text>
+  <text x="770" y="78" fill="#64748B" font-family="monospace" font-size="11" text-anchor="middle">NOV</text>
+  <text x="885" y="78" fill="#64748B" font-family="monospace" font-size="11" text-anchor="middle">DEC</text>
+  <text x="1000" y="78" fill="#64748B" font-family="monospace" font-size="11" text-anchor="middle">JAN</text>
+  <text x="1115" y="78" fill="#64748B" font-family="monospace" font-size="11" text-anchor="middle">FEB+</text>
+
+  <!-- Phase labels -->
+  <text x="40" y="108" fill="#818CF8" font-family="monospace" font-size="10" letter-spacing="1">DISCOVERY</text>
+  <text x="40" y="168" fill="#C084FC" font-family="monospace" font-size="10" letter-spacing="1">CREATION</text>
+  <text x="40" y="228" fill="#22D3EE" font-family="monospace" font-size="10" letter-spacing="1">DEV &amp; DOCS</text>
+  <text x="40" y="288" fill="#34D399" font-family="monospace" font-size="10" letter-spacing="1">SCALING</text>
+
+  <!-- Row labels (workstreams) -->
+  <text x="170" y="108" fill="#94A3B8" font-family="sans-serif" font-size="11">Foundations</text>
+  <text x="170" y="138" fill="#94A3B8" font-family="sans-serif" font-size="11">Pipeline</text>
+  <text x="170" y="168" fill="#94A3B8" font-family="sans-serif" font-size="11">Base Components</text>
+  <text x="170" y="198" fill="#94A3B8" font-family="sans-serif" font-size="11">Custom Components</text>
+  <text x="170" y="228" fill="#94A3B8" font-family="sans-serif" font-size="11">Development</text>
+  <text x="170" y="258" fill="#94A3B8" font-family="sans-serif" font-size="11">QA &amp; Validation</text>
+  <text x="170" y="288" fill="#94A3B8" font-family="sans-serif" font-size="11">Product: Agenda</text>
+  <text x="170" y="318" fill="#94A3B8" font-family="sans-serif" font-size="11">Product: Payment</text>
+  <text x="170" y="348" fill="#94A3B8" font-family="sans-serif" font-size="11">Product: Mi Portal</text>
+  <text x="170" y="378" fill="#94A3B8" font-family="sans-serif" font-size="11">Product: Caja</text>
+  <text x="170" y="408" fill="#94A3B8" font-family="sans-serif" font-size="11">Training</text>
+
+  <!-- Gantt bars -->
+  <!-- Foundations: Jul-Aug -->
+  <rect x="280" y="96" width="230" height="16" rx="3" fill="url(#bar1)" opacity="0.85"/>
+
+  <!-- Pipeline: Aug-Sep -->
+  <rect x="395" y="126" width="230" height="16" rx="3" fill="url(#bar1)" opacity="0.85"/>
+
+  <!-- Base Components Design: Aug-Oct -->
+  <rect x="395" y="156" width="345" height="16" rx="3" fill="url(#bar2)" opacity="0.85"/>
+
+  <!-- Custom Components: Oct-Dec -->
+  <rect x="625" y="186" width="345" height="16" rx="3" fill="url(#bar2)" opacity="0.85"/>
+
+  <!-- Development: Sep-Jan -->
+  <rect x="510" y="216" width="575" height="16" rx="3" fill="url(#bar3)" opacity="0.85"/>
+
+  <!-- QA: Nov-Dec -->
+  <rect x="740" y="246" width="230" height="16" rx="3" fill="url(#bar3)" opacity="0.7"/>
+
+  <!-- Agenda: Jan+ -->
+  <rect x="970" y="276" width="180" height="16" rx="3" fill="url(#bar4)" opacity="0.85"/>
+
+  <!-- Payment: Jan+ -->
+  <rect x="1000" y="306" width="150" height="16" rx="3" fill="url(#bar4)" opacity="0.75"/>
+
+  <!-- Mi Portal: Feb+ -->
+  <rect x="1030" y="336" width="120" height="16" rx="3" fill="url(#bar4)" opacity="0.65"/>
+
+  <!-- Caja: Feb+ -->
+  <rect x="1060" y="366" width="90" height="16" rx="3" fill="url(#bar4)" opacity="0.55"/>
+
+  <!-- Training: Oct, scattered -->
+  <rect x="625" y="396" width="80" height="16" rx="3" fill="#F59E0B" opacity="0.5"/>
+  <rect x="855" y="396" width="60" height="16" rx="3" fill="#F59E0B" opacity="0.5"/>
+  <rect x="1030" y="396" width="60" height="16" rx="3" fill="#F59E0B" opacity="0.5"/>
+
+  <!-- Current sprint marker -->
+  <line x1="1000" y1="60" x2="1000" y2="440" stroke="#F59E0B" stroke-width="1.5" stroke-dasharray="6,4" opacity="0.6"/>
+  <text x="1000" y="458" fill="#F59E0B" font-family="monospace" font-size="9" text-anchor="middle" opacity="0.7">NOW</text>
+
+  <!-- Phase color legend -->
+  <rect x="40" y="460" width="10" height="10" rx="2" fill="#818CF8"/>
+  <text x="56" y="469" fill="#64748B" font-family="monospace" font-size="9">Discovery</text>
+  <rect x="140" y="460" width="10" height="10" rx="2" fill="#C084FC"/>
+  <text x="156" y="469" fill="#64748B" font-family="monospace" font-size="9">Creation</text>
+  <rect x="230" y="460" width="10" height="10" rx="2" fill="#22D3EE"/>
+  <text x="246" y="469" fill="#64748B" font-family="monospace" font-size="9">Dev &amp; Docs</text>
+  <rect x="340" y="460" width="10" height="10" rx="2" fill="#34D399"/>
+  <text x="356" y="469" fill="#64748B" font-family="monospace" font-size="9">Scaling</text>
+  <rect x="430" y="460" width="10" height="10" rx="2" fill="#F59E0B" opacity="0.5"/>
+  <text x="446" y="469" fill="#64748B" font-family="monospace" font-size="9">Training</text>
+</svg>

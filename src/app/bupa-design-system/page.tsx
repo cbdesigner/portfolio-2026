@@ -524,12 +524,12 @@ export default function BupaDesignSystemPage() {
         </div>
       </section>
 
-      {/* Jira Roadmap */}
+      {/* Project Roadmap (reference) */}
       <section className=" mx-auto px-8 md:px-16 py-8">
         <div className="rounded-xl overflow-hidden border border-[var(--color-border)]">
           <img
-            src="/images/bupa/roadmap-jira.png"
-            alt="Bupa Design System Jira Roadmap - 16+ sprints from July 2025 to April 2026"
+            src="/images/bupa/roadmap-reference.svg"
+            alt="Bupa Design System Project Roadmap - 16+ sprints across Discovery, Creation, Dev & Docs, and Scaling phases"
             className="w-full"
             loading="lazy"
           />
@@ -630,6 +630,30 @@ export default function BupaDesignSystemPage() {
         </div>
       </section>
 
+      {/* Typography Detail Screenshot */}
+      <section className=" mx-auto px-8 md:px-16 py-8">
+        <div className="rounded-xl overflow-hidden border border-[var(--color-border)]">
+          <img
+            src="/images/bupa/figma-typography.png"
+            alt="Typography system - Display 1-6 scales with Montserrat, desktop and mobile responsive sizes"
+            className="w-full"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      {/* Variables Screenshot */}
+      <section className=" mx-auto px-8 md:px-16 py-8">
+        <div className="rounded-xl overflow-hidden border border-[var(--color-border)]">
+          <img
+            src="/images/bupa/figma-variables.png"
+            alt="Figma Variables panel - Layout grid tokens with breakpoints, columns, gutter, and margin across devices"
+            className="w-full"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
       {/* Figma Library Screenshot */}
       <section className=" mx-auto px-8 md:px-16 py-8">
         <div className="rounded-xl overflow-hidden border border-[var(--color-border)]">
@@ -683,6 +707,18 @@ export default function BupaDesignSystemPage() {
           <img
             src="/images/bupa/figma-flows.png"
             alt="Bupa Agenda - Medical appointment booking flows with responsive views"
+            className="w-full"
+            loading="lazy"
+          />
+        </div>
+      </section>
+
+      {/* Agenda Responsive Screenshot */}
+      <section className=" mx-auto px-8 md:px-16 py-8">
+        <div className="rounded-xl overflow-hidden border border-[var(--color-border)]">
+          <img
+            src="/images/bupa/figma-agenda-responsive.png"
+            alt="Bupa Agenda - Responsive design comparison between mobile and desktop views"
             className="w-full"
             loading="lazy"
           />

@@ -84,7 +84,7 @@ function LoginForm() {
 
       <div className="w-full max-w-sm">
         {/* Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-8">
           <h1 className="font-heading text-display-md tracking-display text-[var(--color-text-primary)]">
             CB
           </h1>
@@ -92,6 +92,11 @@ function LoginForm() {
             {t.login.title}
           </p>
         </div>
+
+        {/* Welcome message */}
+        <p className="text-center text-body-md text-[var(--color-text-secondary)] leading-relaxed mb-10">
+          {t.login.welcome}
+        </p>
 
         {/* Form */}
         <form onSubmit={handleSubmit} className="space-y-8">
