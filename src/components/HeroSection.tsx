@@ -1,12 +1,18 @@
 "use client";
 
 import { useLanguage } from "@/i18n/LanguageContext";
+import ParticleCanvas from "./ParticleCanvas";
 
 export default function HeroSection() {
   const { t } = useLanguage();
 
   return (
     <section className="relative flex items-center justify-center min-h-screen overflow-hidden bg-[var(--color-bg-primary)]">
+      {/* 3D Particle background */}
+      <div className="absolute inset-0 z-0">
+        <ParticleCanvas />
+      </div>
+
       <div className="relative z-10 text-center px-8 md:px-16 mx-auto">
         <h1 className="font-heading text-display-xl tracking-tightest text-balance text-[var(--color-text-primary)]">
           {t.hero.title}
