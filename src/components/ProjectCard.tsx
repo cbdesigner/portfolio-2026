@@ -27,14 +27,14 @@ export default function ProjectCard({
         <img
           src={thumbnail}
           alt={title}
-          className="absolute inset-0 w-full h-full object-cover opacity-0 grayscale group-hover:opacity-60 group-hover:grayscale-0 transition-all duration-700 ease-editorial group-hover:scale-105"
+          className="absolute inset-0 w-full h-full object-cover opacity-0 grayscale group-hover:opacity-60 transition-all duration-700 ease-editorial group-hover:scale-105"
         />
       ) : (
         <Image
           src={thumbnail}
           alt={title}
           fill
-          className="object-cover opacity-0 grayscale group-hover:opacity-60 group-hover:grayscale-0 transition-all duration-700 ease-editorial group-hover:scale-105"
+          className="object-cover opacity-0 grayscale group-hover:opacity-60 transition-all duration-700 ease-editorial group-hover:scale-105"
           sizes="(max-width: 768px) 100vw, 50vw"
         />
       )}
