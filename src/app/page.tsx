@@ -26,8 +26,7 @@ const allProjects: {
   {
     href: "/banco-ripley",
     key: "bancoRipley",
-    thumbnail:
-      "https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/bcfa0f9e-a94f-4090-8271-6ed0b45f534c_rwc_357x0x1964x1536x1964.jpg?h=435cc0d8750dc3bc4fbe914048a3e6a6",
+    thumbnail: "/images/banco-ripley-thumb.svg",
     category: "UX Design · Banking",
     description: {
       en: "Full redesign of the digital banking experience, improving retention and self-service rates across mobile and web.",
@@ -37,8 +36,7 @@ const allProjects: {
   {
     href: "/autonomus",
     key: "autonomus",
-    thumbnail:
-      "https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/37683366-9afb-4a8c-8f7b-c3ec4b33368d_rwc_388x0x3055x2389x3055.png?h=52b53e689d8bc667e6c5c840394d5c1c",
+    thumbnail: "/images/autonomus-thumb.svg",
     category: "Product Design · Mobility",
     description: {
       en: "Platform connecting seniors to transportation and companionship services, designed for simplicity and trust.",
@@ -48,8 +46,7 @@ const allProjects: {
   {
     href: "/enel-one-hub",
     key: "enelOneHub",
-    thumbnail:
-      "https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/0dcdfaf8-0e56-408b-a690-5c922cbdef4b_rwc_519x558x2130x1668x2130.jpg?h=cd620d34e675c6352ec30e3d48c362b7",
+    thumbnail: "/images/enel-thumb.svg",
     category: "Design Systems · Energy",
     description: {
       en: "Unified design system enabling consistency across Enel's digital products in Latin America.",
@@ -59,8 +56,7 @@ const allProjects: {
   {
     href: "/ux-strategy",
     key: "uxStrategy",
-    thumbnail:
-      "https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/ecaaac91-83da-493b-8994-e10b74c703b5_rwc_225x0x2366x1850x2366.png?h=d5ef39743bb7b1cececf633c2ea61f23",
+    thumbnail: "/images/ux-strategy-thumb.svg",
     category: "UX Strategy",
     description: {
       en: "Strategic UX framework applied across enterprise products to drive adoption and reduce cognitive overhead.",
@@ -70,8 +66,7 @@ const allProjects: {
   {
     href: "/my-design-process",
     key: "myDesignProcess",
-    thumbnail:
-      "https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/0c7e75d4-6fb7-40f9-8ba1-828423d883b5_rwc_270x0x1381x1080x1381.jpg?h=9167763525b16a5face869c3a161e715",
+    thumbnail: "/images/design-process-thumb.svg",
     category: "Methodology · Process",
     description: {
       en: "A documented, repeatable approach to design thinking and execution in complex product environments.",
@@ -101,8 +96,7 @@ const allProjects: {
   {
     href: "/design-system",
     key: "designSystem",
-    thumbnail:
-      "https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/ed4d5e87-cda7-495d-82cb-9e53e5783bd2_rwc_0x0x2120x1658x2120.png?h=baf19eb5e21abfced136e7663f2c12ee",
+    thumbnail: "/images/design-system-thumb.svg",
     category: "Design Systems",
     description: {
       en: "End-to-end design system built to serve multiple products with a single, consistent design language.",
