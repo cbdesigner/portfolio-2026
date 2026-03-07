@@ -1,74 +1,110 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useEffect, useRef, useState, useCallback } from "react";
 
 interface AsciiImageProps {
   src: string;
   alt: string;
-  cols?: number;
 }
 
 const ASCII_CHARS = " .:-=+*#%@";
+const CHAR_ASPECT = 0.6; // monospace char width/height ratio
 
-export default function AsciiImage({ src, alt, cols = 120 }: AsciiImageProps) {
+export default function AsciiImage({ src, alt }: AsciiImageProps) {
+  const containerRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [ascii, setAscii] = useState<string>("");
+  const [fontSize, setFontSize] = useState<number>(6);
   const [loading, setLoading] = useState(true);
+  const imgRef = useRef<HTMLImageElement | null>(null);
 
-  useEffect(() => {
+  const generate = useCallback(() => {
+    const container = containerRef.current;
     const canvas = canvasRef.current;
-    if (!canvas) return;
+    if (!container || !canvas) return;
+
+    const img = imgRef.current;
+    if (!img || !img.complete || !img.naturalWidth) return;
 
     const ctx = canvas.getContext("2d");
     if (!ctx) return;
 
+    const containerWidth = container.offsetWidth;
+
+    // Each char cell: width = fontSize * CHAR_ASPECT, height = fontSize * lineHeight
+    // We want cols * charWidth = containerWidth
+    // Try a range of font sizes and pick the one that gives best detail
+    // Target: ~150-250 cols for good detail
+    const targetCols = Math.min(250, Math.max(100, Math.floor(containerWidth / 4)));
+    const charWidth = containerWidth / targetCols;
+    const fs = charWidth / CHAR_ASPECT;
+    const cols = targetCols;
+
+    const imgAspect = img.naturalHeight / img.naturalWidth;
+    // rows = cols * imgAspect * (charWidth / charHeight)
+    // charHeight = fs * lineHeight(1.15), charWidth = fs * CHAR_ASPECT
+    const charHeight = fs * 1.15;
+    const rows = Math.floor((containerWidth * imgAspect) / charHeight);
+
+    canvas.width = cols;
+    canvas.height = rows;
+
+    ctx.drawImage(img, 0, 0, cols, rows);
+    const imageData = ctx.getImageData(0, 0, cols, rows);
+    const { data } = imageData;
+
+    let result = "";
+    for (let y = 0; y < rows; y++) {
+      for (let x = 0; x < cols; x++) {
+        const i = (y * cols + x) * 4;
+        const r = data[i];
+        const g = data[i + 1];
+        const b = data[i + 2];
+        const brightness = 0.299 * r + 0.587 * g + 0.114 * b;
+        const charIndex = Math.floor(
+          (brightness / 255) * (ASCII_CHARS.length - 1)
+        );
+        result += ASCII_CHARS[charIndex];
+      }
+      result += "\n";
+    }
+
+    setAscii(result);
+    setFontSize(fs);
+    setLoading(false);
+  }, []);
+
+  // Load image once
+  useEffect(() => {
     const img = new Image();
     img.crossOrigin = "anonymous";
-
     img.onload = () => {
-      const aspect = img.height / img.width;
-      // Character cells are ~2x taller than wide, compensate
-      const rows = Math.floor(cols * aspect * 0.45);
-
-      canvas.width = cols;
-      canvas.height = rows;
-
-      ctx.drawImage(img, 0, 0, cols, rows);
-      const imageData = ctx.getImageData(0, 0, cols, rows);
-      const { data } = imageData;
-
-      let result = "";
-      for (let y = 0; y < rows; y++) {
-        for (let x = 0; x < cols; x++) {
-          const i = (y * cols + x) * 4;
-          const r = data[i];
-          const g = data[i + 1];
-          const b = data[i + 2];
-          // Luminance
-          const brightness = 0.299 * r + 0.587 * g + 0.114 * b;
-          const charIndex = Math.floor(
-            (brightness / 255) * (ASCII_CHARS.length - 1)
-          );
-          result += ASCII_CHARS[charIndex];
-        }
-        result += "\n";
-      }
-
-      setAscii(result);
-      setLoading(false);
+      imgRef.current = img;
+      generate();
     };
-
     img.onerror = () => {
       setAscii("[ Failed to load image ]");
       setLoading(false);
     };
-
     img.src = src;
-  }, [src, cols]);
+  }, [src, generate]);
+
+  // Regenerate on resize
+  useEffect(() => {
+    const observer = new ResizeObserver(() => {
+      if (imgRef.current) generate();
+    });
+    if (containerRef.current) observer.observe(containerRef.current);
+    return () => observer.disconnect();
+  }, [generate]);
 
   return (
-    <div className="relative w-full overflow-hidden" role="img" aria-label={alt}>
-      {/* Hidden canvas for pixel processing */}
+    <div
+      ref={containerRef}
+      className="relative w-full overflow-hidden"
+      role="img"
+      aria-label={alt}
+    >
       <canvas ref={canvasRef} className="hidden" />
 
       {loading ? (
@@ -79,11 +115,12 @@ export default function AsciiImage({ src, alt, cols = 120 }: AsciiImageProps) {
         </div>
       ) : (
         <pre
-          className="font-mono text-[var(--color-text-secondary)] leading-none overflow-x-auto whitespace-pre"
+          className="font-mono text-[var(--color-text-secondary)] leading-none whitespace-pre w-full"
           style={{
-            fontSize: "clamp(3px, 0.55vw, 7px)",
-            lineHeight: "1.1",
-            letterSpacing: "0.05em",
+            fontSize: `${fontSize}px`,
+            lineHeight: "1.15",
+            letterSpacing: "0",
+            overflowX: "hidden",
           }}
         >
           {ascii}
