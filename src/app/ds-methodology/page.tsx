@@ -36,43 +36,43 @@ const benefitIcons = [
 
 const stageStyles = [
   {
-    accent: "from-indigo-500/20 to-indigo-500/5",
-    border: "border-indigo-500/30",
-    dot: "bg-indigo-500",
-    number_color: "text-indigo-400",
+    accent: "from-white/10 to-white/5",
+    border: "border-[var(--color-border)]",
+    dot: "bg-[var(--color-text-tertiary)]",
+    number_color: "text-[var(--color-text-secondary)]",
   },
   {
-    accent: "from-purple-500/20 to-purple-500/5",
-    border: "border-purple-500/30",
-    dot: "bg-purple-500",
-    number_color: "text-purple-400",
+    accent: "from-white/10 to-white/5",
+    border: "border-[var(--color-border)]",
+    dot: "bg-[var(--color-text-tertiary)]",
+    number_color: "text-[var(--color-text-secondary)]",
   },
   {
-    accent: "from-cyan-500/20 to-cyan-500/5",
-    border: "border-cyan-500/30",
-    dot: "bg-cyan-500",
-    number_color: "text-cyan-400",
+    accent: "from-white/10 to-white/5",
+    border: "border-[var(--color-border)]",
+    dot: "bg-[var(--color-text-tertiary)]",
+    number_color: "text-[var(--color-text-secondary)]",
   },
   {
-    accent: "from-emerald-500/20 to-emerald-500/5",
-    border: "border-emerald-500/30",
-    dot: "bg-emerald-500",
-    number_color: "text-emerald-400",
+    accent: "from-white/10 to-white/5",
+    border: "border-[var(--color-border)]",
+    dot: "bg-[var(--color-text-tertiary)]",
+    number_color: "text-[var(--color-text-secondary)]",
   },
   {
-    accent: "from-violet-500/20 to-violet-500/5",
-    border: "border-violet-500/30",
-    dot: "bg-violet-500",
-    number_color: "text-violet-400",
+    accent: "from-white/10 to-white/5",
+    border: "border-[var(--color-border)]",
+    dot: "bg-[var(--color-text-tertiary)]",
+    number_color: "text-[var(--color-text-secondary)]",
   },
 ];
 
 const stageFlowColors = [
-  "text-indigo-400",
-  "text-purple-400",
-  "text-cyan-400",
-  "text-emerald-400",
-  "text-violet-400",
+  "text-[var(--color-text-secondary)]",
+  "text-[var(--color-text-secondary)]",
+  "text-[var(--color-text-secondary)]",
+  "text-[var(--color-text-secondary)]",
+  "text-[var(--color-text-secondary)]",
 ];
 
 const i18n = {
@@ -529,7 +529,7 @@ export default function DSMethodologyPage() {
               key={b.title}
               className="group p-6 border border-[var(--color-border)] theme-transition hover:border-[var(--color-text-tertiary)] transition-all duration-300"
             >
-              <div className="w-10 h-10 rounded-lg bg-emerald-500/10 text-emerald-400 flex items-center justify-center mb-4 group-hover:bg-emerald-500/20 transition-colors">
+              <div className="w-10 h-10 rounded-lg bg-white/5 text-[var(--color-text-secondary)] flex items-center justify-center mb-4 group-hover:bg-white/10 transition-colors">
                 {benefitIcons[i]}
               </div>
               <h3 className="text-lg italic text-[var(--color-text-primary)] mb-2">
@@ -617,7 +617,7 @@ export default function DSMethodologyPage() {
               key={p.step}
               className="relative p-6 border border-[var(--color-border)] theme-transition"
             >
-              <span className="text-4xl font-bold text-emerald-500/15 absolute top-4 right-5 font-mono">
+              <span className="text-4xl font-bold text-white/10 absolute top-4 right-5 font-mono">
                 {String(i + 1).padStart(2, "0")}
               </span>
               <span className="inline-block px-3 py-1 text-xs font-medium font-mono border border-[var(--color-border)] text-[var(--color-text-secondary)] mb-4">
@@ -672,7 +672,7 @@ export default function DSMethodologyPage() {
               key={k.label}
               className="text-center p-6 border border-[var(--color-border)] theme-transition"
             >
-              <span className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-emerald-400 to-cyan-400 bg-clip-text text-transparent">
+              <span className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
                 {k.metric}
               </span>
               <p className="text-sm font-semibold text-[var(--color-text-tertiary)] uppercase tracking-wider mt-2 font-mono">
@@ -729,7 +729,7 @@ export default function DSMethodologyPage() {
                   key={i}
                   className="border-b border-[var(--color-border)] hover:bg-[var(--color-card-bg)] transition-colors"
                 >
-                  <td className="py-4 px-4 text-emerald-400 font-mono font-medium whitespace-nowrap">
+                  <td className="py-4 px-4 text-[var(--color-text-secondary)] font-mono font-medium whitespace-nowrap">
                     {r.month}
                   </td>
                   <td className="py-4 px-4 text-[var(--color-text-primary)] font-medium">

@@ -31,12 +31,12 @@ const competencyIcons = [
 ];
 
 const timelineStyles = [
-  { accent: "bg-purple-500/20 border-purple-500/40", dot: "bg-purple-500" },
-  { accent: "bg-indigo-500/20 border-indigo-500/40", dot: "bg-indigo-500" },
-  { accent: "bg-blue-500/20 border-blue-500/40", dot: "bg-blue-500" },
-  { accent: "bg-cyan-500/20 border-cyan-500/40", dot: "bg-cyan-500" },
-  { accent: "bg-emerald-500/20 border-emerald-500/40", dot: "bg-emerald-500" },
-  { accent: "bg-violet-500/20 border-violet-500/40", dot: "bg-violet-500" },
+  { accent: "bg-white/10 border-[var(--color-border)]", dot: "bg-[var(--color-text-tertiary)]" },
+  { accent: "bg-white/10 border-[var(--color-border)]", dot: "bg-[var(--color-text-tertiary)]" },
+  { accent: "bg-white/10 border-[var(--color-border)]", dot: "bg-[var(--color-text-tertiary)]" },
+  { accent: "bg-white/10 border-[var(--color-border)]", dot: "bg-[var(--color-text-tertiary)]" },
+  { accent: "bg-white/10 border-[var(--color-border)]", dot: "bg-[var(--color-text-tertiary)]" },
+  { accent: "bg-white/10 border-[var(--color-border)]", dot: "bg-[var(--color-text-tertiary)]" },
 ];
 
 const tools = [
@@ -447,7 +447,7 @@ export default function DesignSystemArchitectPage() {
               key={comp.title}
               className="group p-6 border border-[var(--color-border)] theme-transition hover:border-[var(--color-text-tertiary)] transition-all duration-300"
             >
-              <div className="w-10 h-10 rounded-lg bg-indigo-500/10 text-indigo-400 flex items-center justify-center mb-4 group-hover:bg-indigo-500/20 transition-colors">
+              <div className="w-10 h-10 rounded-lg bg-white/5 text-[var(--color-text-secondary)] flex items-center justify-center mb-4 group-hover:bg-white/10 transition-colors">
                 {competencyIcons[i]}
               </div>
               <h3 className="text-lg italic text-[var(--color-text-primary)] mb-2">
@@ -474,7 +474,7 @@ export default function DesignSystemArchitectPage() {
 
         <div className="relative">
           {/* Vertical line */}
-          <div className="absolute left-[19px] md:left-[23px] top-0 bottom-0 w-px bg-gradient-to-b from-purple-500/50 via-indigo-500/50 to-violet-500/50" />
+          <div className="absolute left-[19px] md:left-[23px] top-0 bottom-0 w-px bg-gradient-to-b from-white/10 via-white/5 to-white/10" />
 
           <div className="space-y-8">
             {t.timeline.map((item, i) => (
@@ -522,9 +522,9 @@ export default function DesignSystemArchitectPage() {
               key={item.label}
               className="relative p-6 bg-gradient-to-br from-gray-900 to-gray-900/50 border border-[var(--color-border)] overflow-hidden"
             >
-              <div className="absolute top-0 right-0 w-24 h-24 bg-indigo-500/5 rounded-bl-full" />
+              <div className="absolute top-0 right-0 w-24 h-24 bg-white/5 rounded-bl-full" />
               <div className="relative">
-                <span className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-indigo-400 to-purple-400 bg-clip-text text-transparent">
+                <span className="text-3xl md:text-4xl font-bold bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
                   {item.metric}
                 </span>
                 <p className="text-sm font-semibold text-[var(--color-text-tertiary)] uppercase tracking-wider mt-1 mb-3">
@@ -546,7 +546,7 @@ export default function DesignSystemArchitectPage() {
           <ul className="space-y-3 text-[var(--color-text-secondary)]">
             {t.additionalImpactItems.map((item, i) => (
               <li key={i} className="flex items-start gap-3">
-                <span className="mt-2 shrink-0 block w-1.5 h-1.5 rounded-full bg-indigo-500" />
+                <span className="mt-2 shrink-0 block w-1.5 h-1.5 rounded-full bg-[var(--color-text-tertiary)]" />
                 <span>{item}</span>
               </li>
             ))}
@@ -571,7 +571,7 @@ export default function DesignSystemArchitectPage() {
               key={tool}
               className="group flex items-center justify-center p-4 border border-[var(--color-border)] theme-transition hover:border-[var(--color-text-tertiary)] transition-all duration-300 text-center"
             >
-              <span className="text-sm font-medium text-[var(--color-text-secondary)] group-hover:text-purple-300 transition-colors">
+              <span className="text-sm font-medium text-[var(--color-text-secondary)] group-hover:text-[var(--color-text-primary)] transition-colors">
                 {tool}
               </span>
             </div>
@@ -594,7 +594,7 @@ export default function DesignSystemArchitectPage() {
               key={item.step}
               className="relative p-6 border border-[var(--color-border)] theme-transition"
             >
-              <span className="text-4xl font-bold text-indigo-500/20 absolute top-4 right-5">
+              <span className="text-4xl font-bold text-white/10 absolute top-4 right-5">
                 {item.step}
               </span>
               <div className="relative">
@@ -611,17 +611,17 @@ export default function DesignSystemArchitectPage() {
 
         {/* Summary arrow flow */}
         <div className="mt-10 flex items-center justify-center gap-2 flex-wrap text-sm text-[var(--color-text-tertiary)] font-mono">
-          <span className="text-indigo-400 font-medium">{t.methodologySteps[0].title}</span>
+          <span className="text-[var(--color-text-secondary)] font-medium">{t.methodologySteps[0].title}</span>
           <span>&rarr;</span>
-          <span className="text-indigo-400 font-medium">{t.methodologySteps[1].title}</span>
+          <span className="text-[var(--color-text-secondary)] font-medium">{t.methodologySteps[1].title}</span>
           <span>&rarr;</span>
-          <span className="text-indigo-400 font-medium">{t.methodologySteps[2].title}</span>
+          <span className="text-[var(--color-text-secondary)] font-medium">{t.methodologySteps[2].title}</span>
           <span>&rarr;</span>
-          <span className="text-indigo-400 font-medium">{t.methodologySteps[3].title}</span>
+          <span className="text-[var(--color-text-secondary)] font-medium">{t.methodologySteps[3].title}</span>
           <span>&rarr;</span>
-          <span className="text-indigo-400 font-medium">{t.methodologySteps[4].title}</span>
+          <span className="text-[var(--color-text-secondary)] font-medium">{t.methodologySteps[4].title}</span>
           <span>&rarr;</span>
-          <span className="text-indigo-400 font-medium">{t.methodologySteps[5].title}</span>
+          <span className="text-[var(--color-text-secondary)] font-medium">{t.methodologySteps[5].title}</span>
           <span className="text-gray-600 ml-1">{t.flowRepeat}</span>
         </div>
       </section>

@@ -4,10 +4,10 @@ import RelatedProjects from "@/components/RelatedProjects";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 const phaseColors: Record<string, { bg: string; border: string; text: string; dot: string }> = {
-  discovery: { bg: "bg-indigo-500/10", border: "border-indigo-500/30", text: "text-indigo-400", dot: "bg-indigo-500" },
-  creation: { bg: "bg-purple-500/10", border: "border-purple-500/30", text: "text-purple-400", dot: "bg-purple-500" },
-  development: { bg: "bg-cyan-500/10", border: "border-cyan-500/30", text: "text-cyan-400", dot: "bg-cyan-500" },
-  scaling: { bg: "bg-emerald-500/10", border: "border-emerald-500/30", text: "text-emerald-400", dot: "bg-emerald-500" },
+  discovery: { bg: "bg-white/5", border: "border-[var(--color-border)]", text: "text-[var(--color-text-secondary)]", dot: "bg-[var(--color-text-tertiary)]" },
+  creation: { bg: "bg-white/5", border: "border-[var(--color-border)]", text: "text-[var(--color-text-secondary)]", dot: "bg-[var(--color-text-tertiary)]" },
+  development: { bg: "bg-white/5", border: "border-[var(--color-border)]", text: "text-[var(--color-text-secondary)]", dot: "bg-[var(--color-text-tertiary)]" },
+  scaling: { bg: "bg-white/5", border: "border-[var(--color-border)]", text: "text-[var(--color-text-secondary)]", dot: "bg-[var(--color-text-tertiary)]" },
 };
 
 const baseComponents = [
@@ -561,7 +561,7 @@ export default function BupaDesignSystemPage() {
             <ul className="space-y-2 text-[var(--color-text-tertiary)] text-sm">
               {t.roleArchitectBullets.map((bullet, i) => (
                 <li key={i} className="flex items-start gap-2">
-                  <span className="mt-1.5 shrink-0 block w-1.5 h-1.5 rounded-full bg-blue-500" />
+                  <span className="mt-1.5 shrink-0 block w-1.5 h-1.5 rounded-full bg-[var(--color-text-tertiary)]" />
                   {bullet}
                 </li>
               ))}
@@ -574,7 +574,7 @@ export default function BupaDesignSystemPage() {
             <ul className="space-y-2 text-[var(--color-text-tertiary)] text-sm">
               {t.roleLeadershipBullets.map((bullet, i) => (
                 <li key={i} className="flex items-start gap-2">
-                  <span className="mt-1.5 shrink-0 block w-1.5 h-1.5 rounded-full bg-purple-500" />
+                  <span className="mt-1.5 shrink-0 block w-1.5 h-1.5 rounded-full bg-[var(--color-text-tertiary)]" />
                   {bullet}
                 </li>
               ))}
@@ -595,11 +595,11 @@ export default function BupaDesignSystemPage() {
         {/* Steps - Desktop: horizontal, Mobile: vertical */}
         {(() => {
           const stepColors = [
-            { accent: "text-indigo-400", bg: "bg-indigo-500/10", border: "border-indigo-500/30", line: "bg-indigo-500/40", dot: "bg-indigo-500" },
-            { accent: "text-purple-400", bg: "bg-purple-500/10", border: "border-purple-500/30", line: "bg-purple-500/40", dot: "bg-purple-500" },
-            { accent: "text-cyan-400", bg: "bg-cyan-500/10", border: "border-cyan-500/30", line: "bg-cyan-500/40", dot: "bg-cyan-500" },
-            { accent: "text-emerald-400", bg: "bg-emerald-500/10", border: "border-emerald-500/30", line: "bg-emerald-500/40", dot: "bg-emerald-500" },
-            { accent: "text-violet-400", bg: "bg-violet-500/10", border: "border-violet-500/30", line: "bg-violet-500/40", dot: "bg-violet-500" },
+            { accent: "text-[var(--color-text-primary)]", bg: "bg-white/5", border: "border-[var(--color-border)]", line: "bg-[var(--color-border)]", dot: "bg-[var(--color-text-tertiary)]" },
+            { accent: "text-[var(--color-text-primary)]", bg: "bg-white/5", border: "border-[var(--color-border)]", line: "bg-[var(--color-border)]", dot: "bg-[var(--color-text-tertiary)]" },
+            { accent: "text-[var(--color-text-primary)]", bg: "bg-white/5", border: "border-[var(--color-border)]", line: "bg-[var(--color-border)]", dot: "bg-[var(--color-text-tertiary)]" },
+            { accent: "text-[var(--color-text-primary)]", bg: "bg-white/5", border: "border-[var(--color-border)]", line: "bg-[var(--color-border)]", dot: "bg-[var(--color-text-tertiary)]" },
+            { accent: "text-[var(--color-text-primary)]", bg: "bg-white/5", border: "border-[var(--color-border)]", line: "bg-[var(--color-border)]", dot: "bg-[var(--color-text-tertiary)]" },
           ];
           return (
             <>
@@ -666,7 +666,7 @@ export default function BupaDesignSystemPage() {
         })()}
 
         <p className="text-center text-sm text-[var(--color-text-tertiary)]">
-          <a href="/ds-methodology" className="text-blue-400 hover:text-blue-300 underline underline-offset-2 transition-colors">
+          <a href="/ds-methodology" className="text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] underline underline-offset-2 transition-colors">
             {t.viewMethodology}
           </a>
         </p>
@@ -846,7 +846,7 @@ export default function BupaDesignSystemPage() {
               key={p.step}
               className="relative p-5 border border-[var(--color-border)] theme-transition"
             >
-              <span className="text-3xl font-bold text-blue-500/15 absolute top-3 right-4 font-mono">
+              <span className="text-3xl font-bold text-white/10 absolute top-3 right-4 font-mono">
                 {p.step}
               </span>
               <span className="inline-block px-2 py-0.5 text-xs font-medium font-mono border border-[var(--color-border)] text-[var(--color-text-secondary)] mb-3">
@@ -936,7 +936,7 @@ export default function BupaDesignSystemPage() {
               key={k.label}
               className="text-center p-5 border border-[var(--color-border)] theme-transition"
             >
-              <span className="text-3xl font-bold bg-gradient-to-r from-blue-400 to-cyan-400 bg-clip-text text-transparent">
+              <span className="text-3xl font-bold bg-gradient-to-r from-white to-gray-400 bg-clip-text text-transparent">
                 {k.metric}
               </span>
               <p className="text-xs font-semibold text-[var(--color-text-tertiary)] uppercase tracking-wider mt-2 font-mono">
@@ -955,7 +955,7 @@ export default function BupaDesignSystemPage() {
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
           <div>
-            <h3 className="text-sm font-semibold text-blue-400 uppercase tracking-wider mb-4 font-mono">
+            <h3 className="text-sm font-semibold text-[var(--color-text-secondary)] uppercase tracking-wider mb-4 font-mono">
               {t.toolsDesign}
             </h3>
             <div className="flex flex-wrap gap-2">
@@ -970,7 +970,7 @@ export default function BupaDesignSystemPage() {
             </div>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-cyan-400 uppercase tracking-wider mb-4 font-mono">
+            <h3 className="text-sm font-semibold text-[var(--color-text-secondary)] uppercase tracking-wider mb-4 font-mono">
               {t.toolsDevelopment}
             </h3>
             <div className="flex flex-wrap gap-2">
@@ -985,7 +985,7 @@ export default function BupaDesignSystemPage() {
             </div>
           </div>
           <div>
-            <h3 className="text-sm font-semibold text-purple-400 uppercase tracking-wider mb-4 font-mono">
+            <h3 className="text-sm font-semibold text-[var(--color-text-secondary)] uppercase tracking-wider mb-4 font-mono">
               {t.toolsManagement}
             </h3>
             <div className="flex flex-wrap gap-2">
@@ -1008,9 +1008,9 @@ export default function BupaDesignSystemPage() {
           {t.teamTitle}
         </h2>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-6">
-          <div className="p-6 bg-gradient-to-br from-blue-500/10 to-blue-500/5 border border-blue-500/20 text-center">
-            <div className="w-12 h-12 mx-auto mb-3 rounded-full bg-blue-500/20 flex items-center justify-center">
-              <svg className="w-6 h-6 text-blue-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+          <div className="p-6 bg-gradient-to-br from-white/10 to-white/5 border border-[var(--color-border)] text-center">
+            <div className="w-12 h-12 mx-auto mb-3 rounded-full bg-white/10 flex items-center justify-center">
+              <svg className="w-6 h-6 text-[var(--color-text-secondary)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9.813 15.904L9 18.75l-.813-2.846a4.5 4.5 0 00-3.09-3.09L2.25 12l2.846-.813a4.5 4.5 0 003.09-3.09L9 5.25l.813 2.846a4.5 4.5 0 003.09 3.09L15.75 12l-2.846.813a4.5 4.5 0 00-3.09 3.09z" />
               </svg>
             </div>
@@ -1024,9 +1024,9 @@ export default function BupaDesignSystemPage() {
               {t.teamArchitectDesc}
             </p>
           </div>
-          <div className="p-6 bg-gradient-to-br from-purple-500/10 to-purple-500/5 border border-purple-500/20 text-center">
-            <div className="w-12 h-12 mx-auto mb-3 rounded-full bg-purple-500/20 flex items-center justify-center">
-              <svg className="w-6 h-6 text-purple-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+          <div className="p-6 bg-gradient-to-br from-white/10 to-white/5 border border-[var(--color-border)] text-center">
+            <div className="w-12 h-12 mx-auto mb-3 rounded-full bg-white/10 flex items-center justify-center">
+              <svg className="w-6 h-6 text-[var(--color-text-secondary)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M9.53 16.122a3 3 0 00-5.78 1.128 2.25 2.25 0 01-2.4 2.245 4.5 4.5 0 008.4-2.245c0-.399-.078-.78-.22-1.128zm0 0a15.998 15.998 0 003.388-1.62m-5.043-.025a15.994 15.994 0 011.622-3.395m3.42 3.42a15.995 15.995 0 004.764-4.648l3.876-5.814a1.151 1.151 0 00-1.597-1.597L14.146 6.32a15.996 15.996 0 00-4.649 4.763m3.42 3.42a6.776 6.776 0 00-3.42-3.42" />
               </svg>
             </div>
@@ -1040,9 +1040,9 @@ export default function BupaDesignSystemPage() {
               {t.teamDesignerDesc}
             </p>
           </div>
-          <div className="p-6 bg-gradient-to-br from-cyan-500/10 to-cyan-500/5 border border-cyan-500/20 text-center">
-            <div className="w-12 h-12 mx-auto mb-3 rounded-full bg-cyan-500/20 flex items-center justify-center">
-              <svg className="w-6 h-6 text-cyan-400" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
+          <div className="p-6 bg-gradient-to-br from-white/10 to-white/5 border border-[var(--color-border)] text-center">
+            <div className="w-12 h-12 mx-auto mb-3 rounded-full bg-white/10 flex items-center justify-center">
+              <svg className="w-6 h-6 text-[var(--color-text-secondary)]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
                 <path strokeLinecap="round" strokeLinejoin="round" d="M17.25 6.75L22.5 12l-5.25 5.25m-10.5 0L1.5 12l5.25-5.25m7.5-3l-4.5 16.5" />
               </svg>
             </div>

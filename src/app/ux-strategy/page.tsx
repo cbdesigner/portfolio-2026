@@ -283,13 +283,13 @@ const i18n = {
   },
 } as const;
 
-/* ── Color map for area accent colors ───────────────────────── */
+/* ── Color map for area accent colors (monochrome) ─────────── */
 const colorMap: Record<string, { border: string; bg: string; text: string; dot: string }> = {
-  blue: { border: "border-blue-500/30", bg: "bg-blue-500/5", text: "text-blue-400", dot: "bg-blue-500" },
-  purple: { border: "border-purple-500/30", bg: "bg-purple-500/5", text: "text-purple-400", dot: "bg-purple-500" },
-  cyan: { border: "border-cyan-500/30", bg: "bg-cyan-500/5", text: "text-cyan-400", dot: "bg-cyan-500" },
-  emerald: { border: "border-emerald-500/30", bg: "bg-emerald-500/5", text: "text-emerald-400", dot: "bg-emerald-500" },
-  violet: { border: "border-violet-500/30", bg: "bg-violet-500/5", text: "text-violet-400", dot: "bg-violet-500" },
+  blue: { border: "border-[var(--color-border)]", bg: "bg-white/5", text: "text-[var(--color-text-secondary)]", dot: "bg-[var(--color-text-tertiary)]" },
+  purple: { border: "border-[var(--color-border)]", bg: "bg-white/5", text: "text-[var(--color-text-secondary)]", dot: "bg-[var(--color-text-tertiary)]" },
+  cyan: { border: "border-[var(--color-border)]", bg: "bg-white/5", text: "text-[var(--color-text-secondary)]", dot: "bg-[var(--color-text-tertiary)]" },
+  emerald: { border: "border-[var(--color-border)]", bg: "bg-white/5", text: "text-[var(--color-text-secondary)]", dot: "bg-[var(--color-text-tertiary)]" },
+  violet: { border: "border-[var(--color-border)]", bg: "bg-white/5", text: "text-[var(--color-text-secondary)]", dot: "bg-[var(--color-text-tertiary)]" },
 };
 
 /* ── Diamond labels (not translated — visual only) ──────────── */
@@ -327,23 +327,23 @@ export default function UXStrategyPage() {
             <div className="lg:w-3/5 flex justify-center">
               <div className="relative w-[280px] h-[280px] md:w-[340px] md:h-[340px]">
                 {/* Enterprise — top left */}
-                <div className="absolute top-0 left-[15%] w-[35%] h-[35%] rotate-45 bg-indigo-600 flex items-center justify-center">
+                <div className="absolute top-0 left-[15%] w-[35%] h-[35%] rotate-45 bg-neutral-600 flex items-center justify-center">
                   <span className="text-white font-bold text-xs md:text-sm -rotate-45">{diamondLabels[0]}</span>
                 </div>
                 {/* Team — top right */}
-                <div className="absolute top-0 right-[15%] w-[35%] h-[35%] rotate-45 bg-indigo-500 flex items-center justify-center">
+                <div className="absolute top-0 right-[15%] w-[35%] h-[35%] rotate-45 bg-neutral-500 flex items-center justify-center">
                   <span className="text-white font-bold text-xs md:text-sm -rotate-45">{diamondLabels[1]}</span>
                 </div>
                 {/* Strategy — center */}
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[35%] h-[35%] rotate-45 bg-indigo-700 flex items-center justify-center z-10">
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[35%] h-[35%] rotate-45 bg-neutral-700 flex items-center justify-center z-10">
                   <span className="text-white font-bold text-xs md:text-sm -rotate-45">{diamondLabels[2]}</span>
                 </div>
                 {/* Experience — bottom left */}
-                <div className="absolute bottom-0 left-[15%] w-[35%] h-[35%] rotate-45 bg-indigo-500 flex items-center justify-center">
+                <div className="absolute bottom-0 left-[15%] w-[35%] h-[35%] rotate-45 bg-neutral-500 flex items-center justify-center">
                   <span className="text-white font-bold text-xs md:text-sm -rotate-45">{diamondLabels[3]}</span>
                 </div>
                 {/* Operations — bottom right */}
-                <div className="absolute bottom-0 right-[15%] w-[35%] h-[35%] rotate-45 bg-indigo-600 flex items-center justify-center">
+                <div className="absolute bottom-0 right-[15%] w-[35%] h-[35%] rotate-45 bg-neutral-600 flex items-center justify-center">
                   <span className="text-white font-bold text-xs md:text-sm -rotate-45">{diamondLabels[4]}</span>
                 </div>
               </div>
