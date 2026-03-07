@@ -199,3 +199,17 @@ img {
 iframe[src*="figma.com"] {
   pointer-events: none;
 }
+
+/* ── PDF generation mode ── */
+.pdf-generating .pdf-hide {
+  display: none !important;
+}
+
+.pdf-generating .reveal {
+  opacity: 1 !important;
+  transform: translateY(0) !important;
+}
+
+.pdf-generating * {
+  transition: none !important;
+}

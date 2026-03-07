@@ -65,7 +65,7 @@ export const translations = {
       profile: "Profile \u2014 Carlos Baeza",
     },
     profile: {
-      cta: { contact: "Contact", linkedin: "LinkedIn", downloadCv: "Download CV" },
+      cta: { contact: "Contact", linkedin: "LinkedIn", downloadCv: "Download CV", generatingPdf: "Generating PDF..." },
       sections: {
         about: "About",
         experience: "Experience",
@@ -220,7 +220,7 @@ export const translations = {
       profile: "Perfil \u2014 Carlos Baeza",
     },
     profile: {
-      cta: { contact: "Contactar", linkedin: "LinkedIn", downloadCv: "Descargar CV" },
+      cta: { contact: "Contactar", linkedin: "LinkedIn", downloadCv: "Descargar CV", generatingPdf: "Generando PDF..." },
       sections: {
         about: "Sobre m\u00ed",
         experience: "Experiencia",

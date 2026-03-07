@@ -3,6 +3,7 @@
 import Link from "next/link";
 import RelatedProjects from "@/components/RelatedProjects";
 import { useLanguage } from "@/i18n/LanguageContext";
+import { useProfilePdf } from "@/hooks/useProfilePdf";
 
 /* ───── static data ───── */
 
@@ -244,9 +245,10 @@ const companies = [
 export default function ProfileContent() {
   const { t } = useLanguage();
   const p = t.profile;
+  const { downloadPdf, isGenerating } = useProfilePdf();
 
   return (
-    <div className="min-h-screen theme-transition">
+    <div className="min-h-screen theme-transition" data-pdf-content>
       {/* Hero */}
       <section className="relative py-34 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-border)]/10 to-[var(--color-surface)]" />
@@ -263,7 +265,7 @@ export default function ProfileContent() {
           <p className="text-[var(--color-text-tertiary)] mb-8">
             Gran Santiago, Región Metropolitana de Santiago, Chile
           </p>
-          <div className="flex justify-center gap-3">
+          <div className="flex justify-center gap-3 pdf-hide">
             <Link href="/contact" className="btn-ghost magnetic-btn">
               {p.cta.contact}
             </Link>
@@ -275,14 +277,13 @@ export default function ProfileContent() {
             >
               {p.cta.linkedin}
             </a>
-            <a
-              href="https://drive.google.com/file/d/1VbsG-cB8ynxxZk4yX-tinw-7B_5Wy2s-/view?usp=sharing"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="btn-ghost magnetic-btn"
+            <button
+              onClick={downloadPdf}
+              disabled={isGenerating}
+              className="btn-ghost magnetic-btn disabled:opacity-50"
             >
-              {p.cta.downloadCv}
-            </a>
+              {isGenerating ? p.cta.generatingPdf : p.cta.downloadCv}
+            </button>
           </div>
         </div>
       </section>
@@ -618,7 +619,9 @@ export default function ProfileContent() {
           </div>
         </section>
 
-        <RelatedProjects current="/profile" />
+        <div className="pdf-hide">
+          <RelatedProjects current="/profile" />
+        </div>
       </div>
     </div>
   );
