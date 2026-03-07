@@ -140,7 +140,7 @@ export default function DesignSystemPage() {
               <iframe
                 className="absolute inset-0 w-full h-full border-0"
                 src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F7rLDEvWaijCmlCDsrg8FYJ%2FAtomic-Design-System-Multibranding(Agnostic)-with-Tokens%252FVariables%3Ftype%3Dwhiteboard%26node-id%3D2%253A2057%26t%3DEmCIvj7kDxq0MtW7-1"
-                allowFullScreen
+                sandbox="allow-scripts"
               />
             </div>
           </div>

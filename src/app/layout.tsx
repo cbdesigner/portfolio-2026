@@ -98,6 +98,22 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             style={{ display: "none", visibility: "hidden" }}
           />
         </noscript>
+        {/* Content protection: block right-click, keyboard shortcuts, drag */}
+        <Script id="content-protection" strategy="afterInteractive">
+          {`(function(){
+  document.addEventListener('contextmenu',function(e){e.preventDefault();});
+  document.addEventListener('keydown',function(e){
+    if(e.ctrlKey&&(e.key==='p'||e.key==='P'||e.key==='s'||e.key==='S'||e.key==='u'||e.key==='U'||e.key==='c'||e.key==='C')){e.preventDefault();}
+    if(e.ctrlKey&&e.shiftKey&&(e.key==='I'||e.key==='i'||e.key==='J'||e.key==='j')){e.preventDefault();}
+    if(e.metaKey&&(e.key==='p'||e.key==='P'||e.key==='s'||e.key==='S'||e.key==='u'||e.key==='U'||e.key==='c'||e.key==='C')){e.preventDefault();}
+    if(e.key==='F12'){e.preventDefault();}
+    if(e.key==='PrintScreen'){e.preventDefault();navigator.clipboard.writeText('');}
+  });
+  document.addEventListener('dragstart',function(e){e.preventDefault();});
+  document.addEventListener('copy',function(e){e.preventDefault();});
+  document.addEventListener('cut',function(e){e.preventDefault();});
+})();`}
+        </Script>
         <ThemeProvider>
           <LanguageProvider>
             <Navbar />

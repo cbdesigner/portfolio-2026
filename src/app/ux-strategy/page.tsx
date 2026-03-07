@@ -47,7 +47,7 @@ export default function UXStrategyPage() {
             <iframe
               className="absolute inset-0 w-full h-full border-0"
               src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FL67zzf8ZNLhjUuwKQmIfWw%2FUX-Strategy%3Fpage-id%3D0%253A1%26node-id%3D801%253A361%26viewport%3D241%252C48%252C0.22%26scaling%3Dcontain%26starting-point-node-id%3D801%253A361"
-              allowFullScreen
+              sandbox="allow-scripts"
             />
           </div>
         </section>
@@ -59,7 +59,7 @@ export default function UXStrategyPage() {
             <iframe
               className="absolute inset-0 w-full h-full border-0"
               src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FL67zzf8ZNLhjUuwKQmIfWw%2FUX-Strategy%3Fpage-id%3D0%253A1%26node-id%3D801%253A395%26viewport%3D241%252C48%252C0.22%26scaling%3Dcontain%26starting-point-node-id%3D801%253A361"
-              allowFullScreen
+              sandbox="allow-scripts"
             />
           </div>
         </section>
@@ -71,7 +71,7 @@ export default function UXStrategyPage() {
             <iframe
               className="absolute inset-0 w-full h-full border-0"
               src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FL67zzf8ZNLhjUuwKQmIfWw%2FUX-Strategy%3Fpage-id%3D0%253A1%26node-id%3D801%253A398%26viewport%3D241%252C48%252C0.22%26scaling%3Dcontain%26starting-point-node-id%3D801%253A361"
-              allowFullScreen
+              sandbox="allow-scripts"
             />
           </div>
         </section>
@@ -83,7 +83,7 @@ export default function UXStrategyPage() {
             <iframe
               className="absolute inset-0 w-full h-full border-0"
               src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FL67zzf8ZNLhjUuwKQmIfWw%2FUX-Strategy%3Fpage-id%3D0%253A1%26node-id%3D801%253A399%26viewport%3D241%252C48%252C0.22%26scaling%3Dcontain%26starting-point-node-id%3D801%253A361"
-              allowFullScreen
+              sandbox="allow-scripts"
             />
           </div>
         </section>
@@ -95,7 +95,7 @@ export default function UXStrategyPage() {
             <iframe
               className="absolute inset-0 w-full h-full border-0"
               src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FL67zzf8ZNLhjUuwKQmIfWw%2FUX-Strategy%3Fpage-id%3D0%253A1%26node-id%3D801%253A397%26viewport%3D241%252C48%252C0.22%26scaling%3Dcontain%26starting-point-node-id%3D801%253A361"
-              allowFullScreen
+              sandbox="allow-scripts"
             />
           </div>
         </section>
@@ -107,7 +107,7 @@ export default function UXStrategyPage() {
             <iframe
               className="absolute inset-0 w-full h-full border-0"
               src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FL67zzf8ZNLhjUuwKQmIfWw%2FUX-Strategy%3Fpage-id%3D0%253A1%26node-id%3D801%253A396%26viewport%3D241%252C48%252C0.22%26scaling%3Dcontain%26starting-point-node-id%3D801%253A361"
-              allowFullScreen
+              sandbox="allow-scripts"
             />
           </div>
         </section>

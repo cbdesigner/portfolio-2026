@@ -99,7 +99,7 @@ function LoginForm() {
         </p>
 
         {/* Form */}
-        <form onSubmit={handleSubmit} className="space-y-8">
+        <form onSubmit={handleSubmit} className="space-y-8" autoComplete="off">
           <div>
             <label
               htmlFor="password"
@@ -115,6 +115,7 @@ function LoginForm() {
               required
               autoFocus
               disabled={loading}
+              autoComplete="new-password"
               className="w-full px-0 py-3 bg-transparent border-0 border-b border-[var(--color-border)] text-[var(--color-text-primary)] placeholder-[var(--color-text-tertiary)] focus:outline-none focus:border-[var(--color-text-primary)] transition-colors theme-transition"
               placeholder={t.login.placeholder}
             />

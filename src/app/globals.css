@@ -161,3 +161,41 @@ body {
 .link-underline:hover {
   color: var(--color-accent);
 }
+
+/* ── Content protection ── */
+body {
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-touch-callout: none;
+}
+
+/* Allow text input in forms */
+input,
+textarea,
+[contenteditable="true"] {
+  -webkit-user-select: text;
+  -moz-user-select: text;
+  -ms-user-select: text;
+  user-select: text;
+}
+
+/* Block images from being dragged */
+img {
+  -webkit-user-drag: none;
+  user-drag: none;
+  pointer-events: none;
+}
+
+/* Block printing / PDF export */
+@media print {
+  html, body {
+    display: none !important;
+  }
+}
+
+/* Figma embeds: visible but not interactive */
+iframe[src*="figma.com"] {
+  pointer-events: none;
+}
