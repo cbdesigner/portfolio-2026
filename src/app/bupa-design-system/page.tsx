@@ -65,7 +65,13 @@ const i18n = {
     ],
     methodologyTitle: "Methodology Applied",
     methodologyDesc: "I applied my own 5-stage Design System methodology to this project, adapting it to Bupa\u2019s enterprise context and multi-product needs.",
-    methodologySteps: ["Discovery", "Creation", "Dev & Docs", "Training", "Maintenance"],
+    methodologySteps: [
+      { label: "Discovery", desc: "Audit existing UI, map products, identify pain points and stakeholders" },
+      { label: "Creation", desc: "Define tokens, build foundations, design core components in Figma" },
+      { label: "Dev & Docs", desc: "Develop components in code, create Storybook docs, set up pipelines" },
+      { label: "Training", desc: "Onboard teams, run workshops, create adoption guides" },
+      { label: "Maintenance", desc: "Version control, governance model, continuous iteration" },
+    ],
     viewMethodology: "View full methodology \u2192",
     foundationsTitle: "Foundations",
     foundationsDesc: "The semantic foundation layer defines all visual primitives using Figma Variables, supporting Light and Dark themes with 1000+ tokens.",
@@ -289,7 +295,13 @@ const i18n = {
     ],
     methodologyTitle: "Metodolog\u00EDa Aplicada",
     methodologyDesc: "Apliqu\u00E9 mi propia metodolog\u00EDa de Design System de 5 etapas a este proyecto, adapt\u00E1ndola al contexto enterprise de Bupa y sus necesidades multi-producto.",
-    methodologySteps: ["Descubrimiento", "Creaci\u00F3n", "Dev y Docs", "Capacitaci\u00F3n", "Mantenimiento"],
+    methodologySteps: [
+      { label: "Descubrimiento", desc: "Auditar UI existente, mapear productos, identificar pain points y stakeholders" },
+      { label: "Creaci\u00F3n", desc: "Definir tokens, construir fundamentos, dise\u00F1ar componentes core en Figma" },
+      { label: "Dev y Docs", desc: "Desarrollar componentes en c\u00F3digo, crear docs en Storybook, configurar pipelines" },
+      { label: "Capacitaci\u00F3n", desc: "Onboarding de equipos, talleres pr\u00E1cticos, gu\u00EDas de adopci\u00F3n" },
+      { label: "Mantenimiento", desc: "Versionado, modelo de gobernanza, iteraci\u00F3n continua" },
+    ],
     viewMethodology: "Ver metodolog\u00EDa completa \u2192",
     foundationsTitle: "Fundamentos",
     foundationsDesc: "La capa de fundamentos sem\u00E1nticos define todas las primitivas visuales usando Figma Variables, soportando temas Light y Dark con m\u00E1s de 1000 tokens.",
@@ -576,20 +588,83 @@ export default function BupaDesignSystemPage() {
         <h2 className="font-heading text-display-md tracking-display mb-4">
           {t.methodologyTitle}
         </h2>
-        <p className="text-[var(--color-text-tertiary)] text-lg mb-8">
+        <p className="text-[var(--color-text-tertiary)] text-lg mb-10">
           {t.methodologyDesc}
         </p>
-        <div className="flex items-center justify-center gap-2 flex-wrap text-sm text-[var(--color-text-tertiary)] font-mono mb-4">
-          <span className="text-indigo-400 font-medium">{t.methodologySteps[0]}</span>
-          <span>&rarr;</span>
-          <span className="text-purple-400 font-medium">{t.methodologySteps[1]}</span>
-          <span>&rarr;</span>
-          <span className="text-cyan-400 font-medium">{t.methodologySteps[2]}</span>
-          <span>&rarr;</span>
-          <span className="text-emerald-400 font-medium">{t.methodologySteps[3]}</span>
-          <span>&rarr;</span>
-          <span className="text-violet-400 font-medium">{t.methodologySteps[4]}</span>
-        </div>
+
+        {/* Steps - Desktop: horizontal, Mobile: vertical */}
+        {(() => {
+          const stepColors = [
+            { accent: "text-indigo-400", bg: "bg-indigo-500/10", border: "border-indigo-500/30", line: "bg-indigo-500/40", dot: "bg-indigo-500" },
+            { accent: "text-purple-400", bg: "bg-purple-500/10", border: "border-purple-500/30", line: "bg-purple-500/40", dot: "bg-purple-500" },
+            { accent: "text-cyan-400", bg: "bg-cyan-500/10", border: "border-cyan-500/30", line: "bg-cyan-500/40", dot: "bg-cyan-500" },
+            { accent: "text-emerald-400", bg: "bg-emerald-500/10", border: "border-emerald-500/30", line: "bg-emerald-500/40", dot: "bg-emerald-500" },
+            { accent: "text-violet-400", bg: "bg-violet-500/10", border: "border-violet-500/30", line: "bg-violet-500/40", dot: "bg-violet-500" },
+          ];
+          return (
+            <>
+              {/* Desktop horizontal stepper */}
+              <div className="hidden md:block mb-8">
+                {/* Connector line */}
+                <div className="relative flex items-start justify-between">
+                  {/* Horizontal line behind dots */}
+                  <div className="absolute top-[14px] left-[28px] right-[28px] h-px bg-[var(--color-border)]" />
+
+                  {t.methodologySteps.map((step: { label: string; desc: string }, i: number) => {
+                    const c = stepColors[i];
+                    return (
+                      <div key={i} className="relative flex flex-col items-center text-center flex-1">
+                        {/* Step number circle */}
+                        <div className={`relative z-10 w-7 h-7 flex items-center justify-center text-xs font-bold ${c.bg} ${c.border} border ${c.accent} mb-3`} style={{ borderRadius: "50%" }}>
+                          {i + 1}
+                        </div>
+                        {/* Label */}
+                        <span className={`text-sm font-semibold ${c.accent} mb-1`}>
+                          {step.label}
+                        </span>
+                        {/* Description */}
+                        <span className="text-xs text-[var(--color-text-tertiary)] leading-relaxed max-w-[140px]">
+                          {step.desc}
+                        </span>
+                      </div>
+                    );
+                  })}
+                </div>
+              </div>
+
+              {/* Mobile vertical stepper */}
+              <div className="md:hidden mb-8 space-y-0">
+                {t.methodologySteps.map((step: { label: string; desc: string }, i: number) => {
+                  const c = stepColors[i];
+                  const isLast = i === t.methodologySteps.length - 1;
+                  return (
+                    <div key={i} className="flex gap-4">
+                      {/* Left rail: dot + connector */}
+                      <div className="flex flex-col items-center">
+                        <div className={`w-8 h-8 flex items-center justify-center text-xs font-bold ${c.bg} ${c.border} border ${c.accent} shrink-0`} style={{ borderRadius: "50%" }}>
+                          {i + 1}
+                        </div>
+                        {!isLast && (
+                          <div className="w-px flex-1 min-h-[24px] bg-[var(--color-border)]" />
+                        )}
+                      </div>
+                      {/* Right content */}
+                      <div className={`pb-6 ${isLast ? "" : ""}`}>
+                        <span className={`text-sm font-semibold ${c.accent} block mb-0.5`}>
+                          {step.label}
+                        </span>
+                        <span className="text-xs text-[var(--color-text-tertiary)] leading-relaxed">
+                          {step.desc}
+                        </span>
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </>
+          );
+        })()}
+
         <p className="text-center text-sm text-[var(--color-text-tertiary)]">
           <a href="/ds-methodology" className="text-blue-400 hover:text-blue-300 underline underline-offset-2 transition-colors">
             {t.viewMethodology}
