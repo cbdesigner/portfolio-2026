@@ -23,8 +23,6 @@ export default function Navbar() {
           <Link
             key={link.href}
             href={link.href}
-            target={link.external ? "_blank" : undefined}
-            rel={link.external ? "noopener noreferrer" : undefined}
             className={`text-caption tracking-editorial link-underline transition-colors ${
               pathname === link.href
                 ? "accent-gradient-text font-medium"
