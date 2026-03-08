@@ -49,7 +49,7 @@ export default function HeroVideo({ src, className = "" }: HeroVideoProps) {
       playsInline
       className={className}
       style={{
-        marginLeft: "200px",
+        marginLeft: "0",
         transform: "scale(1.2)",
         transformOrigin: "left center",
       }}

@@ -3,9 +3,9 @@
   "configurations": [
     {
       "name": "portfolio-dev",
-      "runtimeExecutable": "/usr/local/bin/npx",
-      "runtimeArgs": ["next", "dev"],
-      "port": 3000
+      "runtimeExecutable": "npm",
+      "runtimeArgs": ["run", "dev", "--", "-p", "3001"],
+      "port": 3001
     }
   ]
 }

@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import Link from "next/link";
 import { usePathname, useRouter } from "next/navigation";
 import { useLanguage } from "@/i18n/LanguageContext";
@@ -10,6 +11,14 @@ export default function Navbar() {
   const router = useRouter();
   const { locale, setLocale, t } = useLanguage();
   const { theme, toggleTheme } = useTheme();
+  const [scrolled, setScrolled] = useState(false);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 20);
+    onScroll(); // check initial position
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   // Hide navbar on login page
   if (pathname === "/login") return null;
@@ -27,7 +36,13 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 md:px-16 py-6 bg-[var(--color-nav-bg)] backdrop-blur-md theme-transition">
+    <nav
+      className={`fixed top-0 left-0 right-0 z-50 flex items-center justify-between px-8 md:px-16 py-6 transition-all duration-300 theme-transition ${
+        scrolled
+          ? "bg-[var(--color-nav-bg)] backdrop-blur-md border-b border-[var(--color-border)]"
+          : "bg-transparent"
+      }`}
+    >
       <div className="flex items-center gap-6">
         {links.map((link) => (
           <Link
