@@ -104,16 +104,6 @@ const allProjects: {
     },
   },
   {
-    href: "/design-system-architect",
-    key: "designSystemArchitect",
-    category: "Design Systems · Architecture",
-    filter: "designSystems",
-    description: {
-      en: "AI-ready design infrastructure built for scale, governance, and deterministic design-to-code workflows.",
-      es: "Infraestructura de diseño lista para IA, construida para escala, gobernanza y flujos deterministas de diseño a código.",
-    },
-  },
-  {
     href: "/bupa-design-system",
     key: "bupaDesignSystem",
     category: "Design Systems · Healthcare",
