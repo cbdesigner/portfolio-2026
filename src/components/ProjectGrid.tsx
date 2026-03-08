@@ -44,7 +44,7 @@ export default function ProjectGrid({ items }: ProjectGridProps) {
     : items.filter((item) => item.filter === active);
 
   return (
-    <section className="px-8 md:px-16 pt-12 pb-20">
+    <section id="projects" className="px-8 md:px-16 pt-12 pb-20">
       {/* Filter pills */}
       <div className="flex flex-wrap items-center gap-3 mb-10">
         {FILTERS.map(({ key, labelKey }) => {

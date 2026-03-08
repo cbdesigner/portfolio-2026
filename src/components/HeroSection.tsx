@@ -29,22 +29,27 @@ export default function HeroSection() {
         <p className="text-body-lg text-[var(--color-text-secondary)] mx-auto mt-8 leading-relaxed">
           {t.hero.description}
         </p>
-        <div className="mt-12 opacity-40">
+        <a
+          href="#projects"
+          className="inline-flex items-center gap-2 mt-12 px-6 py-3 border border-[var(--color-border)] text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] hover:border-[var(--color-text-tertiary)] transition-colors duration-300"
+        >
+          <span className="text-sm font-medium tracking-wide uppercase">
+            {t.hero.cta ?? "View Projects"}
+          </span>
           <svg
             xmlns="http://www.w3.org/2000/svg"
-            width="32"
-            height="32"
+            width="16"
+            height="16"
             viewBox="0 0 24 24"
             fill="none"
             stroke="currentColor"
             strokeWidth="2"
             strokeLinecap="round"
             strokeLinejoin="round"
-            className="mx-auto text-[var(--color-text-tertiary)]"
           >
             <path d="M6 9l6 6 6-6" />
           </svg>
-        </div>
+        </a>
       </div>
     </section>
   );

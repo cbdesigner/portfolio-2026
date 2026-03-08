@@ -13,6 +13,7 @@ export const translations = {
       title: "Hello, I\u2019m Carlos Baeza",
       description:
         "Design Systems Architect, Head of Product Design, and UX Manager with 10+ years building scalable design infrastructure and leading high-impact teams. I specialize in creating enterprise-grade design systems that reduce friction between design and engineering, enabling teams to ship faster without sacrificing consistency. I bridge design, product, and engineering to deliver strategic solutions that drive measurable business results.",
+      cta: "View Projects",
     },
     categories: {
       all: "All",
@@ -168,6 +169,7 @@ export const translations = {
       title: "Hola, soy Carlos Baeza",
       description:
         "Arquitecto de Design Systems, Head of Product Design y UX Manager con m\u00e1s de 10 a\u00f1os construyendo infraestructura de dise\u00f1o escalable y liderando equipos de alto impacto. Me especializo en crear design systems de nivel empresarial que reducen fricci\u00f3n entre dise\u00f1o e ingenier\u00eda, permitiendo que los equipos entreguen m\u00e1s r\u00e1pido sin comprometer la consistencia. Conecto dise\u00f1o, producto e ingenier\u00eda para entregar soluciones estrat\u00e9gicas que generan resultados de negocio medibles.",
+      cta: "Ver Proyectos",
     },
     categories: {
       all: "Todos",
