@@ -97,6 +97,7 @@ export default function DesignSystemPage() {
             <AsciiImage
               src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/84fea897-f6e2-4276-ba5a-80e209da103f_rw_1920.jpg?h=81ff2abc9d2e4e9c32b52857d8d54386"
               alt={t.heroAlt}
+              colorOnHover
             />
           </div>
         </header>

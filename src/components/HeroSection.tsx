@@ -13,6 +13,7 @@ export default function HeroSection() {
         <AsciiImage
           src="/images/hero-bg.png"
           alt=""
+          colorOnHover
         />
       </div>
 

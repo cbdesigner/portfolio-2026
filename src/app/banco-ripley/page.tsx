@@ -162,6 +162,7 @@ export default function BancoRipleyPage() {
           <AsciiImage
             src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/7d478cfe-4942-4e14-b5fb-4f27db3fcadc_rw_1920.jpg?h=6fb9d00d354d1b4ef2e47ddd88ae5068"
             alt={t.heroAlt}
+            colorOnHover
           />
         </div>
       </section>
@@ -286,6 +287,7 @@ export default function BancoRipleyPage() {
           <AsciiImage
             src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/075bd278-35f3-453d-b1b2-2a3c2e3aaeb9_rw_1920.jpg?h=3a9879a295af91f8fdb2f60338354002"
             alt={t.managerAlt}
+            colorOnHover
           />
         </div>
 
@@ -304,6 +306,7 @@ export default function BancoRipleyPage() {
               <AsciiImage
                 src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/224e91da-9b40-464b-bbc2-297f507f3b80_rw_1920.jpg?h=1b474610d4e7c6f5001472f88256ae84"
                 alt={t.area1Alt}
+                colorOnHover
               />
             </div>
           </div>
@@ -321,6 +324,7 @@ export default function BancoRipleyPage() {
               <AsciiImage
                 src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/2f3e18d1-1187-4b01-861c-b103ba408628_rw_1920.jpg?h=90ec9349ebe16fd89346696f4cad8007"
                 alt={t.area2Alt}
+                colorOnHover
               />
             </div>
           </div>
@@ -338,6 +342,7 @@ export default function BancoRipleyPage() {
               <AsciiImage
                 src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/9643c2eb-d444-4923-b913-524f5033ead0_rw_1920.jpg?h=2a38e17682495fb86a19abe1dee745a7"
                 alt={t.area3Alt}
+                colorOnHover
               />
             </div>
           </div>
@@ -355,6 +360,7 @@ export default function BancoRipleyPage() {
               <AsciiImage
                 src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/299d5618-c739-4963-9dda-ac5d3889bfe3_rw_1920.jpg?h=147b14da61b654c5f1abe2e6b4e29c72"
                 alt={t.area4Alt}
+                colorOnHover
               />
             </div>
           </div>
@@ -372,6 +378,7 @@ export default function BancoRipleyPage() {
               <AsciiImage
                 src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/4d535e33-186a-492a-9622-eea44e54eb8f_rw_1920.jpg?h=a9e61622f980d539dff71f92548344f3"
                 alt={t.area5Alt}
+                colorOnHover
               />
             </div>
           </div>
