@@ -252,7 +252,7 @@ export default function ProfileContent() {
       {/* Hero */}
       <section className="relative py-34 overflow-hidden">
         <div className="absolute inset-0 bg-gradient-to-b from-[var(--color-border)]/10 to-[var(--color-surface)]" />
-        <div className="relative mx-auto px-8 md:px-16 text-center">
+        <div className="relative max-w-5xl mx-auto px-8 md:px-16 text-center">
           <div className="w-28 h-28 mx-auto mb-6 bg-[var(--color-text-primary)] flex items-center justify-center text-4xl font-heading text-[var(--color-surface)]">
             CB
           </div>
@@ -288,7 +288,7 @@ export default function ProfileContent() {
         </div>
       </section>
 
-      <div className="mx-auto px-8 md:px-16 pb-26 space-y-22">
+      <div className="max-w-5xl mx-auto px-8 md:px-16 pb-26 space-y-22">
         {/* About */}
         <section>
           <h2 className="font-heading text-display-md tracking-display mb-8 flex items-center gap-3">
