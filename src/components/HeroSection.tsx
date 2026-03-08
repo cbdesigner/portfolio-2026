@@ -1,12 +1,26 @@
 "use client";
 
 import { useLanguage } from "@/i18n/LanguageContext";
+import AsciiImage from "@/components/AsciiImage";
 
 export default function HeroSection() {
   const { t } = useLanguage();
 
   return (
     <section className="relative flex items-center justify-center min-h-screen overflow-hidden">
+      {/* ASCII background layer */}
+      <div className="absolute inset-0 z-0 opacity-[0.12] pointer-events-none select-none">
+        <AsciiImage
+          src="/images/hero-bg.png"
+          alt=""
+        />
+      </div>
+
+      {/* Gradient fade at top and bottom so ASCII blends into surface */}
+      <div className="absolute inset-x-0 top-0 h-32 z-[1] bg-gradient-to-b from-[var(--color-surface)] to-transparent" />
+      <div className="absolute inset-x-0 bottom-0 h-32 z-[1] bg-gradient-to-t from-[var(--color-surface)] to-transparent" />
+
+      {/* Text content */}
       <div className="relative z-10 text-center px-8 md:px-16 mx-auto">
         <h1 className="font-heading text-display-xl tracking-tightest text-balance text-[var(--color-text-primary)]">
           {t.hero.title}
