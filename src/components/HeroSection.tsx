@@ -31,11 +31,11 @@ export default function HeroSection() {
       />
 
       {/* ── Content ── */}
-      <div className="relative z-20 flex items-center h-full">
-        <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full">
-          <div className="flex flex-col gap-12">
+      <div className="relative z-20 flex items-center justify-center h-full">
+        <div className="max-w-5xl mx-auto px-8 md:px-16 w-full text-center">
+          <div className="flex flex-col gap-12 items-center">
             {/* Badge + Heading + Subtitle group */}
-            <div className="flex flex-col gap-6">
+            <div className="flex flex-col gap-6 items-center">
               {/* Badge */}
               <BlurIn delay={0} duration={0.6}>
                 <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 backdrop-blur-sm text-sm font-medium text-white/80">
@@ -48,27 +48,40 @@ export default function HeroSection() {
               <SplitText
                 text={t.hero.title}
                 as="h1"
-                className="font-heading text-display-xl tracking-tightest text-white"
+                className="font-heading text-display-xl tracking-tightest text-white text-balance"
               />
 
               {/* Subtitle */}
               <BlurIn delay={0.6} duration={0.6}>
-                <p className="text-body-lg text-white/70 max-w-2xl leading-relaxed">
+                <p className="text-body-lg text-white/70 leading-relaxed">
                   {t.hero.description}
                 </p>
               </BlurIn>
             </div>
 
-            {/* CTA Buttons */}
+            {/* CTA */}
             <BlurIn delay={0.6} duration={0.6}>
-              <div className="flex flex-wrap items-center gap-4">
-                <a
-                  href="#projects"
-                  className="inline-flex items-center gap-2 px-8 py-3 bg-white/20 backdrop-blur-sm rounded-full text-white font-medium transition-colors duration-300 hover:bg-white/30"
-                >
+              <a
+                href="#projects"
+                className="inline-flex items-center gap-2 px-6 py-3 border border-white/20 text-white/80 hover:text-white hover:border-white/40 transition-colors duration-300"
+              >
+                <span className="text-sm font-medium tracking-wide uppercase">
                   {t.hero.cta}
-                </a>
-              </div>
+                </span>
+                <svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="16"
+                  height="16"
+                  viewBox="0 0 24 24"
+                  fill="none"
+                  stroke="currentColor"
+                  strokeWidth="2"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                >
+                  <path d="M6 9l6 6 6-6" />
+                </svg>
+              </a>
             </BlurIn>
           </div>
         </div>
