@@ -3,24 +3,25 @@ import { NextRequest, NextResponse } from "next/server";
 const COOKIE_NAME = "session_token";
 const SESSION_MAX_AGE_MS = 7 * 24 * 60 * 60 * 1000; // 7 days
 
-/* ── Public paths that skip auth ──────────────────────────────── */
-const PUBLIC_EXACT = new Set(["/login"]);
-const PUBLIC_PREFIXES = [
-  "/api/auth",
-  "/_next",
-  "/images",
-  "/opengraph-image",
-  "/twitter-image",
-  "/icon",
-];
+/* ── Private paths that require auth ─────────────────────────── */
+/* Projects */
+const PRIVATE_PATHS = new Set([
+  "/autonomus",
+  "/enel-one-hub",
+  "/banco-ripley",
+  "/bupa-design-system",
+  /* Methodologies */
+  "/my-design-process",
+  "/ds-services",
+  "/ds-methodology",
+  "/ux-strategy",
+  /* Design System */
+  "/design-system",
+  "/design-system-architect",
+]);
 
-function isPublic(pathname: string): boolean {
-  if (PUBLIC_EXACT.has(pathname)) return true;
-  if (PUBLIC_PREFIXES.some((p) => pathname.startsWith(p))) return true;
-  // Static file extensions
-  if (/\.(svg|png|jpg|jpeg|gif|webp|ico|css|js|woff2?|ttf|eot)$/.test(pathname))
-    return true;
-  return false;
+function isPrivate(pathname: string): boolean {
+  return PRIVATE_PATHS.has(pathname);
 }
 
 /* ── HMAC-SHA256 verification (Web Crypto — Edge Runtime) ─────── */
@@ -63,7 +64,8 @@ async function verifyToken(token: string, secret: string): Promise<boolean> {
 export async function middleware(request: NextRequest) {
   const { pathname } = request.nextUrl;
 
-  if (isPublic(pathname)) return NextResponse.next();
+  // Only check auth on private pages
+  if (!isPrivate(pathname)) return NextResponse.next();
 
   const token = request.cookies.get(COOKIE_NAME)?.value;
   const secret = process.env.AUTH_SECRET;
