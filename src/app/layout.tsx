@@ -7,6 +7,7 @@ import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
 import { LanguageProvider } from "@/i18n/LanguageContext";
 import { ThemeProvider } from "@/components/ThemeProvider";
+import JsonLd from "@/components/JsonLd";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], weight: ["400", "700"], variable: "--font-space-grotesk" });
@@ -114,6 +115,43 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   document.addEventListener('cut',function(e){e.preventDefault();});
 })();`}
         </Script>
+        <JsonLd
+          data={{
+            "@context": "https://schema.org",
+            "@type": "Person",
+            name: "Carlos Baeza",
+            url: siteUrl,
+            jobTitle: "Design Systems Architect",
+            description:
+              "Design Systems Architect building AI-Ready Agentic Design Systems Infrastructure at Enterprise Scale. 10+ years leading cross-functional teams at Banco Ripley, Enel, Bupa and more.",
+            sameAs: [
+              "https://twitter.com/cbdesigner",
+              "https://www.linkedin.com/in/carlos-baeza-design/",
+            ],
+            knowsAbout: [
+              "Design Systems",
+              "Design Tokens",
+              "Figma",
+              "Storybook",
+              "UX Strategy",
+              "Product Design",
+              "AI Design Systems",
+              "Agentic Design",
+              "Multi-brand Theming",
+              "Design-to-Code Workflows",
+            ],
+          }}
+        />
+        <JsonLd
+          data={{
+            "@context": "https://schema.org",
+            "@type": "WebSite",
+            name: "Carlos Baeza — Design Systems Architect",
+            url: siteUrl,
+            description:
+              "Portfolio of Carlos Baeza, Design Systems Architect specializing in AI-ready design infrastructure at enterprise scale.",
+          }}
+        />
         <ThemeProvider>
           <LanguageProvider>
             <Navbar />

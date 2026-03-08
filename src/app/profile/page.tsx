@@ -1,10 +1,13 @@
 import ProfileContent from "@/components/ProfileContent";
 
-export const metadata = {
+import { Metadata } from "next";
+
+export const metadata: Metadata = {
   title:
-    "Carlos Baeza - Profile | Design Systems Architect | AI-Ready Agentic Design Systems Infrastructure",
+    "Profile | Design Systems Architect | AI-Ready Agentic Design Systems Infrastructure",
   description:
     "Full professional profile of Carlos Baeza. Design Systems Architect building AI-Ready Agentic Design Systems Infrastructure at Enterprise Scale.",
+  alternates: { canonical: "https://carlosbaeza.design/profile" },
 };
 
 export default function ProfilePage() {
