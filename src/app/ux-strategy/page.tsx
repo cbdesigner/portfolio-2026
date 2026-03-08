@@ -2,7 +2,6 @@
 
 import { useLanguage } from "@/i18n/LanguageContext";
 import RelatedProjects from "@/components/RelatedProjects";
-import GenerativeAscii from "@/components/GenerativeAscii";
 
 /* ── Area detail card data ──────────────────────────────────── */
 interface AreaDetail {
@@ -293,15 +292,6 @@ const colorMap: Record<string, { border: string; bg: string; text: string; dot: 
   violet: { border: "border-[var(--color-border)]", bg: "bg-white/5", text: "text-[var(--color-text-secondary)]", dot: "bg-[var(--color-text-tertiary)]" },
 };
 
-/* ── Scene types per area (matches order in i18n.areas) ────── */
-const areaScenes: ("strategy" | "enterprise" | "team" | "operations" | "experience")[] = [
-  "strategy",
-  "enterprise",
-  "team",
-  "operations",
-  "experience",
-];
-
 /* ── Diamond labels (not translated — visual only) ──────────── */
 const diamondLabels = ["Enterprise", "Team", "Strategy", "Experience", "Operations"];
 
@@ -364,13 +354,8 @@ export default function UXStrategyPage() {
         {/* Area detail cards */}
         {t.areas.map((area, idx) => {
           const colors = colorMap[area.color] || colorMap.blue;
-          const scene = areaScenes[idx];
           return (
             <section key={idx} className="mb-16">
-              {/* Generative ASCII art — breaks out wider on desktop */}
-              <div className="mb-8 lg:-mx-24 xl:-mx-40 2xl:-mx-56">
-                <GenerativeAscii scene={scene} alt={area.title} />
-              </div>
               <div className={`p-6 md:p-10 border ${colors.border} ${colors.bg} theme-transition`}>
                 {/* Area title */}
                 <h2 className={`font-heading text-display-md tracking-display mb-4 ${colors.text}`}>
