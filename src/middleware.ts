@@ -17,25 +17,9 @@ function isKnownBot(ua: string | null): boolean {
   return KNOWN_BOTS.some((bot) => lower.includes(bot));
 }
 
-/* ── Private paths that require auth ─────────────────────────── */
-/* Projects */
-const PRIVATE_PATHS = new Set([
-  "/autonomus",
-  "/enel-one-hub",
-  "/banco-ripley",
-  "/bupa-design-system",
-  /* Methodologies */
-  "/my-design-process",
-  "/ds-services",
-  "/ds-methodology",
-  "/ux-strategy",
-  /* Design System */
-  "/design-system",
-  "/design-system-architect",
-]);
-
-function isPrivate(pathname: string): boolean {
-  return PRIVATE_PATHS.has(pathname);
+/* ── All portfolio pages are public ──────────────────────────── */
+function isPrivate(_pathname: string): boolean {
+  return false;
 }
 
 /* ── HMAC-SHA256 verification (Web Crypto — Edge Runtime) ─────── */
