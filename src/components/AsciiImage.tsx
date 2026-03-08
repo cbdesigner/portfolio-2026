@@ -114,7 +114,7 @@ export default function AsciiImage({ src, alt, colorOnHover = false }: AsciiImag
     fontSize: `${fontSize}px`,
     lineHeight: "1.15",
     letterSpacing: "0",
-    overflowX: "hidden" as const,
+    overflow: "hidden" as const,
   };
 
   return (
