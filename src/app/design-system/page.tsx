@@ -2,6 +2,7 @@
 
 import { useLanguage } from "@/i18n/LanguageContext";
 import RelatedProjects from "@/components/RelatedProjects";
+import AsciiImage from "@/components/AsciiImage";
 
 const i18n = {
   en: {
@@ -79,7 +80,7 @@ export default function DesignSystemPage() {
   const t = i18n[locale];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-x-hidden">
       <div className="max-w-5xl mx-auto px-8 md:px-16 py-22">
         {/* Hero */}
         <header className="mb-16">
@@ -92,8 +93,11 @@ export default function DesignSystemPage() {
           <p className="text-body-lg text-[var(--color-text-secondary)] leading-relaxed">
             {t.heroDescription}
           </p>
-          <div className="mt-8 mb-4">
-            <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/84fea897-f6e2-4276-ba5a-80e209da103f_rw_1920.jpg?h=81ff2abc9d2e4e9c32b52857d8d54386" alt={t.heroAlt} className="w-full h-auto rounded-lg" loading="lazy" />
+          <div className="mt-8 mb-4 lg:-mx-24 xl:-mx-40 2xl:-mx-56">
+            <AsciiImage
+              src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/84fea897-f6e2-4276-ba5a-80e209da103f_rw_1920.jpg?h=81ff2abc9d2e4e9c32b52857d8d54386"
+              alt={t.heroAlt}
+            />
           </div>
         </header>
 
