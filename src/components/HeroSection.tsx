@@ -21,7 +21,7 @@ export default function HeroSection() {
       <div className="absolute inset-x-0 bottom-0 h-32 z-[1] bg-gradient-to-t from-[var(--color-surface)] to-transparent" />
 
       {/* Text content */}
-      <div className="relative z-10 text-center px-8 md:px-16 mx-auto">
+      <div className="relative z-10 text-center px-8 md:px-16 mx-auto max-w-5xl">
         <h1 className="font-heading text-display-xl tracking-tightest text-balance text-[var(--color-text-primary)]">
           {t.hero.title}
         </h1>
