@@ -1,55 +1,77 @@
 "use client";
 
 import { useLanguage } from "@/i18n/LanguageContext";
-import AsciiImage from "@/components/AsciiImage";
+import { Sparkles } from "lucide-react";
+import BlurIn from "@/components/animations/BlurIn";
+import SplitText from "@/components/animations/SplitText";
+import HeroVideo from "@/components/HeroVideo";
+
+const VIDEO_SRC =
+  "https://stream.mux.com/s8pMcOvMQXc4GD6AX4e1o01xFogFxipmuKltNfSYza0200.m3u8";
 
 export default function HeroSection() {
   const { t } = useLanguage();
 
   return (
-    <section className="relative flex items-center justify-center min-h-screen overflow-hidden">
-      {/* ASCII background layer */}
-      <div className="absolute inset-0 z-0 opacity-40 pointer-events-none select-none">
-        <AsciiImage
-          src="/images/hero-bg.png"
-          alt=""
-          colorOnHover
-        />
+    <section
+      className="relative h-screen w-full overflow-hidden -mt-22"
+      style={{ backgroundColor: "#070612" }}
+    >
+      {/* ── Background video layer ── */}
+      <div className="absolute inset-0 z-0">
+        <HeroVideo src={VIDEO_SRC} className="h-full w-full object-cover" />
       </div>
 
-      {/* Gradient fade at top and bottom so ASCII blends into surface */}
-      <div className="absolute inset-x-0 top-0 h-32 z-[1] bg-gradient-to-b from-[var(--color-surface)] to-transparent" />
-      <div className="absolute inset-x-0 bottom-0 h-32 z-[1] bg-gradient-to-t from-[var(--color-surface)] to-transparent" />
+      {/* ── Bottom gradient fade ── */}
+      <div
+        className="absolute inset-x-0 bottom-0 h-40 z-10"
+        style={{
+          background: "linear-gradient(to top, #070612 0%, transparent 100%)",
+        }}
+      />
 
-      {/* Text content */}
-      <div className="relative z-10 text-center px-8 md:px-16 mx-auto max-w-5xl">
-        <h1 className="font-heading text-display-xl tracking-tightest text-balance text-[var(--color-text-primary)]">
-          {t.hero.title}
-        </h1>
-        <p className="text-body-lg text-[var(--color-text-secondary)] mx-auto mt-8 leading-relaxed">
-          {t.hero.description}
-        </p>
-        <a
-          href="#projects"
-          className="inline-flex items-center gap-2 mt-12 px-6 py-3 border border-[var(--color-border)] text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] hover:border-[var(--color-text-tertiary)] transition-colors duration-300"
-        >
-          <span className="text-sm font-medium tracking-wide uppercase">
-            {t.hero.cta ?? "View Projects"}
-          </span>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            width="16"
-            height="16"
-            viewBox="0 0 24 24"
-            fill="none"
-            stroke="currentColor"
-            strokeWidth="2"
-            strokeLinecap="round"
-            strokeLinejoin="round"
-          >
-            <path d="M6 9l6 6 6-6" />
-          </svg>
-        </a>
+      {/* ── Content ── */}
+      <div className="relative z-20 flex items-center h-full">
+        <div className="max-w-7xl mx-auto px-6 lg:px-12 w-full">
+          <div className="flex flex-col gap-12">
+            {/* Badge + Heading + Subtitle group */}
+            <div className="flex flex-col gap-6">
+              {/* Badge */}
+              <BlurIn delay={0} duration={0.6}>
+                <span className="inline-flex items-center gap-2 px-4 py-2 rounded-full border border-white/20 backdrop-blur-sm text-sm font-medium text-white/80">
+                  <Sparkles className="w-3 h-3" />
+                  {t.hero.badge}
+                </span>
+              </BlurIn>
+
+              {/* Heading — word-by-word stagger */}
+              <SplitText
+                text={t.hero.title}
+                as="h1"
+                className="font-heading text-display-xl tracking-tightest text-white"
+              />
+
+              {/* Subtitle */}
+              <BlurIn delay={0.6} duration={0.6}>
+                <p className="text-body-lg text-white/70 max-w-2xl leading-relaxed">
+                  {t.hero.description}
+                </p>
+              </BlurIn>
+            </div>
+
+            {/* CTA Buttons */}
+            <BlurIn delay={0.6} duration={0.6}>
+              <div className="flex flex-wrap items-center gap-4">
+                <a
+                  href="#projects"
+                  className="inline-flex items-center gap-2 px-8 py-3 bg-white/20 backdrop-blur-sm rounded-full text-white font-medium transition-colors duration-300 hover:bg-white/30"
+                >
+                  {t.hero.cta}
+                </a>
+              </div>
+            </BlurIn>
+          </div>
+        </div>
       </div>
     </section>
   );
