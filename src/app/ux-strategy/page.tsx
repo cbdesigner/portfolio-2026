@@ -2,6 +2,7 @@
 
 import { useLanguage } from "@/i18n/LanguageContext";
 import RelatedProjects from "@/components/RelatedProjects";
+import GenerativeAscii from "@/components/GenerativeAscii";
 
 /* ── Area detail card data ──────────────────────────────────── */
 interface AreaDetail {
@@ -292,6 +293,15 @@ const colorMap: Record<string, { border: string; bg: string; text: string; dot: 
   violet: { border: "border-[var(--color-border)]", bg: "bg-white/5", text: "text-[var(--color-text-secondary)]", dot: "bg-[var(--color-text-tertiary)]" },
 };
 
+/* ── Scene types per area (matches order in i18n.areas) ────── */
+const areaScenes: ("strategy" | "enterprise" | "team" | "operations" | "experience")[] = [
+  "strategy",
+  "enterprise",
+  "team",
+  "operations",
+  "experience",
+];
+
 /* ── Diamond labels (not translated — visual only) ──────────── */
 const diamondLabels = ["Enterprise", "Team", "Strategy", "Experience", "Operations"];
 
@@ -300,7 +310,7 @@ export default function UXStrategyPage() {
   const t = i18n[locale];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-x-hidden">
       <div className="max-w-5xl mx-auto px-8 md:px-16 py-22">
         {/* Hero */}
         <header className="mb-16">
@@ -326,24 +336,24 @@ export default function UXStrategyPage() {
             {/* Diamond grid */}
             <div className="lg:w-3/5 flex justify-center">
               <div className="relative w-[280px] h-[280px] md:w-[340px] md:h-[340px]">
-                {/* Enterprise — top left */}
-                <div className="absolute top-0 left-[15%] w-[35%] h-[35%] rotate-45 bg-neutral-600 flex items-center justify-center">
+                {/* Enterprise — top */}
+                <div className="absolute top-0 left-1/2 -translate-x-1/2 w-[33%] h-[33%] rotate-45 bg-neutral-600 flex items-center justify-center">
                   <span className="text-white font-bold text-xs md:text-sm -rotate-45">{diamondLabels[0]}</span>
                 </div>
-                {/* Team — top right */}
-                <div className="absolute top-0 right-[15%] w-[35%] h-[35%] rotate-45 bg-neutral-500 flex items-center justify-center">
+                {/* Team — left */}
+                <div className="absolute top-1/2 left-0 -translate-y-1/2 w-[33%] h-[33%] rotate-45 bg-neutral-500 flex items-center justify-center">
                   <span className="text-white font-bold text-xs md:text-sm -rotate-45">{diamondLabels[1]}</span>
                 </div>
                 {/* Strategy — center */}
-                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[35%] h-[35%] rotate-45 bg-neutral-700 flex items-center justify-center z-10">
+                <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[33%] h-[33%] rotate-45 bg-neutral-700 flex items-center justify-center z-10">
                   <span className="text-white font-bold text-xs md:text-sm -rotate-45">{diamondLabels[2]}</span>
                 </div>
-                {/* Experience — bottom left */}
-                <div className="absolute bottom-0 left-[15%] w-[35%] h-[35%] rotate-45 bg-neutral-500 flex items-center justify-center">
+                {/* Experience — right */}
+                <div className="absolute top-1/2 right-0 -translate-y-1/2 w-[33%] h-[33%] rotate-45 bg-neutral-500 flex items-center justify-center">
                   <span className="text-white font-bold text-xs md:text-sm -rotate-45">{diamondLabels[3]}</span>
                 </div>
-                {/* Operations — bottom right */}
-                <div className="absolute bottom-0 right-[15%] w-[35%] h-[35%] rotate-45 bg-neutral-600 flex items-center justify-center">
+                {/* Operations — bottom */}
+                <div className="absolute bottom-0 left-1/2 -translate-x-1/2 w-[33%] h-[33%] rotate-45 bg-neutral-600 flex items-center justify-center">
                   <span className="text-white font-bold text-xs md:text-sm -rotate-45">{diamondLabels[4]}</span>
                 </div>
               </div>
@@ -354,8 +364,13 @@ export default function UXStrategyPage() {
         {/* Area detail cards */}
         {t.areas.map((area, idx) => {
           const colors = colorMap[area.color] || colorMap.blue;
+          const scene = areaScenes[idx];
           return (
             <section key={idx} className="mb-16">
+              {/* Generative ASCII art — breaks out wider on desktop */}
+              <div className="mb-8 lg:-mx-24 xl:-mx-40 2xl:-mx-56">
+                <GenerativeAscii scene={scene} alt={area.title} />
+              </div>
               <div className={`p-6 md:p-10 border ${colors.border} ${colors.bg} theme-transition`}>
                 {/* Area title */}
                 <h2 className={`font-heading text-display-md tracking-display mb-4 ${colors.text}`}>
