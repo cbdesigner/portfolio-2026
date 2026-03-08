@@ -23,7 +23,6 @@ const allProjects: { href: string; key: ProjectKey }[] = [
   { href: "/my-design-process", key: "myDesignProcess" },
   { href: "/enel-one-hub", key: "enelOneHub" },
   { href: "/ux-strategy", key: "uxStrategy" },
-  { href: "/design-system-architect", key: "designSystemArchitect" },
   { href: "/ds-methodology", key: "dsMethodology" },
   { href: "/bupa-design-system", key: "bupaDesignSystem" },
   { href: "/ds-services", key: "dsServices" },
