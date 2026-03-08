@@ -9,7 +9,7 @@ export default function HeroSection() {
   return (
     <section className="relative flex items-center justify-center min-h-screen overflow-hidden">
       {/* ASCII background layer */}
-      <div className="absolute inset-0 z-0 opacity-[0.12] pointer-events-none select-none">
+      <div className="absolute inset-0 z-0 opacity-25 pointer-events-none select-none">
         <AsciiImage
           src="/images/hero-bg.png"
           alt=""

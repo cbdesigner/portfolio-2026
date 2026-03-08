@@ -5,15 +5,17 @@ import { useEffect, useRef, useState, useCallback } from "react";
 interface AsciiImageProps {
   src: string;
   alt: string;
+  colorOnHover?: boolean;
 }
 
 const ASCII_CHARS = " .:-=+*#%@";
 const CHAR_ASPECT = 0.6; // monospace char width/height ratio
 
-export default function AsciiImage({ src, alt }: AsciiImageProps) {
+export default function AsciiImage({ src, alt, colorOnHover = false }: AsciiImageProps) {
   const containerRef = useRef<HTMLDivElement>(null);
   const canvasRef = useRef<HTMLCanvasElement>(null);
   const [ascii, setAscii] = useState<string>("");
+  const [colorHtml, setColorHtml] = useState<string>("");
   const [fontSize, setFontSize] = useState<number>(6);
   const [loading, setLoading] = useState(true);
   const imgRef = useRef<HTMLImageElement | null>(null);
@@ -31,18 +33,12 @@ export default function AsciiImage({ src, alt }: AsciiImageProps) {
 
     const containerWidth = container.offsetWidth;
 
-    // Each char cell: width = fontSize * CHAR_ASPECT, height = fontSize * lineHeight
-    // We want cols * charWidth = containerWidth
-    // Try a range of font sizes and pick the one that gives best detail
-    // Target: ~150-250 cols for good detail
     const targetCols = Math.min(250, Math.max(100, Math.floor(containerWidth / 4)));
     const charWidth = containerWidth / targetCols;
     const fs = charWidth / CHAR_ASPECT;
     const cols = targetCols;
 
     const imgAspect = img.naturalHeight / img.naturalWidth;
-    // rows = cols * imgAspect * (charWidth / charHeight)
-    // charHeight = fs * lineHeight(1.15), charWidth = fs * CHAR_ASPECT
     const charHeight = fs * 1.15;
     const rows = Math.floor((containerWidth * imgAspect) / charHeight);
 
@@ -53,8 +49,13 @@ export default function AsciiImage({ src, alt }: AsciiImageProps) {
     const imageData = ctx.getImageData(0, 0, cols, rows);
     const { data } = imageData;
 
-    let result = "";
+    let mono = "";
+    // Build colored HTML only when colorOnHover is enabled
+    const colorParts: string[] = colorOnHover ? [] : [];
+    const buildColor = colorOnHover;
+
     for (let y = 0; y < rows; y++) {
+      if (buildColor) colorParts.push('<span class="ascii-row">');
       for (let x = 0; x < cols; x++) {
         const i = (y * cols + x) * 4;
         const r = data[i];
@@ -64,15 +65,26 @@ export default function AsciiImage({ src, alt }: AsciiImageProps) {
         const charIndex = Math.floor(
           (brightness / 255) * (ASCII_CHARS.length - 1)
         );
-        result += ASCII_CHARS[charIndex];
+        const ch = ASCII_CHARS[charIndex];
+        mono += ch;
+
+        if (buildColor && ch !== " ") {
+          colorParts.push(
+            `<span style="color:rgb(${r},${g},${b})">${ch === "<" ? "&lt;" : ch === "&" ? "&amp;" : ch}</span>`
+          );
+        } else if (buildColor) {
+          colorParts.push(" ");
+        }
       }
-      result += "\n";
+      mono += "\n";
+      if (buildColor) colorParts.push("</span>\n");
     }
 
-    setAscii(result);
+    setAscii(mono);
+    if (buildColor) setColorHtml(colorParts.join(""));
     setFontSize(fs);
     setLoading(false);
-  }, []);
+  }, [colorOnHover]);
 
   // Load image once
   useEffect(() => {
@@ -98,10 +110,17 @@ export default function AsciiImage({ src, alt }: AsciiImageProps) {
     return () => observer.disconnect();
   }, [generate]);
 
+  const preStyle = {
+    fontSize: `${fontSize}px`,
+    lineHeight: "1.15",
+    letterSpacing: "0",
+    overflowX: "hidden" as const,
+  };
+
   return (
     <div
       ref={containerRef}
-      className="relative w-full overflow-hidden"
+      className={`relative w-full overflow-hidden${colorOnHover ? " group" : ""}`}
       role="img"
       aria-label={alt}
     >
@@ -113,15 +132,26 @@ export default function AsciiImage({ src, alt }: AsciiImageProps) {
             Generating ASCII...
           </span>
         </div>
+      ) : colorOnHover ? (
+        <>
+          {/* Monochrome layer — visible by default, fades on hover */}
+          <pre
+            className="font-mono text-[var(--color-text-secondary)] leading-none whitespace-pre w-full transition-opacity duration-500 group-hover:opacity-0"
+            style={preStyle}
+          >
+            {ascii}
+          </pre>
+          {/* Color layer — hidden by default, appears on hover */}
+          <pre
+            className="font-mono leading-none whitespace-pre w-full absolute inset-0 opacity-0 transition-opacity duration-500 group-hover:opacity-100"
+            style={preStyle}
+            dangerouslySetInnerHTML={{ __html: colorHtml }}
+          />
+        </>
       ) : (
         <pre
           className="font-mono text-[var(--color-text-secondary)] leading-none whitespace-pre w-full"
-          style={{
-            fontSize: `${fontSize}px`,
-            lineHeight: "1.15",
-            letterSpacing: "0",
-            overflowX: "hidden",
-          }}
+          style={preStyle}
         >
           {ascii}
         </pre>

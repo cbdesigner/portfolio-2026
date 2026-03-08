@@ -2,6 +2,7 @@
 
 import { useLanguage } from "@/i18n/LanguageContext";
 import RelatedProjects from "@/components/RelatedProjects";
+import AsciiImage from "@/components/AsciiImage";
 
 const i18n = {
   en: {
@@ -107,7 +108,7 @@ export default function MyDesignProcessPage() {
   const t = i18n[locale];
 
   return (
-    <div className="min-h-screen">
+    <div className="min-h-screen overflow-x-hidden">
       <div className="max-w-5xl mx-auto px-8 md:px-16 py-22">
         {/* Hero */}
         <header className="mb-16">
@@ -168,8 +169,12 @@ export default function MyDesignProcessPage() {
             </li>
           </ul>
 
-          <div className="mt-8">
-            <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/45df7e50-c493-463a-835c-2ab98409ebc8_rw_1920.jpg?h=42d4ed746449db9a3dc915315b080e02" alt={t.discoverAlt} className="w-full h-auto rounded-lg" loading="lazy" />
+          <div className="mt-8 lg:-mx-24 xl:-mx-40 2xl:-mx-56">
+            <AsciiImage
+              src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/45df7e50-c493-463a-835c-2ab98409ebc8_rw_1920.jpg?h=42d4ed746449db9a3dc915315b080e02"
+              alt={t.discoverAlt}
+              colorOnHover
+            />
           </div>
         </section>
 
@@ -221,8 +226,12 @@ export default function MyDesignProcessPage() {
             </li>
           </ul>
 
-          <div className="mt-8">
-            <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/504d30e8-ae01-4b18-b77b-1e51a501c090_rw_1920.jpg?h=1a7571a686fb5d46dcaf1d8314855f88" alt={t.defineAlt} className="w-full h-auto rounded-lg" loading="lazy" />
+          <div className="mt-8 lg:-mx-24 xl:-mx-40 2xl:-mx-56">
+            <AsciiImage
+              src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/504d30e8-ae01-4b18-b77b-1e51a501c090_rw_1920.jpg?h=1a7571a686fb5d46dcaf1d8314855f88"
+              alt={t.defineAlt}
+              colorOnHover
+            />
           </div>
         </section>
 
@@ -266,8 +275,12 @@ export default function MyDesignProcessPage() {
             </li>
           </ul>
 
-          <div className="mt-8">
-            <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/2e0b3c9f-a25e-4668-b526-65aa516b8ebd_rw_1920.jpg?h=172424bc484d9ffb6ae6eccaee7c7fe1" alt={t.developAlt} className="w-full h-auto rounded-lg" loading="lazy" />
+          <div className="mt-8 lg:-mx-24 xl:-mx-40 2xl:-mx-56">
+            <AsciiImage
+              src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/2e0b3c9f-a25e-4668-b526-65aa516b8ebd_rw_1920.jpg?h=172424bc484d9ffb6ae6eccaee7c7fe1"
+              alt={t.developAlt}
+              colorOnHover
+            />
           </div>
         </section>
 
@@ -311,8 +324,12 @@ export default function MyDesignProcessPage() {
             </li>
           </ul>
 
-          <div className="mt-8">
-            <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/da8fa13b-6a64-42bb-ada9-920d36fbce72_rw_1920.jpg?h=6cd6d79780a30201ccab450bd1eae191" alt={t.deliverAlt} className="w-full h-auto rounded-lg" loading="lazy" />
+          <div className="mt-8 lg:-mx-24 xl:-mx-40 2xl:-mx-56">
+            <AsciiImage
+              src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/da8fa13b-6a64-42bb-ada9-920d36fbce72_rw_1920.jpg?h=6cd6d79780a30201ccab450bd1eae191"
+              alt={t.deliverAlt}
+              colorOnHover
+            />
           </div>
         </section>
 
