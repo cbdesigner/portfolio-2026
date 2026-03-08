@@ -9,7 +9,11 @@ import HeroVideo from "@/components/HeroVideo";
 const VIDEO_SRC =
   "https://stream.mux.com/s8pMcOvMQXc4GD6AX4e1o01xFogFxipmuKltNfSYza0200.m3u8";
 
-export default function HeroSection() {
+interface HeroSectionProps {
+  isAuthenticated?: boolean | null;
+}
+
+export default function HeroSection({ isAuthenticated }: HeroSectionProps) {
   const { t } = useLanguage();
 
   return (
@@ -62,7 +66,7 @@ export default function HeroSection() {
             {/* CTA */}
             <BlurIn delay={0.6} duration={0.6}>
               <a
-                href="#projects"
+                href={isAuthenticated ? "#projects" : "/login"}
                 className="inline-flex items-center gap-2 px-6 py-3 border border-white/20 text-white/80 hover:text-white hover:border-white/40 transition-colors duration-300"
               >
                 <span className="text-sm font-medium tracking-wide uppercase">

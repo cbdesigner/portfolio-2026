@@ -1,5 +1,6 @@
 "use client";
 
+import { useState, useEffect } from "react";
 import HeroSection from "@/components/HeroSection";
 import ProjectGrid, { type ProjectItem, type FilterValue } from "@/components/ProjectGrid";
 import { useLanguage } from "@/i18n/LanguageContext";
@@ -117,6 +118,14 @@ const allProjects: {
 
 export default function Home() {
   const { t, locale } = useLanguage();
+  const [isAuthenticated, setIsAuthenticated] = useState<boolean | null>(null);
+
+  useEffect(() => {
+    fetch("/api/auth/status")
+      .then((r) => r.json())
+      .then((data) => setIsAuthenticated(data.authenticated))
+      .catch(() => setIsAuthenticated(false));
+  }, []);
 
   const items: ProjectItem[] = allProjects.map((p) => ({
     href: p.href,
@@ -128,8 +137,8 @@ export default function Home() {
 
   return (
     <>
-      <HeroSection />
-      <ProjectGrid items={items} />
+      <HeroSection isAuthenticated={isAuthenticated} />
+      {isAuthenticated === true && <ProjectGrid items={items} />}
     </>
   );
 }
