@@ -3,6 +3,7 @@
 import { useLanguage } from "@/i18n/LanguageContext";
 import RelatedProjects from "@/components/RelatedProjects";
 import AsciiImage from "@/components/AsciiImage";
+import DoubleDiamondDiagram from "@/components/DoubleDiamondDiagram";
 
 const i18n = {
   en: {
@@ -123,14 +124,8 @@ export default function MyDesignProcessPage() {
           </p>
         </header>
 
-        <section className="mb-16">
-          <div className="relative w-full  mx-auto" style={{ paddingBottom: '70.83%' }}>
-            <iframe
-              className="absolute inset-0 w-full h-full border-0"
-              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FnUOuhUu3jSBsp4QfOTbZt7%2FDouble-Diamond-%253CR%253E%253CD%253E-for-Product-Strategy-%2526-Product-Development%3Fpage-id%3D0%253A1%26node-id%3D0-1%26viewport%3D-75%252C-1642%252C0.28%26t%3D3LqySr5TXLwABpuq-1%26scaling%3Dcontain%26starting-point-node-id%3D604%253A12035%26content-scaling%3Dfixed"
-              sandbox="allow-scripts"
-            />
-          </div>
+        <section className="mb-16 lg:-mx-24 xl:-mx-40 2xl:-mx-56">
+          <DoubleDiamondDiagram />
         </section>
 
         {/* Discover */}
