@@ -721,8 +721,8 @@ export default function BupaDesignSystemPage() {
       <section className="max-w-5xl mx-auto px-8 md:px-16 py-8">
         <div className="rounded-xl overflow-hidden border border-[var(--color-border)]">
           <img
-            src="/images/bupa/calendar.png"
-            alt="Componente Calendar — vistas semanal y mensual con indicadores de disponibilidad y documentación de uso"
+            src="/images/bupa/variables.png"
+            alt="Panel de Variables en Figma — colecciones de tokens (smt-tkns, layouts grid, blur, shadows, typography) con valores por breakpoint: mobile, tablet, desktop y large screen"
             className="w-full"
             loading="lazy"
           />
@@ -745,8 +745,8 @@ export default function BupaDesignSystemPage() {
       <section className="max-w-5xl mx-auto px-8 md:px-16 py-8">
         <div className="rounded-xl overflow-hidden border border-[var(--color-border)]">
           <img
-            src="/images/bupa/responsive.png"
-            alt="Bupa Agenda — comparación responsive entre mobile y desktop con grid de layout"
+            src="/images/bupa/button.png"
+            alt="Componente Button del Design System — variantes Primary y Minimal con tamaños, estados (default, hover, focus, active, disabled) y alineación de iconos"
             className="w-full"
             loading="lazy"
           />
