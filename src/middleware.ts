@@ -20,6 +20,7 @@ function isKnownBot(ua: string | null): boolean {
 /* ── Private paths that require auth ─────────────────────────── */
 /* Projects */
 const PRIVATE_PATHS = new Set([
+  "/projects",
   "/autonomus",
   "/enel-one-hub",
   "/banco-ripley",
