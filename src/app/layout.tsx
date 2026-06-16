@@ -5,6 +5,7 @@ import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import BackToTop from "@/components/BackToTop";
+import ImageLightbox from "@/components/ImageLightbox";
 import { LanguageProvider } from "@/i18n/LanguageContext";
 import { ThemeProvider } from "@/components/ThemeProvider";
 import JsonLd from "@/components/JsonLd";
@@ -165,6 +166,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             <main className="min-h-screen pt-22">{children}</main>
             <Footer />
             <BackToTop />
+            <ImageLightbox />
           </LanguageProvider>
         </ThemeProvider>
       </body>

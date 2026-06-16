@@ -213,3 +213,8 @@ iframe[src*="figma.com"] {
 .pdf-generating * {
   transition: none !important;
 }
+
+/* ── Zoomable content images (ImageLightbox) ── */
+main img:not(a img):not(button img):not([data-no-zoom]) {
+  cursor: zoom-in;
+}
