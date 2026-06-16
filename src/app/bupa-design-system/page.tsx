@@ -676,8 +676,8 @@ export default function BupaDesignSystemPage() {
       <section className="max-w-5xl mx-auto px-8 md:px-16 py-8">
         <div className="rounded-xl overflow-hidden border border-[var(--color-border)]">
           <img
-            src="/images/bupa/figma-foundations.png"
-            alt="Bupa Design System Foundations - Color Tokens, Typography, Effects, Spacers & Layout"
+            src="/images/bupa/agenda-board.png"
+            alt="Bupa Agenda — board completo del flujo de reserva de hora médica con vistas mobile y documentación de componentes"
             className="w-full"
             loading="lazy"
           />
@@ -709,8 +709,8 @@ export default function BupaDesignSystemPage() {
       <section className="max-w-5xl mx-auto px-8 md:px-16 py-8">
         <div className="rounded-xl overflow-hidden border border-[var(--color-border)]">
           <img
-            src="/images/bupa/figma-typography.png"
-            alt="Typography system - Display 1-6 scales with Montserrat, desktop and mobile responsive sizes"
+            src="/images/bupa/medical-center.png"
+            alt="Componente AvailableMedicalCenter — centros médicos expandibles tipo acordeón y panel Resumen de tu hora"
             className="w-full"
             loading="lazy"
           />
@@ -721,8 +721,8 @@ export default function BupaDesignSystemPage() {
       <section className="max-w-5xl mx-auto px-8 md:px-16 py-8">
         <div className="rounded-xl overflow-hidden border border-[var(--color-border)]">
           <img
-            src="/images/bupa/figma-variables.png"
-            alt="Figma Variables panel - Layout grid tokens with breakpoints, columns, gutter, and margin across devices"
+            src="/images/bupa/calendar.png"
+            alt="Componente Calendar — vistas semanal y mensual con indicadores de disponibilidad y documentación de uso"
             className="w-full"
             loading="lazy"
           />
@@ -733,8 +733,8 @@ export default function BupaDesignSystemPage() {
       <section className="max-w-5xl mx-auto px-8 md:px-16 py-8">
         <div className="rounded-xl overflow-hidden border border-[var(--color-border)]">
           <img
-            src="/images/bupa/figma-library.png"
-            alt="Bupa Design System Figma Library - Alert, Toggle, Button, Foundations, Icons, and more"
+            src="/images/bupa/booking-mobile.png"
+            alt="Flujo Reserva tu hora — vistas mobile del agendamiento en tema claro y oscuro"
             className="w-full"
             loading="lazy"
           />
@@ -745,8 +745,8 @@ export default function BupaDesignSystemPage() {
       <section className="max-w-5xl mx-auto px-8 md:px-16 py-8">
         <div className="rounded-xl overflow-hidden border border-[var(--color-border)]">
           <img
-            src="/images/bupa/figma-button.png"
-            alt="Button component with sizes, states, icon alignment, and interactive properties"
+            src="/images/bupa/responsive.png"
+            alt="Bupa Agenda — comparación responsive entre mobile y desktop con grid de layout"
             className="w-full"
             loading="lazy"
           />
@@ -780,8 +780,8 @@ export default function BupaDesignSystemPage() {
       <section className="max-w-5xl mx-auto px-8 md:px-16 py-8">
         <div className="rounded-xl overflow-hidden border border-[var(--color-border)]">
           <img
-            src="/images/bupa/figma-flows.png"
-            alt="Bupa Agenda - Medical appointment booking flows with responsive views"
+            src="/images/bupa/agenda-board.png"
+            alt="Bupa Agenda — flujos de reserva de hora médica con vistas responsive"
             className="w-full"
             loading="lazy"
           />
@@ -792,8 +792,8 @@ export default function BupaDesignSystemPage() {
       <section className="max-w-5xl mx-auto px-8 md:px-16 py-8">
         <div className="rounded-xl overflow-hidden border border-[var(--color-border)]">
           <img
-            src="/images/bupa/figma-agenda-responsive.png"
-            alt="Bupa Agenda - Responsive design comparison between mobile and desktop views"
+            src="/images/bupa/responsive.png"
+            alt="Bupa Agenda — comparación de diseño responsive entre vistas mobile y desktop"
             className="w-full"
             loading="lazy"
           />
