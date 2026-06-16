@@ -4,9 +4,8 @@ export const translations = {
   en: {
     nav: {
       home: "Home",
-      cv: "CV",
+      projects: "Projects",
       profile: "Profile",
-      interview: "Interview",
       contact: "Contact",
     },
     hero: {
@@ -163,9 +162,8 @@ export const translations = {
   es: {
     nav: {
       home: "Inicio",
-      cv: "CV",
+      projects: "Proyectos",
       profile: "Perfil",
-      interview: "Entrevista",
       contact: "Contacto",
     },
     hero: {
