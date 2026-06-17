@@ -82,7 +82,7 @@ export default function AutonomusPage() {
 
         {/* Hero Image */}
         <div className="mt-8 mb-4">
-          <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/914aa4c3-9ac2-4119-b92b-cfe7939dbe38_rw_1920.png?h=3cf33696329e175bcd749dd2774c9408" alt={t.heroAlt} className="w-full h-auto rounded-lg" loading="lazy" />
+          <img src="/images/autonomus-services.png" alt={t.heroAlt} className="w-full h-auto rounded-lg" loading="lazy" />
         </div>
 
         {/* Role & Responsibilities */}
@@ -106,7 +106,7 @@ export default function AutonomusPage() {
 
           {/* App for Caregiver and Senior Image */}
           <div className="mt-8 mb-4">
-            <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/84f7f782-34fd-4bfb-9757-ce54d33675f7_rw_1920.png?h=c1c7c14201f8b015119a207a52c3f43d" alt={t.caregiverAlt} className="w-full h-auto rounded-lg" loading="lazy" />
+            <img src="/images/autonomus-app-flows.png" alt={t.caregiverAlt} className="w-full h-auto rounded-lg" loading="lazy" />
           </div>
 
           {/* Mobile App Video */}
