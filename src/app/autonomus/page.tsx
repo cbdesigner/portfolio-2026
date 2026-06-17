@@ -129,9 +129,12 @@ export default function AutonomusPage() {
             {t.backOfficeDesc}
           </p>
 
-          {/* Back Office Image */}
+          {/* Back Office Images */}
           <div className="mt-8 mb-4">
-            <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/b3b98b27-d590-43af-b62b-b030be486436_rw_1920.png?h=476edca82ab4d765221842aebb880e73" alt={t.backOfficeAlt} className="w-full h-auto rounded-lg" loading="lazy" />
+            <img src="/images/autonomus-backoffice-list.png" alt="Back Office - Listado de servicios" className="w-full h-auto rounded-lg" loading="lazy" />
+          </div>
+          <div className="mt-8 mb-4">
+            <img src="/images/autonomus-backoffice-detail.png" alt="Back Office - Detalle del servicio" className="w-full h-auto rounded-lg" loading="lazy" />
           </div>
 
           {/* Back Office Video */}
