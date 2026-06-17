@@ -4,10 +4,6 @@ import { useLanguage } from "@/i18n/LanguageContext";
 import { Sparkles } from "lucide-react";
 import BlurIn from "@/components/animations/BlurIn";
 import SplitText from "@/components/animations/SplitText";
-import HeroVideo from "@/components/HeroVideo";
-
-const VIDEO_SRC =
-  "https://stream.mux.com/s8pMcOvMQXc4GD6AX4e1o01xFogFxipmuKltNfSYza0200.m3u8";
 
 interface HeroSectionProps {
   isAuthenticated?: boolean | null;
@@ -21,19 +17,6 @@ export default function HeroSection({ isAuthenticated }: HeroSectionProps) {
       className="relative h-screen w-full overflow-hidden -mt-22"
       style={{ backgroundColor: "#070612" }}
     >
-      {/* ── Background video layer ── */}
-      <div className="absolute inset-0 z-0">
-        <HeroVideo src={VIDEO_SRC} className="h-full w-full object-cover" />
-      </div>
-
-      {/* ── Bottom gradient fade ── */}
-      <div
-        className="absolute inset-x-0 bottom-0 h-40 z-10"
-        style={{
-          background: "linear-gradient(to top, #070612 0%, transparent 100%)",
-        }}
-      />
-
       {/* ── Content ── */}
       <div className="relative z-20 flex items-center justify-center h-full">
         <div className="max-w-5xl mx-auto px-8 md:px-16 w-full text-center">
