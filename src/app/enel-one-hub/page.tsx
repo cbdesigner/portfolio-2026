@@ -169,8 +169,8 @@ export default function EnelOneHubPage() {
             {t.argentinaColombiaTitle}
           </h2>
           <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
-            <img src="/images/92feab37-cf17-45dd-ab67-ad7decc8b60b_rw_1920.png" alt="Argentina workshops" className="w-full h-auto rounded-lg" loading="lazy" />
-            <img src="/images/80a69530-7f55-4ee3-ab5e-58fbb81a4e50_rw_1920.png" alt="Colombia workshops" className="w-full h-auto rounded-lg" loading="lazy" />
+            <img src="/images/argentina.png" alt="Argentina workshops" className="w-full h-auto rounded-lg" loading="lazy" />
+            <img src="/images/colombia.png" alt="Colombia workshops" className="w-full h-auto rounded-lg" loading="lazy" />
           </div>
         </section>
 
@@ -182,7 +182,7 @@ export default function EnelOneHubPage() {
             {t.chileSitemapDescription}
           </p>
           <div className="mt-6 mb-4">
-            <img src="/images/689d0786-f321-4a4c-9114-47e5a9389f1b_rw_1920.jpg" alt="Chile Sitemap with all sites unified" className="w-full h-auto rounded-lg" loading="lazy" />
+            <img src="/images/sitemap.jpg" alt="Chile Sitemap with all sites unified" className="w-full h-auto rounded-lg" loading="lazy" />
           </div>
         </section>
 
