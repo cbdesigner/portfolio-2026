@@ -165,9 +165,6 @@ export default function EnelOneHubPage() {
         </section>
 
         <section className="mb-16">
-          <h2 className="font-heading text-display-md tracking-display mb-6">
-            {t.argentinaColombiaTitle}
-          </h2>
           <div className="mt-6 grid grid-cols-1 md:grid-cols-2 gap-4">
             <img src="/images/argentina.png" alt="Argentina workshops" className="w-full h-auto rounded-lg" loading="lazy" />
             <img src="/images/colombia.png" alt="Colombia workshops" className="w-full h-auto rounded-lg" loading="lazy" />
