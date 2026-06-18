@@ -207,9 +207,9 @@ export default function EnelOneHubPage() {
             <img src="/images/3c01aa27-85a3-48f8-bb4c-47e693587aff_rw_1920.jpg" alt="Private Area Personas screens" className="w-full h-auto rounded-lg" loading="lazy" />
           </div>
           <div className="mt-4 grid grid-cols-1 md:grid-cols-3 gap-4">
-            <img src="/images/1c8f5170-7ed0-4a81-bc09-89508247421d_rw_1920.jpg" alt="Private Area Personas screens" className="w-full h-auto rounded-lg" loading="lazy" />
-            <img src="/images/68eaa859-0db0-4ac5-916d-8ed63f26069f_rw_1920.jpg" alt="Private Area Personas screens" className="w-full h-auto rounded-lg" loading="lazy" />
-            <img src="/images/31c5f970-38df-4715-b534-971eb2257c21_rw_1920.jpg" alt="Private Area Personas screens" className="w-full h-auto rounded-lg" loading="lazy" />
+            <img src="/images/1c8f5170-7ed0-4a81-bc09-89508247421d_rw_600.jpg" alt="Private Area Personas screens" className="w-full h-auto rounded-lg" loading="lazy" />
+            <img src="/images/68eaa859-0db0-4ac5-916d-8ed63f26069f_rw_600.jpg" alt="Private Area Personas screens" className="w-full h-auto rounded-lg" loading="lazy" />
+            <img src="/images/31c5f970-38df-4715-b534-971eb2257c21_rw_600.jpg" alt="Private Area Personas screens" className="w-full h-auto rounded-lg" loading="lazy" />
           </div>
           <div className="mt-6 mb-4">
             <img src="/images/4cddf3c6-96a4-4255-8b27-12704b9eb724_rw_1920.jpg" alt="Private Area screens" className="w-full h-auto rounded-lg" loading="lazy" />
