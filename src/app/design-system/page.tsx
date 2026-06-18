@@ -140,14 +140,15 @@ export default function DesignSystemPage() {
           <div className="mt-6  mx-auto">
             <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/cb5feb94-e5be-42aa-8cb9-7acc0760afb9_rw_1920.png?h=130d7524717101f2df6a053a7f4047cf" alt={t.tokensAlt} className="w-full h-auto rounded-lg" loading="lazy" />
           </div>
-          <div className="mt-8  mx-auto">
-            <div className="relative w-full" style={{ paddingBottom: '85%' }}>
-              <iframe
-                className="absolute inset-0 w-full h-full border-0"
-                src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F7rLDEvWaijCmlCDsrg8FYJ%2FAtomic-Design-System-Multibranding(Agnostic)-with-Tokens%252FVariables%3Ftype%3Dwhiteboard%26node-id%3D2%253A2057%26t%3DEmCIvj7kDxq0MtW7-1"
-                sandbox="allow-scripts"
-              />
-            </div>
+          <div className="mt-8 mx-auto">
+            <iframe
+              style={{ border: '1px solid rgba(0, 0, 0, 0.1)' }}
+              width="100%"
+              height="600"
+              src="https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Ffile%2F7rLDEvWaijCmlCDsrg8FYJ%2FAtomic-Design-System-Multibranding(Agnostic)-with-Tokens%252FVariables%3Ftype%3Dwhiteboard%26node-id%3D2%253A2057%26t%3DEmCIvj7kDxq0MtW7-1"
+              allowFullScreen
+              sandbox="allow-same-origin allow-scripts allow-pointer-lock allow-forms"
+            />
           </div>
         </section>
 
