@@ -110,14 +110,8 @@ export default function AutonomusPage() {
           </div>
 
           {/* Mobile App Video */}
-          <div className="mt-8 mb-4  mx-auto">
-            <div className="relative w-full" style={{ paddingBottom: '216%' }}>
-              <iframe
-                className="absolute inset-0 w-full h-full border-0"
-                src="https://www-ccv.adobe.io/v1/player/ccv/6noqNmJ-MKs/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View"
-                allowFullScreen
-              />
-            </div>
+          <div className="mt-8 mb-4">
+            <video src="/videos/autonomus-app-video.mp4" controls className="w-full h-auto rounded-lg" />
           </div>
         </section>
 
@@ -139,13 +133,7 @@ export default function AutonomusPage() {
 
           {/* Back Office Video */}
           <div className="mt-8 mb-4">
-            <div className="relative w-full" style={{ paddingBottom: '56.25%' }}>
-              <iframe
-                className="absolute inset-0 w-full h-full border-0"
-                src="https://www-ccv.adobe.io/v1/player/ccv/SD6d2-ZeXmo/embed?bgcolor=%23191919&lazyLoading=true&api_key=BehancePro2View"
-                allowFullScreen
-              />
-            </div>
+            <video src="/videos/autonomus-backoffice-video.mp4" controls className="w-full h-auto rounded-lg" />
           </div>
         </section>
 
