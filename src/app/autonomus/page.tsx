@@ -110,7 +110,7 @@ export default function AutonomusPage() {
           </div>
 
           {/* Mobile App Video */}
-          <div className="mt-8 mb-4">
+          <div className="mt-8 mb-4 mx-auto" style={{ maxWidth: '400px' }}>
             <video src="/videos/autonomus-app-video.mp4" controls className="w-full h-auto rounded-lg" />
           </div>
         </section>
