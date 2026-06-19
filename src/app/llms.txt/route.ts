@@ -56,6 +56,20 @@ Integrated framework of Governance, Architecture, and Metrics to transform how d
 URL: https://carlosbaeza.design/ux-strategy
 Strategic UX framework across 5 key areas: Strategy, Team, Operations, Experience, and Enterprise. Framework for building and leading high-performing design teams at organizational scale.
 
+## Professional Profile
+URL: https://carlosbaeza.design/profile
+- Full name: Carlos Baeza
+- Current role: Design Systems Architect (CEO & Design System Architect at Snapflow Labs, an AI-Native company)
+- Headline: Design Systems Architect, Head of Product Design, and UX Manager
+- Location: Santiago, Región Metropolitana, Chile (works remotely with global teams)
+- Languages: Spanish (native), English (professional)
+- Experience: 10+ years across banking, energy, healthcare, logistics, fintech, and mobility. Led cross-functional teams of up to 27 specialists.
+- Notable organizations: Snapflow Labs, Siamese Digital (Head of Product Design & Design System Manager), Banco Ripley (UX Manager, Chile & Peru), Autonomus, Imille (Enel project), Modyo, Falabella Financiero, Multicaja.
+- Education: Universidad del Desarrollo (Full Stack Development, 2024); Duoc UC (Diseño Gráfico, 2002–2004); Escuela de Creativos Brother (2012).
+- Certifications: SAFe 5 Product Owner / Product Manager (Scaled Agile); Product Strategy (Product School); Google Tag Manager Fundamentals (Google); Design Sprint Innovation, React Web Application Ninja and more (Universidad del Desarrollo).
+- Core skills: Information Architecture, Wireframing & Prototyping, User Research, Design System Architecture, Product Design.
+- Impact: 40% reduction in design-to-implementation cycles and $2M+ in annual technical debt savings across partner organizations.
+
 ## Pages
 - Profile: https://carlosbaeza.design/profile
 - Contact: https://carlosbaeza.design/contact

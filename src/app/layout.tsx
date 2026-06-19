@@ -127,6 +127,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
           data={{
             "@context": "https://schema.org",
             "@type": "Person",
+            "@id": `${siteUrl}/#person`,
             name: "Carlos Baeza",
             url: siteUrl,
             jobTitle: "Design Systems Architect",
