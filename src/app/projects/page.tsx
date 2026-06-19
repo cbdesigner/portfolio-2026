@@ -14,6 +14,7 @@ type ProjectKey =
   | "designSystemArchitect"
   | "dsMethodology"
   | "bupaDesignSystem"
+  | "shipbobDesignSystem"
   | "dsServices";
 
 const allProjects: {
@@ -111,6 +112,16 @@ const allProjects: {
     description: {
       en: "Medical appointment booking system with design tokens, component library, and scalable product architecture.",
       es: "Sistema de reserva de citas médicas con tokens de diseño, librería de componentes y arquitectura escalable.",
+    },
+  },
+  {
+    href: "/shipbob-design-system",
+    key: "shipbobDesignSystem",
+    category: "Design Systems · Logistics",
+    filter: "designSystems",
+    description: {
+      en: "AI-ready design system infrastructure that reduced complex interface development from hours to minutes, enabling scalable fulfillment operations.",
+      es: "Infraestructura de design system preparada para IA que redujo el desarrollo de interfaces complejas de horas a minutos, permitiendo operaciones de fulfillment escalables.",
     },
   },
   {
