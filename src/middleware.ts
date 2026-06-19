@@ -25,6 +25,7 @@ const PRIVATE_PATHS = new Set([
   "/enel-one-hub",
   "/banco-ripley",
   "/bupa-design-system",
+  "/shipbob-design-system",
   /* Methodologies */
   "/my-design-process",
   "/ds-services",
