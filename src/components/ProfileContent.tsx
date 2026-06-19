@@ -16,6 +16,22 @@ const experience: {
   responsibilities?: string[];
 }[] = [
   {
+    role: "CEO (President) & Design System Architect",
+    company: "Snapflow Labs",
+    period: "Oct 2023 – Present (2 yrs 9 mos)",
+    location: "Delaware, Estados Unidos · Remote",
+    description:
+      "Founded Snapflow Labs (AI-Native Company) to solve the design-engineering gap at infrastructure level.\n\nOver 10+ years, I've architected and scaled design systems for global enterprises and high-impact startups across fintech, energy, logistics, and digital banking—working as both a contractor for leading organizations and as Head of Design Systems at Siamese Digital. My work has reached millions of users worldwide through platforms built with these design systems.\n\nNow at Snapflow, I'm building the next generation: AI-ready design system infrastructure that enables enterprises to reduce UI development cycles by 40% and eliminate technical debt through deterministic, spec-driven workflows. Snapflow connects Figma and code in a unified flow, transforming design assets into governed components ready for AI agents to generate production-ready interfaces at scale.\n\nTrack record: 40% reduction in design-to-implementation cycles and $2M+ in annual technical debt savings across organizations I've partnered with.",
+    responsibilities: [
+      "Deterministic design-to-code automation powered by AI",
+      "Enterprise-scale design governance without manual overhead",
+      "Multi-framework support: React, Angular, Vue, Web Components",
+      "Seamless Figma-to-code integration",
+      "Specification-driven design workflows",
+      "Mission: Make design systems the operating system for AI-native product development",
+    ],
+  },
+  {
     role: "Design System Architect",
     company: "Flylance",
     period: "Jul 2025 – Present (9 months)",
