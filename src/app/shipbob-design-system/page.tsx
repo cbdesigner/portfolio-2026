@@ -224,8 +224,20 @@ export default function ShipBobPage() {
             <h3 className="text-2xl font-medium mb-4 text-[var(--color-text-primary)]">
               5. Developer Integration
             </h3>
-            <p className="text-[var(--color-text-tertiary)]">
+            <p className="text-[var(--color-text-tertiary)] mb-4">
               Direct alignment between Figma design system and codebase. Reduced manual decisions, eliminated design-eng friction, accelerated implementation. Components ready to use — no interpretation needed.
+            </p>
+            <p className="text-[var(--color-text-tertiary)] text-sm">
+              <strong>Tech Stack:</strong> ShipBob's development team built the design system in Vue.js using{" "}
+              <a
+                href="https://primevue.org/"
+                target="_blank"
+                rel="noopener noreferrer"
+                className="text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] underline"
+              >
+                PrimeVue
+              </a>{" "}
+              as the component foundation. This allowed rapid iteration, consistent component behavior, and seamless integration with ShipBob's existing Vue infrastructure.
             </p>
           </div>
 
