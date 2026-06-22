@@ -14,7 +14,7 @@ export function useProfilePdf() {
       const html2pdf = (await import("html2pdf.js")).default;
 
       const element = document.querySelector(
-        "[data-pdf-content]"
+        "[data-simplified-cv-pdf]"
       ) as HTMLElement | null;
       if (!element) {
         console.error("PDF content container not found");
@@ -26,44 +26,30 @@ export function useProfilePdf() {
         .getPropertyValue("--color-surface")
         .trim();
 
-      // Toggle PDF mode — triggers CSS rules to hide buttons, etc.
-      element.classList.add("pdf-generating");
-
-      // Force all scroll-reveal elements to be visible
-      const revealEls = element.querySelectorAll(".reveal:not(.revealed)");
-      revealEls.forEach((el) => el.classList.add("revealed"));
-
       // Wait for fonts to be fully loaded
       await document.fonts.ready;
 
       // eslint-disable-next-line @typescript-eslint/no-explicit-any
       await (html2pdf() as any)
         .set({
-          margin: [10, 10, 10, 10],
+          margin: [5, 5, 5, 5],
           filename: "Carlos_Baeza_CV.pdf",
-          image: { type: "jpeg", quality: 0.95 },
+          image: { type: "jpeg", quality: 0.98 },
           html2canvas: {
             scale: 2,
             useCORS: true,
-            backgroundColor: bgColor || "#0a0a0a",
+            backgroundColor: bgColor || "#ffffff",
             logging: false,
-            windowWidth: 1280,
+            windowWidth: 800,
           },
           jsPDF: {
             unit: "mm",
             format: "a4",
             orientation: "portrait",
           },
-          pagebreak: {
-            mode: ["avoid-all", "css", "legacy"],
-            avoid: ["section", ".pdf-no-break"],
-          },
         })
         .from(element)
         .save();
-
-      // Clean up
-      element.classList.remove("pdf-generating");
     } catch (error) {
       console.error("PDF generation failed:", error);
     } finally {

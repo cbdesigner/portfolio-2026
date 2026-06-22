@@ -2,6 +2,7 @@
 
 import Link from "next/link";
 import RelatedProjects from "@/components/RelatedProjects";
+import SimplifiedCvContent from "@/components/SimplifiedCvContent";
 import { useLanguage } from "@/i18n/LanguageContext";
 import { useProfilePdf } from "@/hooks/useProfilePdf";
 
@@ -638,6 +639,11 @@ export default function ProfileContent() {
         <div className="pdf-hide">
           <RelatedProjects current="/profile" />
         </div>
+      </div>
+
+      {/* Hidden simplified CV for PDF generation */}
+      <div className="hidden">
+        <SimplifiedCvContent />
       </div>
     </div>
   );
