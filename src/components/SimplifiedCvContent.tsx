@@ -33,7 +33,7 @@ export default function SimplifiedCvContent() {
         </h1>
         <div style={{ fontSize: "6.5pt", color: "#333333", lineHeight: "1.15" }}>
           <p style={{ margin: "0.3pt 0" }}>
-            📧 carlos@snapflowlabs.com · 📞 +569 6685 2551 · 🌐 carlosbaeza.design · 🔗 linkedin.com/in/carlos-baeza-designer
+            📧 carlos@snapflowlabs.com · 📞 +569 6685 2551 · 🌐 portfolio-2026-3cva.onrender.com · 🔗 linkedin.com/in/carlos-baeza-designer
           </p>
         </div>
       </div>
@@ -323,7 +323,7 @@ export default function SimplifiedCvContent() {
 
       {/* Footer */}
       <div style={{ paddingTop: "1.5pt", fontSize: "6pt", color: "#666666", textAlign: "center", marginTop: "auto" }}>
-        <p style={{ margin: "0" }}>carlosbaeza.design • June 2026 • Full professional history and design systems expertise</p>
+        <p style={{ margin: "0" }}>portfolio-2026-3cva.onrender.com • June 2026 • Full professional history and design systems expertise</p>
       </div>
     </div>
   );
