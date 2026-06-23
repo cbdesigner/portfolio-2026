@@ -34,8 +34,8 @@ const experience: {
   },
   {
     role: "Design System Architect",
-    company: "Flylance",
-    period: "Jul 2025 – Present (9 months)",
+    company: "ShipBob",
+    period: "Jul 2025 – Mar 2026 (9 months)",
     description:
       "I led the strategic conceptualization and execution of the Design System for ShipBob, optimizing visual consistency and operational efficiency across their global logistics ecosystem.",
     responsibilities: [
