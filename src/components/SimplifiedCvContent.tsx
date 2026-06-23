@@ -19,7 +19,7 @@ export default function SimplifiedCvContent() {
       }}
     >
       {/* Header */}
-      <div style={{ marginBottom: "4pt", paddingBottom: "2pt", borderBottom: "1.5pt solid #000000" }}>
+      <div style={{ marginBottom: "4pt", paddingBottom: "2pt" }}>
         <h1
           style={{
             margin: "0 0 0.3pt 0",
@@ -39,9 +39,9 @@ export default function SimplifiedCvContent() {
       </div>
 
       {/* Two Column Layout */}
-      <div style={{ display: "flex", gap: "7mm", flex: 1, marginBottom: "2pt", overflow: "hidden" }}>
+      <div style={{ display: "flex", gap: "6mm", flex: 1, marginBottom: "2pt", overflow: "hidden" }}>
         {/* Left Column - Experience */}
-        <section style={{ flex: 1, minWidth: 0 }}>
+        <section style={{ flex: 0 0 65%, minWidth: 0 }}>
           <h2
             style={{
               margin: "2.5pt 0 1.5pt 0",
@@ -49,8 +49,6 @@ export default function SimplifiedCvContent() {
               fontWeight: "700",
               textTransform: "uppercase",
               letterSpacing: "0.6pt",
-              borderBottom: "1pt solid #000000",
-              paddingBottom: "0.5pt",
               color: "#000000",
             }}
           >
@@ -269,10 +267,10 @@ export default function SimplifiedCvContent() {
         </section>
 
         {/* Right Column */}
-        <section style={{ flex: "0 0 40mm", overflow: "hidden" }}>
+        <section style={{ flex: 1, overflow: "hidden" }}>
           {/* Education */}
           <div style={{ marginBottom: "2pt" }}>
-            <h3 style={{ margin: "2.5pt 0 1pt 0", fontSize: "7.5pt", fontWeight: "700", textTransform: "uppercase", letterSpacing: "0.6pt", borderBottom: "1pt solid #000000", paddingBottom: "0.3pt", color: "#000000" }}>
+            <h3 style={{ margin: "2.5pt 0 1pt 0", fontSize: "7.5pt", fontWeight: "700", textTransform: "uppercase", letterSpacing: "0.6pt", color: "#000000" }}>
               Education
             </h3>
             <div style={{ fontSize: "7pt", color: "#333333" }}>
@@ -285,7 +283,7 @@ export default function SimplifiedCvContent() {
 
           {/* Certifications */}
           <div style={{ marginBottom: "2pt" }}>
-            <h3 style={{ margin: "2.5pt 0 1pt 0", fontSize: "7.5pt", fontWeight: "700", textTransform: "uppercase", letterSpacing: "0.6pt", borderBottom: "1pt solid #000000", paddingBottom: "0.3pt", color: "#000000" }}>
+            <h3 style={{ margin: "2.5pt 0 1pt 0", fontSize: "7.5pt", fontWeight: "700", textTransform: "uppercase", letterSpacing: "0.6pt", color: "#000000" }}>
               Certifications
             </h3>
             <ul style={{ margin: "0", paddingLeft: "6pt", fontSize: "6.5pt", color: "#333333", lineHeight: "1.1" }}>
@@ -298,7 +296,7 @@ export default function SimplifiedCvContent() {
 
           {/* Methodologies */}
           <div style={{ marginBottom: "2pt" }}>
-            <h3 style={{ margin: "2.5pt 0 1pt 0", fontSize: "7.5pt", fontWeight: "700", textTransform: "uppercase", letterSpacing: "0.6pt", borderBottom: "1pt solid #000000", paddingBottom: "0.3pt", color: "#000000" }}>
+            <h3 style={{ margin: "2.5pt 0 1pt 0", fontSize: "7.5pt", fontWeight: "700", textTransform: "uppercase", letterSpacing: "0.6pt", color: "#000000" }}>
               Methodologies
             </h3>
             <p style={{ margin: "0", fontSize: "6.5pt", color: "#333333", lineHeight: "1.15" }}>
@@ -308,7 +306,7 @@ export default function SimplifiedCvContent() {
 
           {/* Tools */}
           <div style={{ marginBottom: "2pt" }}>
-            <h3 style={{ margin: "2.5pt 0 1pt 0", fontSize: "7.5pt", fontWeight: "700", textTransform: "uppercase", letterSpacing: "0.6pt", borderBottom: "1pt solid #000000", paddingBottom: "0.3pt", color: "#000000" }}>
+            <h3 style={{ margin: "2.5pt 0 1pt 0", fontSize: "7.5pt", fontWeight: "700", textTransform: "uppercase", letterSpacing: "0.6pt", color: "#000000" }}>
               Tools & Tech
             </h3>
             <div style={{ fontSize: "6.5pt", color: "#333333", lineHeight: "1.1" }}>
@@ -321,7 +319,7 @@ export default function SimplifiedCvContent() {
 
           {/* Awards */}
           <div style={{ marginBottom: "2pt" }}>
-            <h3 style={{ margin: "2.5pt 0 1pt 0", fontSize: "7.5pt", fontWeight: "700", textTransform: "uppercase", letterSpacing: "0.6pt", borderBottom: "1pt solid #000000", paddingBottom: "0.3pt", color: "#000000" }}>
+            <h3 style={{ margin: "2.5pt 0 1pt 0", fontSize: "7.5pt", fontWeight: "700", textTransform: "uppercase", letterSpacing: "0.6pt", color: "#000000" }}>
               Awards
             </h3>
             <ul style={{ margin: "0", paddingLeft: "6pt", fontSize: "6.5pt", color: "#333333", lineHeight: "1.1" }}>
@@ -333,7 +331,7 @@ export default function SimplifiedCvContent() {
 
           {/* Skills */}
           <div style={{ marginBottom: "2pt" }}>
-            <h3 style={{ margin: "2.5pt 0 1pt 0", fontSize: "7.5pt", fontWeight: "700", textTransform: "uppercase", letterSpacing: "0.6pt", borderBottom: "1pt solid #000000", paddingBottom: "0.3pt", color: "#000000" }}>
+            <h3 style={{ margin: "2.5pt 0 1pt 0", fontSize: "7.5pt", fontWeight: "700", textTransform: "uppercase", letterSpacing: "0.6pt", color: "#000000" }}>
               Core Skills
             </h3>
             <ul style={{ margin: "0", paddingLeft: "6pt", fontSize: "6.5pt", color: "#333333", lineHeight: "1.1" }}>
@@ -348,7 +346,7 @@ export default function SimplifiedCvContent() {
 
           {/* Languages */}
           <div>
-            <h3 style={{ margin: "2.5pt 0 1pt 0", fontSize: "7.5pt", fontWeight: "700", textTransform: "uppercase", letterSpacing: "0.6pt", borderBottom: "1pt solid #000000", paddingBottom: "0.3pt", color: "#000000" }}>
+            <h3 style={{ margin: "2.5pt 0 1pt 0", fontSize: "7.5pt", fontWeight: "700", textTransform: "uppercase", letterSpacing: "0.6pt", color: "#000000" }}>
               Languages
             </h3>
             <p style={{ margin: "0", fontSize: "6.5pt", color: "#333333" }}>
@@ -359,7 +357,7 @@ export default function SimplifiedCvContent() {
       </div>
 
       {/* Footer */}
-      <div style={{ borderTop: "1pt solid #000000", paddingTop: "1.5pt", fontSize: "6pt", color: "#666666", textAlign: "center", marginTop: "auto" }}>
+      <div style={{ paddingTop: "1.5pt", fontSize: "6pt", color: "#666666", textAlign: "center", marginTop: "auto" }}>
         <p style={{ margin: "0" }}>carlosbaeza.design • June 2026 • Full professional history and design systems expertise</p>
       </div>
     </div>
