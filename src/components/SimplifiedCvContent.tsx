@@ -19,7 +19,7 @@ export default function SimplifiedCvContent() {
       }}
     >
       {/* Header */}
-      <div style={{ marginBottom: "4pt", paddingBottom: "2.5pt", borderBottom: "1pt solid #000000" }}>
+      <div style={{ marginBottom: "4pt", paddingBottom: "2pt", borderBottom: "1.5pt solid #000000" }}>
         <h1
           style={{
             margin: "0 0 0.3pt 0",
