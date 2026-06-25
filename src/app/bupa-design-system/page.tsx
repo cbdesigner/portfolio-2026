@@ -538,15 +538,13 @@ export default function BupaDesignSystemPage() {
 
       {/* 2. Project Overview */}
       <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
-        <div className="w-full max-w-6xl mx-auto">
-          <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
-            <img
-              src="/images/bupa/roadmap-reference.svg"
-              alt="Bupa Design System Project Roadmap - 16+ sprints across Discovery, Creation, Dev & Docs, and Scaling phases"
-              className="w-full"
-              loading="lazy"
-            />
-          </div>
+        <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
+          <img
+            src="/images/bupa/roadmap-reference.svg"
+            alt="Bupa Design System Project Roadmap - 16+ sprints across Discovery, Creation, Dev & Docs, and Scaling phases"
+            className="w-full"
+            loading="lazy"
+          />
         </div>
       </section>
 
@@ -676,15 +674,13 @@ export default function BupaDesignSystemPage() {
 
       {/* 5. What We Delivered - Gallery images */}
       <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
-        <div className="w-full max-w-6xl mx-auto">
-          <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
-            <img
-              src="/images/bupa/agenda-board.png"
-              alt="Bupa Agenda — board completo del flujo de reserva de hora médica con vistas mobile y documentación de componentes"
-              className="w-full"
-              loading="lazy"
-            />
-          </div>
+        <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
+          <img
+            src="/images/bupa/agenda-board.png"
+            alt="Bupa Agenda — board completo del flujo de reserva de hora médica con vistas mobile y documentación de componentes"
+            className="w-full"
+            loading="lazy"
+          />
         </div>
       </section>
 
@@ -719,7 +715,7 @@ export default function BupaDesignSystemPage() {
             { src: "/images/bupa/button.png", alt: "Componente Button del Design System — variantes Primary y Minimal con tamaños, estados (default, hover, focus, active, disabled) y alineación de iconos" },
           ].map((img, i) => (
             <div key={i} className="w-full px-8 md:px-0">
-              <div className="w-full max-w-6xl mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
+              <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
                 <img
                   src={img.src}
                   alt={img.alt}
@@ -763,7 +759,7 @@ export default function BupaDesignSystemPage() {
             { src: "/images/bupa/responsive.png", alt: "Bupa Agenda — comparación de diseño responsive entre vistas mobile y desktop" },
           ].map((img, i) => (
             <div key={i} className="w-full px-8 md:px-0">
-              <div className="w-full max-w-6xl mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
+              <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
                 <img
                   src={img.src}
                   alt={img.alt}

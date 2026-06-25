@@ -134,7 +134,7 @@ export default function CopecVoltexPage() {
 
         {/* Design System Image */}
         <section className="w-full px-8 md:px-0 py-8">
-          <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
+          <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
             <img
               src="/images/voltex/0fdbc23c-70f5-4b80-aeac-0a62d016169f_rw_1920.png"
               alt="Modular Design System — Components, tokens, and patterns"
@@ -161,7 +161,7 @@ export default function CopecVoltexPage() {
 
         {/* EV Catalog Image */}
         <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
-          <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
+          <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
             <img
               src="/images/voltex/05108844-6000-4f0e-a03e-20352d3a0e79_rw_1920.png"
               alt="Electric Vehicle Catalog — Intuitive explorer with filtering"
@@ -188,7 +188,7 @@ export default function CopecVoltexPage() {
 
         {/* Education Image */}
         <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
-          <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
+          <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
             <img
               src="/images/voltex/e019b36d-92df-4e20-84e9-b178884b01e7_rw_1920.png"
               alt="Educational Resources — Guides on EV ownership and sustainability"
@@ -216,7 +216,7 @@ export default function CopecVoltexPage() {
 
         {/* Cost Calculator Image */}
         <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
-          <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
+          <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
             <img
               src="/images/voltex/2d9fc2e8-d729-4e64-97aa-61697ba2d190_rw_1920.png"
               alt="ROI Cost Calculator — Ownership cost estimation and savings visualization"
@@ -327,7 +327,7 @@ export default function CopecVoltexPage() {
         <div className="space-y-8 py-20">
           {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((num) => (
             <div key={num} className="w-full px-8 md:px-0">
-              <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
+              <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
                 <img
                   src={`/images/voltex/voltex-${num}.png`}
                   alt={`Copec Voltex Project Image ${num}`}

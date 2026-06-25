@@ -143,11 +143,11 @@ export default function ShipBobPage() {
 
         {/* Tokens Image */}
         <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
-          <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
+          <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
             <img
               src="/images/shipbob/tokens-variables.png"
               alt="ShipBob Design Tokens — Semantic color, spacing, and typography variables"
-              className="w-full max-w-6xl mx-auto"
+              className="w-full"
               loading="lazy"
             />
           </div>
@@ -155,11 +155,11 @@ export default function ShipBobPage() {
 
         {/* Base Styles Image */}
         <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
-          <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
+          <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
             <img
               src="/images/shipbob/base-styles.png"
               alt="Base Styles — Consistent typography, colors, and spacing applied across the system"
-              className="w-full max-w-6xl mx-auto"
+              className="w-full"
               loading="lazy"
             />
           </div>
@@ -184,11 +184,11 @@ export default function ShipBobPage() {
 
         {/* Button Component */}
         <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
-          <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
+          <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
             <img
               src="/images/shipbob/button.png"
               alt="Button Component — Primary, secondary, and tertiary variants with states"
-              className="w-full max-w-6xl mx-auto"
+              className="w-full"
               loading="lazy"
             />
           </div>
@@ -196,11 +196,11 @@ export default function ShipBobPage() {
 
         {/* Toggle Component */}
         <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
-          <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
+          <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
             <img
               src="/images/shipbob/toggle.png"
               alt="Toggle Component — Binary controls for complex operations"
-              className="w-full max-w-6xl mx-auto"
+              className="w-full"
               loading="lazy"
             />
           </div>
@@ -208,11 +208,11 @@ export default function ShipBobPage() {
 
         {/* Bottom Sheet Component */}
         <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
-          <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
+          <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
             <img
               src="/images/shipbob/bottom-sheet.png"
               alt="Bottom Sheet Component — Modular content delivery for mobile and desktop"
-              className="w-full max-w-6xl mx-auto"
+              className="w-full"
               loading="lazy"
             />
           </div>
@@ -220,11 +220,11 @@ export default function ShipBobPage() {
 
         {/* Stepper Component */}
         <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
-          <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
+          <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
             <img
               src="/images/shipbob/stepper.png"
               alt="Stepper Component — Multi-step workflows for fulfillment operations"
-              className="w-full max-w-6xl mx-auto"
+              className="w-full"
               loading="lazy"
             />
           </div>
@@ -242,11 +242,11 @@ export default function ShipBobPage() {
 
         {/* Table Base */}
         <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
-          <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
+          <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
             <img
               src="/images/shipbob/table.png"
               alt="Table Component — Base table with sorting, filtering, and pagination"
-              className="w-full max-w-6xl mx-auto"
+              className="w-full"
               loading="lazy"
             />
           </div>
@@ -254,11 +254,11 @@ export default function ShipBobPage() {
 
         {/* Table Variant 1 */}
         <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
-          <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
+          <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
             <img
               src="/images/shipbob/table-1.png"
               alt="Table Variant 1 — Compact variant for dense information displays"
-              className="w-full max-w-6xl mx-auto"
+              className="w-full"
               loading="lazy"
             />
           </div>
@@ -266,11 +266,11 @@ export default function ShipBobPage() {
 
         {/* Table Variant 2 */}
         <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
-          <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
+          <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
             <img
               src="/images/shipbob/table-2.png"
               alt="Table Variant 2 — Expandable rows for detailed operational data"
-              className="w-full max-w-6xl mx-auto"
+              className="w-full"
               loading="lazy"
             />
           </div>

@@ -88,8 +88,8 @@ export default function AutonomusPage() {
 
       {/* Hero Image */}
       <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
-        <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
-          <img src="/images/autonomus-services.png" alt={t.heroAlt} className="w-full max-w-6xl mx-auto" loading="lazy" />
+        <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
+          <img src="/images/autonomus-services.png" alt={t.heroAlt} className="w-full" loading="lazy" />
         </div>
       </section>
 
@@ -190,8 +190,8 @@ export default function AutonomusPage() {
 
         {/* App Flows Image */}
         <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
-          <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
-            <img src="/images/autonomus-app-flows.png" alt={t.caregiverAlt} className="w-full max-w-6xl mx-auto" loading="lazy" />
+          <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
+            <img src="/images/autonomus-app-flows.png" alt={t.caregiverAlt} className="w-full" loading="lazy" />
           </div>
         </section>
 
@@ -214,15 +214,15 @@ export default function AutonomusPage() {
 
         {/* Back Office List Image */}
         <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
-          <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
-            <img src="/images/autonomus-backoffice-list.png" alt="Back Office - Listado de servicios" className="w-full max-w-6xl mx-auto" loading="lazy" />
+          <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
+            <img src="/images/autonomus-backoffice-list.png" alt="Back Office - Listado de servicios" className="w-full" loading="lazy" />
           </div>
         </section>
 
         {/* Back Office Detail Image */}
         <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
-          <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
-            <img src="/images/autonomus-backoffice-detail.png" alt="Back Office - Detalle del servicio" className="w-full max-w-6xl mx-auto" loading="lazy" />
+          <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
+            <img src="/images/autonomus-backoffice-detail.png" alt="Back Office - Detalle del servicio" className="w-full" loading="lazy" />
           </div>
         </section>
 

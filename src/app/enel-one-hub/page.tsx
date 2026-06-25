@@ -112,8 +112,8 @@ export default function EnelOneHubPage() {
 
       {/* Hero Image */}
       <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
-        <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
-          <img src="/images/de6dc1e6-bcbb-406f-adee-b47964a84e1a_rw_1920.jpg" alt="Enel One Hub" className="w-full max-w-6xl mx-auto" loading="lazy" />
+        <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
+          <img src="/images/de6dc1e6-bcbb-406f-adee-b47964a84e1a_rw_1920.jpg" alt="Enel One Hub" className="w-full" loading="lazy" />
         </div>
       </section>
 
@@ -225,24 +225,28 @@ export default function EnelOneHubPage() {
 
         {/* Interview Images */}
         <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
-              <img src="/images/1095788a-2ad7-4262-889b-2ca483c20d9c_rw_1920.png" alt="Interviews Chile and Peru" className="w-full max-w-6xl mx-auto" loading="lazy" />
-            </div>
-            <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
-              <img src="/images/2f5c8c4f-2f84-4a17-b212-82c8e25dc90b_rw_1920.png" alt="Interviews workshops Chile and Peru" className="w-full max-w-6xl mx-auto" loading="lazy" />
+          <div className="w-full md:w-4/5 mx-auto">
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
+                <img src="/images/1095788a-2ad7-4262-889b-2ca483c20d9c_rw_1920.png" alt="Interviews Chile and Peru" className="w-full" loading="lazy" />
+              </div>
+              <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
+                <img src="/images/2f5c8c4f-2f84-4a17-b212-82c8e25dc90b_rw_1920.png" alt="Interviews workshops Chile and Peru" className="w-full" loading="lazy" />
+              </div>
             </div>
           </div>
         </section>
 
         {/* Argentina Colombia Section */}
         <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
-              <img src="/images/argentina.png" alt="Argentina workshops" className="w-full max-w-6xl mx-auto" loading="lazy" />
-            </div>
-            <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
-              <img src="/images/colombia.png" alt="Colombia workshops" className="w-full max-w-6xl mx-auto" loading="lazy" />
+          <div className="w-full md:w-4/5 mx-auto">
+            <div className="grid md:grid-cols-2 gap-8">
+              <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
+                <img src="/images/argentina.png" alt="Argentina workshops" className="w-full" loading="lazy" />
+              </div>
+              <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
+                <img src="/images/colombia.png" alt="Colombia workshops" className="w-full" loading="lazy" />
+              </div>
             </div>
           </div>
         </section>
@@ -258,8 +262,8 @@ export default function EnelOneHubPage() {
         </section>
 
         <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
-          <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
-            <img src="/images/sitemap.jpg" alt="Chile Sitemap with all sites unified" className="w-full max-w-6xl mx-auto" loading="lazy" />
+          <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
+            <img src="/images/sitemap.jpg" alt="Chile Sitemap with all sites unified" className="w-full" loading="lazy" />
           </div>
         </section>
 
@@ -274,8 +278,8 @@ export default function EnelOneHubPage() {
         </section>
 
         <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
-          <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
-            <img src="/images/711a3f8e-b0b0-4e62-85f5-d5dc0f6c1f45_rw_1920.png" alt="Hotspots of Private Area Personas Chile" className="w-full max-w-6xl mx-auto" loading="lazy" />
+          <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
+            <img src="/images/711a3f8e-b0b0-4e62-85f5-d5dc0f6c1f45_rw_1920.png" alt="Hotspots of Private Area Personas Chile" className="w-full" loading="lazy" />
           </div>
         </section>
       </section>
@@ -292,36 +296,38 @@ export default function EnelOneHubPage() {
 
       {/* Private Area Main Image */}
       <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
-        <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
-          <img src="/images/3c01aa27-85a3-48f8-bb4c-47e693587aff_rw_1920.jpg" alt="Private Area Personas screens" className="w-full max-w-6xl mx-auto" loading="lazy" />
+        <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
+          <img src="/images/3c01aa27-85a3-48f8-bb4c-47e693587aff_rw_1920.jpg" alt="Private Area Personas screens" className="w-full" loading="lazy" />
         </div>
       </section>
 
       {/* Private Area Grid */}
       <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
-        <div className="grid md:grid-cols-3 gap-8">
-          <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
-            <img src="/images/1c8f5170-7ed0-4a81-bc09-89508247421d_rw_600.jpg" alt="Private Area Personas screen 1" className="w-full max-w-6xl mx-auto" loading="lazy" />
-          </div>
-          <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
-            <img src="/images/68eaa859-0db0-4ac5-916d-8ed63f26069f_rw_600.jpg" alt="Private Area Personas screen 2" className="w-full max-w-6xl mx-auto" loading="lazy" />
-          </div>
-          <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
-            <img src="/images/31c5f970-38df-4715-b534-971eb2257c21_rw_600.jpg" alt="Private Area Personas screen 3" className="w-full max-w-6xl mx-auto" loading="lazy" />
+        <div className="w-full md:w-4/5 mx-auto">
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
+              <img src="/images/1c8f5170-7ed0-4a81-bc09-89508247421d_rw_600.jpg" alt="Private Area Personas screen 1" className="w-full" loading="lazy" />
+            </div>
+            <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
+              <img src="/images/68eaa859-0db0-4ac5-916d-8ed63f26069f_rw_600.jpg" alt="Private Area Personas screen 2" className="w-full" loading="lazy" />
+            </div>
+            <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
+              <img src="/images/31c5f970-38df-4715-b534-971eb2257c21_rw_600.jpg" alt="Private Area Personas screen 3" className="w-full" loading="lazy" />
+            </div>
           </div>
         </div>
       </section>
 
       {/* Private Area Detail Images */}
       <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
-        <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
-          <img src="/images/4cddf3c6-96a4-4255-8b27-12704b9eb724_rw_1920.jpg" alt="Private Area screens" className="w-full max-w-6xl mx-auto" loading="lazy" />
+        <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
+          <img src="/images/4cddf3c6-96a4-4255-8b27-12704b9eb724_rw_1920.jpg" alt="Private Area screens" className="w-full" loading="lazy" />
         </div>
       </section>
 
       <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
-        <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
-          <img src="/images/6359bbdd-d6a3-4a42-8fc5-15cd4fd5e8e0_rw_1920.jpg" alt="Private Area screens detail" className="w-full max-w-6xl mx-auto" loading="lazy" />
+        <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
+          <img src="/images/6359bbdd-d6a3-4a42-8fc5-15cd4fd5e8e0_rw_1920.jpg" alt="Private Area screens detail" className="w-full" loading="lazy" />
         </div>
       </section>
 
@@ -337,8 +343,8 @@ export default function EnelOneHubPage() {
 
       {/* Public Area Image */}
       <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
-        <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
-          <img src="/images/d17e4048-0bf7-4fc2-9dcb-0c14dac652f4_rw_1920.png" alt="Public Area Personas screen" className="w-full max-w-6xl mx-auto" loading="lazy" />
+        <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
+          <img src="/images/d17e4048-0bf7-4fc2-9dcb-0c14dac652f4_rw_1920.png" alt="Public Area Personas screen" className="w-full" loading="lazy" />
         </div>
       </section>
 

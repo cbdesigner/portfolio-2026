@@ -116,7 +116,7 @@ export default function DesignSystemPage() {
             </span>{" "}
             {t.journeyText2}
           </p>
-          <div className="mt-6 mx-auto">
+          <div className="w-full md:w-4/5 mx-auto mt-6">
             <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/25825197-c473-4a76-bb01-401ddedcd0fb_rw_1920.png?h=3dcd06bb65a20695a3cd2c17815ca682" alt={t.journeyAlt} className="w-full h-auto rounded-lg" loading="lazy" />
           </div>
       </section>
@@ -139,7 +139,7 @@ export default function DesignSystemPage() {
             <p>{t.tokensText1}</p>
             <p>{t.tokensText2}</p>
           </div>
-          <div className="mt-6 mx-auto">
+          <div className="w-full md:w-4/5 mx-auto mt-6">
             <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/cb5feb94-e5be-42aa-8cb9-7acc0760afb9_rw_1920.png?h=130d7524717101f2df6a053a7f4047cf" alt={t.tokensAlt} className="w-full h-auto rounded-lg" loading="lazy" />
           </div>
           <div className="mt-8 mx-auto">
