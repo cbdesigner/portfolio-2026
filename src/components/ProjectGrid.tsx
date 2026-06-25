@@ -69,7 +69,7 @@ export default function ProjectGrid({ items }: ProjectGridProps) {
 
         {/* Count */}
         <span className="ml-auto font-mono text-caption text-[var(--color-text-tertiary)]">
-          {String(filtered.length).padStart(2, "0")} {filtered.length === 1 ? "project" : "projects"}
+          {String(filtered.length).padStart(2, "0")} {filtered.length === 1 ? t.projectCount.singular : t.projectCount.plural}
         </span>
       </div>
 

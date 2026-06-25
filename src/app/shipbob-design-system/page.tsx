@@ -26,7 +26,7 @@ export default function ShipBobPage() {
       <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <div className="mb-6">
           <span className="text-sm font-medium text-[var(--color-text-secondary)] tracking-wide uppercase">
-            Case Study
+            {t.caseStudy}
           </span>
         </div>
         <h1 className="font-heading text-display-lg tracking-display mb-6">
@@ -45,7 +45,7 @@ export default function ShipBobPage() {
         <div className="grid md:grid-cols-4 gap-8 mb-20">
           <div>
             <h3 className="text-sm font-medium text-[var(--color-text-secondary)] uppercase tracking-wide mb-2">
-              Client
+              {t.projectMetadata.client}
             </h3>
             <p className="text-lg text-[var(--color-text-primary)]">
               ShipBob
@@ -53,7 +53,7 @@ export default function ShipBobPage() {
           </div>
           <div>
             <h3 className="text-sm font-medium text-[var(--color-text-secondary)] uppercase tracking-wide mb-2">
-              Role
+              {t.projectMetadata.role}
             </h3>
             <p className="text-lg text-[var(--color-text-primary)]">
               Lead Design System Architect
@@ -61,7 +61,7 @@ export default function ShipBobPage() {
           </div>
           <div>
             <h3 className="text-sm font-medium text-[var(--color-text-secondary)] uppercase tracking-wide mb-2">
-              Timeline
+              {t.projectMetadata.timeline}
             </h3>
             <p className="text-lg text-[var(--color-text-primary)]">
               6 Months
@@ -69,7 +69,7 @@ export default function ShipBobPage() {
           </div>
           <div>
             <h3 className="text-sm font-medium text-[var(--color-text-secondary)] uppercase tracking-wide mb-2">
-              Tech Stack
+              {t.projectMetadata.techStack}
             </h3>
             <p className="text-lg text-[var(--color-text-primary)]">
               Figma, Vue.js, PrimeVue
@@ -83,7 +83,7 @@ export default function ShipBobPage() {
         <div className="grid md:grid-cols-2 gap-12">
           <div>
             <h2 className="font-heading text-display-sm tracking-display mb-4">
-              The Challenge
+              {t.sectionHeaders.theChallenge}
             </h2>
             <p className="text-[var(--color-text-tertiary)] mb-4">
               ShipBob operates complex fulfillment operations across multiple systems: WMS, tracking, dashboards, and operational tools serving different user roles with constantly evolving requirements.
@@ -101,7 +101,7 @@ export default function ShipBobPage() {
           </div>
           <div>
             <h2 className="font-heading text-display-sm tracking-display mb-4">
-              The Opportunity
+              {t.sectionHeaders.theOpportunity}
             </h2>
             <p className="text-[var(--color-text-tertiary)] mb-4">
               ShipBob needed a unified system that could enable rapid, consistent interface development while reducing friction between design and engineering teams.

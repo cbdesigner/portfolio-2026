@@ -139,7 +139,7 @@ const i18n = {
 } as const;
 
 export default function BancoRipleyPage() {
-  const { locale } = useLanguage();
+  const { locale, t: globalT } = useLanguage();
   const t = i18n[locale];
 
   return (
@@ -179,7 +179,7 @@ export default function BancoRipleyPage() {
           <div className="grid md:grid-cols-4 gap-8">
             <div>
               <h3 className="text-sm font-medium text-[var(--color-text-secondary)] uppercase tracking-wide mb-2">
-                Client
+                {globalT.projectMetadata.client}
               </h3>
               <p className="text-lg text-[var(--color-text-primary)]">
                 Banco Ripley
@@ -187,7 +187,7 @@ export default function BancoRipleyPage() {
             </div>
             <div>
               <h3 className="text-sm font-medium text-[var(--color-text-secondary)] uppercase tracking-wide mb-2">
-                Roles
+                {globalT.projectMetadata.role}
               </h3>
               <p className="text-lg text-[var(--color-text-primary)]">
                 UX Lead, UX Manager
@@ -195,7 +195,7 @@ export default function BancoRipleyPage() {
             </div>
             <div>
               <h3 className="text-sm font-medium text-[var(--color-text-secondary)] uppercase tracking-wide mb-2">
-                Timeline
+                {globalT.projectMetadata.timeline}
               </h3>
               <p className="text-lg text-[var(--color-text-primary)]">
                 4+ Years (2019-2023)
@@ -203,7 +203,7 @@ export default function BancoRipleyPage() {
             </div>
             <div>
               <h3 className="text-sm font-medium text-[var(--color-text-secondary)] uppercase tracking-wide mb-2">
-                Tech Stack
+                {globalT.projectMetadata.techStack}
               </h3>
               <p className="text-lg text-[var(--color-text-primary)]">
                 Figma, Jira, Design Systems
@@ -217,7 +217,7 @@ export default function BancoRipleyPage() {
           <div className="grid md:grid-cols-2 gap-16">
             <div>
               <h2 className="font-heading text-display-sm tracking-display mb-6">
-                The Challenge
+                {globalT.sectionHeaders.theChallenge}
               </h2>
               <p className="text-[var(--color-text-tertiary)] mb-6">
                 Banco Ripley needed to build a digital wallet from scratch while managing design consistency across multiple products and platforms.
@@ -232,7 +232,7 @@ export default function BancoRipleyPage() {
             </div>
             <div>
               <h2 className="font-heading text-display-sm tracking-display mb-6">
-                The Opportunity
+                {globalT.sectionHeaders.theOpportunity}
               </h2>
               <p className="text-[var(--color-text-tertiary)] mb-6">
                 Create a scalable design organization and system that would enable Chek to reach 1.6M+ users while maintaining consistency and enabling team growth across Chile and Peru.

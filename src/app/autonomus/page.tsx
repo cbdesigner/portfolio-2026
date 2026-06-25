@@ -63,7 +63,7 @@ const i18n = {
 } as const;
 
 export default function AutonomusPage() {
-  const { locale } = useLanguage();
+  const { locale, t: globalT } = useLanguage();
   const t = i18n[locale];
 
   return (
@@ -72,7 +72,7 @@ export default function AutonomusPage() {
       <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <div className="mb-6">
           <span className="text-sm font-medium text-[var(--color-text-secondary)] tracking-wide uppercase">
-            Case Study
+            {globalT.caseStudy}
           </span>
         </div>
         <h1 className="font-heading text-display-lg tracking-display mb-6">
@@ -98,7 +98,7 @@ export default function AutonomusPage() {
         <div className="grid md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-sm font-medium text-[var(--color-text-secondary)] uppercase tracking-wide mb-2">
-              Client
+              {globalT.projectMetadata.client}
             </h3>
             <p className="text-lg text-[var(--color-text-primary)]">
               Autonomus / Guil
@@ -106,7 +106,7 @@ export default function AutonomusPage() {
           </div>
           <div>
             <h3 className="text-sm font-medium text-[var(--color-text-secondary)] uppercase tracking-wide mb-2">
-              Role
+              {globalT.projectMetadata.role}
             </h3>
             <p className="text-lg text-[var(--color-text-primary)]">
               Product Designer
@@ -114,7 +114,7 @@ export default function AutonomusPage() {
           </div>
           <div>
             <h3 className="text-sm font-medium text-[var(--color-text-secondary)] uppercase tracking-wide mb-2">
-              Timeline
+              {globalT.projectMetadata.timeline}
             </h3>
             <p className="text-lg text-[var(--color-text-primary)]">
               8 Months
@@ -122,7 +122,7 @@ export default function AutonomusPage() {
           </div>
           <div>
             <h3 className="text-sm font-medium text-[var(--color-text-secondary)] uppercase tracking-wide mb-2">
-              Tech Stack
+              {globalT.projectMetadata.techStack}
             </h3>
             <p className="text-lg text-[var(--color-text-primary)]">
               Figma, Webflow
@@ -136,7 +136,7 @@ export default function AutonomusPage() {
         <div className="grid md:grid-cols-2 gap-16">
           <div>
             <h2 className="font-heading text-display-sm tracking-display mb-6">
-              The Challenge
+              {globalT.sectionHeaders.theChallenge}
             </h2>
             <p className="text-[var(--color-text-tertiary)] mb-6">
               Senior adults face barriers to mobility, social connection, and independence. Existing transportation solutions lack accessibility features and were not designed with their specific needs in mind.
@@ -151,7 +151,7 @@ export default function AutonomusPage() {
           </div>
           <div>
             <h2 className="font-heading text-display-sm tracking-display mb-6">
-              The Opportunity
+              {globalT.sectionHeaders.theOpportunity}
             </h2>
             <p className="text-[var(--color-text-tertiary)] mb-6">
               Create an Uber-like experience purpose-built for seniors, prioritizing accessibility, simplicity, and trust at every touchpoint.
@@ -237,7 +237,7 @@ export default function AutonomusPage() {
       {/* What We Delivered */}
       <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <h2 className="font-heading text-display-md tracking-display mb-12">
-          What We Delivered
+          {globalT.sectionHeaders.whatWeDelivered}
         </h2>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -300,7 +300,7 @@ export default function AutonomusPage() {
       {/* Methodology & Deliverables */}
       <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <h2 className="font-heading text-display-md tracking-display mb-12">
-          Methodology & Approach
+          {globalT.sectionHeaders.methodologyApproach}
         </h2>
         <ul className="space-y-3 text-[var(--color-text-tertiary)]">
           <li>• {t.method1}</li>
@@ -315,7 +315,7 @@ export default function AutonomusPage() {
       {/* Impact & Results */}
       <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <h2 className="font-heading text-display-md tracking-display mb-12">
-          Impact & Results
+          {globalT.sectionHeaders.impactResults}
         </h2>
 
         <div className="grid md:grid-cols-2 gap-12">
@@ -350,7 +350,7 @@ export default function AutonomusPage() {
       {/* Lessons Learned */}
       <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <h2 className="font-heading text-display-md tracking-display mb-12">
-          Lessons Learned
+          {globalT.sectionHeaders.lessonsLearned}
         </h2>
 
         <div className="grid md:grid-cols-2 gap-12">
@@ -382,7 +382,7 @@ export default function AutonomusPage() {
       {/* Conclusion */}
       <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <h2 className="font-heading text-display-md tracking-display mb-8">
-          Conclusion
+          {globalT.sectionHeaders.conclusion}
         </h2>
 
         <div className="space-y-6 text-[var(--color-text-tertiary)]">

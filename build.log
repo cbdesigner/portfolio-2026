@@ -1,0 +1,21 @@
+
+> portfolio@0.1.0 build
+> next build
+
+  ▲ Next.js 14.2.18
+
+   Creating an optimized production build ...
+ ✓ Compiled successfully
+   Linting and checking validity of types ...
+Failed to compile.
+
+./src/i18n/translations.ts:56:5
+Type error: An object literal cannot have multiple properties with the same name.
+
+[0m [90m 54 |[39m       send[33m:[39m [32m"Send Message"[39m[33m,[39m[0m
+[0m [90m 55 |[39m     }[33m,[39m[0m
+[0m[31m[1m>[22m[39m[90m 56 |[39m     caseStudy[33m:[39m [32m"Case Study"[39m[33m,[39m[0m
+[0m [90m    |[39m     [31m[1m^[22m[39m[0m
+[0m [90m 57 |[39m     projectMetadata[33m:[39m {[0m
+[0m [90m 58 |[39m       client[33m:[39m [32m"Client"[39m[33m,[39m[0m
+[0m [90m 59 |[39m       role[33m:[39m [32m"Role"[39m[33m,[39m[0m

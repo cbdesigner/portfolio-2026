@@ -87,7 +87,7 @@ const i18n = {
 } as const;
 
 export default function EnelOneHubPage() {
-  const { locale } = useLanguage();
+  const { locale, t: globalT } = useLanguage();
   const t = i18n[locale];
 
   return (
@@ -96,7 +96,7 @@ export default function EnelOneHubPage() {
       <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <div className="mb-6">
           <span className="text-sm font-medium text-[var(--color-text-secondary)] tracking-wide uppercase">
-            Case Study
+            {globalT.caseStudy}
           </span>
         </div>
         <h1 className="font-heading text-display-lg tracking-display mb-6">
@@ -122,7 +122,7 @@ export default function EnelOneHubPage() {
         <div className="grid md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-sm font-medium text-[var(--color-text-secondary)] uppercase tracking-wide mb-2">
-              Client
+              {globalT.projectMetadata.client}
             </h3>
             <p className="text-lg text-[var(--color-text-primary)]">
               Enel Global
@@ -130,7 +130,7 @@ export default function EnelOneHubPage() {
           </div>
           <div>
             <h3 className="text-sm font-medium text-[var(--color-text-secondary)] uppercase tracking-wide mb-2">
-              Role
+              {globalT.projectMetadata.role}
             </h3>
             <p className="text-lg text-[var(--color-text-primary)]">
               Senior UX/UI Designer
@@ -138,7 +138,7 @@ export default function EnelOneHubPage() {
           </div>
           <div>
             <h3 className="text-sm font-medium text-[var(--color-text-secondary)] uppercase tracking-wide mb-2">
-              Timeline
+              {globalT.projectMetadata.timeline}
             </h3>
             <p className="text-lg text-[var(--color-text-primary)]">
               12 Months
@@ -160,7 +160,7 @@ export default function EnelOneHubPage() {
         <div className="grid md:grid-cols-2 gap-16">
           <div>
             <h2 className="font-heading text-display-sm tracking-display mb-6">
-              The Challenge
+              {globalT.sectionHeaders.theChallenge}
             </h2>
             <p className="text-[var(--color-text-tertiary)] mb-6">
               Enel's global presence meant fragmentary digital experiences across countries and products.
@@ -175,7 +175,7 @@ export default function EnelOneHubPage() {
           </div>
           <div>
             <h2 className="font-heading text-display-sm tracking-display mb-6">
-              The Opportunity
+              {globalT.sectionHeaders.theOpportunity}
             </h2>
             <p className="text-[var(--color-text-tertiary)] mb-6">
               Unify Enel's global presence with a cohesive visual language while respecting regional variations and user needs.

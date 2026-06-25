@@ -26,7 +26,7 @@ export default function CopecVoltexPage() {
       <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <div className="mb-6">
           <span className="text-sm font-medium text-[var(--color-text-secondary)] tracking-wide uppercase">
-            Case Study
+            {t.caseStudy}
           </span>
         </div>
         <h1 className="font-heading text-display-lg tracking-display mb-6">
@@ -45,7 +45,7 @@ export default function CopecVoltexPage() {
         <div className="grid md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-sm font-medium text-[var(--color-text-secondary)] uppercase tracking-wide mb-2">
-              Client
+              {t.projectMetadata.client}
             </h3>
             <p className="text-lg text-[var(--color-text-primary)]">
               Copec Voltex
@@ -53,7 +53,7 @@ export default function CopecVoltexPage() {
           </div>
           <div>
             <h3 className="text-sm font-medium text-[var(--color-text-secondary)] uppercase tracking-wide mb-2">
-              Role
+              {t.projectMetadata.role}
             </h3>
             <p className="text-lg text-[var(--color-text-primary)]">
               Head of Product Design
@@ -61,7 +61,7 @@ export default function CopecVoltexPage() {
           </div>
           <div>
             <h3 className="text-sm font-medium text-[var(--color-text-secondary)] uppercase tracking-wide mb-2">
-              Timeline
+              {t.projectMetadata.timeline}
             </h3>
             <p className="text-lg text-[var(--color-text-primary)]">
               3 Months
@@ -69,7 +69,7 @@ export default function CopecVoltexPage() {
           </div>
           <div>
             <h3 className="text-sm font-medium text-[var(--color-text-secondary)] uppercase tracking-wide mb-2">
-              Tech Stack
+              {t.projectMetadata.techStack}
             </h3>
             <p className="text-lg text-[var(--color-text-primary)]">
               Figma, React, Storybook
@@ -83,7 +83,7 @@ export default function CopecVoltexPage() {
         <div className="grid md:grid-cols-2 gap-16">
           <div>
             <h2 className="font-heading text-display-sm tracking-display mb-6">
-              The Challenge
+              {t.sectionHeaders.theChallenge}
             </h2>
             <p className="text-[var(--color-text-tertiary)] mb-6">
               Copec Voltex faced a critical gap in the market: there was no centralized, user-friendly platform educating consumers about electric vehicle ownership, comparing options, and calculating true ownership costs.
@@ -98,7 +98,7 @@ export default function CopecVoltexPage() {
           </div>
           <div>
             <h2 className="font-heading text-display-sm tracking-display mb-6">
-              The Opportunity
+              {t.sectionHeaders.theOpportunity}
             </h2>
             <p className="text-[var(--color-text-tertiary)] mb-6">
               Create a cohesive eMobility platform combining design excellence with development speed, removing barriers to EV adoption through intuitive tools and transparent information.
@@ -262,7 +262,7 @@ export default function CopecVoltexPage() {
       {/* What We Delivered */}
       <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
         <h2 className="font-heading text-display-md tracking-display mb-12">
-          What We Delivered
+          {t.sectionHeaders.whatWeDelivered}
         </h2>
 
         <div className="grid md:grid-cols-3 gap-8">
@@ -343,7 +343,7 @@ export default function CopecVoltexPage() {
       {/* Impact & Results */}
       <section className="max-w-5xl mx-auto px-8 md:px-16 py-22 border-t border-[var(--color-border)]">
         <h2 className="font-heading text-display-md tracking-display mb-12">
-          Impact & Results
+          {t.sectionHeaders.impactResults}
         </h2>
 
         <div className="grid md:grid-cols-2 gap-12 mb-12">
