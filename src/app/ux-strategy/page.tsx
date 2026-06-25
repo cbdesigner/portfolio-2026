@@ -353,8 +353,6 @@ export default function UXStrategyPage() {
           </div>
         </section>
 
-      </section>
-
       {/* 3-7. Challenge & Opportunity through Conclusion - Area Detail Cards */}
       {t.areas.map((area, idx) => {
         const colors = colorMap[area.color] || colorMap.blue;

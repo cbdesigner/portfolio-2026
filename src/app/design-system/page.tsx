@@ -130,8 +130,6 @@ export default function DesignSystemPage() {
           </div>
         </section>
 
-      </section>
-
       {/* 4. Approach - Design System with Tokens Studio */}
       <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
           <h2 className="font-heading text-display-md tracking-display mb-6">
@@ -177,8 +175,6 @@ export default function DesignSystemPage() {
           </p>
         </section>
 
-      </section>
-
       {/* 7. Impact & Results - Tools section */}
       <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
           <h2 className="font-heading text-display-md tracking-display mb-4">{t.toolsTitle}</h2>
@@ -188,8 +184,6 @@ export default function DesignSystemPage() {
             </span>
           </div>
         </section>
-
-      </section>
 
       {/* 8. Lessons Learned - Empty */}
       <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">

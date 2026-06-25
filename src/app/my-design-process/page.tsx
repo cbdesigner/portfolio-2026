@@ -183,8 +183,6 @@ export default function MyDesignProcessPage() {
           </div>
         </section>
 
-      </section>
-
       {/* 4. Approach - Define */}
       <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
           <h2 className="font-heading text-display-md tracking-display mb-6">{t.defineTitle}</h2>
@@ -339,8 +337,6 @@ export default function MyDesignProcessPage() {
             />
           </div>
         </section>
-
-      </section>
 
       {/* 7. Impact & Results - Summary */}
       <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">

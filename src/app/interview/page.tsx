@@ -108,8 +108,6 @@ export default function InterviewPage() {
           </div>
         </section>
 
-      </section>
-
       {/* 3. Challenge & Opportunity - Interview */}
       <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
           <h2 className="font-heading text-display-md tracking-display mb-6">
@@ -140,8 +138,6 @@ export default function InterviewPage() {
           </div>
         </section>
 
-      </section>
-
       {/* 4. Approach - Maturity in UX */}
       <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
           <h2 className="font-heading text-display-md tracking-display mb-6">
@@ -153,8 +149,6 @@ export default function InterviewPage() {
             </p>
           </div>
         </section>
-
-      </section>
 
       {/* 5. What We Delivered - Main Gaps */}
       <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
@@ -168,8 +162,6 @@ export default function InterviewPage() {
             </p>
           </div>
         </section>
-
-      </section>
 
       {/* 6. Gallery - What Awaits Us */}
       <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
@@ -190,8 +182,6 @@ export default function InterviewPage() {
             </p>
           </div>
         </section>
-
-      </section>
 
       {/* 7. Impact & Results - Empty */}
       <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
