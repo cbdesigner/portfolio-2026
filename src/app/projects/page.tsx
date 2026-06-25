@@ -29,7 +29,7 @@ const allProjects: {
     href: "/copec-voltex",
     key: "copecVoltex",
     category: "Design Systems · eMobility",
-    filter: "projects",
+    filter: "designSystems",
     description: {
       en: "Scalable design system and eMobility platform featuring EV catalog, educational resources, and cost calculator. 50% reduction in design-to-development time.",
       es: "Sistema de diseño escalable y plataforma de movilidad eléctrica con catálogo de vehículos, recursos educativos y calculadora de costos. 50% de reducción en tiempo de desarrollo.",
@@ -48,11 +48,11 @@ const allProjects: {
   {
     href: "/autonomus",
     key: "autonomus",
-    category: "Product Design · Mobility",
-    filter: "projects",
+    category: "Design Systems · Mobility",
+    filter: "designSystems",
     description: {
-      en: "Platform connecting seniors to transportation and companionship services, designed for simplicity and trust.",
-      es: "Plataforma que conecta adultos mayores con servicios de transporte y compañía, diseñada para simplicidad y confianza.",
+      en: "Multibranding design system and platform connecting seniors to transportation and companionship services, designed for simplicity and trust.",
+      es: "Sistema de diseño multimarca y plataforma que conecta adultos mayores con servicios de transporte y compañía, diseñada para simplicidad y confianza.",
     },
   },
   {
