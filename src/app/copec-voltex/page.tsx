@@ -23,7 +23,7 @@ export default function CopecVoltexPage() {
       />
 
       {/* Hero / Header */}
-      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <div className="mb-6">
           <span className="text-sm font-medium text-[var(--color-text-secondary)] tracking-wide uppercase">
             Case Study
@@ -35,25 +35,60 @@ export default function CopecVoltexPage() {
         <p className="text-xl text-[var(--color-text-secondary)] mb-4 max-w-3xl">
           Scalable Design System & eMobility Platform
         </p>
-        <p className="text-lg text-[var(--color-text-tertiary)] max-w-3xl">
+        <p className="text-lg text-[var(--color-text-tertiary)] max-w-4xl">
           Building a cohesive platform to drive sustainable transportation adoption. A modular design system powering an electric vehicle catalog, educational resources, and cost calculator—delivered in 3 months with 50% reduction in design-to-development time.
         </p>
       </section>
 
-      {/* Overview */}
-      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22 border-t border-[var(--color-border)]">
-        <div className="grid md:grid-cols-2 gap-12">
+      {/* Project Overview */}
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+        <div className="grid md:grid-cols-4 gap-8">
           <div>
-            <h2 className="font-heading text-display-sm tracking-display mb-4">
+            <h3 className="text-sm font-medium text-[var(--color-text-secondary)] uppercase tracking-wide mb-2">
+              Client
+            </h3>
+            <p className="text-lg text-[var(--color-text-primary)]">
+              Copec Voltex
+            </p>
+          </div>
+          <div>
+            <h3 className="text-sm font-medium text-[var(--color-text-secondary)] uppercase tracking-wide mb-2">
+              Role
+            </h3>
+            <p className="text-lg text-[var(--color-text-primary)]">
+              Head of Product Design
+            </p>
+          </div>
+          <div>
+            <h3 className="text-sm font-medium text-[var(--color-text-secondary)] uppercase tracking-wide mb-2">
+              Timeline
+            </h3>
+            <p className="text-lg text-[var(--color-text-primary)]">
+              3 Months
+            </p>
+          </div>
+          <div>
+            <h3 className="text-sm font-medium text-[var(--color-text-secondary)] uppercase tracking-wide mb-2">
+              Tech Stack
+            </h3>
+            <p className="text-lg text-[var(--color-text-primary)]">
+              Figma, React, Storybook
+            </p>
+          </div>
+        </div>
+      </section>
+
+      {/* Challenge & Opportunity */}
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+        <div className="grid md:grid-cols-2 gap-16">
+          <div>
+            <h2 className="font-heading text-display-sm tracking-display mb-6">
               The Challenge
             </h2>
-            <p className="text-[var(--color-text-tertiary)] mb-4">
+            <p className="text-[var(--color-text-tertiary)] mb-6">
               Copec Voltex faced a critical gap in the market: there was no centralized, user-friendly platform educating consumers about electric vehicle ownership, comparing options, and calculating true ownership costs.
             </p>
-            <p className="text-[var(--color-text-tertiary)] mb-6">
-              The core problems:
-            </p>
-            <ul className="space-y-2 text-[var(--color-text-tertiary)]">
+            <ul className="space-y-3 text-[var(--color-text-tertiary)]">
               <li>• No unified platform for EV education and comparison</li>
               <li>• Users lacked accessible tools to evaluate EV ownership costs</li>
               <li>• Scattered, inconsistent information about electromobility</li>
@@ -62,16 +97,13 @@ export default function CopecVoltexPage() {
             </ul>
           </div>
           <div>
-            <h2 className="font-heading text-display-sm tracking-display mb-4">
+            <h2 className="font-heading text-display-sm tracking-display mb-6">
               The Opportunity
             </h2>
-            <p className="text-[var(--color-text-tertiary)] mb-4">
-              Create a cohesive eMobility platform that combines design excellence with development speed, removing barriers to EV adoption through intuitive tools and transparent information.
-            </p>
             <p className="text-[var(--color-text-tertiary)] mb-6">
-              What was needed:
+              Create a cohesive eMobility platform combining design excellence with development speed, removing barriers to EV adoption through intuitive tools and transparent information.
             </p>
-            <ul className="space-y-2 text-[var(--color-text-tertiary)]">
+            <ul className="space-y-3 text-[var(--color-text-tertiary)]">
               <li>• Modular design system for rapid development</li>
               <li>• Scalable component architecture (React + Storybook)</li>
               <li>• Unified visual language across three distinct features</li>
@@ -82,233 +114,209 @@ export default function CopecVoltexPage() {
         </div>
       </section>
 
-      {/* Project Details */}
-      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22 border-t border-[var(--color-border)]">
-        <div className="grid md:grid-cols-3 gap-8 mb-16">
-          <div>
-            <h3 className="text-sm font-medium text-[var(--color-text-secondary)] uppercase tracking-wide mb-2">
-              Client
-            </h3>
-            <p className="text-[var(--color-text-primary)] text-lg">
-              Copec Voltex
-            </p>
-          </div>
-          <div>
-            <h3 className="text-sm font-medium text-[var(--color-text-secondary)] uppercase tracking-wide mb-2">
-              Role
-            </h3>
-            <p className="text-[var(--color-text-primary)] text-lg">
-              Head of Product Design / Design System Manager
-            </p>
-          </div>
-          <div>
-            <h3 className="text-sm font-medium text-[var(--color-text-secondary)] uppercase tracking-wide mb-2">
-              Timeline
-            </h3>
-            <p className="text-[var(--color-text-primary)] text-lg">
-              3 Months
-            </p>
-          </div>
-        </div>
-
-        <div className="grid md:grid-cols-2 gap-8">
-          <div>
-            <h3 className="text-sm font-medium text-[var(--color-text-secondary)] uppercase tracking-wide mb-4">
-              Technology Stack
-            </h3>
-            <ul className="space-y-2 text-[var(--color-text-tertiary)]">
-              <li><strong className="text-[var(--color-text-primary)]">Design:</strong> Figma</li>
-              <li><strong className="text-[var(--color-text-primary)]">Development:</strong> React JS, Storybook</li>
-              <li><strong className="text-[var(--color-text-primary)]">Process:</strong> One-week sprint delivery</li>
-            </ul>
-          </div>
-          <div>
-            <h3 className="text-sm font-medium text-[var(--color-text-secondary)] uppercase tracking-wide mb-4">
-              Collaboration
-            </h3>
-            <ul className="space-y-2 text-[var(--color-text-tertiary)]">
-              <li>• Product Owner (daily validation meetings)</li>
-              <li>• Abstract (development partner)</li>
-              <li>• Technical Lead & Software Engineer</li>
-            </ul>
-          </div>
-        </div>
-      </section>
 
       {/* Approach */}
-      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22 border-t border-[var(--color-border)]">
-        <h2 className="font-heading text-display-md tracking-display mb-12">
-          Our Approach
-        </h2>
+      <section className="border-t border-[var(--color-border)]">
+        {/* Discovery Phase */}
+        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
+          <h2 className="font-heading text-display-md tracking-display mb-8">
+            Discovery & Strategy
+          </h2>
+          <p className="text-[var(--color-text-tertiary)] mb-6 max-w-3xl">
+            We began with deep user research and stakeholder interviews to understand Copec Voltex's goals, user needs, and the competitive landscape of eMobility platforms.
+          </p>
+          <ul className="space-y-3 text-[var(--color-text-tertiary)] max-w-3xl">
+            <li>• <strong className="text-[var(--color-text-primary)]">User Research:</strong> Interviews with potential EV buyers to understand decision-making and pain points</li>
+            <li>• <strong className="text-[var(--color-text-primary)]">Stakeholder Alignment:</strong> Daily meetings with Product Owner to validate vision and priorities</li>
+            <li>• <strong className="text-[var(--color-text-primary)]">Competitive Audit:</strong> Analyzed existing resources to ensure differentiation</li>
+          </ul>
+        </section>
 
-        <div className="space-y-16">
-          {/* Discovery Phase */}
-          <div>
-            <h3 className="text-2xl font-medium mb-4 text-[var(--color-text-primary)]">
-              1. Discovery & Alignment
-            </h3>
-            <p className="text-[var(--color-text-tertiary)] mb-8">
-              We began with deep user research and stakeholder interviews to understand Copec Voltex's goals, user needs, and the competitive landscape of eMobility platforms. This informed every design decision.
-            </p>
-            <ul className="space-y-3 text-[var(--color-text-tertiary)] mb-8">
-              <li>• <strong className="text-[var(--color-text-primary)]">User Research:</strong> Interviews with potential EV buyers to understand decision-making processes and pain points</li>
-              <li>• <strong className="text-[var(--color-text-primary)]">Stakeholder Alignment:</strong> Daily meetings with Product Owner to validate vision and priorities</li>
-              <li>• <strong className="text-[var(--color-text-primary)]">Competitive Audit:</strong> Analyzed existing resources to ensure Copec Voltex's platform would stand out</li>
-            </ul>
+        {/* Design System Image */}
+        <section className="w-full px-8 md:px-0 py-8">
+          <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
+            <img
+              src="/images/voltex/0fdbc23c-70f5-4b80-aeac-0a62d016169f_rw_1920.png"
+              alt="Modular Design System — Components, tokens, and patterns"
+              className="w-full"
+              loading="lazy"
+            />
           </div>
+        </section>
 
-          {/* Design System */}
-          <div>
-            <h3 className="text-2xl font-medium mb-4 text-[var(--color-text-primary)]">
-              2. Modular Design System
-            </h3>
-            <p className="text-[var(--color-text-tertiary)] mb-8">
-              Built a scalable, reusable design system in Figma emphasizing modularity. This foundation enabled rapid iteration and consistent experience across three distinct platform features.
-            </p>
-            <div className="rounded-xl overflow-hidden border border-[var(--color-border)] mb-8">
-              <img
-                src="/images/voltex/0fdbc23c-70f5-4b80-aeac-0a62d016169f_rw_1920.png"
-                alt="Copec Voltex Design System — Components, tokens, and design patterns"
-                className="w-full"
-                loading="lazy"
-              />
-            </div>
-            <ul className="space-y-3 text-[var(--color-text-tertiary)]">
-              <li>• <strong className="text-[var(--color-text-primary)]">Design Tokens:</strong> Semantic color, spacing, and typography variables for consistency</li>
-              <li>• <strong className="text-[var(--color-text-primary)]">Component Library:</strong> 50+ reusable components with adaptive variants</li>
-              <li>• <strong className="text-[var(--color-text-primary)]">Documentation:</strong> Comprehensive guidelines for both design and development teams</li>
-            </ul>
-          </div>
+        {/* Design System Details */}
+        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+          <h3 className="font-heading text-display-sm tracking-display mb-6">
+            Modular Design System
+          </h3>
+          <p className="text-[var(--color-text-tertiary)] mb-6 max-w-3xl">
+            Built a scalable, reusable design system in Figma emphasizing modularity. This foundation enabled rapid iteration and consistent experience across three distinct platform features.
+          </p>
+          <ul className="space-y-3 text-[var(--color-text-tertiary)]">
+            <li>• <strong className="text-[var(--color-text-primary)]">Design Tokens:</strong> Semantic color, spacing, and typography variables for consistency</li>
+            <li>• <strong className="text-[var(--color-text-primary)]">Component Library:</strong> 50+ reusable components with adaptive variants</li>
+            <li>• <strong className="text-[var(--color-text-primary)]">Documentation:</strong> Comprehensive guidelines for design and development teams</li>
+          </ul>
+        </section>
 
-          {/* EV Catalog */}
-          <div>
-            <h3 className="text-2xl font-medium mb-4 text-[var(--color-text-primary)]">
-              3. Electric Vehicle Catalog
-            </h3>
-            <p className="text-[var(--color-text-tertiary)] mb-8">
-              Designed an intuitive EV catalog allowing users to explore and compare electric vehicles. Advanced filtering by price, range, and brand helps users find the perfect EV for their needs.
-            </p>
-            <div className="rounded-xl overflow-hidden border border-[var(--color-border)]">
-              <img
-                src="/images/voltex/05108844-6000-4f0e-a03e-20352d3a0e79_rw_1920.png"
-                alt="EV Catalog — Electric vehicle explorer with filtering and detailed specs"
-                className="w-full"
-                loading="lazy"
-              />
-            </div>
+        {/* EV Catalog Image */}
+        <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
+          <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
+            <img
+              src="/images/voltex/05108844-6000-4f0e-a03e-20352d3a0e79_rw_1920.png"
+              alt="Electric Vehicle Catalog — Intuitive explorer with filtering"
+              className="w-full"
+              loading="lazy"
+            />
           </div>
+        </section>
 
-          {/* Education Section */}
-          <div>
-            <h3 className="text-2xl font-medium mb-4 text-[var(--color-text-primary)]">
-              4. Educational Resources
-            </h3>
-            <p className="text-[var(--color-text-tertiary)] mb-8">
-              Built a dedicated education section covering key topics: choosing the right EV, sustainability benefits, regulations, and electromobility trends. This removes knowledge barriers to adoption.
-            </p>
-            <div className="rounded-xl overflow-hidden border border-[var(--color-border)]">
-              <img
-                src="/images/voltex/e019b36d-92df-4e20-84e9-b178884b01e7_rw_1920.png"
-                alt="Education Section — Resources on EV ownership, sustainability, and regulations"
-                className="w-full"
-                loading="lazy"
-              />
-            </div>
-          </div>
+        {/* EV Catalog Details */}
+        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+          <h3 className="font-heading text-display-sm tracking-display mb-6">
+            Electric Vehicle Catalog
+          </h3>
+          <p className="text-[var(--color-text-tertiary)] mb-6 max-w-3xl">
+            Designed an intuitive EV catalog allowing users to explore and compare electric vehicles. Advanced filtering by price, range, and brand helps users find the perfect vehicle for their needs.
+          </p>
+          <ul className="space-y-3 text-[var(--color-text-tertiary)]">
+            <li>• Advanced filtering: price, range, brand, acceleration, features</li>
+            <li>• Detailed vehicle specifications and comparisons</li>
+            <li>• Integration with cost calculator for informed decisions</li>
+          </ul>
+        </section>
 
-          {/* Cost Calculator */}
-          <div>
-            <h3 className="text-2xl font-medium mb-4 text-[var(--color-text-primary)]">
-              5. ROI Cost Calculator
-            </h3>
-            <p className="text-[var(--color-text-tertiary)] mb-8">
-              Created an interactive tool that helps users calculate true EV ownership costs and visualize long-term savings. This turns abstract sustainability benefits into concrete financial arguments.
-            </p>
-            <div className="rounded-xl overflow-hidden border border-[var(--color-border)]">
-              <img
-                src="/images/voltex/2d9fc2e8-d729-4e64-97aa-61697ba2d190_rw_1920.png"
-                alt="Cost Calculator — Ownership cost estimation and ROI visualization"
-                className="w-full"
-                loading="lazy"
-              />
-            </div>
+        {/* Education Image */}
+        <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
+          <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
+            <img
+              src="/images/voltex/e019b36d-92df-4e20-84e9-b178884b01e7_rw_1920.png"
+              alt="Educational Resources — Guides on EV ownership and sustainability"
+              className="w-full"
+              loading="lazy"
+            />
           </div>
+        </section>
 
-          {/* Development Process */}
-          <div>
-            <h3 className="text-2xl font-medium mb-4 text-[var(--color-text-primary)]">
-              6. Agile Development & Continuous Validation
-            </h3>
-            <p className="text-[var(--color-text-tertiary)] mb-8">
-              Followed a one-week sprint delivery model with daily validation meetings. This rapid iteration ensured alignment and enabled quick pivots based on feedback.
-            </p>
-            <ul className="space-y-3 text-[var(--color-text-tertiary)]">
-              <li>• <strong className="text-[var(--color-text-primary)]">Daily Standups:</strong> Product Owner, design, and engineering stayed synchronized</li>
-              <li>• <strong className="text-[var(--color-text-primary)]">Weekly Releases:</strong> Sprint-based delivery of new features and improvements</li>
-              <li>• <strong className="text-[var(--color-text-primary)]">Continuous Testing:</strong> User feedback informed each iteration</li>
-            </ul>
+        {/* Education Details */}
+        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+          <h3 className="font-heading text-display-sm tracking-display mb-6">
+            Educational Resources
+          </h3>
+          <p className="text-[var(--color-text-tertiary)] mb-6 max-w-3xl">
+            Built a dedicated education section covering key topics: choosing the right EV, sustainability benefits, regulations, and electromobility trends. This removes knowledge barriers to adoption.
+          </p>
+          <ul className="space-y-3 text-[var(--color-text-tertiary)]">
+            <li>• Comprehensive guides on EV selection and ownership</li>
+            <li>• Sustainability and environmental impact resources</li>
+            <li>• Regulatory information by region</li>
+            <li>• Industry trends and electromobility insights</li>
+          </ul>
+        </section>
+
+        {/* Cost Calculator Image */}
+        <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
+          <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
+            <img
+              src="/images/voltex/2d9fc2e8-d729-4e64-97aa-61697ba2d190_rw_1920.png"
+              alt="ROI Cost Calculator — Ownership cost estimation and savings visualization"
+              className="w-full"
+              loading="lazy"
+            />
           </div>
-        </div>
+        </section>
+
+        {/* Cost Calculator Details */}
+        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+          <h3 className="font-heading text-display-sm tracking-display mb-6">
+            ROI Cost Calculator
+          </h3>
+          <p className="text-[var(--color-text-tertiary)] mb-6 max-w-3xl">
+            Created an interactive tool that helps users calculate true EV ownership costs and visualize long-term savings. This turns abstract sustainability benefits into concrete financial arguments.
+          </p>
+          <ul className="space-y-3 text-[var(--color-text-tertiary)]">
+            <li>• Real-time cost calculation based on usage patterns</li>
+            <li>• Fuel cost comparisons vs. traditional vehicles</li>
+            <li>• Maintenance and operational savings visualization</li>
+            <li>• ROI breakeven point estimation</li>
+          </ul>
+        </section>
+
+        {/* Development Process */}
+        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+          <h3 className="font-heading text-display-sm tracking-display mb-6">
+            Agile Development & Continuous Validation
+          </h3>
+          <p className="text-[var(--color-text-tertiary)] mb-6 max-w-3xl">
+            Followed a one-week sprint delivery model with daily validation meetings. This rapid iteration ensured alignment and enabled quick pivots based on feedback.
+          </p>
+          <ul className="space-y-3 text-[var(--color-text-tertiary)]">
+            <li>• Daily standups with Product Owner, design, and engineering</li>
+            <li>• Weekly sprint cycles with production releases</li>
+            <li>• Continuous user feedback integration</li>
+            <li>• Real-time alignment across all teams</li>
+          </ul>
+        </section>
       </section>
 
-      {/* Key Deliverables */}
-      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22 border-t border-[var(--color-border)]">
+      {/* What We Delivered */}
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
         <h2 className="font-heading text-display-md tracking-display mb-12">
-          Key Deliverables
+          What We Delivered
         </h2>
 
-        <div className="grid md:grid-cols-2 gap-8">
-          <div className="p-6 rounded-lg border border-[var(--color-border)]">
+        <div className="grid md:grid-cols-3 gap-8">
+          <div>
             <h3 className="text-lg font-medium mb-3 text-[var(--color-text-primary)]">
               Design System
             </h3>
-            <p className="text-[var(--color-text-tertiary)]">
-              Scalable, reusable design system in Figma with tokens, components, and comprehensive documentation for seamless design-to-development handoff.
+            <p className="text-[var(--color-text-tertiary)] text-sm">
+              Tokens, 50+ components, and documentation for seamless design-to-code handoff.
             </p>
           </div>
 
-          <div className="p-6 rounded-lg border border-[var(--color-border)]">
+          <div>
             <h3 className="text-lg font-medium mb-3 text-[var(--color-text-primary)]">
               EV Catalog
             </h3>
-            <p className="text-[var(--color-text-tertiary)]">
-              Interactive electric vehicle catalog with advanced filtering (price, range, brand), detailed specifications, and comparison features.
+            <p className="text-[var(--color-text-tertiary)] text-sm">
+              Interactive vehicle explorer with advanced filtering, specs, and comparisons.
             </p>
           </div>
 
-          <div className="p-6 rounded-lg border border-[var(--color-border)]">
+          <div>
             <h3 className="text-lg font-medium mb-3 text-[var(--color-text-primary)]">
               Education Platform
             </h3>
-            <p className="text-[var(--color-text-tertiary)]">
-              Comprehensive resource center covering EV selection, sustainability, regulations, and electromobility trends to educate users.
+            <p className="text-[var(--color-text-tertiary)] text-sm">
+              Guides on selection, sustainability, regulations, and industry trends.
             </p>
           </div>
 
-          <div className="p-6 rounded-lg border border-[var(--color-border)]">
+          <div>
             <h3 className="text-lg font-medium mb-3 text-[var(--color-text-primary)]">
-              ROI Calculator
+              Cost Calculator
             </h3>
-            <p className="text-[var(--color-text-tertiary)]">
-              Interactive cost estimation tool enabling users to calculate ownership costs and visualize long-term savings vs. traditional vehicles.
+            <p className="text-[var(--color-text-tertiary)] text-sm">
+              Interactive tool for cost estimation and ROI visualization.
             </p>
           </div>
 
-          <div className="p-6 rounded-lg border border-[var(--color-border)]">
+          <div>
             <h3 className="text-lg font-medium mb-3 text-[var(--color-text-primary)]">
               React Components
             </h3>
-            <p className="text-[var(--color-text-tertiary)]">
-              Production-ready component library in React with Storybook documentation, enabling rapid feature development and consistency.
+            <p className="text-[var(--color-text-tertiary)] text-sm">
+              Production-ready library with Storybook documentation.
             </p>
           </div>
 
-          <div className="p-6 rounded-lg border border-[var(--color-border)]">
+          <div>
             <h3 className="text-lg font-medium mb-3 text-[var(--color-text-primary)]">
               Documentation
             </h3>
-            <p className="text-[var(--color-text-tertiary)]">
-              Comprehensive design and development guidelines, ensuring seamless collaboration and consistent implementation across teams.
+            <p className="text-[var(--color-text-tertiary)] text-sm">
+              Design and development guidelines for consistency.
             </p>
           </div>
         </div>
