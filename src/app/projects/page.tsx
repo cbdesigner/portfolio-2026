@@ -149,22 +149,14 @@ const allProjects: {
 
 export default function ProjectsPage() {
   const { t, locale } = useLanguage();
-  const [items, setItems] = useState<ProjectItem[]>([]);
-  const [selectedFilter, setSelectedFilter] = useState<FilterValue>("all");
 
-  useEffect(() => {
-    const projectsData = allProjects
-      .filter((p) => selectedFilter === "all" || p.filter === selectedFilter)
-      .map((p) => ({
-        href: p.href,
-        title: t.projectTitles[p.key],
-        category: p.category,
-        description: p.description[locale],
-        filter: p.filter,
-      }));
-
-    setItems(projectsData);
-  }, [selectedFilter, t]);
+  const items: ProjectItem[] = allProjects.map((p) => ({
+    href: p.href,
+    title: t.projectTitles[p.key],
+    category: p.category,
+    description: p.description[locale],
+    filter: p.filter,
+  }));
 
   return (
     <main className="min-h-screen pt-22">
