@@ -96,7 +96,7 @@ export default function InterviewPage() {
       </section>
 
       {/* 2. Project Overview - What is Multiplica */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
           <h2 className="font-heading text-display-md tracking-display mb-6">
             {t.whatIsMultiplicaTitle}
           </h2>
@@ -109,7 +109,7 @@ export default function InterviewPage() {
         </section>
 
       {/* 3. Challenge & Opportunity - Interview */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
           <h2 className="font-heading text-display-md tracking-display mb-6">
             {t.interviewTitle}
           </h2>
@@ -139,7 +139,7 @@ export default function InterviewPage() {
         </section>
 
       {/* 4. Approach - Maturity in UX */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
           <h2 className="font-heading text-display-md tracking-display mb-6">
             {t.maturityTitle}
           </h2>
@@ -151,7 +151,7 @@ export default function InterviewPage() {
         </section>
 
       {/* 5. What We Delivered - Main Gaps */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
           <h2 className="font-heading text-display-md tracking-display mb-6">{t.mainGapsTitle}</h2>
           <div className="space-y-4 text-[var(--color-text-secondary)] leading-relaxed">
             <p>
@@ -164,7 +164,7 @@ export default function InterviewPage() {
         </section>
 
       {/* 6. Gallery - What Awaits Us */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
           <h2 className="font-heading text-display-md tracking-display mb-6">
             {t.whatAwaitsTitle}
           </h2>
@@ -184,19 +184,19 @@ export default function InterviewPage() {
         </section>
 
       {/* 7. Impact & Results - Empty */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
       </section>
 
       {/* 8. Lessons Learned - Empty */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
       </section>
 
       {/* 9. Conclusion - Empty */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
       </section>
 
       {/* 10. Related Projects */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <RelatedProjects current="/interview" />
       </section>
     </div>

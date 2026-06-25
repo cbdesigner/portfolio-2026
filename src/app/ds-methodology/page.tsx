@@ -513,7 +513,7 @@ export default function DSMethodologyPage() {
       </section>
 
       {/* 2. Project Overview - Strategic Benefits */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <div className="text-center mb-12">
           <h2 className="font-heading text-display-md tracking-display mb-4">
             {t.benefitsTitle}
@@ -544,7 +544,7 @@ export default function DSMethodologyPage() {
       </section>
 
       {/* 3. Challenge & Opportunity - 5 Stages Overview */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <div className="text-center mb-12">
           <h2 className="font-heading text-display-md tracking-display mb-4">
             {t.stagesTitle}
@@ -601,7 +601,7 @@ export default function DSMethodologyPage() {
       </section>
 
       {/* 4. Approach - Development Pipeline */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <div className="text-center mb-12">
           <h2 className="font-heading text-display-md tracking-display mb-4">
             {t.pipelineTitle}
@@ -635,7 +635,7 @@ export default function DSMethodologyPage() {
       </section>
 
       {/* 5. What We Delivered - Tools */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <div className="text-center mb-12">
           <h2 className="font-heading text-display-md tracking-display mb-4">
             {t.toolsSectionTitle}
@@ -656,7 +656,7 @@ export default function DSMethodologyPage() {
       </section>
 
       {/* 6. Gallery - KPIs */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <div className="text-center mb-12">
           <h2 className="font-heading text-display-md tracking-display mb-4">
             {t.kpisTitle}
@@ -698,7 +698,7 @@ export default function DSMethodologyPage() {
       </section>
 
       {/* 7. Impact & Results - Roadmap */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <div className="text-center mb-12">
           <h2 className="font-heading text-display-md tracking-display mb-4">
             {t.roadmapTitle}
@@ -746,15 +746,15 @@ export default function DSMethodologyPage() {
       </section>
 
       {/* 8. Lessons Learned - Empty */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
       </section>
 
       {/* 9. Conclusion - Empty */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
       </section>
 
       {/* 10. Related Projects */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <RelatedProjects current="/ds-methodology" />
       </section>
     </article>

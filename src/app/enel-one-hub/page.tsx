@@ -111,14 +111,14 @@ export default function EnelOneHubPage() {
       </section>
 
       {/* Hero Image */}
-      <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
+      <section className="w-full px-8 md:px-0 py-8">
         <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
           <img src="/images/de6dc1e6-bcbb-406f-adee-b47964a84e1a_rw_1920.jpg" alt="Enel One Hub" className="w-full" loading="lazy" />
         </div>
       </section>
 
       {/* Project Overview */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-sm font-medium text-[var(--color-text-secondary)] uppercase tracking-wide mb-2">
@@ -156,7 +156,7 @@ export default function EnelOneHubPage() {
       </section>
 
       {/* Challenge & Opportunity */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <div className="grid md:grid-cols-2 gap-16">
           <div>
             <h2 className="font-heading text-display-sm tracking-display mb-6">
@@ -214,7 +214,7 @@ export default function EnelOneHubPage() {
         </section>
 
         {/* Interviews Section */}
-        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
           <h3 className="font-heading text-display-sm tracking-display mb-6">
             {t.interviewsTitle}
           </h3>
@@ -224,7 +224,7 @@ export default function EnelOneHubPage() {
         </section>
 
         {/* Interview Images */}
-        <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
+        <section className="w-full px-8 md:px-0 py-8">
           <div className="w-full md:w-4/5 mx-auto">
             <div className="grid md:grid-cols-2 gap-8">
               <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
@@ -238,7 +238,7 @@ export default function EnelOneHubPage() {
         </section>
 
         {/* Argentina Colombia Section */}
-        <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
+        <section className="w-full px-8 md:px-0 py-8">
           <div className="w-full md:w-4/5 mx-auto">
             <div className="grid md:grid-cols-2 gap-8">
               <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
@@ -252,7 +252,7 @@ export default function EnelOneHubPage() {
         </section>
 
         {/* Chile Sitemap Section */}
-        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
           <h3 className="font-heading text-display-sm tracking-display mb-6">
             {t.chileSitemapTitle}
           </h3>
@@ -261,14 +261,14 @@ export default function EnelOneHubPage() {
           </p>
         </section>
 
-        <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
+        <section className="w-full px-8 md:px-0 py-8">
           <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
             <img src="/images/sitemap.jpg" alt="Chile Sitemap with all sites unified" className="w-full" loading="lazy" />
           </div>
         </section>
 
         {/* Hotspots Section */}
-        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
           <h3 className="font-heading text-display-sm tracking-display mb-6">
             {t.hotspotsTitle}
           </h3>
@@ -277,7 +277,7 @@ export default function EnelOneHubPage() {
           </p>
         </section>
 
-        <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
+        <section className="w-full px-8 md:px-0 py-8">
           <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
             <img src="/images/711a3f8e-b0b0-4e62-85f5-d5dc0f6c1f45_rw_1920.png" alt="Hotspots of Private Area Personas Chile" className="w-full" loading="lazy" />
           </div>
@@ -285,7 +285,7 @@ export default function EnelOneHubPage() {
       </section>
 
       {/* Private Area Design */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <h2 className="font-heading text-display-md tracking-display mb-8">
           {t.privateAreaTitle}
         </h2>
@@ -295,14 +295,14 @@ export default function EnelOneHubPage() {
       </section>
 
       {/* Private Area Main Image */}
-      <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
+      <section className="w-full px-8 md:px-0 py-8">
         <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
           <img src="/images/3c01aa27-85a3-48f8-bb4c-47e693587aff_rw_1920.jpg" alt="Private Area Personas screens" className="w-full" loading="lazy" />
         </div>
       </section>
 
       {/* Private Area Grid */}
-      <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
+      <section className="w-full px-8 md:px-0 py-8">
         <div className="w-full md:w-4/5 mx-auto">
           <div className="grid md:grid-cols-3 gap-8">
             <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
@@ -319,20 +319,20 @@ export default function EnelOneHubPage() {
       </section>
 
       {/* Private Area Detail Images */}
-      <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
+      <section className="w-full px-8 md:px-0 py-8">
         <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
           <img src="/images/4cddf3c6-96a4-4255-8b27-12704b9eb724_rw_1920.jpg" alt="Private Area screens" className="w-full" loading="lazy" />
         </div>
       </section>
 
-      <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
+      <section className="w-full px-8 md:px-0 py-8">
         <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
           <img src="/images/6359bbdd-d6a3-4a42-8fc5-15cd4fd5e8e0_rw_1920.jpg" alt="Private Area screens detail" className="w-full" loading="lazy" />
         </div>
       </section>
 
       {/* Public Area Design */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <h2 className="font-heading text-display-md tracking-display mb-8">
           {t.publicAreaTitle}
         </h2>
@@ -342,14 +342,14 @@ export default function EnelOneHubPage() {
       </section>
 
       {/* Public Area Image */}
-      <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
+      <section className="w-full px-8 md:px-0 py-8">
         <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
           <img src="/images/d17e4048-0bf7-4fc2-9dcb-0c14dac652f4_rw_1920.png" alt="Public Area Personas screen" className="w-full" loading="lazy" />
         </div>
       </section>
 
       {/* What We Delivered */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <h2 className="font-heading text-display-md tracking-display mb-12">
           What We Delivered
         </h2>
@@ -412,7 +412,7 @@ export default function EnelOneHubPage() {
       </section>
 
       {/* Impact & Results */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <h2 className="font-heading text-display-md tracking-display mb-12">
           Impact & Results
         </h2>
@@ -453,7 +453,7 @@ export default function EnelOneHubPage() {
       </section>
 
       {/* Lessons Learned */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <h2 className="font-heading text-display-md tracking-display mb-12">
           Lessons Learned
         </h2>
@@ -484,7 +484,7 @@ export default function EnelOneHubPage() {
       </section>
 
       {/* Conclusion */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <h2 className="font-heading text-display-md tracking-display mb-8">
           Conclusion
         </h2>
@@ -500,7 +500,7 @@ export default function EnelOneHubPage() {
       </section>
 
       {/* My Responsibilities */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <h2 className="font-heading text-display-md tracking-display mb-12">
           {t.responsibilitiesTitle}
         </h2>
@@ -519,7 +519,7 @@ export default function EnelOneHubPage() {
       </section>
 
       {/* Tools */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <h2 className="font-heading text-display-md tracking-display mb-6">
           {t.toolsTitle}
         </h2>
@@ -552,7 +552,7 @@ export default function EnelOneHubPage() {
       </section>
 
       {/* Related Projects */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <RelatedProjects current="/enel-one-hub" />
       </section>
     </>

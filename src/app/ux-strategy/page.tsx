@@ -313,7 +313,7 @@ export default function UXStrategyPage() {
       </section>
 
       {/* 2. Project Overview - 5 Areas */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
           <div className="flex flex-col lg:flex-row items-center gap-12 lg:gap-16">
             {/* Left text */}
             <div className="lg:w-2/5 text-center lg:text-left">
@@ -357,7 +357,7 @@ export default function UXStrategyPage() {
       {t.areas.map((area, idx) => {
         const colors = colorMap[area.color] || colorMap.blue;
         return (
-          <section key={idx} className={`max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)] ${idx === 0 ? 'border-t' : ''}`}>
+          <section key={idx} className={`max-w-6xl mx-auto px-8 md:px-16 py-20 ${idx === 0 ? 'border-t' : ''}`}>
               <div className={`p-6 md:p-10 border ${colors.border} ${colors.bg} theme-transition`}>
                 {/* Area title */}
                 <h2 className={`font-heading text-display-md tracking-display mb-4 ${colors.text}`}>
@@ -412,7 +412,7 @@ export default function UXStrategyPage() {
         })}
 
       {/* 10. Related Projects */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <RelatedProjects current="/ux-strategy" />
       </section>
     </div>

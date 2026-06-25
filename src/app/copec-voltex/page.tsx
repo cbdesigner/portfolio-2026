@@ -145,7 +145,7 @@ export default function CopecVoltexPage() {
         </section>
 
         {/* Design System Details */}
-        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
           <h3 className="font-heading text-display-sm tracking-display mb-6">
             Modular Design System
           </h3>
@@ -160,7 +160,7 @@ export default function CopecVoltexPage() {
         </section>
 
         {/* EV Catalog Image */}
-        <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
+        <section className="w-full px-8 md:px-0 py-8">
           <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
             <img
               src="/images/voltex/05108844-6000-4f0e-a03e-20352d3a0e79_rw_1920.png"
@@ -172,7 +172,7 @@ export default function CopecVoltexPage() {
         </section>
 
         {/* EV Catalog Details */}
-        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
           <h3 className="font-heading text-display-sm tracking-display mb-6">
             Electric Vehicle Catalog
           </h3>
@@ -187,7 +187,7 @@ export default function CopecVoltexPage() {
         </section>
 
         {/* Education Image */}
-        <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
+        <section className="w-full px-8 md:px-0 py-8">
           <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
             <img
               src="/images/voltex/e019b36d-92df-4e20-84e9-b178884b01e7_rw_1920.png"
@@ -199,7 +199,7 @@ export default function CopecVoltexPage() {
         </section>
 
         {/* Education Details */}
-        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
           <h3 className="font-heading text-display-sm tracking-display mb-6">
             Educational Resources
           </h3>
@@ -215,7 +215,7 @@ export default function CopecVoltexPage() {
         </section>
 
         {/* Cost Calculator Image */}
-        <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
+        <section className="w-full px-8 md:px-0 py-8">
           <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
             <img
               src="/images/voltex/2d9fc2e8-d729-4e64-97aa-61697ba2d190_rw_1920.png"
@@ -227,7 +227,7 @@ export default function CopecVoltexPage() {
         </section>
 
         {/* Cost Calculator Details */}
-        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
           <h3 className="font-heading text-display-sm tracking-display mb-6">
             ROI Cost Calculator
           </h3>
@@ -243,7 +243,7 @@ export default function CopecVoltexPage() {
         </section>
 
         {/* Development Process */}
-        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
           <h3 className="font-heading text-display-sm tracking-display mb-6">
             Agile Development & Continuous Validation
           </h3>
@@ -323,7 +323,7 @@ export default function CopecVoltexPage() {
       </section>
 
       {/* Gallery - Project Images 1-10 */}
-      <section className="border-t border-[var(--color-border)]">
+      <section>
         <div className="space-y-8 py-20">
           {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((num) => (
             <div key={num} className="w-full px-8 md:px-0">

@@ -87,14 +87,14 @@ export default function AutonomusPage() {
       </section>
 
       {/* Hero Image */}
-      <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
+      <section className="w-full px-8 md:px-0 py-8">
         <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
           <img src="/images/autonomus-services.png" alt={t.heroAlt} className="w-full" loading="lazy" />
         </div>
       </section>
 
       {/* Project Overview */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <div className="grid md:grid-cols-4 gap-8">
           <div>
             <h3 className="text-sm font-medium text-[var(--color-text-secondary)] uppercase tracking-wide mb-2">
@@ -132,7 +132,7 @@ export default function AutonomusPage() {
       </section>
 
       {/* Challenge & Opportunity */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <div className="grid md:grid-cols-2 gap-16">
           <div>
             <h2 className="font-heading text-display-sm tracking-display mb-6">
@@ -179,7 +179,7 @@ export default function AutonomusPage() {
         </section>
 
         {/* Caregiver & Senior Section */}
-        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
           <h3 className="font-heading text-display-sm tracking-display mb-6">
             {t.caregiverTitle}
           </h3>
@@ -189,21 +189,21 @@ export default function AutonomusPage() {
         </section>
 
         {/* App Flows Image */}
-        <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
+        <section className="w-full px-8 md:px-0 py-8">
           <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
             <img src="/images/autonomus-app-flows.png" alt={t.caregiverAlt} className="w-full" loading="lazy" />
           </div>
         </section>
 
         {/* Mobile App Video */}
-        <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
+        <section className="w-full px-8 md:px-0 py-8">
           <div className="max-w-2xl mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
             <video src="/videos/autonomus-app-video.mp4" controls className="w-full h-auto" />
           </div>
         </section>
 
         {/* Back Office Section */}
-        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
           <h3 className="font-heading text-display-sm tracking-display mb-6">
             {t.backOfficeTitle}
           </h3>
@@ -213,21 +213,21 @@ export default function AutonomusPage() {
         </section>
 
         {/* Back Office List Image */}
-        <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
+        <section className="w-full px-8 md:px-0 py-8">
           <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
             <img src="/images/autonomus-backoffice-list.png" alt="Back Office - Listado de servicios" className="w-full" loading="lazy" />
           </div>
         </section>
 
         {/* Back Office Detail Image */}
-        <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
+        <section className="w-full px-8 md:px-0 py-8">
           <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
             <img src="/images/autonomus-backoffice-detail.png" alt="Back Office - Detalle del servicio" className="w-full" loading="lazy" />
           </div>
         </section>
 
         {/* Back Office Video */}
-        <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
+        <section className="w-full px-8 md:px-0 py-8">
           <div className="max-w-2xl mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
             <video src="/videos/autonomus-backoffice-video.mp4" controls className="w-full h-auto" />
           </div>
@@ -235,7 +235,7 @@ export default function AutonomusPage() {
       </section>
 
       {/* What We Delivered */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <h2 className="font-heading text-display-md tracking-display mb-12">
           What We Delivered
         </h2>
@@ -298,7 +298,7 @@ export default function AutonomusPage() {
       </section>
 
       {/* Methodology & Deliverables */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <h2 className="font-heading text-display-md tracking-display mb-12">
           Methodology & Approach
         </h2>
@@ -313,7 +313,7 @@ export default function AutonomusPage() {
       </section>
 
       {/* Impact & Results */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <h2 className="font-heading text-display-md tracking-display mb-12">
           Impact & Results
         </h2>
@@ -348,7 +348,7 @@ export default function AutonomusPage() {
       </section>
 
       {/* Lessons Learned */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <h2 className="font-heading text-display-md tracking-display mb-12">
           Lessons Learned
         </h2>
@@ -380,7 +380,7 @@ export default function AutonomusPage() {
       </section>
 
       {/* Conclusion */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <h2 className="font-heading text-display-md tracking-display mb-8">
           Conclusion
         </h2>
@@ -399,7 +399,7 @@ export default function AutonomusPage() {
       </section>
 
       {/* Tools */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <h2 className="font-heading text-display-md tracking-display mb-6">
           {t.toolsTitle}
         </h2>
@@ -423,7 +423,7 @@ export default function AutonomusPage() {
       </section>
 
       {/* Related Projects */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <RelatedProjects current="/autonomus" />
       </section>
     </>

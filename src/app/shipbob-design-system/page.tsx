@@ -41,7 +41,7 @@ export default function ShipBobPage() {
       </section>
 
       {/* Project Overview */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <div className="grid md:grid-cols-4 gap-8 mb-20">
           <div>
             <h3 className="text-sm font-medium text-[var(--color-text-secondary)] uppercase tracking-wide mb-2">
@@ -79,7 +79,7 @@ export default function ShipBobPage() {
       </section>
 
       {/* Challenge & Opportunity */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <div className="grid md:grid-cols-2 gap-12">
           <div>
             <h2 className="font-heading text-display-sm tracking-display mb-4">
@@ -132,7 +132,7 @@ export default function ShipBobPage() {
         </section>
 
         {/* Foundations Section */}
-        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
           <h3 className="font-heading text-display-sm tracking-display mb-6">
             Design Foundations
           </h3>
@@ -142,7 +142,7 @@ export default function ShipBobPage() {
         </section>
 
         {/* Tokens Image */}
-        <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
+        <section className="w-full px-8 md:px-0 py-8">
           <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
             <img
               src="/images/shipbob/tokens-variables.png"
@@ -154,7 +154,7 @@ export default function ShipBobPage() {
         </section>
 
         {/* Base Styles Image */}
-        <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
+        <section className="w-full px-8 md:px-0 py-8">
           <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
             <img
               src="/images/shipbob/base-styles.png"
@@ -166,14 +166,14 @@ export default function ShipBobPage() {
         </section>
 
         {/* Base Styles Details */}
-        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
           <p className="text-[var(--color-text-tertiary)]">
             Unified base styles ensuring consistency across all interfaces without requiring design decisions for every new page. This foundation reduced interface development time from hours to minutes.
           </p>
         </section>
 
         {/* Component System Section */}
-        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
           <h3 className="font-heading text-display-sm tracking-display mb-6">
             Component Library
           </h3>
@@ -183,7 +183,7 @@ export default function ShipBobPage() {
         </section>
 
         {/* Button Component */}
-        <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
+        <section className="w-full px-8 md:px-0 py-8">
           <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
             <img
               src="/images/shipbob/button.png"
@@ -195,7 +195,7 @@ export default function ShipBobPage() {
         </section>
 
         {/* Toggle Component */}
-        <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
+        <section className="w-full px-8 md:px-0 py-8">
           <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
             <img
               src="/images/shipbob/toggle.png"
@@ -207,7 +207,7 @@ export default function ShipBobPage() {
         </section>
 
         {/* Bottom Sheet Component */}
-        <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
+        <section className="w-full px-8 md:px-0 py-8">
           <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
             <img
               src="/images/shipbob/bottom-sheet.png"
@@ -219,7 +219,7 @@ export default function ShipBobPage() {
         </section>
 
         {/* Stepper Component */}
-        <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
+        <section className="w-full px-8 md:px-0 py-8">
           <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
             <img
               src="/images/shipbob/stepper.png"
@@ -231,7 +231,7 @@ export default function ShipBobPage() {
         </section>
 
         {/* Complex Data Patterns Section */}
-        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
           <h3 className="font-heading text-display-sm tracking-display mb-6">
             Complex Data Patterns
           </h3>
@@ -241,7 +241,7 @@ export default function ShipBobPage() {
         </section>
 
         {/* Table Base */}
-        <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
+        <section className="w-full px-8 md:px-0 py-8">
           <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
             <img
               src="/images/shipbob/table.png"
@@ -253,7 +253,7 @@ export default function ShipBobPage() {
         </section>
 
         {/* Table Variant 1 */}
-        <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
+        <section className="w-full px-8 md:px-0 py-8">
           <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
             <img
               src="/images/shipbob/table-1.png"
@@ -265,7 +265,7 @@ export default function ShipBobPage() {
         </section>
 
         {/* Table Variant 2 */}
-        <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
+        <section className="w-full px-8 md:px-0 py-8">
           <div className="w-full md:w-4/5 mx-auto rounded-lg overflow-hidden border border-[var(--color-border)]">
             <img
               src="/images/shipbob/table-2.png"
@@ -277,7 +277,7 @@ export default function ShipBobPage() {
         </section>
 
         {/* System Enablement & Development */}
-        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
           <h3 className="font-heading text-display-sm tracking-display mb-6">
             System Enablement & Developer Integration
           </h3>
@@ -302,7 +302,7 @@ export default function ShipBobPage() {
         </section>
 
         {/* AI-Ready Foundation */}
-        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
           <h3 className="font-heading text-display-sm tracking-display mb-6">
             AI-Ready Foundation
           </h3>
@@ -313,7 +313,7 @@ export default function ShipBobPage() {
       </section>
 
       {/* What We Delivered */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <h2 className="font-heading text-display-md tracking-display mb-12">
           What We Delivered
         </h2>
@@ -376,7 +376,7 @@ export default function ShipBobPage() {
       </section>
 
       {/* Impact & Results */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <h2 className="font-heading text-display-md tracking-display mb-8">
           Measurable Impact
         </h2>
@@ -433,7 +433,7 @@ export default function ShipBobPage() {
       </section>
 
       {/* Lessons Learned */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <h2 className="font-heading text-display-md tracking-display mb-12">
           Lessons Learned
         </h2>
@@ -465,7 +465,7 @@ export default function ShipBobPage() {
       </section>
 
       {/* Conclusion */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <h2 className="font-heading text-display-md tracking-display mb-8">
           Conclusion
         </h2>
@@ -493,7 +493,7 @@ export default function ShipBobPage() {
       </section>
 
       {/* Related Projects */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <RelatedProjects current="shipbobDesignSystem" />
       </section>
     </>

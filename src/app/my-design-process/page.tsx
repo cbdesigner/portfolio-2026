@@ -125,7 +125,7 @@ export default function MyDesignProcessPage() {
       </section>
 
       {/* 2. Project Overview - Interactive Figma embed */}
-      <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
+      <section className="w-full px-8 md:px-0 py-8">
         <div className="w-full max-w-6xl mx-auto">
           <iframe
             style={{ border: '1px solid rgba(0, 0, 0, 0.1)' }}
@@ -139,7 +139,7 @@ export default function MyDesignProcessPage() {
       </section>
 
       {/* 3. Challenge & Opportunity - Discover */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
           <h2 className="font-heading text-display-md tracking-display mb-6">{t.discoverTitle}</h2>
 
           <h3 className="text-lg font-medium text-[var(--color-text-primary)] mb-3">
@@ -184,7 +184,7 @@ export default function MyDesignProcessPage() {
         </section>
 
       {/* 4. Approach - Define */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
           <h2 className="font-heading text-display-md tracking-display mb-6">{t.defineTitle}</h2>
 
           <h3 className="text-lg font-medium text-[var(--color-text-primary)] mb-3">
@@ -241,7 +241,7 @@ export default function MyDesignProcessPage() {
         </section>
 
       {/* 5. What We Delivered - Develop */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
           <h2 className="font-heading text-display-md tracking-display mb-6">{t.developTitle}</h2>
 
           <h3 className="text-lg font-medium text-[var(--color-text-primary)] mb-3">
@@ -290,7 +290,7 @@ export default function MyDesignProcessPage() {
         </section>
 
       {/* 6. Gallery - Deliver */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
           <h2 className="font-heading text-display-md tracking-display mb-6">{t.deliverTitle}</h2>
 
           <h3 className="text-lg font-medium text-[var(--color-text-primary)] mb-3">
@@ -339,22 +339,22 @@ export default function MyDesignProcessPage() {
         </section>
 
       {/* 7. Impact & Results - Summary */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <p className="text-body-lg text-[var(--color-text-secondary)] leading-relaxed">
           {t.summary}
         </p>
       </section>
 
       {/* 8. Lessons Learned - Empty */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
       </section>
 
       {/* 9. Conclusion - Empty */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
       </section>
 
       {/* 10. Related Projects */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <RelatedProjects current="/my-design-process" />
       </section>
     </div>

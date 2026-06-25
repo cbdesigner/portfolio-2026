@@ -338,7 +338,7 @@ export default function DSServicesPage() {
       </section>
 
       {/* 2. Project Overview - 3 Pillars Overview */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <h2 className="font-heading text-display-md italic tracking-display text-[var(--color-text-primary)] mb-12">
           {content.pillarsTitle}
         </h2>
@@ -360,7 +360,7 @@ export default function DSServicesPage() {
       </section>
 
       {/* 3. Challenge & Opportunity - Pillar 1: Governance */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <h2 className="font-heading text-display-md italic tracking-display text-[var(--color-text-primary)] mb-6">
           {content.governanceTitle}
         </h2>
@@ -412,7 +412,7 @@ export default function DSServicesPage() {
       </section>
 
       {/* 4. Approach - Pillar 2: Architecture */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <h2 className="font-heading text-display-md italic tracking-display text-[var(--color-text-primary)] mb-6">
           {content.architectureTitle}
         </h2>
@@ -476,7 +476,7 @@ export default function DSServicesPage() {
       </section>
 
       {/* 5. What We Delivered - Pillar 3: Metrics */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <h2 className="font-heading text-display-md italic tracking-display text-[var(--color-text-primary)] mb-6">
           {content.metricsTitle}
         </h2>
@@ -536,7 +536,7 @@ export default function DSServicesPage() {
       </section>
 
       {/* 6. Gallery - Recommendation */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <div className="bg-[var(--color-card-bg)] border border-[var(--color-border)] rounded-lg p-12 theme-transition">
           <h2 className="font-heading text-display-md italic tracking-display text-[var(--color-text-primary)] mb-6">
             {content.recommendationTitle}
@@ -548,7 +548,7 @@ export default function DSServicesPage() {
       </section>
 
       {/* 7. Impact & Results - CTA */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)] text-center">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 text-center">
         <p className="text-body-lg text-[var(--color-text-secondary)] mb-8">
           {content.ctaText}
         </p>
@@ -561,15 +561,15 @@ export default function DSServicesPage() {
       </section>
 
       {/* 8. Lessons Learned - Empty */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
       </section>
 
       {/* 9. Conclusion - Empty */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
       </section>
 
       {/* 10. Related Projects */}
-      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <RelatedProjects current="/ds-services" />
       </section>
     </article>
