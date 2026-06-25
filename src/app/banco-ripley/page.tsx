@@ -144,251 +144,474 @@ export default function BancoRipleyPage() {
 
   return (
     <article className="overflow-x-hidden">
-      {/* Hero Section */}
-      <section className="max-w-5xl mx-auto px-8 md:px-16 pt-22 pb-22 text-center">
-        <p className="text-overline uppercase tracking-widest-caps text-[var(--color-text-tertiary)] mb-4 font-mono">
-          {t.overline}
-        </p>
-        <h1 className="font-heading text-display-lg tracking-display mb-4">
-          {t.title}
-        </h1>
-        <p className="text-body-lg text-[var(--color-text-secondary)] mb-8">
-          {t.subtitle}
-        </p>
-        <p className="text-body-lg text-[var(--color-text-secondary)] leading-relaxed  mx-auto">
-          {t.heroDescription}
-        </p>
-        <div className="mt-8 mb-4 lg:-mx-24 xl:-mx-40 2xl:-mx-56">
-          <AsciiImage
-            src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/7d478cfe-4942-4e14-b5fb-4f27db3fcadc_rw_1920.jpg?h=6fb9d00d354d1b4ef2e47ddd88ae5068"
-            alt={t.heroAlt}
-            colorOnHover
-          />
-        </div>
-      </section>
-
-      {/* Section 1 - UX Lead */}
-      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22">
-        <h2 className="font-heading text-display-md tracking-display mb-8">
-          {t.section1Title}
-        </h2>
-
-        <div className="space-y-6 text-body-lg text-[var(--color-text-secondary)] leading-relaxed">
-          <p>
-            {t.section1Text}{" "}
-            <strong className="text-[var(--color-text-primary)]">{t.chekName}</strong>
-            {t.section1TextCont}
+      <>
+        {/* Hero Section */}
+        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
+          <div className="mb-6">
+            <span className="text-sm font-medium text-[var(--color-text-secondary)] tracking-wide uppercase">
+              {t.overline}
+            </span>
+          </div>
+          <h1 className="font-heading text-display-lg tracking-display mb-6">
+            {t.title}
+          </h1>
+          <p className="text-xl text-[var(--color-text-secondary)] mb-4 max-w-3xl">
+            {t.subtitle}
           </p>
-        </div>
+          <p className="text-lg text-[var(--color-text-tertiary)] max-w-4xl">
+            {t.heroDescription}
+          </p>
+        </section>
 
-        {/* Chek Ecosystem */}
-        <div className="mt-12">
-          <h3 className="text-xl italic mb-8">{t.ecosystemTitle}</h3>
+        {/* Hero Image */}
+        <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
+          <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
+            <AsciiImage
+              src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/7d478cfe-4942-4e14-b5fb-4f27db3fcadc_rw_1920.jpg?h=6fb9d00d354d1b4ef2e47ddd88ae5068"
+              alt={t.heroAlt}
+              colorOnHover
+            />
+          </div>
+        </section>
 
-          <div className="space-y-8">
-            <div className="border-l-2 border-[var(--color-border)] pl-6">
-              <h4 className="text-xl italic text-[var(--color-text-primary)] mb-2">
-                {t.chekPersonasTitle}
-              </h4>
-              <p className="text-[var(--color-text-secondary)] leading-relaxed">
-                {t.chekPersonasDesc}
+        {/* Project Overview */}
+        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+          <div className="grid md:grid-cols-4 gap-8">
+            <div>
+              <h3 className="text-sm font-medium text-[var(--color-text-secondary)] uppercase tracking-wide mb-2">
+                Client
+              </h3>
+              <p className="text-lg text-[var(--color-text-primary)]">
+                Banco Ripley
               </p>
             </div>
-
-            <div className="border-l-2 border-[var(--color-border)] pl-6">
-              <h4 className="text-xl italic text-[var(--color-text-primary)] mb-2">
-                {t.chekComerciosTitle}
-              </h4>
-              <p className="text-[var(--color-text-secondary)] leading-relaxed">
-                {t.chekComerciosDesc}
+            <div>
+              <h3 className="text-sm font-medium text-[var(--color-text-secondary)] uppercase tracking-wide mb-2">
+                Roles
+              </h3>
+              <p className="text-lg text-[var(--color-text-primary)]">
+                UX Lead, UX Manager
               </p>
             </div>
-
-            <div className="border-l-2 border-[var(--color-border)] pl-6">
-              <h4 className="text-xl italic text-[var(--color-text-primary)] mb-2">
-                {t.websitesTitle}
-              </h4>
-              <p className="text-[var(--color-text-secondary)] leading-relaxed">
-                {t.websitesDesc}
+            <div>
+              <h3 className="text-sm font-medium text-[var(--color-text-secondary)] uppercase tracking-wide mb-2">
+                Timeline
+              </h3>
+              <p className="text-lg text-[var(--color-text-primary)]">
+                4+ Years (2019-2023)
               </p>
             </div>
-
-            <div className="border-l-2 border-[var(--color-border)] pl-6">
-              <h4 className="text-xl italic text-[var(--color-text-primary)] mb-2">
-                {t.devWebsiteTitle}
-              </h4>
-              <p className="text-[var(--color-text-secondary)] leading-relaxed">
-                {t.devWebsiteDesc}
-              </p>
-            </div>
-
-            <div className="border-l-2 border-[var(--color-border)] pl-6">
-              <h4 className="text-xl italic text-[var(--color-text-primary)] mb-2">
-                {t.backofficeTitle}
-              </h4>
-              <p className="text-[var(--color-text-secondary)] leading-relaxed">
-                {t.backofficeDesc}
+            <div>
+              <h3 className="text-sm font-medium text-[var(--color-text-secondary)] uppercase tracking-wide mb-2">
+                Tech Stack
+              </h3>
+              <p className="text-lg text-[var(--color-text-primary)]">
+                Figma, Jira, Design Systems
               </p>
             </div>
           </div>
-        </div>
+        </section>
 
-        {/* Responsibilities */}
-        <div className="mt-12">
-          <h3 className="text-xl italic mb-6">{t.responsibilitiesTitle}</h3>
-          <ul className="space-y-4 text-[var(--color-text-secondary)] text-lg">
-            <li className="flex items-start gap-3">
-              <span className="text-[var(--color-text-tertiary)] mt-1.5 shrink-0 block w-1.5 h-1.5 rounded-full bg-[var(--color-text-tertiary)]" />
-              <span>{t.resp1}</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-[var(--color-text-tertiary)] mt-1.5 shrink-0 block w-1.5 h-1.5 rounded-full bg-[var(--color-text-tertiary)]" />
-              <span>{t.resp2}</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-[var(--color-text-tertiary)] mt-1.5 shrink-0 block w-1.5 h-1.5 rounded-full bg-[var(--color-text-tertiary)]" />
-              <span>{t.resp3}</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-[var(--color-text-tertiary)] mt-1.5 shrink-0 block w-1.5 h-1.5 rounded-full bg-[var(--color-text-tertiary)]" />
-              <span>{t.resp4}</span>
-            </li>
-            <li className="flex items-start gap-3">
-              <span className="text-[var(--color-text-tertiary)] mt-1.5 shrink-0 block w-1.5 h-1.5 rounded-full bg-[var(--color-text-tertiary)]" />
-              <span>{t.resp5}</span>
-            </li>
-          </ul>
-        </div>
+        {/* Challenge & Opportunity */}
+        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+          <div className="grid md:grid-cols-2 gap-16">
+            <div>
+              <h2 className="font-heading text-display-sm tracking-display mb-6">
+                The Challenge
+              </h2>
+              <p className="text-[var(--color-text-tertiary)] mb-6">
+                Banco Ripley needed to build a digital wallet from scratch while managing design consistency across multiple products and platforms.
+              </p>
+              <ul className="space-y-3 text-[var(--color-text-tertiary)]">
+                <li>• No established UX direction or design system</li>
+                <li>• Multiple teams working in silos (Marketing, Legal, Dev, Product)</li>
+                <li>• Rapid growth requiring design leadership</li>
+                <li>• Need for consistency across Personas, Comercios, and admin platforms</li>
+                <li>• Building organizational design infrastructure from zero</li>
+              </ul>
+            </div>
+            <div>
+              <h2 className="font-heading text-display-sm tracking-display mb-6">
+                The Opportunity
+              </h2>
+              <p className="text-[var(--color-text-tertiary)] mb-6">
+                Create a scalable design organization and system that would enable Chek to reach 1.6M+ users while maintaining consistency and enabling team growth across Chile and Peru.
+              </p>
+              <ul className="space-y-3 text-[var(--color-text-tertiary)]">
+                <li>• Build design system and tokens in Figma</li>
+                <li>• Establish design operating model (Double Diamond + Lean)</li>
+                <li>• Scale from individual contributor to manager</li>
+                <li>• Create UX Center of Excellence for multiple regions</li>
+                <li>• Enable rapid feature development without sacrificing quality</li>
+              </ul>
+            </div>
+          </div>
+        </section>
 
-        {/* Chek Success Note */}
-        <div className="mt-12 p-6 border border-[var(--color-border)] theme-transition">
-          <p className="text-[var(--color-text-secondary)] text-lg leading-relaxed">
-            <strong className="text-[var(--color-text-primary)]">{t.successNoteLabel}</strong>{" "}
-            {t.successNoteText}
-          </p>
-        </div>
-      </section>
+        {/* Approach - Phase 1: UX Lead */}
+        <section className="border-t border-[var(--color-border)]">
+          <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
+            <h2 className="font-heading text-display-md tracking-display mb-8">
+              {t.section1Title}
+            </h2>
+            <p className="text-[var(--color-text-tertiary)] mb-6 max-w-3xl">
+              {t.section1Text}{" "}
+              <strong className="text-[var(--color-text-primary)]">{t.chekName}</strong>
+              {t.section1TextCont}
+            </p>
+          </section>
 
-      {/* Section 2 - UX Manager */}
-      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22">
-        <h2 className="font-heading text-display-md tracking-display mb-8">
-          {t.section2Title}
-        </h2>
+          {/* Chek Ecosystem */}
+          <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+            <h3 className="font-heading text-display-sm tracking-display mb-6">
+              {t.ecosystemTitle}
+            </h3>
 
-        <div className="space-y-6 text-body-lg text-[var(--color-text-secondary)] leading-relaxed">
-          <p>
+            <div className="space-y-8 text-[var(--color-text-tertiary)]">
+              <div>
+                <h4 className="text-lg font-medium text-[var(--color-text-primary)] mb-2">
+                  {t.chekPersonasTitle}
+                </h4>
+                <p>{t.chekPersonasDesc}</p>
+              </div>
+
+              <div>
+                <h4 className="text-lg font-medium text-[var(--color-text-primary)] mb-2">
+                  {t.chekComerciosTitle}
+                </h4>
+                <p>{t.chekComerciosDesc}</p>
+              </div>
+
+              <div>
+                <h4 className="text-lg font-medium text-[var(--color-text-primary)] mb-2">
+                  {t.websitesTitle}
+                </h4>
+                <p>{t.websitesDesc}</p>
+              </div>
+
+              <div>
+                <h4 className="text-lg font-medium text-[var(--color-text-primary)] mb-2">
+                  {t.devWebsiteTitle}
+                </h4>
+                <p>{t.devWebsiteDesc}</p>
+              </div>
+
+              <div>
+                <h4 className="text-lg font-medium text-[var(--color-text-primary)] mb-2">
+                  {t.backofficeTitle}
+                </h4>
+                <p>{t.backofficeDesc}</p>
+              </div>
+            </div>
+          </section>
+
+          {/* Responsibilities Section */}
+          <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+            <h3 className="font-heading text-display-sm tracking-display mb-6">
+              {t.responsibilitiesTitle}
+            </h3>
+            <ul className="space-y-4 text-[var(--color-text-tertiary)]">
+              <li>• {t.resp1}</li>
+              <li>• {t.resp2}</li>
+              <li>• {t.resp3}</li>
+              <li>• {t.resp4}</li>
+              <li>• {t.resp5}</li>
+            </ul>
+          </section>
+
+          {/* Chek Success Note */}
+          <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+            <p className="text-[var(--color-text-secondary)] text-lg">
+              <strong className="text-[var(--color-text-primary)]">{t.successNoteLabel}</strong>{" "}
+              {t.successNoteText}
+            </p>
+          </section>
+        </section>
+
+        {/* Phase 2: UX Manager */}
+        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+          <h2 className="font-heading text-display-md tracking-display mb-8">
+            {t.section2Title}
+          </h2>
+          <p className="text-[var(--color-text-tertiary)] mb-6 max-w-3xl">
             {t.section2Text}{" "}
             <strong className="text-[var(--color-text-primary)]">{t.uxCenter}</strong>{" "}
             {t.section2TextCont}
           </p>
-        </div>
+        </section>
 
-        <div className="mt-8 mb-4 lg:-mx-24 xl:-mx-40 2xl:-mx-56">
-          <AsciiImage
-            src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/075bd278-35f3-453d-b1b2-2a3c2e3aaeb9_rw_1920.jpg?h=3a9879a295af91f8fdb2f60338354002"
-            alt={t.managerAlt}
-            colorOnHover
-          />
-        </div>
+        {/* Manager Phase Image */}
+        <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
+          <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
+            <AsciiImage
+              src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/075bd278-35f3-453d-b1b2-2a3c2e3aaeb9_rw_1920.jpg?h=3a9879a295af91f8fdb2f60338354002"
+              alt={t.managerAlt}
+              colorOnHover
+            />
+          </div>
+        </section>
 
         {/* 5 Key Areas */}
-        <div className="mt-12 space-y-12">
-          {/* 1. Enterprise */}
-          <div>
-            <div className="flex items-baseline gap-4 mb-4">
-              <span className="text-3xl font-bold text-[var(--color-text-tertiary)]">01</span>
-              <h3 className="text-xl italic">{t.area1Title}</h3>
+        {/* 1. Enterprise */}
+        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+          <h3 className="font-heading text-display-sm tracking-display mb-6">
+            1. {t.area1Title}
+          </h3>
+          <p className="text-[var(--color-text-tertiary)]">
+            {t.area1Desc}
+          </p>
+        </section>
+
+        <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
+          <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
+            <AsciiImage
+              src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/224e91da-9b40-464b-bbc2-297f507f3b80_rw_1920.jpg?h=1b474610d4e7c6f5001472f88256ae84"
+              alt={t.area1Alt}
+              colorOnHover
+            />
+          </div>
+        </section>
+
+        {/* 2. Team */}
+        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+          <h3 className="font-heading text-display-sm tracking-display mb-6">
+            2. {t.area2Title}
+          </h3>
+          <p className="text-[var(--color-text-tertiary)]">
+            {t.area2Desc}
+          </p>
+        </section>
+
+        <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
+          <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
+            <AsciiImage
+              src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/2f3e18d1-1187-4b01-861c-b103ba408628_rw_1920.jpg?h=90ec9349ebe16fd89346696f4cad8007"
+              alt={t.area2Alt}
+              colorOnHover
+            />
+          </div>
+        </section>
+
+        {/* 3. Strategy */}
+        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+          <h3 className="font-heading text-display-sm tracking-display mb-6">
+            3. {t.area3Title}
+          </h3>
+          <p className="text-[var(--color-text-tertiary)]">
+            {t.area3Desc}
+          </p>
+        </section>
+
+        <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
+          <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
+            <AsciiImage
+              src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/9643c2eb-d444-4923-b913-524f5033ead0_rw_1920.jpg?h=2a38e17682495fb86a19abe1dee745a7"
+              alt={t.area3Alt}
+              colorOnHover
+            />
+          </div>
+        </section>
+
+        {/* 4. Experience */}
+        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+          <h3 className="font-heading text-display-sm tracking-display mb-6">
+            4. {t.area4Title}
+          </h3>
+          <p className="text-[var(--color-text-tertiary)]">
+            {t.area4Desc}
+          </p>
+        </section>
+
+        <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
+          <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
+            <AsciiImage
+              src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/299d5618-c739-4963-9dda-ac5d3889bfe3_rw_1920.jpg?h=147b14da61b654c5f1abe2e6b4e29c72"
+              alt={t.area4Alt}
+              colorOnHover
+            />
+          </div>
+        </section>
+
+        {/* 5. Operations */}
+        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+          <h3 className="font-heading text-display-sm tracking-display mb-6">
+            5. {t.area5Title}
+          </h3>
+          <p className="text-[var(--color-text-tertiary)]">
+            {t.area5Desc}
+          </p>
+        </section>
+
+        <section className="w-full px-8 md:px-0 py-8 border-t border-[var(--color-border)]">
+          <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
+            <AsciiImage
+              src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/4d535e33-186a-492a-9622-eea44e54eb8f_rw_1920.jpg?h=a9e61622f980d539dff71f92548344f3"
+              alt={t.area5Alt}
+              colorOnHover
+            />
+          </div>
+        </section>
+
+        {/* What We Delivered */}
+        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+          <h2 className="font-heading text-display-md tracking-display mb-12">
+            What We Delivered
+          </h2>
+
+          <div className="grid md:grid-cols-3 gap-8">
+            <div>
+              <h3 className="text-lg font-medium mb-3 text-[var(--color-text-primary)]">
+                Design System in Figma
+              </h3>
+              <p className="text-[var(--color-text-tertiary)] text-sm">
+                Complete design token system with semantic naming, multibranding support, and comprehensive component library.
+              </p>
             </div>
-            <p className="text-[var(--color-text-secondary)] text-lg leading-relaxed pl-14">
-              {t.area1Desc}
-            </p>
-            <div className="mt-6 mx-auto lg:-mx-24 xl:-mx-40 2xl:-mx-56">
-              <AsciiImage
-                src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/224e91da-9b40-464b-bbc2-297f507f3b80_rw_1920.jpg?h=1b474610d4e7c6f5001472f88256ae84"
-                alt={t.area1Alt}
-                colorOnHover
-              />
+
+            <div>
+              <h3 className="text-lg font-medium mb-3 text-[var(--color-text-primary)]">
+                Design Operating Model
+              </h3>
+              <p className="text-[var(--color-text-tertiary)] text-sm">
+                Implemented Double Diamond methodology with Lean principles and Dual Track Agile for design-engineering alignment.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-medium mb-3 text-[var(--color-text-primary)]">
+                UX Center of Excellence
+              </h3>
+              <p className="text-[var(--color-text-tertiary)] text-sm">
+                Established design center serving Chile and Peru with 20+ designers, researchers, and UX writers across teams.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-medium mb-3 text-[var(--color-text-primary)]">
+                Team Infrastructure
+              </h3>
+              <p className="text-[var(--color-text-tertiary)] text-sm">
+                Recruitment, onboarding, career development, and 1:1 frameworks enabling team growth from 3 to 20+ designers.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-medium mb-3 text-[var(--color-text-primary)]">
+                Strategic Roadmapping
+              </h3>
+              <p className="text-[var(--color-text-tertiary)] text-sm">
+                OKR definition, PI Planning with SAFe framework, and quarterly initiative management across multiple products.
+              </p>
+            </div>
+
+            <div>
+              <h3 className="text-lg font-medium mb-3 text-[var(--color-text-primary)]">
+                Product Ecosystem
+              </h3>
+              <p className="text-[var(--color-text-tertiary)] text-sm">
+                Consistency across 5+ platforms: Personas app, Comercios app, Websites, Developer platform, and Backoffice.
+              </p>
             </div>
           </div>
+        </section>
 
-          {/* 2. Team */}
-          <div>
-            <div className="flex items-baseline gap-4 mb-4">
-              <span className="text-3xl font-bold text-[var(--color-text-tertiary)]">02</span>
-              <h3 className="text-xl italic">{t.area2Title}</h3>
+        {/* Impact & Results */}
+        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+          <h2 className="font-heading text-display-md tracking-display mb-12">
+            Impact & Results
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-12 mb-12">
+            <div>
+              <h3 className="text-2xl font-medium mb-6 text-[var(--color-text-primary)]">
+                Quantitative Outcomes
+              </h3>
+              <ul className="space-y-4">
+                <li className="flex gap-4">
+                  <span className="text-2xl font-bold text-[var(--color-text-secondary)]">1.6M+</span>
+                  <span className="text-[var(--color-text-tertiary)]">Users reached by Chek by end of 2024</span>
+                </li>
+                <li className="flex gap-4">
+                  <span className="text-2xl font-bold text-[var(--color-text-secondary)]">20+</span>
+                  <span className="text-[var(--color-text-tertiary)]">Design team members managed and trained</span>
+                </li>
+                <li className="flex gap-4">
+                  <span className="text-2xl font-bold text-[var(--color-text-secondary)]">5x</span>
+                  <span className="text-[var(--color-text-tertiary)]">Team growth from initial hire to UX Center leadership</span>
+                </li>
+              </ul>
             </div>
-            <p className="text-[var(--color-text-secondary)] text-lg leading-relaxed pl-14">
-              {t.area2Desc}
-            </p>
-            <div className="mt-6 mx-auto lg:-mx-24 xl:-mx-40 2xl:-mx-56">
-              <AsciiImage
-                src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/2f3e18d1-1187-4b01-861c-b103ba408628_rw_1920.jpg?h=90ec9349ebe16fd89346696f4cad8007"
-                alt={t.area2Alt}
-                colorOnHover
-              />
+
+            <div>
+              <h3 className="text-2xl font-medium mb-6 text-[var(--color-text-primary)]">
+                Qualitative Outcomes
+              </h3>
+              <ul className="space-y-4 text-[var(--color-text-tertiary)]">
+                <li>• <strong className="text-[var(--color-text-primary)]">Design Consistency:</strong> Unified visual language across multiple products and platforms</li>
+                <li>• <strong className="text-[var(--color-text-primary)]">Team Scalability:</strong> Design system enabled rapid hiring and onboarding of new team members</li>
+                <li>• <strong className="text-[var(--color-text-primary)]">Process Excellence:</strong> Double Diamond + Lean methodology improved design efficiency</li>
+                <li>• <strong className="text-[var(--color-text-primary)]">Regional Expansion:</strong> Successfully scaled design operations to Chile and Peru</li>
+              </ul>
             </div>
           </div>
+        </section>
 
-          {/* 3. Strategy */}
-          <div>
-            <div className="flex items-baseline gap-4 mb-4">
-              <span className="text-3xl font-bold text-[var(--color-text-tertiary)]">03</span>
-              <h3 className="text-xl italic">{t.area3Title}</h3>
+        {/* Lessons Learned */}
+        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+          <h2 className="font-heading text-display-md tracking-display mb-12">
+            Lessons Learned
+          </h2>
+
+          <div className="grid md:grid-cols-2 gap-12">
+            <div>
+              <h3 className="text-2xl font-medium mb-4 text-[var(--color-text-primary)]">
+                What Worked Well
+              </h3>
+              <ul className="space-y-3 text-[var(--color-text-tertiary)]">
+                <li>• <strong className="text-[var(--color-text-primary)]">Design System First:</strong> Building Figma system early enabled consistency as we scaled</li>
+                <li>• <strong className="text-[var(--color-text-primary)]">Clear Operating Model:</strong> Double Diamond framework provided structure for distributed teams</li>
+                <li>• <strong className="text-[var(--color-text-primary)]">Team Investment:</strong> Hiring early and investing in designer growth paid dividends</li>
+                <li>• <strong className="text-[var(--color-text-primary)]">Cross-functional Alignment:</strong> Regular meetings with Product, Dev, and Legal ensured design effectiveness</li>
+              </ul>
             </div>
-            <p className="text-[var(--color-text-secondary)] text-lg leading-relaxed pl-14">
-              {t.area3Desc}
-            </p>
-            <div className="mt-6 mx-auto lg:-mx-24 xl:-mx-40 2xl:-mx-56">
-              <AsciiImage
-                src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/9643c2eb-d444-4923-b913-524f5033ead0_rw_1920.jpg?h=2a38e17682495fb86a19abe1dee745a7"
-                alt={t.area3Alt}
-                colorOnHover
-              />
+
+            <div>
+              <h3 className="text-2xl font-medium mb-4 text-[var(--color-text-primary)]">
+                Areas for Improvement
+              </h3>
+              <ul className="space-y-3 text-[var(--color-text-tertiary)]">
+                <li>• <strong className="text-[var(--color-text-primary)]">Earlier User Research:</strong> More systematic user research earlier in product development</li>
+                <li>• <strong className="text-[var(--color-text-primary)]">Automation Investment:</strong> Design system automation would have reduced manual work</li>
+                <li>• <strong className="text-[var(--color-text-primary)]">Accessibility Planning:</strong> WCAG compliance should have been prioritized from day one</li>
+              </ul>
             </div>
           </div>
+        </section>
 
-          {/* 4. Experience */}
-          <div>
-            <div className="flex items-baseline gap-4 mb-4">
-              <span className="text-3xl font-bold text-[var(--color-text-tertiary)]">04</span>
-              <h3 className="text-xl italic">{t.area4Title}</h3>
-            </div>
-            <p className="text-[var(--color-text-secondary)] text-lg leading-relaxed pl-14">
-              {t.area4Desc}
+        {/* Conclusion */}
+        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+          <h2 className="font-heading text-display-md tracking-display mb-8">
+            Conclusion
+          </h2>
+
+          <div className="space-y-6 text-[var(--color-text-tertiary)]">
+            <p>
+              My journey at Banco Ripley demonstrates the power of building design systems and organizational infrastructure from the ground up. Starting as a UX Lead supporting Chek's digital wallet, I scaled the design practice into a regional Center of Excellence serving multiple countries.
             </p>
-            <div className="mt-6 mx-auto lg:-mx-24 xl:-mx-40 2xl:-mx-56">
-              <AsciiImage
-                src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/299d5618-c739-4963-9dda-ac5d3889bfe3_rw_1920.jpg?h=147b14da61b654c5f1abe2e6b4e29c72"
-                alt={t.area4Alt}
-                colorOnHover
-              />
-            </div>
-          </div>
-
-          {/* 5. Operations */}
-          <div>
-            <div className="flex items-baseline gap-4 mb-4">
-              <span className="text-3xl font-bold text-[var(--color-text-tertiary)]">05</span>
-              <h3 className="text-xl italic">{t.area5Title}</h3>
-            </div>
-            <p className="text-[var(--color-text-secondary)] text-lg leading-relaxed pl-14">
-              {t.area5Desc}
+            <p>
+              The success of Chek—reaching 1.6 million users—was not just about product design. It was about creating the systems, processes, and teams that enabled consistent, scalable design across an increasingly complex ecosystem.
             </p>
-            <div className="mt-6 mx-auto lg:-mx-24 xl:-mx-40 2xl:-mx-56">
-              <AsciiImage
-                src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/4d535e33-186a-492a-9622-eea44e54eb8f_rw_1920.jpg?h=a9e61622f980d539dff71f92548344f3"
-                alt={t.area5Alt}
-                colorOnHover
-              />
-            </div>
+            <p>
+              From design systems in Figma to team management frameworks to strategic roadmapping, every element contributed to enabling rapid product development without sacrificing quality or consistency.
+            </p>
           </div>
-        </div>
-      </section>
+        </section>
 
-      {/* Related Projects */}
-      <section className="max-w-5xl mx-auto px-8 md:px-16 pb-22">
-        <RelatedProjects current="/banco-ripley" />
-      </section>
+        {/* Related Projects */}
+        <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+          <RelatedProjects current="/banco-ripley" />
+        </section>
+      </>
     </article>
   );
 }
