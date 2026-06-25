@@ -322,6 +322,24 @@ export default function CopecVoltexPage() {
         </div>
       </section>
 
+      {/* Gallery - Project Images 1-10 */}
+      <section className="border-t border-[var(--color-border)]">
+        <div className="space-y-8 py-20">
+          {[1, 2, 3, 4, 5, 6, 7, 8, 9, 10].map((num) => (
+            <div key={num} className="w-full px-8 md:px-0">
+              <div className="rounded-lg overflow-hidden border border-[var(--color-border)]">
+                <img
+                  src={`/images/voltex/voltex-${num}.png`}
+                  alt={`Copec Voltex Project Image ${num}`}
+                  className="w-full"
+                  loading="lazy"
+                />
+              </div>
+            </div>
+          ))}
+        </div>
+      </section>
+
       {/* Impact & Results */}
       <section className="max-w-5xl mx-auto px-8 md:px-16 py-22 border-t border-[var(--color-border)]">
         <h2 className="font-heading text-display-md tracking-display mb-12">
