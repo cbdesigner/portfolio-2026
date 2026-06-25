@@ -16,7 +16,8 @@ type ProjectKey =
   | "dsMethodology"
   | "bupaDesignSystem"
   | "shipbobDesignSystem"
-  | "dsServices";
+  | "dsServices"
+  | "copecVoltex";
 
 const allProjects: {
   href: string;
@@ -25,6 +26,16 @@ const allProjects: {
   filter: FilterValue;
   description: { en: string; es: string };
 }[] = [
+  {
+    href: "/copec-voltex",
+    key: "copecVoltex",
+    category: "Design Systems · eMobility",
+    filter: "projects",
+    description: {
+      en: "Scalable design system and eMobility platform featuring EV catalog, educational resources, and cost calculator. 50% reduction in design-to-development time.",
+      es: "Sistema de diseño escalable y plataforma de movilidad eléctrica con catálogo de vehículos, recursos educativos y calculadora de costos. 50% de reducción en tiempo de desarrollo.",
+    },
+  },
   {
     href: "/banco-ripley",
     key: "bancoRipley",

@@ -54,6 +54,7 @@ export const translations = {
       send: "Send Message",
     },
     projectTitles: {
+      copecVoltex: "Copec Voltex eMobility Hub",
       bancoRipley: "Transforming the Digital Experience at Banco Ripley",
       designSystem: "A journey in the field of Design Systems",
       autonomus: "Autonomus",
@@ -213,6 +214,7 @@ export const translations = {
       send: "Enviar mensaje",
     },
     projectTitles: {
+      copecVoltex: "Copec Voltex eMobility Hub",
       bancoRipley: "Transformando la Experiencia Digital en Banco Ripley",
       designSystem: "A journey in the field of Design Systems",
       autonomus: "Autonomus",
