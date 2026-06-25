@@ -397,8 +397,8 @@ export default function DesignSystemArchitectPage() {
 
   return (
     <article>
-      {/* Hero Section */}
-      <section className="max-w-5xl mx-auto px-8 md:px-16 pt-22 pb-22 text-center">
+      {/* 1. Hero / Header */}
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 text-center">
         <p className="text-overline uppercase tracking-widest-caps text-[var(--color-text-tertiary)] mb-4">
           {t.caseStudy}
         </p>
@@ -421,8 +421,8 @@ export default function DesignSystemArchitectPage() {
         </div>
       </section>
 
-      {/* Overview */}
-      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22">
+      {/* 2. Project Overview */}
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
         <h2 className="font-heading text-display-md tracking-display mb-8">{t.overviewTitle}</h2>
         <div className="space-y-6 text-body-lg text-[var(--color-text-secondary)] leading-relaxed">
           <p>{t.overviewP1}</p>
@@ -430,8 +430,8 @@ export default function DesignSystemArchitectPage() {
         </div>
       </section>
 
-      {/* Core Competencies */}
-      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22">
+      {/* 3. Challenge & Opportunity - Core Competencies */}
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
         <div className="text-center mb-12">
           <h2 className="font-heading text-display-md tracking-display mb-4">
             {t.competenciesTitle}
@@ -461,8 +461,8 @@ export default function DesignSystemArchitectPage() {
         </div>
       </section>
 
-      {/* Evolution of My Approach */}
-      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22">
+      {/* 4. Approach - Evolution of My Approach */}
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
         <div className="text-center mb-12">
           <h2 className="font-heading text-display-md tracking-display mb-4">
             {t.evolutionTitle}
@@ -505,8 +505,8 @@ export default function DesignSystemArchitectPage() {
         </div>
       </section>
 
-      {/* Key Achievements */}
-      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22">
+      {/* 5. What We Delivered - Key Achievements */}
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
         <div className="text-center mb-12">
           <h2 className="font-heading text-display-md tracking-display mb-4">
             {t.achievementsTitle}
@@ -554,8 +554,8 @@ export default function DesignSystemArchitectPage() {
         </div>
       </section>
 
-      {/* Tools & Technologies */}
-      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22">
+      {/* 6. Gallery - Tools & Technologies */}
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
         <div className="text-center mb-12">
           <h2 className="font-heading text-display-md tracking-display mb-4">
             {t.toolsTitle}
@@ -579,8 +579,8 @@ export default function DesignSystemArchitectPage() {
         </div>
       </section>
 
-      {/* Methodology */}
-      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22">
+      {/* 7. Impact & Results - Methodology */}
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
         <div className="text-center mb-12">
           <h2 className="font-heading text-display-md tracking-display mb-4">{t.methodologyTitle}</h2>
           <p className="text-[var(--color-text-tertiary)] text-lg  mx-auto">
@@ -626,8 +626,16 @@ export default function DesignSystemArchitectPage() {
         </div>
       </section>
 
-      {/* Related Projects */}
-      <section className="max-w-5xl mx-auto px-8 md:px-16 pb-22">
+      {/* 8. Lessons Learned - Empty */}
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      </section>
+
+      {/* 9. Conclusion - Empty */}
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      </section>
+
+      {/* 10. Related Projects */}
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
         <RelatedProjects current="/design-system-architect" />
       </section>
     </article>

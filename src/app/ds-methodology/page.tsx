@@ -496,8 +496,8 @@ export default function DSMethodologyPage() {
 
   return (
     <article>
-      {/* Hero */}
-      <section className="max-w-5xl mx-auto px-8 md:px-16 pt-22 pb-22 text-center">
+      {/* 1. Hero / Header */}
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 text-center">
         <p className="text-overline uppercase tracking-widest-caps text-[var(--color-text-tertiary)] mb-4 font-mono">
           {t.heroOverline}
         </p>
@@ -512,8 +512,8 @@ export default function DSMethodologyPage() {
         </p>
       </section>
 
-      {/* Strategic Benefits */}
-      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22">
+      {/* 2. Project Overview - Strategic Benefits */}
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
         <div className="text-center mb-12">
           <h2 className="font-heading text-display-md tracking-display mb-4">
             {t.benefitsTitle}
@@ -543,8 +543,8 @@ export default function DSMethodologyPage() {
         </div>
       </section>
 
-      {/* 5 Stages Overview */}
-      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22">
+      {/* 3. Challenge & Opportunity - 5 Stages Overview */}
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
         <div className="text-center mb-12">
           <h2 className="font-heading text-display-md tracking-display mb-4">
             {t.stagesTitle}
@@ -600,8 +600,8 @@ export default function DSMethodologyPage() {
         </div>
       </section>
 
-      {/* Development Pipeline */}
-      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22">
+      {/* 4. Approach - Development Pipeline */}
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
         <div className="text-center mb-12">
           <h2 className="font-heading text-display-md tracking-display mb-4">
             {t.pipelineTitle}
@@ -634,8 +634,8 @@ export default function DSMethodologyPage() {
         </div>
       </section>
 
-      {/* Tools */}
-      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22">
+      {/* 5. What We Delivered - Tools */}
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
         <div className="text-center mb-12">
           <h2 className="font-heading text-display-md tracking-display mb-4">
             {t.toolsSectionTitle}
@@ -655,8 +655,8 @@ export default function DSMethodologyPage() {
         </div>
       </section>
 
-      {/* KPIs */}
-      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22">
+      {/* 6. Gallery - KPIs */}
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
         <div className="text-center mb-12">
           <h2 className="font-heading text-display-md tracking-display mb-4">
             {t.kpisTitle}
@@ -697,8 +697,8 @@ export default function DSMethodologyPage() {
         </div>
       </section>
 
-      {/* Roadmap */}
-      <section className="max-w-5xl mx-auto px-8 md:px-16 py-22">
+      {/* 7. Impact & Results - Roadmap */}
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
         <div className="text-center mb-12">
           <h2 className="font-heading text-display-md tracking-display mb-4">
             {t.roadmapTitle}
@@ -745,8 +745,16 @@ export default function DSMethodologyPage() {
         </div>
       </section>
 
-      {/* Related Projects */}
-      <section className="max-w-5xl mx-auto px-8 md:px-16 pb-22">
+      {/* 8. Lessons Learned - Empty */}
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      </section>
+
+      {/* 9. Conclusion - Empty */}
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      </section>
+
+      {/* 10. Related Projects */}
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
         <RelatedProjects current="/ds-methodology" />
       </section>
     </article>

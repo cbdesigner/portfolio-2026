@@ -81,8 +81,8 @@ export default function DesignSystemPage() {
 
   return (
     <div className="min-h-screen overflow-x-hidden">
-      <div className="max-w-5xl mx-auto px-8 md:px-16 py-22">
-        {/* Hero */}
+      {/* 1. Hero / Header */}
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20">
         <header className="mb-16">
           <h1 className="font-heading text-display-lg tracking-display mb-4">
             {t.title}
@@ -102,8 +102,10 @@ export default function DesignSystemPage() {
           </div>
         </header>
 
-        {/* Journey Beginning */}
-        <section className="mb-16">
+      </section>
+
+      {/* 2. Project Overview - Journey Beginning */}
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
           <h2 className="font-heading text-display-md tracking-display mb-6">
             {t.journeyTitle}
           </h2>
@@ -114,13 +116,13 @@ export default function DesignSystemPage() {
             </span>{" "}
             {t.journeyText2}
           </p>
-          <div className="mt-6  mx-auto">
+          <div className="mt-6 mx-auto">
             <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/25825197-c473-4a76-bb01-401ddedcd0fb_rw_1920.png?h=3dcd06bb65a20695a3cd2c17815ca682" alt={t.journeyAlt} className="w-full h-auto rounded-lg" loading="lazy" />
           </div>
-        </section>
+      </section>
 
-        {/* 2018-2019 */}
-        <section className="mb-16">
+      {/* 3. Challenge & Opportunity - 2018-2019 */}
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
           <h2 className="font-heading text-display-md tracking-display mb-6">{t.period2018Title}</h2>
           <div className="space-y-4 text-[var(--color-text-secondary)] leading-relaxed">
             <p>{t.period2018Text1}</p>
@@ -128,8 +130,10 @@ export default function DesignSystemPage() {
           </div>
         </section>
 
-        {/* Design System with Tokens Studio */}
-        <section className="mb-16">
+      </section>
+
+      {/* 4. Approach - Design System with Tokens Studio */}
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
           <h2 className="font-heading text-display-md tracking-display mb-6">
             {t.tokensTitle}
           </h2>
@@ -137,7 +141,7 @@ export default function DesignSystemPage() {
             <p>{t.tokensText1}</p>
             <p>{t.tokensText2}</p>
           </div>
-          <div className="mt-6  mx-auto">
+          <div className="mt-6 mx-auto">
             <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/cb5feb94-e5be-42aa-8cb9-7acc0760afb9_rw_1920.png?h=130d7524717101f2df6a053a7f4047cf" alt={t.tokensAlt} className="w-full h-auto rounded-lg" loading="lazy" />
           </div>
           <div className="mt-8 mx-auto">
@@ -150,10 +154,10 @@ export default function DesignSystemPage() {
               sandbox="allow-same-origin allow-scripts allow-pointer-lock allow-forms"
             />
           </div>
-        </section>
+      </section>
 
-        {/* Multibranding Design System with Variables */}
-        <section className="mb-16">
+      {/* 5. What We Delivered - Multibranding Design System with Variables */}
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
           <h2 className="font-heading text-display-md tracking-display mb-6">
             {t.variablesTitle}
           </h2>
@@ -161,20 +165,22 @@ export default function DesignSystemPage() {
             <p>{t.variablesText1}</p>
             <p>{t.variablesText2}</p>
           </div>
-          <div className="mt-6  mx-auto">
+          <div className="mt-6 mx-auto">
             <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/3a7b452f-b341-4e72-b0e7-743a6456924c_rw_1920.png?h=0bd1f99d2ffb6032ab3a7022b33f50d2" alt={t.variablesAlt} className="w-full h-auto rounded-lg" loading="lazy" />
           </div>
-        </section>
+      </section>
 
-        {/* Summary */}
-        <section className="mb-16">
+      {/* 6. Gallery - Summary */}
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
           <p className="text-body-lg text-[var(--color-text-secondary)] leading-relaxed">
             {t.summary}
           </p>
         </section>
 
-        {/* Tools */}
-        <section className="mb-16">
+      </section>
+
+      {/* 7. Impact & Results - Tools section */}
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
           <h2 className="font-heading text-display-md tracking-display mb-4">{t.toolsTitle}</h2>
           <div className="flex flex-wrap gap-3">
             <span className="px-4 py-2 border border-[var(--color-border)] text-sm text-[var(--color-text-secondary)] font-mono">
@@ -183,9 +189,20 @@ export default function DesignSystemPage() {
           </div>
         </section>
 
-        {/* Related Projects */}
+      </section>
+
+      {/* 8. Lessons Learned - Empty */}
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      </section>
+
+      {/* 9. Conclusion - Empty */}
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
+      </section>
+
+      {/* 10. Related Projects */}
+      <section className="max-w-6xl mx-auto px-8 md:px-16 py-20 border-t border-[var(--color-border)]">
         <RelatedProjects current="/design-system" />
-      </div>
+      </section>
     </div>
   );
 }
