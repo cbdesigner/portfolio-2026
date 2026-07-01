@@ -109,9 +109,6 @@ export default function InterviewPage() {
           <p className="text-[var(--color-text-secondary)] leading-relaxed">
             {t.whatIsMultiplicaText}
           </p>
-          <div className="w-full md:w-4/5 mx-auto mt-6 mb-6">
-            <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/251c0be5-e5c3-4b2d-8a45-0b1d0e9a6fbf_rw_1920.png?h=a7637cd3186675478999980674275955" alt="Multiplica - digital consulting firm" className="w-full h-auto rounded-lg" loading="lazy" />
-          </div>
         </section>
 
       {/* 3. Challenge & Opportunity - Interview */}
@@ -122,9 +119,6 @@ export default function InterviewPage() {
           <p className="text-[var(--color-text-secondary)] mb-6 italic">
             {t.interviewSubtitle}
           </p>
-          <div className="w-full md:w-4/5 mx-auto mt-6 mb-6">
-            <img src="https://cdn.myportfolio.com/cffae2d78aba7c84001c467fdc4cc79e/b65d50ee-e2f4-4779-a32d-ff86fd544344_rw_1920.png?h=f4d8cd4e0bd1242e15d7feb9ff8ebfe9" alt="Interview with Carlos Baeza article" className="w-full h-auto rounded-lg" loading="lazy" />
-          </div>
           <div className="space-y-6 text-[var(--color-text-secondary)] leading-relaxed">
             <p>
               {t.interviewParagraph1}
