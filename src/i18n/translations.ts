@@ -72,6 +72,14 @@ export const translations = {
       singular: "project",
       plural: "projects",
     },
+    featuredInterview: {
+      badge: "Recognized as UX Reference in the Southern Cone",
+      title: "Featured Interview",
+      description: "In 2019, I was featured in an in-depth interview by Multiplica discussing my approach to UX strategy, design systems, and the future of AI in design.",
+      cta: "Read Interview",
+      publication: "Multiplica Interview — 2019",
+      category: "Interview · Recognition",
+    },
     projectTitles: {
       copecVoltex: "Copec Voltex eMobility Hub",
       bancoRipley: "Transforming the Digital Experience at Banco Ripley",
@@ -250,6 +258,14 @@ export const translations = {
     projectCount: {
       singular: "proyecto",
       plural: "proyectos",
+    },
+    featuredInterview: {
+      badge: "Reconocido como referente en UX del Cono Sur",
+      title: "Entrevista Destacada",
+      description: "En 2019, fui entrevistado por Multiplica en una conversación profunda sobre mi enfoque de estrategia UX, design systems y el futuro de la IA en diseño.",
+      cta: "Leer Entrevista",
+      publication: "Entrevista Multiplica — 2019",
+      category: "Entrevista · Reconocimiento",
     },
     projectTitles: {
       copecVoltex: "Copec Voltex eMobility Hub",

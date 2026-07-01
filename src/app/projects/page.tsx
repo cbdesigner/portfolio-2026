@@ -2,6 +2,7 @@
 
 import { useState, useEffect } from "react";
 import ProjectGrid, { type ProjectItem, type FilterValue } from "@/components/ProjectGrid";
+import FeaturedInterviewCard from "@/components/FeaturedInterviewCard";
 import { useLanguage } from "@/i18n/LanguageContext";
 
 type ProjectKey =
@@ -169,6 +170,12 @@ export default function ProjectsPage() {
             ? "Explore my design systems, products, and strategic work across healthcare, banking, energy, and mobility."
             : "Explora mis design systems, productos y trabajo estratégico en healthcare, banca, energía y movilidad."}
         </p>
+      </section>
+
+      <section className="px-8 md:px-16 py-12">
+        <div className="grid grid-cols-1 gap-6">
+          <FeaturedInterviewCard />
+        </div>
       </section>
 
       <ProjectGrid items={items} />

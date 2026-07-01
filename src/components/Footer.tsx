@@ -1,9 +1,12 @@
 "use client";
 
 import { usePathname } from "next/navigation";
+import Link from "next/link";
+import { useLanguage } from "@/i18n/LanguageContext";
 
 export default function Footer() {
   const pathname = usePathname();
+  const { t } = useLanguage();
   if (pathname === "/login") return null;
 
   return (
@@ -21,12 +24,12 @@ export default function Footer() {
         <span className="mx-3 text-[var(--color-border)]">|</span>
         +569 6685 2551
       </p>
-      <div className="mt-6">
+      <div className="mt-6 flex flex-col gap-4 sm:flex-row sm:justify-center sm:gap-6">
         <a
           href="https://www.linkedin.com/in/carlos-baeza-designer/"
           target="_blank"
           rel="noopener noreferrer"
-          className="inline-flex items-center gap-2 text-caption text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-colors"
+          className="inline-flex items-center justify-center gap-2 text-caption text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-colors"
           aria-label="LinkedIn"
         >
           <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="currentColor">
@@ -34,6 +37,12 @@ export default function Footer() {
           </svg>
           LinkedIn
         </a>
+        <Link
+          href="/interview"
+          className="inline-flex items-center justify-center gap-2 text-caption text-[var(--color-text-secondary)] hover:text-[var(--color-text-primary)] transition-colors"
+        >
+          {t.featuredInterview.publication}
+        </Link>
       </div>
     </footer>
   );
