@@ -83,6 +83,7 @@ export const translations = {
     projectTitles: {
       copecVoltex: "Copec Voltex eMobility Hub",
       bancoRipley: "Transforming the Digital Experience at Banco Ripley",
+      chek: "Chek Digital Wallet",
       designSystem: "A journey in the field of Design Systems",
       autonomus: "Autonomus",
       myDesignProcess: "My Design Process",
@@ -270,6 +271,7 @@ export const translations = {
     projectTitles: {
       copecVoltex: "Copec Voltex eMobility Hub",
       bancoRipley: "Transformando la Experiencia Digital en Banco Ripley",
+      chek: "Chek Billetera Digital",
       designSystem: "Un viaje en el campo de los Design Systems",
       autonomus: "Autonomus",
       myDesignProcess: "Mi Proceso de Dise\u00f1o",

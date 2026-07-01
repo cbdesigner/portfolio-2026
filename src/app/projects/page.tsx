@@ -6,6 +6,7 @@ import { useLanguage } from "@/i18n/LanguageContext";
 
 type ProjectKey =
   | "bancoRipley"
+  | "chek"
   | "designSystem"
   | "autonomus"
   | "myDesignProcess"
@@ -43,6 +44,16 @@ const allProjects: {
     description: {
       en: "Full redesign of the digital banking experience, improving retention and self-service rates across mobile and web.",
       es: "Rediseño completo de la experiencia bancaria digital, mejorando retención y autoservicio en web y móvil.",
+    },
+  },
+  {
+    href: "/chek",
+    key: "chek",
+    category: "FinTech · Digital Wallet",
+    filter: "projects",
+    description: {
+      en: "Digital wallet for Banco Ripley serving 800K+ users. Led UX strategy, design system, and team for Personas, Comercios, and web platforms democratizing banking.",
+      es: "Billetera digital de Banco Ripley con 800K+ usuarios. Lideré estrategia UX, design system y equipo para plataformas Personas, Comercios y web democratizando banca.",
     },
   },
   {
