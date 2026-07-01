@@ -160,7 +160,6 @@ export default function Home() {
   return (
     <>
       <HeroSection isAuthenticated={isAuthenticated} />
-      {isAuthenticated === true && <ProjectGrid items={items} />}
     </>
   );
 }

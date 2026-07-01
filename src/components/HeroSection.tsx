@@ -46,30 +46,6 @@ export default function HeroSection({ isAuthenticated }: HeroSectionProps) {
               </BlurIn>
             </div>
 
-            {/* CTA */}
-            <BlurIn delay={0.6} duration={0.6}>
-              <a
-                href={isAuthenticated ? "#projects" : "/login"}
-                className="inline-flex items-center gap-2 px-6 py-3 border border-white/20 text-white/80 hover:text-white hover:border-white/40 transition-colors duration-300"
-              >
-                <span className="text-sm font-medium tracking-wide uppercase">
-                  {t.hero.cta}
-                </span>
-                <svg
-                  xmlns="http://www.w3.org/2000/svg"
-                  width="16"
-                  height="16"
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="currentColor"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                >
-                  <path d="M6 9l6 6 6-6" />
-                </svg>
-              </a>
-            </BlurIn>
           </div>
         </div>
       </div>
