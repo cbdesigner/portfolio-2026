@@ -1,6 +1,6 @@
 import { MetadataRoute } from "next";
 
-const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://carlosbaeza.design";
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://portfolio-2026-3cva.onrender.com";
 
 const projects = [
   { slug: "banco-ripley", changeFrequency: "monthly" as const, priority: 0.9 },

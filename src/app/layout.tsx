@@ -14,7 +14,7 @@ const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
 const spaceGrotesk = Space_Grotesk({ subsets: ["latin"], weight: ["400", "700"], variable: "--font-space-grotesk" });
 const spaceMono = Space_Mono({ subsets: ["latin"], weight: ["400", "700"], variable: "--font-space-mono" });
 
-const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://carlosbaeza.design";
+const siteUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://portfolio-2026-3cva.onrender.com";
 
 export const metadata: Metadata = {
   metadataBase: new URL(siteUrl),

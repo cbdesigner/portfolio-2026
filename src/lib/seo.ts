@@ -1,6 +1,6 @@
 import { Metadata } from "next";
 
-const baseUrl = "https://carlosbaeza.design";
+const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://portfolio-2026-3cva.onrender.com";
 
 export interface ProjectMetadata {
   slug: string;
