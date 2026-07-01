@@ -1,12 +1,19 @@
 import { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
+import { generateProjectMetadata, generateProjectJsonLd } from "@/lib/seo";
 
-export const metadata: Metadata = {
+const projectData = {
+  slug: "design-system-architect",
   title: "Design System Architect",
   description:
+    "AI-ready design infrastructure built for scale, governance, and deterministic design-to-code workflows. Token architecture, component systems, and multi-brand theming. Holistic approach to design system architecture connecting strategy, tooling, and team enablement.",
+  shortDescription:
     "AI-ready design infrastructure built for scale, governance, and deterministic design-to-code workflows. Token architecture, component systems, and multi-brand theming.",
-  alternates: { canonical: "https://carlosbaeza.design/design-system-architect" },
+  category: "Design Systems · Architecture · AI-Ready",
+  keywords: ["AI Design Systems", "Design Tokens", "Architecture", "Design-to-Code", "MCP", "Governance"],
 };
+
+export const metadata: Metadata = generateProjectMetadata(projectData);
 
 export default function DesignSystemArchitectLayout({
   children,
@@ -15,17 +22,7 @@ export default function DesignSystemArchitectLayout({
 }) {
   return (
     <>
-      <JsonLd
-        data={{
-          "@context": "https://schema.org",
-          "@type": "CreativeWork",
-          name: "Design System Architect",
-          description: metadata.description as string,
-          author: { "@type": "Person", name: "Carlos Baeza" },
-          url: "https://carlosbaeza.design/design-system-architect",
-          keywords: ["AI Design Systems", "Design Tokens", "Architecture", "Design-to-Code", "MCP"],
-        }}
-      />
+      <JsonLd data={generateProjectJsonLd(projectData)} />
       {children}
     </>
   );

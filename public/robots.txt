@@ -1,0 +1,17 @@
+# robots.txt
+User-agent: *
+Allow: /
+Allow: /projects
+Allow: /profile
+Allow: /interview
+
+# Disallow admin and protected routes
+Disallow: /api/
+Disallow: /admin/
+Disallow: /.next/
+
+# Crawl delay for respectful indexing
+Crawl-delay: 1
+
+# Sitemap location
+Sitemap: https://carlosbaeza.design/sitemap.xml

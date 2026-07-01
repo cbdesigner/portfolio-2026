@@ -1,12 +1,19 @@
 import { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
+import { generateProjectMetadata, generateProjectJsonLd } from "@/lib/seo";
 
-export const metadata: Metadata = {
+const projectData = {
+  slug: "design-system",
   title: "Design System Journey",
   description:
+    "A journey from Atomic Design to advanced multibranding design systems with Figma Variables and Tokens Studio, across Banco Ripley, Enel, and Autonomus. Evolution of design system thinking and enterprise scale.",
+  shortDescription:
     "A journey from Atomic Design to advanced multibranding design systems with Figma Variables and Tokens Studio, across Banco Ripley, Enel, and Autonomus.",
-  alternates: { canonical: "https://carlosbaeza.design/design-system" },
+  category: "Design Systems · Documentation",
+  keywords: ["Design Systems", "Atomic Design", "Figma Variables", "Tokens Studio", "Multibranding", "Evolution"],
 };
+
+export const metadata: Metadata = generateProjectMetadata(projectData);
 
 export default function DesignSystemLayout({
   children,
@@ -15,17 +22,7 @@ export default function DesignSystemLayout({
 }) {
   return (
     <>
-      <JsonLd
-        data={{
-          "@context": "https://schema.org",
-          "@type": "CreativeWork",
-          name: "Design System Journey",
-          description: metadata.description as string,
-          author: { "@type": "Person", name: "Carlos Baeza" },
-          url: "https://carlosbaeza.design/design-system",
-          keywords: ["Design Systems", "Atomic Design", "Figma Variables", "Tokens Studio", "Multibranding"],
-        }}
-      />
+      <JsonLd data={generateProjectJsonLd(projectData)} />
       {children}
     </>
   );

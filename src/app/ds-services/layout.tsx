@@ -1,12 +1,19 @@
 import { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
+import { generateProjectMetadata, generateProjectJsonLd } from "@/lib/seo";
 
-export const metadata: Metadata = {
+const projectData = {
+  slug: "ds-services",
   title: "Design Systems Services",
   description:
     "Integrated framework of Governance, Architecture, and Metrics to transform how design systems scale and deliver measurable business value across organizations.",
-  alternates: { canonical: "https://carlosbaeza.design/ds-services" },
+  shortDescription:
+    "Integrated framework of Governance, Architecture, and Metrics to transform how design systems scale and deliver measurable business value across organizations.",
+  category: "Design Systems · Services · Enterprise",
+  keywords: ["Design Systems", "Governance", "Architecture", "Metrics", "Business Value"],
 };
+
+export const metadata: Metadata = generateProjectMetadata(projectData);
 
 export default function DsServicesLayout({
   children,
@@ -15,17 +22,7 @@ export default function DsServicesLayout({
 }) {
   return (
     <>
-      <JsonLd
-        data={{
-          "@context": "https://schema.org",
-          "@type": "CreativeWork",
-          name: "Design Systems Services",
-          description: metadata.description as string,
-          author: { "@type": "Person", name: "Carlos Baeza" },
-          url: "https://carlosbaeza.design/ds-services",
-          keywords: ["Design Systems", "Governance", "Architecture", "Metrics", "Business Value"],
-        }}
-      />
+      <JsonLd data={generateProjectJsonLd(projectData)} />
       {children}
     </>
   );

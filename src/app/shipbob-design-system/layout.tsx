@@ -1,9 +1,17 @@
 import { Metadata } from "next";
+import JsonLd from "@/components/JsonLd";
+import { generateProjectMetadata, generateProjectJsonLd } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "ShipBob Design System — AI-Ready Infrastructure Case Study",
+const projectData = {
+  slug: "shipbob-design-system",
+  title: "ShipBob Design System — AI-Ready Infrastructure",
   description:
-    "Enterprise design system infrastructure for ShipBob that reduced interface development time by 75% and enabled AI-ready scalability. How we built a system-driven approach to complex fulfillment operations.",
+    "Enterprise design system infrastructure for ShipBob that reduced interface development time by 75% and enabled AI-ready scalability. System-driven approach to complex fulfillment operations with deterministic design-to-code workflows.",
+  shortDescription:
+    "Enterprise design system infrastructure for ShipBob that reduced interface development time by 75% and enabled AI-ready scalability.",
+  client: "ShipBob",
+  category: "Design Systems · Logistics · AI-Ready",
+  impact: "75% reduction in interface development time. Enabled AI-ready scalability.",
   keywords: [
     "ShipBob",
     "Design System",
@@ -15,35 +23,19 @@ export const metadata: Metadata = {
     "Logistics",
     "Design Infrastructure",
   ],
-  alternates: { canonical: "https://carlosbaeza.design/shipbob-design-system" },
-  openGraph: {
-    type: "article",
-    url: "https://carlosbaeza.design/shipbob-design-system",
-    title: "ShipBob Design System — AI-Ready Infrastructure",
-    description:
-      "How ShipBob reduced interface development time by 75% through enterprise design system infrastructure.",
-    images: [
-      {
-        url: "/opengraph-image",
-        width: 1200,
-        height: 630,
-        alt: "ShipBob Design System Case Study",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "ShipBob Design System — AI-Ready Infrastructure",
-    description:
-      "75% reduction in interface development time through system-driven design.",
-    images: ["/twitter-image"],
-  },
 };
+
+export const metadata: Metadata = generateProjectMetadata(projectData);
 
 export default function ShipBobLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <>
+      <JsonLd data={generateProjectJsonLd(projectData)} />
+      {children}
+    </>
+  );
 }

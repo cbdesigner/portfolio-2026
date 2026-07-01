@@ -1,9 +1,19 @@
 import { Metadata } from "next";
+import JsonLd from "@/components/JsonLd";
+import { generateProjectMetadata, generateProjectJsonLd } from "@/lib/seo";
 
-export const metadata: Metadata = {
+const projectData = {
+  slug: "chek",
   title: "Chek Digital Wallet — Banco Ripley Case Study",
   description:
+    "Led comprehensive UX strategy, design system architecture, and team leadership for Chek—a digital wallet serving 800K+ users across three mobile and web platforms. Enabled unbanked Chileans and foreigners to access banking services, sell without commission, and transact with zero maintenance fees.",
+  shortDescription:
     "800K+ users. Digital wallet democratizing banking in Chile and Peru. Led UX strategy, design system, and team for Chek Personas, Comercios, and web platforms.",
+  client: "Banco Ripley",
+  role: "UX Lead & Design Manager",
+  timeline: "Dec 2019 — 2020+",
+  category: "FinTech · Digital Wallet · Design Systems",
+  impact: "Served 800K+ users with 4.5★ ratings. Democratized banking access for unbanked populations across Chile and Peru.",
   keywords: [
     "Chek",
     "Digital Wallet",
@@ -14,36 +24,23 @@ export const metadata: Metadata = {
     "Ionic",
     "PWA",
     "FinTech",
+    "Banking",
+    "Fintech Design",
+    "Payment Systems",
   ],
-  alternates: { canonical: "https://portfolio-2026-3cva.onrender.com/chek" },
-  openGraph: {
-    type: "article",
-    url: "https://portfolio-2026-3cva.onrender.com/chek",
-    title: "Chek Digital Wallet — Banco Ripley Case Study",
-    description:
-      "Led UX strategy and design system for Chek, a digital wallet democratizing banking for 800K+ users in Chile and Peru.",
-    images: [
-      {
-        url: "/opengraph-image",
-        width: 1200,
-        height: 630,
-        alt: "Chek Digital Wallet Case Study",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Chek Digital Wallet — Banco Ripley Case Study",
-    description:
-      "800K+ users. Digital wallet democratizing banking in Chile and Peru with Chek.",
-    images: ["/twitter-image"],
-  },
 };
+
+export const metadata: Metadata = generateProjectMetadata(projectData);
 
 export default function ChekLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <>
+      <JsonLd data={generateProjectJsonLd(projectData)} />
+      {children}
+    </>
+  );
 }

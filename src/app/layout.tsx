@@ -35,6 +35,13 @@ export const metadata: Metadata = {
     "AI Design Systems",
     "Agentic Design",
     "Carlos Baeza",
+    "Design System Governance",
+    "Scalable Design Infrastructure",
+    "Enterprise Design Systems",
+    "UX Strategy",
+    "Design System Methodology",
+    "Lima Designer",
+    "South America Design",
   ],
   authors: [{ name: "Carlos Baeza", url: siteUrl }],
   creator: "Carlos Baeza",
@@ -130,6 +137,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             "@id": `${siteUrl}/#person`,
             name: "Carlos Baeza",
             url: siteUrl,
+            image: "/opengraph-image",
             jobTitle: "Design Systems Architect",
             description:
               "Design Systems Architect building AI-Ready Agentic Design Systems Infrastructure at Enterprise Scale. 10+ years leading cross-functional teams at Banco Ripley, Enel, Bupa and more.",
@@ -148,7 +156,20 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
               "Agentic Design",
               "Multi-brand Theming",
               "Design-to-Code Workflows",
+              "Design System Governance",
+              "Scalable Design Infrastructure",
             ],
+            geo: {
+              "@type": "GeoCoordinates",
+              latitude: "-12.0464",
+              longitude: "-77.0428",
+            },
+            address: {
+              "@type": "PostalAddress",
+              addressCountry: "PE",
+              addressRegion: "Lima",
+              addressLocality: "Lima",
+            },
           }}
         />
         <JsonLd
@@ -159,6 +180,107 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
             url: siteUrl,
             description:
               "Portfolio of Carlos Baeza, Design Systems Architect specializing in AI-ready design infrastructure at enterprise scale.",
+            potentialAction: {
+              "@type": "SearchAction",
+              target: {
+                "@type": "EntryPoint",
+                urlTemplate: `${siteUrl}/projects?q={search_term_string}`,
+              },
+              "query-input": "required name=search_term_string",
+            },
+          }}
+        />
+        <JsonLd
+          data={{
+            "@context": "https://schema.org",
+            "@type": "ProfilePage",
+            name: "Carlos Baeza — Design Systems Architect",
+            url: siteUrl,
+            description:
+              "Design Systems Architect with 10+ years of experience at Banco Ripley, Enel, Bupa, and more. Specializing in AI-ready design infrastructure, design tokens, and enterprise-scale systems.",
+            mainEntity: {
+              "@type": "Person",
+              name: "Carlos Baeza",
+              jobTitle: "Design Systems Architect",
+              url: siteUrl,
+              image: "/opengraph-image",
+              geo: {
+                "@type": "GeoCoordinates",
+                latitude: "-12.0464",
+                longitude: "-77.0428",
+              },
+              address: {
+                "@type": "PostalAddress",
+                addressCountry: "PE",
+                addressRegion: "Lima",
+              },
+            },
+          }}
+        />
+        <JsonLd
+          data={{
+            "@context": "https://schema.org",
+            "@type": "FAQPage",
+            mainEntity: [
+              {
+                "@type": "Question",
+                name: "What is a Design System Architect?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "A Design Systems Architect builds and scales design infrastructure across enterprise organizations. They define design tokens, component libraries, and governance models that enable teams to maintain consistency while moving fast.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What experience does Carlos Baeza have?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Carlos Baeza has 10+ years leading design systems at scale. He's built design infrastructure at Banco Ripley (Chek, Ripley), Enel, Bupa, ShipBob, and more. His work spans mobile apps, web platforms, and cross-brand theming.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "What tools does Carlos Baeza use?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Carlos specializes in Figma (design), Storybook (documentation), React (frontend), design tokens, and governance frameworks. He also works with Ionic for mobile, Tailwind CSS, and enterprise CI/CD pipelines.",
+                },
+              },
+              {
+                "@type": "Question",
+                name: "Is Carlos Baeza available for consulting or freelance work?",
+                acceptedAnswer: {
+                  "@type": "Answer",
+                  text: "Contact Carlos via the contact page for inquiries about design systems consulting, architecture reviews, or team mentorship.",
+                },
+              },
+            ],
+          }}
+        />
+        <JsonLd
+          data={{
+            "@context": "https://schema.org",
+            "@type": "BreadcrumbList",
+            itemListElement: [
+              {
+                "@type": "ListItem",
+                position: 1,
+                name: "Home",
+                item: siteUrl,
+              },
+              {
+                "@type": "ListItem",
+                position: 2,
+                name: "Projects",
+                item: `${siteUrl}/projects`,
+              },
+              {
+                "@type": "ListItem",
+                position: 3,
+                name: "Profile",
+                item: `${siteUrl}/profile`,
+              },
+            ],
           }}
         />
         <ThemeProvider>

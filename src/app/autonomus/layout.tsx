@@ -1,12 +1,27 @@
 import { Metadata } from "next";
 import JsonLd from "@/components/JsonLd";
+import { generateProjectMetadata, generateProjectJsonLd } from "@/lib/seo";
 
-export const metadata: Metadata = {
+const projectData = {
+  slug: "autonomus",
   title: "Autonomus — Mobility Platform for Seniors",
   description:
-    "Case study: Product design for a mobility platform connecting seniors to transportation and companionship services, with a multibranding design system using Figma Variables.",
-  alternates: { canonical: "https://carlosbaeza.design/autonomus" },
+    "Multibranding design system and platform connecting seniors to transportation and companionship services. Designed for simplicity and trust with focus on accessibility and inclusive design patterns.",
+  shortDescription:
+    "Mobility platform for seniors with multibranding design system using Figma Variables. Connecting seniors to transportation and companionship services.",
+  category: "Design Systems · Mobility · Accessibility",
+  keywords: [
+    "Product Design",
+    "Mobility",
+    "Accessibility",
+    "Figma Variables",
+    "Multibranding",
+    "Seniors",
+    "Inclusive Design",
+  ],
 };
+
+export const metadata: Metadata = generateProjectMetadata(projectData);
 
 export default function AutonomusLayout({
   children,
@@ -15,17 +30,7 @@ export default function AutonomusLayout({
 }) {
   return (
     <>
-      <JsonLd
-        data={{
-          "@context": "https://schema.org",
-          "@type": "CreativeWork",
-          name: "Autonomus — Mobility Platform for Seniors",
-          description: metadata.description as string,
-          author: { "@type": "Person", name: "Carlos Baeza" },
-          url: "https://carlosbaeza.design/autonomus",
-          keywords: ["Product Design", "Mobility", "Accessibility", "Figma Variables", "Multibranding"],
-        }}
-      />
+      <JsonLd data={generateProjectJsonLd(projectData)} />
       {children}
     </>
   );

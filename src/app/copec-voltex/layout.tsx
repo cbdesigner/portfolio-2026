@@ -1,9 +1,17 @@
 import { Metadata } from "next";
+import JsonLd from "@/components/JsonLd";
+import { generateProjectMetadata, generateProjectJsonLd } from "@/lib/seo";
 
-export const metadata: Metadata = {
-  title: "Copec Voltex eMobility Hub — Design System & Platform Case Study",
+const projectData = {
+  slug: "copec-voltex",
+  title: "Copec Voltex eMobility Hub — Design System & Platform",
   description:
-    "Scalable design system and eMobility platform for Copec Voltex featuring EV catalog, educational resources, and cost calculator. 50% reduction in design-to-development time through modular design system.",
+    "Scalable design system and eMobility platform for Copec Voltex featuring EV catalog, educational resources, and cost calculator. 50% reduction in design-to-development time through modular design system built with design tokens and component library.",
+  shortDescription:
+    "Scalable design system and eMobility platform for Copec Voltex featuring EV catalog, educational resources, and cost calculator. 50% reduction in design-to-development time.",
+  client: "Copec Voltex",
+  category: "Design Systems · eMobility · Sustainability",
+  impact: "50% reduction in design-to-development time. Promoted sustainable transportation across Chile.",
   keywords: [
     "Copec Voltex",
     "eMobility",
@@ -15,36 +23,21 @@ export const metadata: Metadata = {
     "React",
     "Figma",
     "Storybook",
+    "Sustainable Transportation",
   ],
-  alternates: { canonical: "https://portfolio-2026-3cva.onrender.com/copec-voltex" },
-  openGraph: {
-    type: "article",
-    url: "https://portfolio-2026-3cva.onrender.com/copec-voltex",
-    title: "Copec Voltex eMobility Hub — Design System & Platform",
-    description:
-      "How we built a scalable design system and eMobility platform for Copec Voltex to promote sustainable transportation.",
-    images: [
-      {
-        url: "/opengraph-image",
-        width: 1200,
-        height: 630,
-        alt: "Copec Voltex eMobility Hub Case Study",
-      },
-    ],
-  },
-  twitter: {
-    card: "summary_large_image",
-    title: "Copec Voltex eMobility Hub — Design System & Platform",
-    description:
-      "50% reduction in design-to-development time through modular design system for eMobility platform.",
-    images: ["/twitter-image"],
-  },
 };
+
+export const metadata: Metadata = generateProjectMetadata(projectData);
 
 export default function CopecVoltexLayout({
   children,
 }: {
   children: React.ReactNode;
 }) {
-  return <>{children}</>;
+  return (
+    <>
+      <JsonLd data={generateProjectJsonLd(projectData)} />
+      {children}
+    </>
+  );
 }

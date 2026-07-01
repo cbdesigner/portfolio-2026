@@ -1,0 +1,2 @@
+# Add your Google verification code here
+# Format: google-site-verification: [YOUR_CODE]
