@@ -2,7 +2,6 @@
 
 import { useState, useEffect } from "react";
 import HeroSection from "@/components/HeroSection";
-import FeaturedInterviewCard from "@/components/FeaturedInterviewCard";
 import ProjectGrid, { type ProjectItem, type FilterValue } from "@/components/ProjectGrid";
 import { useLanguage } from "@/i18n/LanguageContext";
 
@@ -161,16 +160,7 @@ export default function Home() {
   return (
     <>
       <HeroSection isAuthenticated={isAuthenticated} />
-      {isAuthenticated === true && (
-        <>
-          <section className="px-8 md:px-16 py-12">
-            <div className="grid grid-cols-1 gap-6">
-              <FeaturedInterviewCard />
-            </div>
-          </section>
-          <ProjectGrid items={items} />
-        </>
-      )}
+      {isAuthenticated === true && <ProjectGrid items={items} />}
     </>
   );
 }
