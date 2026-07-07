@@ -406,7 +406,38 @@ export default function ProfileContent() {
             <span className="font-mono text-overline text-[var(--color-text-tertiary)]">09</span>
             {p.sections.recommendations}
           </h2>
-          <SimplifiedCvContent />
+          <div className="space-y-6">
+            {p.recommendationsList.map((rec, i) => (
+              <div
+                key={i}
+                className="border border-[var(--color-border)] p-6 theme-transition"
+              >
+                <p className="text-[var(--color-text-secondary)] leading-relaxed mb-4">
+                  "{rec.text}"
+                </p>
+                <div className="flex items-start justify-between gap-4">
+                  <div>
+                    <p className="font-heading text-[var(--color-text-primary)] text-sm">
+                      {rec.author}
+                    </p>
+                    <p className="text-[var(--color-text-tertiary)] text-xs mt-1">
+                      {rec.role}
+                    </p>
+                  </div>
+                  {linkedinUrls[rec.author] && (
+                    <a
+                      href={linkedinUrls[rec.author]}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="text-[var(--color-text-tertiary)] hover:text-[var(--color-text-secondary)] transition-colors pdf-hide"
+                    >
+                      LinkedIn ↗
+                    </a>
+                  )}
+                </div>
+              </div>
+            ))}
+          </div>
         </section>
 
         {/* Honors & Awards */}
