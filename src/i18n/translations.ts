@@ -146,6 +146,23 @@ export const translations = {
       aboutOutro:
         "If your teams are growing and alignment is starting to cost more time than it should, we\u2019ll likely have a valuable conversation.",
       responsibilities: "Key Responsibilities:",
+      awardsList: [
+        {
+          title: "Laboratoria Talent Fest powered by Lenovo",
+          description:
+            "Hackathon event by Laboratoria connecting women in tech with employers. Multidisciplinary squads of developers and UX designers build digital solutions in a 36-hour sprint, presenting MVPs to industry leaders across Latin America.",
+        },
+        {
+          title: "International Young Forestry Entrepreneur Contest Mexico",
+          description:
+            "International competition recognizing young entrepreneurs with innovative projects in sustainable forestry and environmental impact, held in Mexico.",
+        },
+        {
+          title: "Developing Latin America",
+          description:
+            "Regional civic tech hackathon organized by Fundación Ciudadano Inteligente across 8 Latin American countries. Multidisciplinary teams of developers, designers, and citizens built open-data solutions to address social challenges in 36 consecutive hours.",
+        },
+      ],
       experience: [
         {
           role: "CEO (President) & Design System Architect",
@@ -495,6 +512,23 @@ export const translations = {
       aboutOutro:
         "Si tus equipos est\u00e1n creciendo y la alineaci\u00f3n est\u00e1 empezando a costar m\u00e1s tiempo del que deber\u00eda, probablemente tendremos una conversaci\u00f3n valiosa.",
       responsibilities: "Responsabilidades clave:",
+      awardsList: [
+        {
+          title: "Laboratoria Talent Fest powered by Lenovo",
+          description:
+            "Evento hackathon de Laboratoria que conecta a mujeres en tecnología con empleadores. Equipos multidisciplinarios de desarrolladores y diseñadores UX construyen soluciones digitales en un sprint de 36 horas, presentando MVPs a líderes de la industria en toda Latinoamérica.",
+        },
+        {
+          title: "Concurso Internacional de Jóvenes Emprendedores Forestales México",
+          description:
+            "Competencia internacional que reconoce a jóvenes emprendedores con proyectos innovadores en silvicultura sostenible e impacto ambiental, realizada en México.",
+        },
+        {
+          title: "Desarrollando América Latina",
+          description:
+            "Hackathon regional de tecnología cívica organizado por Fundación Ciudadano Inteligente en 8 países de Latinoamérica. Equipos multidisciplinarios de desarrolladores, diseñadores y ciudadanos construyeron soluciones con datos abiertos para abordar desafíos sociales en 36 horas consecutivas.",
+        },
+      ],
       experience: [
         {
           role: "CEO (Presidente) & Arquitecto de Design System",

@@ -57,24 +57,6 @@ const linkedinUrls: Record<string, string> = {
   "Carlos Araya": "https://www.linkedin.com/in/rayacarlo/",
 };
 
-const awards = [
-  {
-    title: "Laboratoria Talent Fest powered by Lenovo",
-    description:
-      "Hackathon event by Laboratoria connecting women in tech with employers. Multidisciplinary squads of developers and UX designers build digital solutions in a 36-hour sprint, presenting MVPs to industry leaders across Latin America.",
-  },
-  {
-    title: "International Young Forestry Entrepreneur Contest Mexico",
-    description:
-      "International competition recognizing young entrepreneurs with innovative projects in sustainable forestry and environmental impact, held in Mexico.",
-  },
-  {
-    title: "Developing Latin America",
-    description:
-      "Regional civic tech hackathon organized by Fundación Ciudadano Inteligente across 8 Latin American countries. Multidisciplinary teams of developers, designers, and citizens built open-data solutions to address social challenges in 36 consecutive hours.",
-  },
-];
-
 const aiTools = [
   "Claude Code", "ChatGPT", "Gemini", "AI Google Studio",
   "Gamma", "NotebookLM", "Lovable", "Relume.ai", "UIzard.io",
@@ -447,7 +429,7 @@ export default function ProfileContent() {
             {p.sections.awards}
           </h2>
           <div className="grid gap-4">
-            {awards.map((award, i) => (
+            {p.awardsList.map((award, i) => (
               <div
                 key={i}
                 className="border border-[var(--color-border)] p-5 theme-transition"
